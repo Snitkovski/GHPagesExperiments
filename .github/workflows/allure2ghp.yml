@@ -1,5 +1,22 @@
 # MIT License
 # Copyright (c) 2024 Alexei Snitkovski <sam@1c.ro> and colleagues
+# 
+# Создание и настройка персонального токена доступа (PAT):
+#   - Перейдите в Developer settings
+#   - Нажмите Generate new token
+#   - Дайте токену подходящее имя
+#   - Выберите следующие разрешения:
+#       Contents:  Repository contents, commits, branches, downloads, releases, and merges
+#       Pages:     Retrieve Pages statuses, configuration, and builds, as well as create new builds
+#       Workflows: Update GitHub Action workflow files
+#   - Создайте токен и скопируйте его
+#
+# Добавление токена как секрета:
+#   - Перейдите в настройки вашего репозитория (Settings)
+#   - Выберите раздел Secrets and variables -> Actions
+#   - Нажмите New repository secret
+#   - Назовите секрет, например, PERSONAL_ACCESS_TOKEN, и вставьте туда созданный токен.
+#
 
 name: Generate and Publish Allure Report
 
@@ -41,6 +58,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
