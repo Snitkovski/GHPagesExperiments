@@ -1,0 +1,30 @@
+# MIT License
+# Copyright (c) 2022 Alexei Snitkovski <sam@1c.ro> and colleagues
+# All rights reserved.
+# 
+# You should to add in your Repository following "secrets" (at the GitHub portal, "Settings" tab):
+# TranslatorCURLink   - web address for BSL Translator (i.e. https://irp.one/romania1c)
+# TranslatorProjectID - ID for current Project in BSL Translator (i.e. b6364530-00d7-11ea-8b87-xxxxxxxxxxxx)
+# BTuser              - BSL Translator login
+# BTpass              - BSL Translator password
+# 
+
+name: Translator launch
+
+on:
+  # Triggers the workflow on push or pull request events, but only for the master branch
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 't*' # Push events to matching for Releases: v* (i.e. for Billing - v1.0.2.14) and for Translations: t* -  t1.0.2.14 + .001
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  Translation:
+    runs-on: ubuntu-latest
+    steps:
+    - name: TranslatorCurl
+      run: |
+        curl -X POST ${{ secrets.TranslatorCURLink }}/command --data "{'actions':[{'value':'${{ secrets.TranslatorProjectID }}'}],'callback_id':'config_translate','agent':'Jenkins'}" -u ${{ secrets.BTuser }}:${{ secrets.BTpass }}

@@ -1,0 +1,287 @@
+# MIT License
+# Copyright (c) 2022 Alexei Snitkovski <sam@1c.ro> and colleagues
+# based on Tymko Oleg <olegtymko@yandex.ru> and contributors Copyright (C) 2020
+# All rights reserved.
+#
+# Additional information:
+# source for CreateReleaseFromTag - see: github.com/actions/create-release
+#
+# Conditions:
+# 1) your Repository should contains the file   .\template\base\1Cv8.1CD
+#    empty 1C database with "Regional infobase settings" Ro-Ro
+# 2) your Repository should contains the file   build_config.json
+#    with few Parameters, mentioned below 
+#
+
+name: Create CF and publish to GitHub Releases
+
+on:
+  # Triggers the workflow on push or pull request events, but only for the master branch
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching for Releases: v* (i.e. v062) and for Translations: t* (i.e. t002)
+###################################
+#    branches: [ TranslateRuEn ]    # the only name of your MAIN branch (e.g. master or develop)
+#      - main                       # or for many branches
+#      - 'releases/**'              #   with different names
+#
+###################################
+#    release:                       # releases 
+#        types: [published, edited] #   with types of activities
+#
+###################################
+#     workflow_run:
+#       workflows: ["Tests"]
+#       branches: [master]
+#       types:
+#         - completed               # workflow running ONLY if tests completed on branch master
+#
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  # Parameters depending on Product / Project - see in  build_config.json
+  #  BASE_PATH: ./XXXXX_ro_devel    # path to the Repository
+  #  REPO_NAME: XXXXX_ro_devel      # Repository name - from EDT
+  #  PROJ_NAME: XXXXX_ro_devel      # Project name - from EDT
+  #  PROD_NAME: XXXXX_ro            # Product name - for Release CF file name
+  #  VER_1C:    8.3.18.1959         # Platform 1C version
+  #  VER_EDT:   2022.2.4            # EDT version on "Build Server" (where we launch GH Runner)
+
+  # Parameters regardless of Product / Project
+  BUILD_DIR: build
+  PATH_1C:   c:\Program Files\1cv8
+  SyntaxCheck: /CheckModules -Server -ThinClient -WebClient
+  FullCheck:   /CheckConfig  -Server -ThinClient -WebClient -ConfigLogIntegrity -EmptyHandlers
+  LogFile:     Log01.log
+
+
+jobs:
+  Preparation:
+    runs-on: self-hosted
+    # Map a step output to a JOB output - for transfer Values between JOBS
+    outputs:
+      BASE_PATH_fromJSON: ${{ steps.get_base_path.outputs.prop }}
+      REPO_NAME_fromJSON: ${{ steps.get_repo_name.outputs.prop }}
+      PROJ_NAME_fromJSON: ${{ steps.get_proj_name.outputs.prop }}
+      PROD_NAME_fromJSON: ${{ steps.get_prod_name.outputs.prop }}
+      VER_1C_fromJSON:    ${{ steps.get_ver1c.outputs.prop }}
+      VER_EDT_fromJSON:   ${{ steps.get_ver_edt.outputs.prop }}
+      VER_APP_fromConf:   ${{ steps.get_app_ver_xml.outputs.info }}
+      
+    steps:
+    # Actualization - get Repository
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checks-out our repository
+      uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+      
+    # Parse build_congig JSON file
+    - name: get 1C Platform version 
+      id: get_ver1c
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'ver_onec'
+
+    # Parse build_congig JSON file
+    - name: get EDT version 
+      id: get_ver_edt
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'ver_edt'
+
+    # Parse build_congig JSON file
+    - name: Get Base_Path_fromJSON
+      id: get_base_path
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'base_path'
+    
+    # Parse build_congig JSON file
+    - name: Get Repo_Name_fromJSON
+      id: get_repo_name
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'repo_name'
+    
+    # Parse build_congig JSON file
+    - name: Get Proj_Name_fromJSON
+      id: get_proj_name
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'proj_name'
+    
+    # Parse build_congig JSON file
+    - name: Get Prod_Name_fromJSON
+      id: get_prod_name
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'build_config.json'
+        prop_path: 'prod_name'
+    
+    # Parse 1C Configuration.mdo (XML file) - get our Application version
+    - name: Get Application version from root XML
+      id: get_app_ver_xml
+      uses: mavrosxristoforos/get-xml-info@1.0
+      with:
+        xml-file: 'PD_ro_devel\src\Configuration\Configuration.mdo'
+        xpath:    //version
+
+    # Prepare environment Variable
+    - env:
+         VER_APP_fromConf: ${{ steps.get_app_ver_xml.outputs.info }}
+      shell: cmd
+      run: |
+        echo VER_APP_fromConf = %VER_APP_fromConf%
+
+    # Environment Variables visualization
+    # [...skipped...]
+        
+    # Check Environment Variables
+    # [...skipped...]
+
+    # Catalogs preparation
+    - name: Catalogs preparation
+      shell: cmd
+      run: |
+        rd    ${{ env.BUILD_DIR }} /s/q
+        mkdir ${{ env.BUILD_DIR }}\cf
+        mkdir ${{ env.BUILD_DIR }}\base
+        mkdir ${{ env.BUILD_DIR }}\distrib
+        dir  .\template\base\
+        copy .\template\base\1Cv8.1CD ${{ env.BUILD_DIR }}\base\1Cv8.1CD
+
+  Build:
+    # This job is depending on previous
+    needs: Preparation
+    runs-on: self-hosted
+    
+    steps:
+    # EDT source convertion to XML
+    - name: EDT to XML convertion
+      env:
+        PROJ_NAME: ${{ needs.Preparation.outputs.PROJ_NAME_fromJSON }}
+        VER_EDT:   ${{ needs.Preparation.outputs.VER_EDT_fromJSON }}
+      shell: cmd
+      run: .\gha-ring-run.cmd workspace export --project ${{ env.PROJ_NAME }} --configuration-files ${{ env.BUILD_DIR }}\cf --workspace-location ${{ env.BUILD_DIR }}\ws ${{ env.VER_EDT }}
+      
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # DB 1C - restore from files
+    - name: DB restore from files
+      env:
+        VER_1C:   ${{ needs.Preparation.outputs.VER_1C_fromJSON}}
+      shell: cmd
+      run: .\gha-ibcmd-run.cmd infobase config import ${{ env.BUILD_DIR }}\cf ${{ env.BUILD_DIR }}\base
+      
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # Update DB 1C
+    - name: DB update
+      env:
+        VER_1C:   ${{ needs.Preparation.outputs.VER_1C_fromJSON}}
+      shell: cmd
+      run: .\gha-ibcmd-run.cmd infobase config apply  --force                 ${{ env.BUILD_DIR }}\base
+     
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # Application SyntaxCheck
+    - name: Syntax Check
+      env:
+        VER_1C:   ${{ needs.Preparation.outputs.VER_1C_fromJSON}}
+      shell: cmd
+      run: .\gha-1c-run.cmd CONFIG ${{ env.SyntaxCheck }}
+
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # Application FullCheck
+    - name: Full Check
+      env:
+        VER_1C:   ${{ needs.Preparation.outputs.VER_1C_fromJSON}}
+      shell: cmd
+      run: .\gha-1c-run.cmd CONFIG ${{ env.FullCheck }}
+
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # Create Application Distribution File
+    - name: Create Distribution File
+      env:
+        VER_1C:    ${{ needs.Preparation.outputs.VER_1C_fromJSON}}
+        PROD_NAME: ${{ needs.Preparation.outputs.PROD_NAME_fromJSON }}
+      shell: cmd
+      run: .\gha-1c-run.cmd DESIGNER /CreateDistributionFiles -cffile ${{ env.BUILD_DIR }}\distrib\${{ env.PROD_NAME }}.cf
+
+    - name: Upload LogFile as Artifact (if fail)
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.LogFile }}
+        path: ${{ env.LogFile }}
+      if: ${{ failure() }}
+      
+    # Uploading distributive 1C CF
+    - name: Create Release
+      env:
+        # This token is provided by Actions, you do not need to create your own token - alt. ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
+        PROD_NAME:    ${{ needs.Preparation.outputs.PROD_NAME_fromJSON }}
+        VER_APP:      ${{ needs.Preparation.outputs.VER_APP_fromConf  }}
+      id: create_release
+      uses: actions/create-release@master
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Product ${{ env.PROD_NAME }} ${{ env.VER_APP }}, build ${{ github.ref }}
+        draft: false
+        prerelease: false                         # body_path: CHANGELOG.md
+
+    - name: Artifacts Uploading
+      env:
+        PROD_NAME: ${{ needs.Preparation.outputs.PROD_NAME_fromJSON }}
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ env.PROD_NAME }}
+        path: ${{ env.BUILD_DIR }}\distrib\${{ env.PROD_NAME }}.cf
+
+    - name: Uploading to Releases
+      env:
+        # This token is provided by Actions, you do not need to create your own token
+        GITHUB_TOKEN: ${{ github.token }}
+        PROD_NAME:    ${{ needs.Preparation.outputs.PROD_NAME_fromJSON }}
+      uses: actions/upload-release-asset@master
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ env.BUILD_DIR }}\distrib\${{ env.PROD_NAME }}.cf
+        asset_name: ${{ env.PROD_NAME }}.cf
+        asset_content_type: application/cf
