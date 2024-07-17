@@ -1,0 +1,673 @@
+{
+  "uid" : "3f09fc6376782c86",
+  "name" : "(VATOnRelease) Universal report",
+  "historyId" : "Accounting reports detailing check.(VATOnRelease) Universal report",
+  "time" : {
+    "start" : 1721186385794,
+    "stop" : 1721186396103,
+    "duration" : 10309
+  },
+  "status" : "failed",
+  "statusMessage" : "Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10114)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10098)}: Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field. \n\nTechnical data:\n        ActiveWindowHeader: Universal report: Catalog \"Bank accounts\"\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Universal report\n        TreeRowNumber: 21.344\n        FeatureLineNumber: 224\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ИзВыпадающегоСпискаСИменемЯВыбираюТочноеЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:54",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186385888,
+      "stop" : 1721186386124,
+      "duration" : 236
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10114)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10098)}: Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field. \n\nTechnical data:\n        ActiveWindowHeader: Universal report: Catalog \"Bank accounts\"\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Universal report\n        TreeRowNumber: 21.344\n        FeatureLineNumber: 224\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ИзВыпадающегоСпискаСИменемЯВыбираюТочноеЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:54",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/app/Report.UniversalReport\"",
+      "time" : {
+        "start" : 1721186386342,
+        "stop" : 1721186386358,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/Report.UniversalReport"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Universal report: *\" window is opened",
+      "time" : {
+        "start" : 1721186386389,
+        "stop" : 1721186386686,
+        "duration" : 297
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Universal report: *"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* Catalog report",
+      "time" : {
+        "start" : 1721186386717,
+        "stop" : 1721186390184,
+        "duration" : 3467
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I activate \"Object type\" field",
+        "time" : {
+          "start" : 1721186386717,
+          "stop" : 1721186386733,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Object type"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I input \"Catalog\" text in \"Object type\" field",
+        "time" : {
+          "start" : 1721186386764,
+          "stop" : 1721186386796,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Object type"
+        }, {
+          "name" : "Парам2",
+          "value" : "Catalog"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I activate \"Object name\" field",
+        "time" : {
+          "start" : 1721186386811,
+          "stop" : 1721186386842,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Object name"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I input \"Bank accounts\" text in \"Object name\" field",
+        "time" : {
+          "start" : 1721186386874,
+          "stop" : 1721186387082,
+          "duration" : 208
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Object name"
+        }, {
+          "name" : "Парам2",
+          "value" : "Bank accounts"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select \"Bank accounts\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem1Value\"",
+        "time" : {
+          "start" : 1721186387097,
+          "stop" : 1721186387285,
+          "duration" : 188
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SettingsComposerUserSettingsItem1Value"
+        }, {
+          "name" : "Парам2",
+          "value" : "Bank accounts"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"GenerateReport\"",
+        "time" : {
+          "start" : 1721186387316,
+          "stop" : 1721186387488,
+          "duration" : 172
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "GenerateReport"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And in \"ReportSpreadsheetDocument\" spreadsheet document I move to \"R7C2\" cell",
+        "time" : {
+          "start" : 1721186387519,
+          "stop" : 1721186387988,
+          "duration" : 469
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ReportSpreadsheetDocument"
+        }, {
+          "name" : "Парам2",
+          "value" : "R7C2"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1721186388009,
+          "stop" : 1721186388025,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721186388050,
+          "stop" : 1721186390184,
+          "duration" : 2134
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* Documents report",
+      "time" : {
+        "start" : 1721186390403,
+        "stop" : 1721186396103,
+        "duration" : 5700
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/app/Report.UniversalReport\"",
+        "time" : {
+          "start" : 1721186390403,
+          "stop" : 1721186390419,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/app/Report.UniversalReport"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click Choice button of the field named \"SettingsComposerUserSettingsItem1Value\"",
+        "time" : {
+          "start" : 1721186390434,
+          "stop" : 1721186390638,
+          "duration" : 204
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SettingsComposerUserSettingsItem1Value"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select \"Document\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem1Value\"",
+        "time" : {
+          "start" : 1721186390669,
+          "stop" : 1721186396087,
+          "duration" : 5418
+        },
+        "status" : "failed",
+        "statusMessage" : "Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field.",
+        "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10114)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10098)}: Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field. \n\nTechnical data:\n        ActiveWindowHeader: Universal report: Catalog \"Bank accounts\"\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Universal report\n        TreeRowNumber: 21.344\n        FeatureLineNumber: 224\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ИзВыпадающегоСпискаСИменемЯВыбираюТочноеЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:54",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d27d726d8d3c488f",
+          "name" : "EventLog.mxl",
+          "source" : "d27d726d8d3c488f.mxl",
+          "type" : "mxl",
+          "size" : 51620
+        }, {
+          "uid" : "c451e0914ac73957",
+          "name" : "EventLog.html",
+          "source" : "c451e0914ac73957.html",
+          "type" : "html",
+          "size" : 52904
+        }, {
+          "uid" : "a94788b364d2e039",
+          "name" : "EventLog.xlsx",
+          "source" : "a94788b364d2e039.xlsx",
+          "type" : "xlsx",
+          "size" : 15214
+        }, {
+          "uid" : "35fb2a64c87293d2",
+          "name" : "ActiveFormState.mxl",
+          "source" : "35fb2a64c87293d2.mxl",
+          "type" : "mxl",
+          "size" : 49812
+        }, {
+          "uid" : "385b181f06322167",
+          "name" : "ActiveFormState.html",
+          "source" : "385b181f06322167.html",
+          "type" : "html",
+          "size" : 105147
+        }, {
+          "uid" : "a2228359a99955e",
+          "name" : "ActiveFormState.xlsx",
+          "source" : "a2228359a99955e.xlsx",
+          "type" : "xlsx",
+          "size" : 13986
+        }, {
+          "uid" : "83b8dc180fbb357f",
+          "name" : "AllFormsState.mxl",
+          "source" : "83b8dc180fbb357f.mxl",
+          "type" : "mxl",
+          "size" : 194388
+        }, {
+          "uid" : "e6abc80a11cdd7d9",
+          "name" : "AllFormsState.html",
+          "source" : "e6abc80a11cdd7d9.html",
+          "type" : "html",
+          "size" : 391486
+        }, {
+          "uid" : "98f0fa99e8bde20b",
+          "name" : "AllFormsState.xlsx",
+          "source" : "98f0fa99e8bde20b.xlsx",
+          "type" : "xlsx",
+          "size" : 30519
+        }, {
+          "uid" : "e28c8ce204d20d3b",
+          "name" : "NetworkConnectionsData.txt",
+          "source" : "e28c8ce204d20d3b.txt",
+          "type" : "txt",
+          "size" : 3825
+        }, {
+          "uid" : "ba28aa927b6cb5be",
+          "name" : "OSProcessesData.txt",
+          "source" : "ba28aa927b6cb5be.txt",
+          "type" : "txt",
+          "size" : 23718
+        }, {
+          "uid" : "62fe4d46b1e47e4a",
+          "name" : "VariableValues.mxl",
+          "source" : "62fe4d46b1e47e4a.mxl",
+          "type" : "mxl",
+          "size" : 8701
+        }, {
+          "uid" : "d8afa535e0281937",
+          "name" : "VariableValues.html",
+          "source" : "d8afa535e0281937.html",
+          "type" : "html",
+          "size" : 18679
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SettingsComposerUserSettingsItem1Value"
+        }, {
+          "name" : "Парам2",
+          "value" : "Document"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 13,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "And I click Choice button of the field named \"SettingsComposerUserSettingsItem2Value\"",
+        "time" : {
+          "start" : 1721186396087,
+          "stop" : 1721186396087,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SettingsComposerUserSettingsItem2Value"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select \"Sales invoice\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem2Value\"",
+        "time" : {
+          "start" : 1721186396087,
+          "stop" : 1721186396087,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "SettingsComposerUserSettingsItem2Value"
+        }, {
+          "name" : "Парам2",
+          "value" : "Sales invoice"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"GenerateReport\"",
+        "time" : {
+          "start" : 1721186396103,
+          "stop" : 1721186396103,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "GenerateReport"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I wait for \"ReportSpreadsheetDocument\" spreadsheet document filling for \"10\" seconds",
+        "time" : {
+          "start" : 1721186396103,
+          "stop" : 1721186396103,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ReportSpreadsheetDocument"
+        }, {
+          "name" : "Парам2",
+          "value" : "10"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And in \"ReportSpreadsheetDocument\" spreadsheet document I move to \"R9C1\" cell",
+        "time" : {
+          "start" : 1721186396103,
+          "stop" : 1721186396103,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ReportSpreadsheetDocument"
+        }, {
+          "name" : "Парам2",
+          "value" : "R9C1"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then user message window does not contain messages",
+        "time" : {
+          "start" : 1721186396103,
+          "stop" : 1721186396103,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "5c99bbdd0d430f49",
+          "name" : "Этот клиент.screenshot",
+          "source" : "5c99bbdd0d430f49.png",
+          "type" : "image/png",
+          "size" : 21215
+        }, {
+          "uid" : "7b4d90ad1c8ecce3",
+          "name" : "Этот клиент.screenshot",
+          "source" : "7b4d90ad1c8ecce3.png",
+          "type" : "image/png",
+          "size" : 46344
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "attachmentsCount" : 15,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8d1ef62ee3c6eaf5",
+      "name" : "Этот клиент.screenshot",
+      "source" : "8d1ef62ee3c6eaf5.png",
+      "type" : "image/png",
+      "size" : 21215
+    }, {
+      "uid" : "b254783c6d43c568",
+      "name" : "Этот клиент.screenshot",
+      "source" : "b254783c6d43c568.png",
+      "type" : "image/png",
+      "size" : 46344
+    }, {
+      "uid" : "6c1f5ba531764074",
+      "name" : "EventLog.mxl",
+      "source" : "6c1f5ba531764074.mxl",
+      "type" : "mxl",
+      "size" : 51620
+    }, {
+      "uid" : "60f9e3e47318b8c0",
+      "name" : "EventLog.html",
+      "source" : "60f9e3e47318b8c0.html",
+      "type" : "html",
+      "size" : 52904
+    }, {
+      "uid" : "2d0dc35f250dd4b1",
+      "name" : "EventLog.xlsx",
+      "source" : "2d0dc35f250dd4b1.xlsx",
+      "type" : "xlsx",
+      "size" : 15214
+    }, {
+      "uid" : "dd2bcb1a3d1cb4c9",
+      "name" : "ActiveFormState.mxl",
+      "source" : "dd2bcb1a3d1cb4c9.mxl",
+      "type" : "mxl",
+      "size" : 49812
+    }, {
+      "uid" : "33294b2bbcdddd46",
+      "name" : "ActiveFormState.html",
+      "source" : "33294b2bbcdddd46.html",
+      "type" : "html",
+      "size" : 105147
+    }, {
+      "uid" : "a81659970b6709de",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "a81659970b6709de.xlsx",
+      "type" : "xlsx",
+      "size" : 13986
+    }, {
+      "uid" : "bb8f32d5f5c15986",
+      "name" : "AllFormsState.mxl",
+      "source" : "bb8f32d5f5c15986.mxl",
+      "type" : "mxl",
+      "size" : 194388
+    }, {
+      "uid" : "a7a6010655a2dae3",
+      "name" : "AllFormsState.html",
+      "source" : "a7a6010655a2dae3.html",
+      "type" : "html",
+      "size" : 391486
+    }, {
+      "uid" : "b1880162aa3a52f",
+      "name" : "AllFormsState.xlsx",
+      "source" : "b1880162aa3a52f.xlsx",
+      "type" : "xlsx",
+      "size" : 30519
+    }, {
+      "uid" : "3c72bac5e668aac",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "3c72bac5e668aac.txt",
+      "type" : "txt",
+      "size" : 3825
+    }, {
+      "uid" : "3ea94b1d7754670f",
+      "name" : "OSProcessesData.txt",
+      "source" : "3ea94b1d7754670f.txt",
+      "type" : "txt",
+      "size" : 23718
+    }, {
+      "uid" : "1b59c6cc90182015",
+      "name" : "VariableValues.mxl",
+      "source" : "1b59c6cc90182015.mxl",
+      "type" : "mxl",
+      "size" : 8701
+    }, {
+      "uid" : "2f4f19420c783bf5",
+      "name" : "VariableValues.html",
+      "source" : "2f4f19420c783bf5.html",
+      "type" : "html",
+      "size" : 18679
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 22,
+    "attachmentsCount" : 30,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Universal report"
+  }, {
+    "name" : "feature",
+    "value" : "Accounting reports detailing check"
+  }, {
+    "name" : "suite",
+    "value" : "Accounting reports detailing check"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "3f09fc6376782c86.json",
+  "parameterValues" : [ ]
+}

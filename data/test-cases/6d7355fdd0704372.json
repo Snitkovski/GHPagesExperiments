@@ -1,0 +1,240 @@
+{
+  "uid" : "6d7355fdd0704372",
+  "name" : "(VATOnRelease) Report Account details book False",
+  "historyId" : "Y_002 Department functional option check.(VATOnRelease) Report Account details book False",
+  "time" : {
+    "start" : 1721189622315,
+    "stop" : 1721189624355,
+    "duration" : 2040
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721189622393,
+      "stop" : 1721189622518,
+      "duration" : 125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And Department field check reports \"AccountDetailsBook\", \"False\"",
+      "time" : {
+        "start" : 1721189622736,
+        "stop" : 1721189624355,
+        "duration" : 1619
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I save \"True\" value to \"True\" variable",
+        "time" : {
+          "start" : 1721189622736,
+          "stop" : 1721189622736,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "True"
+        }, {
+          "name" : "Парам2",
+          "value" : "True"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I save \"False\" value to \"False\" variable",
+        "time" : {
+          "start" : 1721189622768,
+          "stop" : 1721189622768,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "False"
+        }, {
+          "name" : "Парам2",
+          "value" : "False"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* Open object form",
+        "time" : {
+          "start" : 1721189622799,
+          "stop" : 1721189624355,
+          "duration" : 1556
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/app/Report.AccountDetailsBook\"",
+          "time" : {
+            "start" : 1721189622799,
+            "stop" : 1721189622799,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/app/Report.AccountDetailsBook"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "If \"False\" variable is equal to \"True\" Then",
+          "time" : {
+            "start" : 1721189622830,
+            "stop" : 1721189622830,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "False"
+          }, {
+            "name" : "Парам2",
+            "value" : "True"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Else",
+          "time" : {
+            "start" : 1721189622861,
+            "stop" : 1721189624007,
+            "duration" : 1146
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Then I dont see \"Department\" attribute",
+            "time" : {
+              "start" : 1721189622861,
+              "stop" : 1721189624007,
+              "duration" : 1146
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Department"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1721189624032,
+            "stop" : 1721189624355,
+            "duration" : 323
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Report Account details book False"
+  }, {
+    "name" : "feature",
+    "value" : "Y_002 Department functional option check"
+  }, {
+    "name" : "suite",
+    "value" : "Y_002 Department functional option check"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh" ]
+  },
+  "source" : "6d7355fdd0704372.json",
+  "parameterValues" : [ ]
+}

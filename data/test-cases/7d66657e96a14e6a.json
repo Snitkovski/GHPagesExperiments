@@ -1,0 +1,592 @@
+{
+  "uid" : "7d66657e96a14e6a",
+  "name" : "(VATOnRelease) PI generate Bank Payment",
+  "historyId" : "Documents generate on.(VATOnRelease) PI generate Bank Payment",
+  "time" : {
+    "start" : 1721185403901,
+    "stop" : 1721185410075,
+    "duration" : 6174
+  },
+  "status" : "failed",
+  "statusMessage" : "Expect field with <BankAccount> header is filled, and it is empty.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6112)}: Expect field with <BankAccount> header is filled, and it is empty.\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Bank Payment\n        TreeRowNumber: 17.379\n        FeatureLineNumber: 426\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ПолеСИменемЗаполнено\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:03:28",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721185403979,
+      "stop" : 1721185404109,
+      "duration" : 130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I close all client application windows",
+    "time" : {
+      "start" : 1721185404328,
+      "stop" : 1721185404515,
+      "duration" : 187
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expect field with <BankAccount> header is filled, and it is empty.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6112)}: Expect field with <BankAccount> header is filled, and it is empty.\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Bank Payment\n        TreeRowNumber: 17.379\n        FeatureLineNumber: 426\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ПолеСИменемЗаполнено\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:03:28",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721185404734,
+        "stop" : 1721185404921,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+      "time" : {
+        "start" : 1721185405145,
+        "stop" : 1721185405161,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721185405223,
+        "stop" : 1721185405286,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a768de87a24e169",
+        "name" : "table",
+        "source" : "1a768de87a24e169.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"Number\" in \"List\" table",
+      "time" : {
+        "start" : 1721185405317,
+        "stop" : 1721185405317,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "Number"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721185405348,
+        "stop" : 1721185405348,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate current test client window",
+      "time" : {
+        "start" : 1721185405379,
+        "stop" : 1721185405379,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I activate current test client window",
+      "time" : {
+        "start" : 1721185405551,
+        "stop" : 1721185405551,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I click the button named \"FormDocumentBankPaymentCreateBasedOn\"",
+      "time" : {
+        "start" : 1721185405754,
+        "stop" : 1721185405770,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentBankPaymentCreateBasedOn"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"BankAccount\" is filled",
+      "time" : {
+        "start" : 1721185405801,
+        "stop" : 1721185410075,
+        "duration" : 4274
+      },
+      "status" : "failed",
+      "statusMessage" : "Expect field with <BankAccount> header is filled, and it is empty.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6112)}: Expect field with <BankAccount> header is filled, and it is empty.\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Bank Payment\n        TreeRowNumber: 17.379\n        FeatureLineNumber: 426\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ПолеСИменемЗаполнено\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:03:28",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9ba5461f804f73f0",
+        "name" : "EventLog.mxl",
+        "source" : "9ba5461f804f73f0.mxl",
+        "type" : "mxl",
+        "size" : 31524
+      }, {
+        "uid" : "3ba0034a129dccda",
+        "name" : "EventLog.html",
+        "source" : "3ba0034a129dccda.html",
+        "type" : "html",
+        "size" : 33305
+      }, {
+        "uid" : "d993aefd59e0cbd5",
+        "name" : "EventLog.xlsx",
+        "source" : "d993aefd59e0cbd5.xlsx",
+        "type" : "xlsx",
+        "size" : 13245
+      }, {
+        "uid" : "74a751a1c08dbdb3",
+        "name" : "ActiveFormState.mxl",
+        "source" : "74a751a1c08dbdb3.mxl",
+        "type" : "mxl",
+        "size" : 58891
+      }, {
+        "uid" : "8ff83e9ee30c15cd",
+        "name" : "ActiveFormState.html",
+        "source" : "8ff83e9ee30c15cd.html",
+        "type" : "html",
+        "size" : 125732
+      }, {
+        "uid" : "91d084307f7bd444",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "91d084307f7bd444.xlsx",
+        "type" : "xlsx",
+        "size" : 15464
+      }, {
+        "uid" : "24ed85d87295dec1",
+        "name" : "AllFormsState.mxl",
+        "source" : "24ed85d87295dec1.mxl",
+        "type" : "mxl",
+        "size" : 278291
+      }, {
+        "uid" : "5cfeed4756e92c6a",
+        "name" : "AllFormsState.html",
+        "source" : "5cfeed4756e92c6a.html",
+        "type" : "html",
+        "size" : 572458
+      }, {
+        "uid" : "8ba9914232de2732",
+        "name" : "AllFormsState.xlsx",
+        "source" : "8ba9914232de2732.xlsx",
+        "type" : "xlsx",
+        "size" : 40530
+      }, {
+        "uid" : "5c279393ffa33e66",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "5c279393ffa33e66.txt",
+        "type" : "txt",
+        "size" : 3615
+      }, {
+        "uid" : "d9d8692082d8e4c8",
+        "name" : "OSProcessesData.txt",
+        "source" : "d9d8692082d8e4c8.txt",
+        "type" : "txt",
+        "size" : 23564
+      }, {
+        "uid" : "ab9da2daf3ae3b09",
+        "name" : "VariableValues.mxl",
+        "source" : "ab9da2daf3ae3b09.mxl",
+        "type" : "mxl",
+        "size" : 6906
+      }, {
+        "uid" : "36d9d6c33b4171c2",
+        "name" : "VariableValues.html",
+        "source" : "36d9d6c33b4171c2.html",
+        "type" : "html",
+        "size" : 14675
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "BankAccount"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"CashFlowActivity\" is filled",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CashFlowActivity"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"Company\" is filled",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Company"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"Contract\" is filled",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Contract"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If \"$$VATPayerStatus$$\" variable is equal to \"NonPayer\" Then",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And \"DetailsOther\" table became equal by template",
+        "time" : {
+          "start" : 1721185410075,
+          "stop" : 1721185410075,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cf861ed3c2b6d803",
+          "name" : "table",
+          "source" : "cf861ed3c2b6d803.csv",
+          "type" : "text/csv",
+          "size" : 157
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DetailsOther"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$VATPayerStatus$$"
+      }, {
+        "name" : "Парам2",
+        "value" : "NonPayer"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "ElseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnRelease\" Then",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And \"DetailsOther\" table became equal by template",
+        "time" : {
+          "start" : 1721185410075,
+          "stop" : 1721185410075,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ab66156da9f6f5be",
+          "name" : "table",
+          "source" : "ab66156da9f6f5be.csv",
+          "type" : "text/csv",
+          "size" : 157
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "DetailsOther"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$VATPayerStatus$$"
+      }, {
+        "name" : "Парам2",
+        "value" : "VATOnRelease"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I close current window",
+      "time" : {
+        "start" : 1721185410075,
+        "stop" : 1721185410075,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e7f22121231e64dd",
+        "name" : "Этот клиент.screenshot",
+        "source" : "e7f22121231e64dd.png",
+        "type" : "image/png",
+        "size" : 89078
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "a9afeb74235d1adf",
+      "name" : "Этот клиент.screenshot",
+      "source" : "a9afeb74235d1adf.png",
+      "type" : "image/png",
+      "size" : 89078
+    }, {
+      "uid" : "41ed5725c77a7f2d",
+      "name" : "EventLog.mxl",
+      "source" : "41ed5725c77a7f2d.mxl",
+      "type" : "mxl",
+      "size" : 31524
+    }, {
+      "uid" : "16021d3b3031fa55",
+      "name" : "EventLog.html",
+      "source" : "16021d3b3031fa55.html",
+      "type" : "html",
+      "size" : 33305
+    }, {
+      "uid" : "40344731c6e4b2d2",
+      "name" : "EventLog.xlsx",
+      "source" : "40344731c6e4b2d2.xlsx",
+      "type" : "xlsx",
+      "size" : 13245
+    }, {
+      "uid" : "33f05692d9098f8c",
+      "name" : "ActiveFormState.mxl",
+      "source" : "33f05692d9098f8c.mxl",
+      "type" : "mxl",
+      "size" : 58891
+    }, {
+      "uid" : "f75c7a7fffd0214c",
+      "name" : "ActiveFormState.html",
+      "source" : "f75c7a7fffd0214c.html",
+      "type" : "html",
+      "size" : 125732
+    }, {
+      "uid" : "ff907a60a18cd831",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "ff907a60a18cd831.xlsx",
+      "type" : "xlsx",
+      "size" : 15464
+    }, {
+      "uid" : "aefdcb95603058bc",
+      "name" : "AllFormsState.mxl",
+      "source" : "aefdcb95603058bc.mxl",
+      "type" : "mxl",
+      "size" : 278291
+    }, {
+      "uid" : "7e895f00dfe0f28d",
+      "name" : "AllFormsState.html",
+      "source" : "7e895f00dfe0f28d.html",
+      "type" : "html",
+      "size" : 572458
+    }, {
+      "uid" : "a0e38ebc3dec30cc",
+      "name" : "AllFormsState.xlsx",
+      "source" : "a0e38ebc3dec30cc.xlsx",
+      "type" : "xlsx",
+      "size" : 40530
+    }, {
+      "uid" : "9e14fa46ac2266c9",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "9e14fa46ac2266c9.txt",
+      "type" : "txt",
+      "size" : 3615
+    }, {
+      "uid" : "c664e0ed4228f3f4",
+      "name" : "OSProcessesData.txt",
+      "source" : "c664e0ed4228f3f4.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "fc19acbb81747401",
+      "name" : "VariableValues.mxl",
+      "source" : "fc19acbb81747401.mxl",
+      "type" : "mxl",
+      "size" : 6906
+    }, {
+      "uid" : "60108f5de56e28c0",
+      "name" : "VariableValues.html",
+      "source" : "60108f5de56e28c0.html",
+      "type" : "html",
+      "size" : 14675
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 31,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "PI generate Bank Payment"
+  }, {
+    "name" : "feature",
+    "value" : "Documents generate on"
+  }, {
+    "name" : "suite",
+    "value" : "Documents generate on"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "MiscellaneousForOllCompany"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "7d66657e96a14e6a.json",
+  "parameterValues" : [ ]
+}

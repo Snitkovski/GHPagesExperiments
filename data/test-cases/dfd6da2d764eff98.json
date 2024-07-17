@@ -1,0 +1,727 @@
+{
+  "uid" : "dfd6da2d764eff98",
+  "name" : "(VATOnRelease) Foreign customer",
+  "historyId" : "VAT rates selection check.(VATOnRelease) Foreign customer",
+  "time" : {
+    "start" : 1721187362297,
+    "stop" : 1721187371084,
+    "duration" : 8787
+  },
+  "status" : "failed",
+  "statusMessage" : "Current cell <Import> of <List> table value is:",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <Import> of <List> table value is: \nFalse\n, and expected is:\nTrue\n\nTechnical data:\n        ActiveWindowHeader: VAT rates\n        ActiveFormName: Catalog.VATRates.Form.ChoiceForm\n        FeatureName: VAT rates selection check\n        ScriptName: Foreign customer\n        TreeRowNumber: 26.108\n        FeatureLineNumber: 170\n        FeatureFullPath: features\\CI\\Main\\Basic\\VAT_RatesSelectionCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:36:09",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721187362391,
+      "stop" : 1721187362656,
+      "duration" : 265
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Current cell <Import> of <List> table value is:",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <Import> of <List> table value is: \nFalse\n, and expected is:\nTrue\n\nTechnical data:\n        ActiveWindowHeader: VAT rates\n        ActiveFormName: Catalog.VATRates.Form.ChoiceForm\n        FeatureName: VAT rates selection check\n        ScriptName: Foreign customer\n        TreeRowNumber: 26.108\n        FeatureLineNumber: 170\n        FeatureFullPath: features\\CI\\Main\\Basic\\VAT_RatesSelectionCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:36:09",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721187362891,
+        "stop" : 1721187363266,
+        "duration" : 375
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+      "time" : {
+        "start" : 1721187363485,
+        "stop" : 1721187363500,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* Create a new invoice",
+      "time" : {
+        "start" : 1721187363532,
+        "stop" : 1721187371084,
+        "duration" : 7552
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the button named \"FormCreate\"",
+        "time" : {
+          "start" : 1721187363532,
+          "stop" : 1721187363610,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormCreate"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Purchase invoice (create)\" window is opened",
+        "time" : {
+          "start" : 1721187363641,
+          "stop" : 1721187363782,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Purchase invoice (create)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select \"Import\" exact value from the drop-down list named \"OperationKind\"",
+        "time" : {
+          "start" : 1721187363797,
+          "stop" : 1721187363828,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "OperationKind"
+        }, {
+          "name" : "Парам2",
+          "value" : "Import"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click Choice button of the field named \"Company\"",
+        "time" : {
+          "start" : 1721187363860,
+          "stop" : 1721187363969,
+          "duration" : 109
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Company"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1721187364052,
+          "stop" : 1721187364083,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6632a0d62aec8436",
+          "name" : "table",
+          "source" : "6632a0d62aec8436.csv",
+          "type" : "text/csv",
+          "size" : 28
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1721187364114,
+          "stop" : 1721187364130,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Purchase invoice (create) *\" window is opened",
+        "time" : {
+          "start" : 1721187364161,
+          "stop" : 1721187364349,
+          "duration" : 188
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Purchase invoice (create) *"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+        "time" : {
+          "start" : 1721187364380,
+          "stop" : 1721187364396,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsAdd"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+        "time" : {
+          "start" : 1721187364427,
+          "stop" : 1721187364474,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsProduct"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Accounting Items\" window is opened",
+        "time" : {
+          "start" : 1721187364505,
+          "stop" : 1721187364599,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Accounting Items"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1721187364630,
+          "stop" : 1721187364646,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Purchase invoice (create) *\" window is opened",
+        "time" : {
+          "start" : 1721187364661,
+          "stop" : 1721187364739,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Purchase invoice (create) *"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+        "time" : {
+          "start" : 1721187364755,
+          "stop" : 1721187364786,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsQuantity"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I input \"10\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+        "time" : {
+          "start" : 1721187364817,
+          "stop" : 1721187364849,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsQuantity"
+        }, {
+          "name" : "Парам3",
+          "value" : "10"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1721187364880,
+          "stop" : 1721187364896,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "And I input \"100,0000\" text in the field named \"LineItemsPrice\" of \"LineItems\" table",
+        "time" : {
+          "start" : 1721187364927,
+          "stop" : 1721187365015,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsPrice"
+        }, {
+          "name" : "Парам3",
+          "value" : "100,0000"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I move to the next attribute",
+        "time" : {
+          "start" : 1721187365041,
+          "stop" : 1721187365057,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "And I click choice button of the attribute named \"LineItemsVATRate\" in \"LineItems\" table",
+        "time" : {
+          "start" : 1721187365088,
+          "stop" : 1721187365228,
+          "duration" : 140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        }, {
+          "name" : "Парам2",
+          "value" : "LineItemsVATRate"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"VAT rates\" window is opened",
+        "time" : {
+          "start" : 1721187365260,
+          "stop" : 1721187365322,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "VAT rates"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And for each line of \"List\" table I do",
+        "time" : {
+          "start" : 1721187365353,
+          "stop" : 1721187371084,
+          "duration" : 5731
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And in \"List\" table \"Import\" field is set to \"True\"",
+          "time" : {
+            "start" : 1721187365416,
+            "stop" : 1721187371084,
+            "duration" : 5668
+          },
+          "status" : "failed",
+          "statusMessage" : "Current cell <Import> of <List> table value is:",
+          "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <Import> of <List> table value is: \nFalse\n, and expected is:\nTrue\n\nTechnical data:\n        ActiveWindowHeader: VAT rates\n        ActiveFormName: Catalog.VATRates.Form.ChoiceForm\n        FeatureName: VAT rates selection check\n        ScriptName: Foreign customer\n        TreeRowNumber: 26.108\n        FeatureLineNumber: 170\n        FeatureFullPath: features\\CI\\Main\\Basic\\VAT_RatesSelectionCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:36:09",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "88982ddffd80f1d8",
+            "name" : "EventLog.mxl",
+            "source" : "88982ddffd80f1d8.mxl",
+            "type" : "mxl",
+            "size" : 81471
+          }, {
+            "uid" : "b26b6cd7ec2e4a0",
+            "name" : "EventLog.html",
+            "source" : "b26b6cd7ec2e4a0.html",
+            "type" : "html",
+            "size" : 81930
+          }, {
+            "uid" : "eaf83bad599b0d2e",
+            "name" : "EventLog.xlsx",
+            "source" : "eaf83bad599b0d2e.xlsx",
+            "type" : "xlsx",
+            "size" : 16390
+          }, {
+            "uid" : "1c92315e28b5a69e",
+            "name" : "ActiveFormState.mxl",
+            "source" : "1c92315e28b5a69e.mxl",
+            "type" : "mxl",
+            "size" : 23258
+          }, {
+            "uid" : "91d95139005e39e2",
+            "name" : "ActiveFormState.html",
+            "source" : "91d95139005e39e2.html",
+            "type" : "html",
+            "size" : 50309
+          }, {
+            "uid" : "13d8a84c614c9718",
+            "name" : "ActiveFormState.xlsx",
+            "source" : "13d8a84c614c9718.xlsx",
+            "type" : "xlsx",
+            "size" : 10173
+          }, {
+            "uid" : "6839362c423dfc8a",
+            "name" : "AllFormsState.mxl",
+            "source" : "6839362c423dfc8a.mxl",
+            "type" : "mxl",
+            "size" : 155243
+          }, {
+            "uid" : "b4b6d8869716cdee",
+            "name" : "AllFormsState.html",
+            "source" : "b4b6d8869716cdee.html",
+            "type" : "html",
+            "size" : 330103
+          }, {
+            "uid" : "cc8a5df0c4b4237e",
+            "name" : "AllFormsState.xlsx",
+            "source" : "cc8a5df0c4b4237e.xlsx",
+            "type" : "xlsx",
+            "size" : 26881
+          }, {
+            "uid" : "aaf4b9c0345d0f27",
+            "name" : "NetworkConnectionsData.txt",
+            "source" : "aaf4b9c0345d0f27.txt",
+            "type" : "txt",
+            "size" : 3903
+          }, {
+            "uid" : "36dd7bc6ceb6c576",
+            "name" : "OSProcessesData.txt",
+            "source" : "36dd7bc6ceb6c576.txt",
+            "type" : "txt",
+            "size" : 23641
+          }, {
+            "uid" : "525c12258cf66d30",
+            "name" : "VariableValues.mxl",
+            "source" : "525c12258cf66d30.mxl",
+            "type" : "mxl",
+            "size" : 11183
+          }, {
+            "uid" : "ac426717abcdd6c1",
+            "name" : "VariableValues.html",
+            "source" : "ac426717abcdd6c1.html",
+            "type" : "html",
+            "size" : 23830
+          }, {
+            "uid" : "69143b522fc3d27c",
+            "name" : "Этот клиент.VAT rates",
+            "source" : "69143b522fc3d27c.png",
+            "type" : "image/png",
+            "size" : 46689
+          }, {
+            "uid" : "c1ceb1210dd89364",
+            "name" : "Этот клиент.screenshot",
+            "source" : "c1ceb1210dd89364.png",
+            "type" : "image/png",
+            "size" : 67599
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "Import"
+          }, {
+            "name" : "Парам3",
+            "value" : "True"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 15,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 15,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 21,
+      "attachmentsCount" : 16,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8f42232a2c7b5b12",
+      "name" : "Этот клиент.VAT rates",
+      "source" : "8f42232a2c7b5b12.png",
+      "type" : "image/png",
+      "size" : 46689
+    }, {
+      "uid" : "b25d507bdbd69ae4",
+      "name" : "Этот клиент.screenshot",
+      "source" : "b25d507bdbd69ae4.png",
+      "type" : "image/png",
+      "size" : 67599
+    }, {
+      "uid" : "6ff697ba8e957fce",
+      "name" : "EventLog.mxl",
+      "source" : "6ff697ba8e957fce.mxl",
+      "type" : "mxl",
+      "size" : 81471
+    }, {
+      "uid" : "6d273535b23a4541",
+      "name" : "EventLog.html",
+      "source" : "6d273535b23a4541.html",
+      "type" : "html",
+      "size" : 81930
+    }, {
+      "uid" : "151ef1d6c910826a",
+      "name" : "EventLog.xlsx",
+      "source" : "151ef1d6c910826a.xlsx",
+      "type" : "xlsx",
+      "size" : 16390
+    }, {
+      "uid" : "ab6f4d3eee13799",
+      "name" : "ActiveFormState.mxl",
+      "source" : "ab6f4d3eee13799.mxl",
+      "type" : "mxl",
+      "size" : 23258
+    }, {
+      "uid" : "f60f01028c338e0b",
+      "name" : "ActiveFormState.html",
+      "source" : "f60f01028c338e0b.html",
+      "type" : "html",
+      "size" : 50309
+    }, {
+      "uid" : "ed41391cbcf43a43",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "ed41391cbcf43a43.xlsx",
+      "type" : "xlsx",
+      "size" : 10173
+    }, {
+      "uid" : "cb858cdb706d321b",
+      "name" : "AllFormsState.mxl",
+      "source" : "cb858cdb706d321b.mxl",
+      "type" : "mxl",
+      "size" : 155243
+    }, {
+      "uid" : "80f109836eec151f",
+      "name" : "AllFormsState.html",
+      "source" : "80f109836eec151f.html",
+      "type" : "html",
+      "size" : 330103
+    }, {
+      "uid" : "5a23eee6936f58d",
+      "name" : "AllFormsState.xlsx",
+      "source" : "5a23eee6936f58d.xlsx",
+      "type" : "xlsx",
+      "size" : 26881
+    }, {
+      "uid" : "38876afe512ae41e",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "38876afe512ae41e.txt",
+      "type" : "txt",
+      "size" : 3903
+    }, {
+      "uid" : "106a1830379cf7c2",
+      "name" : "OSProcessesData.txt",
+      "source" : "106a1830379cf7c2.txt",
+      "type" : "txt",
+      "size" : 23641
+    }, {
+      "uid" : "f456be5833ee0e02",
+      "name" : "VariableValues.mxl",
+      "source" : "f456be5833ee0e02.mxl",
+      "type" : "mxl",
+      "size" : 11183
+    }, {
+      "uid" : "bdbb24fbd85c39f4",
+      "name" : "VariableValues.html",
+      "source" : "bdbb24fbd85c39f4.html",
+      "type" : "html",
+      "size" : 23830
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 24,
+    "attachmentsCount" : 31,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Foreign customer"
+  }, {
+    "name" : "feature",
+    "value" : "VAT rates selection check"
+  }, {
+    "name" : "suite",
+    "value" : "VAT rates selection check"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "dfd6da2d764eff98.json",
+  "parameterValues" : [ ]
+}

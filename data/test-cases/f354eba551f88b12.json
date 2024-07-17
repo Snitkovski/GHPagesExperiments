@@ -1,0 +1,538 @@
+{
+  "uid" : "f354eba551f88b12",
+  "name" : "(VATOnRelease) Bank Payment",
+  "historyId" : "Document mark/unmark for deletion.(VATOnRelease) Bank Payment",
+  "time" : {
+    "start" : 1721189106357,
+    "stop" : 1721189114144,
+    "duration" : 7787
+  },
+  "status" : "failed",
+  "statusMessage" : "The current row of <List> table is not marked for deletion.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(16381)}: The current row of <List> table is not marked for deletion.\n\nTechnical data:\n        ActiveWindowHeader: Bank payments\n        ActiveFormName: Document.BankPayment.Form.ListForm\n        FeatureName: Document mark/unmark for deletion\n        ScriptName: Bank Payment\n        TreeRowNumber: 36.388\n        FeatureLineNumber: 17\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_001_DocsMarkUnmarkForDeletion.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеТекущаяСтрокаПомеченаНаУдаление\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:05:12",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721189106435,
+      "stop" : 1721189106763,
+      "duration" : 328
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "The current row of <List> table is not marked for deletion.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(16381)}: The current row of <List> table is not marked for deletion.\n\nTechnical data:\n        ActiveWindowHeader: Bank payments\n        ActiveFormName: Document.BankPayment.Form.ListForm\n        FeatureName: Document mark/unmark for deletion\n        ScriptName: Bank Payment\n        TreeRowNumber: 36.388\n        FeatureLineNumber: 17\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_001_DocsMarkUnmarkForDeletion.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеТекущаяСтрокаПомеченаНаУдаление\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:05:12",
+    "steps" : [ {
+      "name" : "And Document unposting mark/unmark for deletion \"e1cib/list/Document.BankPayment\"",
+      "time" : {
+        "start" : 1721189106982,
+        "stop" : 1721189114144,
+        "duration" : 7162
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721189106982,
+          "stop" : 1721189107174,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.BankPayment\"",
+        "time" : {
+          "start" : 1721189107408,
+          "stop" : 1721189107408,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.BankPayment"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "If number of \"List\" table lines is \"more\" \"0\" Then",
+        "time" : {
+          "start" : 1721189107440,
+          "stop" : 1721189114144,
+          "duration" : 6704
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Then I go to the first line in \"List\" table",
+          "time" : {
+            "start" : 1721189107565,
+            "stop" : 1721189107580,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"FormSetDeletionMark\"",
+          "time" : {
+            "start" : 1721189107611,
+            "stop" : 1721189107611,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormSetDeletionMark"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1721189107643,
+            "stop" : 1721189107643,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"Button0\"",
+          "time" : {
+            "start" : 1721189107674,
+            "stop" : 1721189107674,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Button0"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And the current row in \"List\" table is marked for deletion",
+          "time" : {
+            "start" : 1721189107705,
+            "stop" : 1721189114144,
+            "duration" : 6439
+          },
+          "status" : "failed",
+          "statusMessage" : "The current row of <List> table is not marked for deletion.",
+          "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(16381)}: The current row of <List> table is not marked for deletion.\n\nTechnical data:\n        ActiveWindowHeader: Bank payments\n        ActiveFormName: Document.BankPayment.Form.ListForm\n        FeatureName: Document mark/unmark for deletion\n        ScriptName: Bank Payment\n        TreeRowNumber: 36.388\n        FeatureLineNumber: 17\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_001_DocsMarkUnmarkForDeletion.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеТекущаяСтрокаПомеченаНаУдаление\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:05:12",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "2719bd7019b04d04",
+            "name" : "EventLog.mxl",
+            "source" : "2719bd7019b04d04.mxl",
+            "type" : "mxl",
+            "size" : 62629
+          }, {
+            "uid" : "57ccacfade4ee927",
+            "name" : "EventLog.html",
+            "source" : "57ccacfade4ee927.html",
+            "type" : "html",
+            "size" : 63748
+          }, {
+            "uid" : "fe1a6e396fd03b70",
+            "name" : "EventLog.xlsx",
+            "source" : "fe1a6e396fd03b70.xlsx",
+            "type" : "xlsx",
+            "size" : 16067
+          }, {
+            "uid" : "161ec600363a281a",
+            "name" : "ActiveFormState.mxl",
+            "source" : "161ec600363a281a.mxl",
+            "type" : "mxl",
+            "size" : 30436
+          }, {
+            "uid" : "7faad7858c24b169",
+            "name" : "ActiveFormState.html",
+            "source" : "7faad7858c24b169.html",
+            "type" : "html",
+            "size" : 64091
+          }, {
+            "uid" : "aa8b5faa8b63579c",
+            "name" : "ActiveFormState.xlsx",
+            "source" : "aa8b5faa8b63579c.xlsx",
+            "type" : "xlsx",
+            "size" : 11450
+          }, {
+            "uid" : "1c0ba66b96e9a3",
+            "name" : "AllFormsState.mxl",
+            "source" : "1c0ba66b96e9a3.mxl",
+            "type" : "mxl",
+            "size" : 59854
+          }, {
+            "uid" : "f5ce979f3d1d50a1",
+            "name" : "AllFormsState.html",
+            "source" : "f5ce979f3d1d50a1.html",
+            "type" : "html",
+            "size" : 125553
+          }, {
+            "uid" : "8490023d0fafae84",
+            "name" : "AllFormsState.xlsx",
+            "source" : "8490023d0fafae84.xlsx",
+            "type" : "xlsx",
+            "size" : 15398
+          }, {
+            "uid" : "facc3d341dbbec09",
+            "name" : "NetworkConnectionsData.txt",
+            "source" : "facc3d341dbbec09.txt",
+            "type" : "txt",
+            "size" : 3460
+          }, {
+            "uid" : "748728db89010a95",
+            "name" : "OSProcessesData.txt",
+            "source" : "748728db89010a95.txt",
+            "type" : "txt",
+            "size" : 23564
+          }, {
+            "uid" : "4dfdc32bd0bcfd4f",
+            "name" : "VariableValues.mxl",
+            "source" : "4dfdc32bd0bcfd4f.mxl",
+            "type" : "mxl",
+            "size" : 12444
+          }, {
+            "uid" : "4e69e08c4ff1b9f1",
+            "name" : "VariableValues.html",
+            "source" : "4e69e08c4ff1b9f1.html",
+            "type" : "html",
+            "size" : 26498
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 13,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"FormSetDeletionMark\"",
+          "time" : {
+            "start" : 1721189114144,
+            "stop" : 1721189114144,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormSetDeletionMark"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then \"1C:Enterprise\" window is opened",
+          "time" : {
+            "start" : 1721189114144,
+            "stop" : 1721189114144,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "1C:Enterprise"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"Button0\"",
+          "time" : {
+            "start" : 1721189114144,
+            "stop" : 1721189114144,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Button0"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And the current row in \"List\" table is not marked for deletion",
+          "time" : {
+            "start" : 1721189114144,
+            "stop" : 1721189114144,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        }, {
+          "name" : "Парам2",
+          "value" : "more"
+        }, {
+          "name" : "Парам3",
+          "value" : "0"
+        } ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 13,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Else",
+        "time" : {
+          "start" : 1721189114144,
+          "stop" : 1721189114144,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ {
+          "name" : "Then I raise \"There are no documents $DocumentType$\" exception",
+          "time" : {
+            "start" : 1721189114144,
+            "stop" : 1721189114144,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "There are no documents $DocumentType$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721189114144,
+          "stop" : 1721189114144,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e14d7d8e68ee5518",
+          "name" : "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+          "source" : "e14d7d8e68ee5518.png",
+          "type" : "image/png",
+          "size" : 93397
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 15,
+      "attachmentsCount" : 14,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "cecb07d4fb25503a",
+      "name" : "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+      "source" : "cecb07d4fb25503a.png",
+      "type" : "image/png",
+      "size" : 93397
+    }, {
+      "uid" : "ce87e8aded2f555f",
+      "name" : "EventLog.mxl",
+      "source" : "ce87e8aded2f555f.mxl",
+      "type" : "mxl",
+      "size" : 62629
+    }, {
+      "uid" : "ffd5b39204d44702",
+      "name" : "EventLog.html",
+      "source" : "ffd5b39204d44702.html",
+      "type" : "html",
+      "size" : 63748
+    }, {
+      "uid" : "17312a014a46df5a",
+      "name" : "EventLog.xlsx",
+      "source" : "17312a014a46df5a.xlsx",
+      "type" : "xlsx",
+      "size" : 16067
+    }, {
+      "uid" : "66339dd95afc6c0d",
+      "name" : "ActiveFormState.mxl",
+      "source" : "66339dd95afc6c0d.mxl",
+      "type" : "mxl",
+      "size" : 30436
+    }, {
+      "uid" : "f9e7faa538d83e9b",
+      "name" : "ActiveFormState.html",
+      "source" : "f9e7faa538d83e9b.html",
+      "type" : "html",
+      "size" : 64091
+    }, {
+      "uid" : "17b27c3643412f56",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "17b27c3643412f56.xlsx",
+      "type" : "xlsx",
+      "size" : 11450
+    }, {
+      "uid" : "f18bbd61ecfbaa05",
+      "name" : "AllFormsState.mxl",
+      "source" : "f18bbd61ecfbaa05.mxl",
+      "type" : "mxl",
+      "size" : 59854
+    }, {
+      "uid" : "317b38094b8bed9a",
+      "name" : "AllFormsState.html",
+      "source" : "317b38094b8bed9a.html",
+      "type" : "html",
+      "size" : 125553
+    }, {
+      "uid" : "2d4f42d05f1bba28",
+      "name" : "AllFormsState.xlsx",
+      "source" : "2d4f42d05f1bba28.xlsx",
+      "type" : "xlsx",
+      "size" : 15398
+    }, {
+      "uid" : "f785fd59cef57f8",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "f785fd59cef57f8.txt",
+      "type" : "txt",
+      "size" : 3460
+    }, {
+      "uid" : "977ec07fac5cab4a",
+      "name" : "OSProcessesData.txt",
+      "source" : "977ec07fac5cab4a.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "f223e09ad7d7b9dc",
+      "name" : "VariableValues.mxl",
+      "source" : "f223e09ad7d7b9dc.mxl",
+      "type" : "mxl",
+      "size" : 12444
+    }, {
+      "uid" : "82273324f6383af8",
+      "name" : "VariableValues.html",
+      "source" : "82273324f6383af8.html",
+      "type" : "html",
+      "size" : 26498
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 16,
+    "attachmentsCount" : 28,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Bank Payment"
+  }, {
+    "name" : "feature",
+    "value" : "Document mark/unmark for deletion"
+  }, {
+    "name" : "suite",
+    "value" : "Document mark/unmark for deletion"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "f354eba551f88b12.json",
+  "parameterValues" : [ ]
+}
