@@ -1,0 +1,227 @@
+{
+	"uuid": "6c8bcbd1-4701-4635-8190-8a7287f538fc",
+	"historyId": "Y_002 Department functional option check.(VATOnRelease) Report AccountTurnover False",
+	"name": "(VATOnRelease) Report AccountTurnover False",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189616224,
+	"stop": 1721189618249,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Department field check reports \"AccountTurnover\", \"False\"",
+			"start": 1721189616865,
+			"stop": 1721189618249,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I save \"True\" value to \"True\" variable",
+					"start": 1721189616865,
+					"stop": 1721189616865,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "True"
+						},
+						{
+							"name": "Парам2",
+							"value": "True"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save \"False\" value to \"False\" variable",
+					"start": 1721189616896,
+					"stop": 1721189616896,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "False"
+						},
+						{
+							"name": "Парам2",
+							"value": "False"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "* Open object form",
+					"start": 1721189616912,
+					"stop": 1721189618249,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Given I open hyperlink \"e1cib/app/Report.AccountTurnover\"",
+							"start": 1721189616912,
+							"stop": 1721189616928,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/app/Report.AccountTurnover"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "If \"False\" variable is equal to \"True\" Then",
+							"start": 1721189616959,
+							"stop": 1721189616959,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "False"
+								},
+								{
+									"name": "Парам2",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Else",
+							"start": 1721189616990,
+							"stop": 1721189618010,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then I dont see \"Department\" attribute",
+									"start": 1721189616990,
+									"stop": 1721189618010,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Department"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close all client application windows",
+							"start": 1721189618036,
+							"stop": 1721189618249,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Report AccountTurnover False"
+		},
+		{
+			"name": "feature",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "suite",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

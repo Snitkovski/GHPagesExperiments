@@ -1,0 +1,416 @@
+{
+	"uuid": "10d5c450-08bd-4fb7-b1ff-e59efcc57d03",
+	"historyId": "Documents generate on.(VATOnRelease) PI generate Inventory Items Commissionin",
+	"name": "(VATOnRelease) PI generate Inventory Items Commissionin",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721185493348,
+	"stop": 1721185499997,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Form attribute named <Location> is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7556)}: Form attribute named <Location> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Inventory Items Commissionin\n        TreeRowNumber: 17.544\n        FeatureLineNumber: 611\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ПолеСИменемЗаполнено\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:04:58"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721185494537,
+			"stop": 1721185494725,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+			"start": 1721185494943,
+			"stop": 1721185494959,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseInvoice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721185495038,
+			"stop": 1721185495101,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "60af103a-5456-49d8-8e0a-7a8bb97cb1ff-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721185495132,
+			"stop": 1721185495132,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721185495163,
+			"stop": 1721185495163,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate current test client window",
+			"start": 1721185495195,
+			"stop": 1721185495195,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentInventoryItemsCommissioningCreateBasedOn\"",
+			"start": 1721185495351,
+			"stop": 1721185495445,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentInventoryItemsCommissioningCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the field named \"Location\" is filled",
+			"start": 1721185495460,
+			"stop": 1721185499997,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Form attribute named <Location> is not found.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7556)}: Form attribute named <Location> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Inventory Items Commissionin\n        TreeRowNumber: 17.544\n        FeatureLineNumber: 611\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ПолеСИменемЗаполнено\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:04:58"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Location"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "1b4cd122-6b30-4006-bd20-2c612dea64a9-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "c88f2cb7-05c7-469f-b6ed-3256c98eab75-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "020ffdef-85ba-4b01-a6de-16b4167d1383-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "38a81b73-f2f5-4891-9139-676bfd9841ae-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "52af25b6-f860-485d-b16b-d0b3cda91322-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "15ecb93b-d0be-4435-abb0-b71e95351eea-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "19790709-3814-4688-9488-e2343f49f9c8-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "a5585572-8f3c-4665-81c9-d9a6e764bb4f-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "a2919934-ae92-4faa-a937-3c8b701989ab-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "51114007-3092-4813-85f6-9266b57dc087-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "369861bc-3f84-4dfc-920d-23facf58b204-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "b5fa7972-57c4-41f7-b993-8a7f8a86a8b6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "48856d8e-03b2-4587-a878-16b0479b0e8d-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And the field named \"BasisDocument\" is filled",
+			"start": 1721185499997,
+			"stop": 1721185499997,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "BasisDocument"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"LineItems\" table became equal",
+			"start": 1721185499997,
+			"stop": 1721185499997,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "da9999fb-28b9-4f89-aea3-4e6de64dcc07-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721185499997,
+			"stop": 1721185499997,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_afe.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "PI generate Inventory Items Commissionin"
+		},
+		{
+			"name": "feature",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "suite",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "fab73474-f433-4daa-9d0e-45000ffb54a5-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "fe691930-c672-4b51-9ba3-8f19fb96f525-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "3a841932-4058-4f64-83e6-3a4dbdf725c7-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "cf005ce5-108e-487b-a4d5-d442056ef12b-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "66e70b85-133f-417c-9b0f-99746f68b6d7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "ab7046c7-b645-49ed-a663-43aa0fb384ad-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "eedae1b4-4fa0-4191-9a0b-e7aae9fa0012-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "42f1afaf-cdae-44fa-84dc-5a35edde7277-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "c28fdb7a-2c42-49a1-b5f7-838814c51fb2-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "c302b453-90ca-4c6a-9d47-55989b38657c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "a9911397-7ede-40a3-baa2-30e4d42e3d0c-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "348e0158-97c6-4585-a09d-80799c377019-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "84bafc4a-7817-485a-9a7b-c8c7b5c8d537-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "680d99c6-3f49-458d-a520-c44b4f00db6f-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

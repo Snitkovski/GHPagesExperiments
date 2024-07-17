@@ -1,0 +1,312 @@
+{
+	"uuid": "ea8a91be-24c6-455b-8504-183c5f503741",
+	"historyId": "Accounting reports detailing check.(VATOnRelease) Trial Balance by account",
+	"name": "(VATOnRelease) Trial Balance by account",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186359262,
+	"stop": 1721186361483,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/app/Report.TrialBalanceByAccount\"",
+			"start": 1721186359730,
+			"stop": 1721186359746,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/Report.TrialBalanceByAccount"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Trial Balance by account * for * - *\" window is opened",
+			"start": 1721186359777,
+			"stop": 1721186359777,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Trial Balance by account * for * - *"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Account\"",
+			"start": 1721186359809,
+			"stop": 1721186359840,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Account"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Chart of accounts\" window is opened",
+			"start": 1721186359855,
+			"stop": 1721186359934,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Chart of accounts"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186360012,
+			"stop": 1721186360279,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "42bef529-5dd2-40d2-b78a-c7e7d0ba3fa7-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186360310,
+			"stop": 1721186360325,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"GenerateReport\"",
+			"start": 1721186360341,
+			"stop": 1721186360497,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GenerateReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then user message window does not contain messages",
+			"start": 1721186360529,
+			"stop": 1721186360700,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"Result\" spreadsheet document I move to \"R11C5\" cell",
+			"start": 1721186360732,
+			"stop": 1721186360747,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Result"
+				},
+				{
+					"name": "Парам2",
+					"value": "R11C5"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"Result\" spreadsheet document I move to \"R12C5\" cell",
+			"start": 1721186360763,
+			"stop": 1721186360779,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Result"
+				},
+				{
+					"name": "Парам2",
+					"value": "R12C5"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"Result\" spreadsheet document I double-click the current cell",
+			"start": 1721186360810,
+			"stop": 1721186360825,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Result"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Account card * for * - *\" window is opened",
+			"start": 1721186360857,
+			"stop": 1721186361452,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Account card * for * - *"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then user message window does not contain messages",
+			"start": 1721186361483,
+			"stop": 1721186361483,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Trial Balance by account"
+		},
+		{
+			"name": "feature",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "suite",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

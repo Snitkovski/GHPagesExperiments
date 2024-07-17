@@ -1,0 +1,428 @@
+{
+	"uuid": "5b3e9657-d4a4-4c91-89c8-169d8d66a955",
+	"historyId": "Set Advanced Expenses Write off Parameters.(VATOnRelease) Set Advanced Expenses Write off Parameters By monthes",
+	"name": "(VATOnRelease) Set Advanced Expenses Write off Parameters By monthes",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186524387,
+	"stop": 1721186526027,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* By monthes",
+			"start": 1721186524965,
+			"stop": 1721186525626,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"By month\" exact value from the drop-down list named \"Method\"",
+					"start": 1721186524965,
+					"stop": 1721186524981,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Method"
+						},
+						{
+							"name": "Парам2",
+							"value": "By month"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"1C:Enterprise\" window is opened",
+					"start": 1721186525022,
+					"stop": 1721186525048,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "1C:Enterprise"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Button0\"",
+					"start": 1721186525079,
+					"stop": 1721186525079,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Button0"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormPost\"",
+					"start": 1721186525110,
+					"stop": 1721186525126,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPost"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"WriteOffSchedule\" table became equal",
+					"start": 1721186525563,
+					"stop": 1721186525579,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffSchedule"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "fa8fe9d5-5bde-4701-95f4-d493b86771b0-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormPost\"",
+					"start": 1721186525610,
+					"stop": 1721186525626,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPost"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Save the first and last lines",
+			"start": 1721186525720,
+			"stop": 1721186526027,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I save the value of \"WriteOffSchedule\" table as \"WriteOffSchedule\"",
+					"start": 1721186525720,
+					"stop": 1721186525735,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffSchedule"
+						},
+						{
+							"name": "Парам2",
+							"value": "WriteOffSchedule"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "fe380419-a38e-4354-a9c4-4e6afc927af6-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I delete \"$$WriteOffScheduleTotalAmount$$\" variable",
+					"start": 1721186525767,
+					"stop": 1721186525767,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "$$WriteOffScheduleTotalAmount$$"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I delete \"$$WriteOffScheduleTotalAmountLast$$\" variable",
+					"start": 1721186525798,
+					"stop": 1721186525798,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "$$WriteOffScheduleTotalAmountLast$$"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to the first line in \"WriteOffSchedule\" table",
+					"start": 1721186525829,
+					"stop": 1721186525845,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffSchedule"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of \"WriteOffScheduleTotalAmount\" field of \"WriteOffSchedule\" table as \"$$WriteOffScheduleTotalAmount$$\"",
+					"start": 1721186525876,
+					"stop": 1721186525876,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffScheduleTotalAmount"
+						},
+						{
+							"name": "Парам2",
+							"value": "WriteOffSchedule"
+						},
+						{
+							"name": "Парам3",
+							"value": "$$WriteOffScheduleTotalAmount$$"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to the last line in \"WriteOffSchedule\" table",
+					"start": 1721186525907,
+					"stop": 1721186525923,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffSchedule"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of \"WriteOffScheduleTotalAmount\" field of \"WriteOffSchedule\" table as \"$$WriteOffScheduleTotalAmountLast$$\"",
+					"start": 1721186525938,
+					"stop": 1721186525954,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffScheduleTotalAmount"
+						},
+						{
+							"name": "Парам2",
+							"value": "WriteOffSchedule"
+						},
+						{
+							"name": "Парам3",
+							"value": "$$WriteOffScheduleTotalAmountLast$$"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"WriteOffSchedulePeriod\" of \"WriteOffSchedule\" table as \"WriteOffSchedulePeriod\"",
+					"start": 1721186525985,
+					"stop": 1721186525985,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "WriteOffSchedulePeriod"
+						},
+						{
+							"name": "Парам2",
+							"value": "WriteOffSchedule"
+						},
+						{
+							"name": "Парам3",
+							"value": "WriteOffSchedulePeriod"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"Date\" as \"Date\"",
+					"start": 1721186526017,
+					"stop": 1721186526027,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Date"
+						},
+						{
+							"name": "Парам2",
+							"value": "Date"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Set Advanced Expenses Write off Parameters By monthes"
+		},
+		{
+			"name": "feature",
+			"value": "Set Advanced Expenses Write off Parameters"
+		},
+		{
+			"name": "suite",
+			"value": "Set Advanced Expenses Write off Parameters"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

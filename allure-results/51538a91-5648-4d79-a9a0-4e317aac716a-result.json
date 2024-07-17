@@ -1,0 +1,173 @@
+{
+	"uuid": "51538a91-5648-4d79-a9a0-4e317aac716a",
+	"historyId": "Purchase Invoices generate documents.(VATOnRelease) PurchaseOrder generate Cash payment",
+	"name": "(VATOnRelease) PurchaseOrder generate Cash payment",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186088264,
+	"stop": 1721186089316,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186088343,
+			"stop": 1721186088671,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+			"start": 1721186088889,
+			"stop": 1721186088905,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186088983,
+			"stop": 1721186088999,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "4aa66e16-8afb-467e-91c2-94813a723414-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721186089025,
+			"stop": 1721186089025,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentCashPaymentCreateBasedOn\"",
+			"start": 1721186089050,
+			"stop": 1721186089066,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentCashPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Cash payment (create)\" window is opened",
+			"start": 1721186089097,
+			"stop": 1721186089316,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Cash payment (create)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "PurchaseOrder generate Cash payment"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

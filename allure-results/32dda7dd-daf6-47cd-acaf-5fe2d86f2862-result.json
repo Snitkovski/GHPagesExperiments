@@ -1,0 +1,1760 @@
+{
+	"uuid": "32dda7dd-daf6-47cd-acaf-5fe2d86f2862",
+	"historyId": "E-factura.(VATOnRelease) E-invoice work place Status filter check",
+	"name": "(VATOnRelease) E-invoice work place Status filter check",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721187063346,
+	"stop": 1721187074084,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is:",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is: \nIn pending processing\n, and expected is:\nSent\nPossible template string <*en*>.\n\nTechnical data:\n        ActiveWindowHeader: E-Factura exchange\n        ActiveFormName: DataProcessor.EInvoiceExchangeWorkplace.Form.Workplace\n        FeatureName: E-factura\n        ScriptName: E-invoice work place Status filter check\n        TreeRowNumber: 24.034\n        FeatureLineNumber: 187\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеСИменемИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:31:12"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Status filter check",
+			"start": 1721187064554,
+			"stop": 1721187064850,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/app/DataProcessor.EInvoiceExchangeWorkplace\"",
+					"start": 1721187064554,
+					"stop": 1721187064554,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/app/DataProcessor.EInvoiceExchangeWorkplace"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"E-Factura exchange\" window is opened",
+					"start": 1721187064585,
+					"stop": 1721187064679,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "E-Factura exchange"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And drop-down list named \"OutgoingStatus\" contains values",
+					"start": 1721187064850,
+					"stop": 1721187064850,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "4b714d53-e884-475c-9955-2fbf6c8fa6ed-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* To send",
+			"start": 1721187064882,
+			"stop": 1721187066797,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"To send\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187064882,
+					"stop": 1721187064913,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "To send"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the number of \"OutgoingDocuments\" table lines is \"more\" \"0\"",
+					"start": 1721187064944,
+					"stop": 1721187065136,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "more"
+						},
+						{
+							"name": "Парам3",
+							"value": "0"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065168,
+					"stop": 1721187065230,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065214,
+							"stop": 1721187065230,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065371,
+					"stop": 1721187065402,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065402,
+							"stop": 1721187065402,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065433,
+					"stop": 1721187065480,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065464,
+							"stop": 1721187065480,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065496,
+					"stop": 1721187065543,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065543,
+							"stop": 1721187065543,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065574,
+					"stop": 1721187065605,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065605,
+							"stop": 1721187065605,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065636,
+					"stop": 1721187065683,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065668,
+							"stop": 1721187065683,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065699,
+					"stop": 1721187065746,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065746,
+							"stop": 1721187065746,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065777,
+					"stop": 1721187065808,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065808,
+							"stop": 1721187065808,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065839,
+					"stop": 1721187065886,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065871,
+							"stop": 1721187065886,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065902,
+					"stop": 1721187065949,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187065949,
+							"stop": 1721187065949,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187065980,
+					"stop": 1721187066021,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066011,
+							"stop": 1721187066021,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066047,
+					"stop": 1721187066094,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066078,
+							"stop": 1721187066094,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066110,
+					"stop": 1721187066157,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066157,
+							"stop": 1721187066157,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066188,
+					"stop": 1721187066235,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066235,
+							"stop": 1721187066235,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066266,
+					"stop": 1721187066313,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066313,
+							"stop": 1721187066313,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066344,
+					"stop": 1721187066391,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066375,
+							"stop": 1721187066391,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066422,
+					"stop": 1721187066469,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066453,
+							"stop": 1721187066469,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066500,
+					"stop": 1721187066532,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066532,
+							"stop": 1721187066532,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066563,
+					"stop": 1721187066610,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066610,
+							"stop": 1721187066610,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066641,
+					"stop": 1721187066688,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066688,
+							"stop": 1721187066688,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066719,
+					"stop": 1721187066766,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"\"",
+							"start": 1721187066750,
+							"stop": 1721187066766,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": ""
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187066782,
+					"stop": 1721187066797,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* All documents",
+			"start": 1721187066828,
+			"stop": 1721187067083,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"All documents\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187066828,
+					"stop": 1721187066860,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "All documents"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the number of \"OutgoingDocuments\" table lines is \"more\" \"0\"",
+					"start": 1721187066891,
+					"stop": 1721187067083,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "more"
+						},
+						{
+							"name": "Парам3",
+							"value": "0"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Success",
+			"start": 1721187067114,
+			"stop": 1721187067192,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"Success\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187067114,
+					"stop": 1721187067146,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "Success"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187067177,
+					"stop": 1721187067192,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Errors",
+			"start": 1721187067224,
+			"stop": 1721187067286,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"Errors\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187067224,
+					"stop": 1721187067239,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "Errors"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187067271,
+					"stop": 1721187067286,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* In pending processing",
+			"start": 1721187067317,
+			"stop": 1721187074084,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \"All documents\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187067317,
+					"stop": 1721187067333,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "All documents"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"OutgoingDocuments\" table",
+					"start": 1721187067411,
+					"stop": 1721187067442,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "55b803f7-d79b-4960-8cad-1e9d3adf7094-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"OutgoingDocuments\" table",
+					"start": 1721187067458,
+					"stop": 1721187067474,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"OutgoingDocListSendToANAF\"",
+					"start": 1721187067786,
+					"stop": 1721187067802,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocListSendToANAF"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"In pending processing\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187067833,
+					"stop": 1721187068197,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "In pending processing"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And for each line of \"OutgoingDocuments\" table I do",
+					"start": 1721187068228,
+					"stop": 1721187074084,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"Sent\"",
+							"start": 1721187068275,
+							"stop": 1721187074084,
+							"status": "failed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false,
+								"message": "Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is:",
+								"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is: \nIn pending processing\n, and expected is:\nSent\nPossible template string <*en*>.\n\nTechnical data:\n        ActiveWindowHeader: E-Factura exchange\n        ActiveFormName: DataProcessor.EInvoiceExchangeWorkplace.Form.Workplace\n        FeatureName: E-factura\n        ScriptName: E-invoice work place Status filter check\n        TreeRowNumber: 24.034\n        FeatureLineNumber: 187\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеСИменемИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:31:12"
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "OutgoingDocuments"
+								},
+								{
+									"name": "Парам2",
+									"value": "OutgoingDocumentsStatus"
+								},
+								{
+									"name": "Парам3",
+									"value": "Sent"
+								}
+							],
+							"attachments": [
+								{
+									"name": "EventLog.mxl",
+									"source": "d527a843-fcd0-42df-a5f5-5e12bf248ccb-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "EventLog.html",
+									"source": "96607eda-c157-411c-895c-96e03487f9c6-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.xlsx",
+									"source": "3853aa1c-f763-4996-a194-9f3a3d9df242-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "ActiveFormState.mxl",
+									"source": "d99b2516-b9a5-4543-b8a1-7fea39b07c66-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ActiveFormState.html",
+									"source": "93dc79c1-945a-4eb5-afe3-864860f0c9e0-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "ActiveFormState.xlsx",
+									"source": "a70c9341-ce6e-46d9-8121-1ba2427ac13b-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "AllFormsState.mxl",
+									"source": "016eb3a6-c40c-4f66-9c46-67be9b7011a2-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "AllFormsState.html",
+									"source": "a727c898-1e39-4566-ada0-60fd9c8a04ed-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "AllFormsState.xlsx",
+									"source": "a6aa6936-8e43-4a16-8952-d0b45e4befd0-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "NetworkConnectionsData.txt",
+									"source": "f74ce28c-4806-429c-8431-2d91fa28f8dd-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "OSProcessesData.txt",
+									"source": "fbdb319a-106d-4f18-89fd-d26f2c054a10-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "VariableValues.mxl",
+									"source": "6666f98c-a0f1-40fb-99cf-9666fbfb30de-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "VariableValues.html",
+									"source": "c373c1e5-9071-468c-875e-1161170ad9d4-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "Этот клиент.screenshot",
+									"source": "v8_CDDA_1151.png",
+									"type": "image/png"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "E-invoice work place Status filter check"
+		},
+		{
+			"name": "feature",
+			"value": "E-factura"
+		},
+		{
+			"name": "suite",
+			"value": "E-factura"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "TaxOfficeExchange"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "131c49d0-e727-4e1f-824d-81f0d539087a-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "51a076df-100c-4234-aa49-bc00bf56d28d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "a96428ad-3db7-4932-a40b-8dbcfa91447a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "494786a6-2e9b-4cfc-8a64-ecfa85384523-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "abdbaeeb-ee94-41c7-aff6-4beeca688c6e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "3e4467f9-1d42-4899-9756-ca215730adc8-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "880571d6-fcd9-4e70-9692-3f225ff4b2d6-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "6e465698-6dad-45b7-a86c-6d60bc8769d3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "48866c20-b99f-40fc-9bec-9b5a33eeda8e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "a18d8481-6066-4f27-b1f9-fccb8cffc4f5-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "8dbf24a0-31b0-441d-a966-1e8e864bb606-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "51bb516f-d6eb-446a-9db3-f1deb38d5adc-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "9a891384-94e2-42da-b321-2cf7752251ea-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "679aaec4-bcac-4572-a36d-3af77efde21b-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

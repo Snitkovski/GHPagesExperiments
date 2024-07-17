@@ -1,0 +1,300 @@
+{
+	"uuid": "a44c1591-0725-4028-97f2-7e92223c5a78",
+	"historyId": "Inventory Items commissioning.(VATOnRelease) Data preparation Purchase invoice",
+	"name": "(VATOnRelease) Data preparation Purchase invoice",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184498135,
+	"stop": 1721184501295,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I save \"{CurrentDate() - 10*24*60*60}\" in \"CurDate\" variable",
+			"start": 1721184499308,
+			"stop": 1721184499308,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{CurrentDate() - 10*24*60*60}"
+				},
+				{
+					"name": "Парам2",
+					"value": "CurDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I check or create document \"PurchaseInvoice\" objects:",
+			"start": 1721184499386,
+			"stop": 1721184499527,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "50e2b92e-d7f1-4cde-98f4-c9642042dd1c-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I refill object tabular section \"LineItems\":",
+			"start": 1721184499730,
+			"stop": 1721184499777,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "3cf2ecb2-3a77-40ba-8c83-ba27d4f81eb6-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/data/Document.PurchaseInvoice?ref=b2e6d6921d5e794611eeccc87cea27e1\"",
+			"start": 1721184499808,
+			"stop": 1721184499808,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/data/Document.PurchaseInvoice?ref=b2e6d6921d5e794611eeccc87cea27e1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721184499840,
+			"stop": 1721184500075,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I delete \"00000000000000000012\" variable",
+			"start": 1721184500091,
+			"stop": 1721184500091,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "00000000000000000012"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save the value of the field named \"Number\" as \"$$PINumber$$\"",
+			"start": 1721184500122,
+			"stop": 1721184500481,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Number"
+				},
+				{
+					"name": "Парам2",
+					"value": "$$PINumber$$"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I check or create document \"PurchaseInvoice\" objects:",
+			"start": 1721184500778,
+			"stop": 1721184500903,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "e182fc70-25ea-4748-bd1f-f4a6fa5ce384-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I refill object tabular section \"LineItems\":",
+			"start": 1721184500981,
+			"stop": 1721184501029,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "3e2a6659-a5ba-423c-8ed8-fe2c99dc73f0-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/data/Document.PurchaseInvoice?ref=b2eee0e38c8a07b811ef0249906eb2b6\"",
+			"start": 1721184501061,
+			"stop": 1721184501061,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/data/Document.PurchaseInvoice?ref=b2eee0e38c8a07b811ef0249906eb2b6"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721184501092,
+			"stop": 1721184501295,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Data preparation Purchase invoice"
+		},
+		{
+			"name": "feature",
+			"value": "Inventory Items commissioning"
+		},
+		{
+			"name": "suite",
+			"value": "Inventory Items commissioning"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

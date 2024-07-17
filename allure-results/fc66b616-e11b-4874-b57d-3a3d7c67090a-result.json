@@ -1,0 +1,833 @@
+{
+	"uuid": "fc66b616-e11b-4874-b57d-3a3d7c67090a",
+	"historyId": "Goods Increase In Retail button select/Add.(VATOnRelease) Goods Increase In Retail button select/Add",
+	"name": "(VATOnRelease) Goods Increase In Retail button select/Add",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189869642,
+	"stop": 1721189881554,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <LineItems>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <LineItems>. Line No.<1>. Column <Product>. Expected <Retail Prpduct >, got <>\n\nTechnical data:\n        ActiveWindowHeader: Goods increase in retail (create) *\n        ActiveFormName: Document.GoodsIncreaseInRetail.Form.DocumentForm\n        FeatureName: Goods Increase In Retail button select/Add\n        ScriptName: Goods Increase In Retail button select/Add\n        TreeRowNumber: 41.626\n        FeatureLineNumber: 65\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\GoodsIncreaseInRetailButtonSelectAdd.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:17:59"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721189870147,
+			"stop": 1721189870334,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.GoodsIncreaseInRetail\"",
+			"start": 1721189870553,
+			"stop": 1721189870568,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.GoodsIncreaseInRetail"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721189870584,
+			"stop": 1721189870709,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"TradePoint\" became equal to \"Punct de comert amanunt principal\"",
+			"start": 1721189870740,
+			"stop": 1721189870834,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "TradePoint"
+				},
+				{
+					"name": "Парам2",
+					"value": "Punct de comert amanunt principal"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsSelectItems\"",
+			"start": 1721189870975,
+			"stop": 1721189870975,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsSelectItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189871073,
+			"stop": 1721189871729,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "385e0df0-c012-4a8a-8874-c651f3ba55ce-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189871745,
+			"stop": 1721189871761,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPutToDocument\"",
+			"start": 1721189871776,
+			"stop": 1721189871792,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPutToDocument"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"LineItems\" table became equal",
+			"start": 1721189871870,
+			"stop": 1721189881554,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Table <LineItems>.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <LineItems>. Line No.<1>. Column <Product>. Expected <Retail Prpduct >, got <>\n\nTechnical data:\n        ActiveWindowHeader: Goods increase in retail (create) *\n        ActiveFormName: Document.GoodsIncreaseInRetail.Form.DocumentForm\n        FeatureName: Goods Increase In Retail button select/Add\n        ScriptName: Goods Increase In Retail button select/Add\n        TreeRowNumber: 41.626\n        FeatureLineNumber: 65\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\GoodsIncreaseInRetailButtonSelectAdd.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:17:59"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "aec51c1f-aa70-44cc-bb68-0c917cdc9502-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "Differences.mxl",
+					"source": "d9e825d7-6aaa-42c4-9df1-907b39c16a3c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "Differences.html",
+					"source": "4b9f5eaf-7d47-4602-86bd-afa13dbaeace-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ReferenceValueTable.mxl",
+					"source": "e376613f-938e-4f6e-bfe4-6fde40dae990-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ReferenceValueTable.html",
+					"source": "1fe86c25-b4ae-4150-adeb-8b25bcbf141f-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "fc1fff71-b979-4594-8da1-830559c81c2d-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "d66a359f-a71b-463b-a652-9fdd6e0934a8-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "974bbb2f-f17b-4ab3-b272-12ae77bb6be7-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "5bc25e30-5e49-480e-973c-df61cf7dd3d7-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "df89b94d-35df-4677-a1d5-30e3a47ea4ef-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "bb5654c8-6b69-483d-ba11-e4d37c603e46-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "bbeb5d70-8247-4f72-a01f-25de6f9a8f7f-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "0efecd7f-5977-4c01-ba1c-2df0a9fc5723-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "916e8359-bb40-4127-83c5-6e620463367d-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "fd86e903-1ee2-4ec1-9554-f907107ef39c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "3e8fb08e-6692-4ca2-8ba9-c6de496228c3-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "dc34b89e-9119-465d-b4ae-fa3dc5a0ddd8-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "29c3e5c7-67e5-4da9-93a8-6a15e5e4f698-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "f7dacacd-1cfb-4105-9291-9b301ca3510f-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "329b9132-2cae-41dc-8bfe-9e6e61b9da68-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I delete a line in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"LineItemsProducts\" in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsProducts"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "822ef9b3-c6b6-4ddf-bf95-862b8ffa40f2-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Goods increase in retail (create) *\" window is opened",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Goods increase in retail (create) *"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"2,0000\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				},
+				{
+					"name": "Парам3",
+					"value": "2,0000"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsCOGS\" in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsCOGS"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"100,00\" text in the field named \"LineItemsCOGS\" of \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsCOGS"
+				},
+				{
+					"name": "Парам3",
+					"value": "100,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Income\"",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Income"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "e66c0aec-085c-4efa-ab69-75840296d725-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189881554,
+			"stop": 1721189881554,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+					"source": "v8_CDDA_15d4.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Goods Increase In Retail button select/Add"
+		},
+		{
+			"name": "feature",
+			"value": "Goods Increase In Retail button select/Add"
+		},
+		{
+			"name": "suite",
+			"value": "Goods Increase In Retail button select/Add"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_003_Retail"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "bb4e65af-780e-46e2-9c30-e39ea96e37de-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "4f5b7f92-aa5a-4652-9f19-3d46e11f6842-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "a70eb713-ff00-47b5-a0fa-0f92d581fde9-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "4c6f56e1-7f0b-46da-9d5c-473fb1d0fec3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "c6814413-def2-46a3-9ef9-d76d2ef44324-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "33ede0c2-182c-4d2a-ac1e-cf8b5690df72-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "0db0d65f-688a-4951-987e-4b00eee1a078-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "aa34e7e3-e705-4902-b5fc-e61d19d320f3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "26b2ee8c-ed33-4e3f-94d2-7237f6148591-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "ec7bc59a-52c4-4fbc-9705-bd0e2a7acb41-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "fcd3cb4b-cb9e-4efe-9d2d-0642dc743218-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "0d59d4e2-ea47-4e86-bd8e-f98806200eda-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "3f3f95f6-2650-4926-92ef-bec3c53d3613-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "7db56740-19b1-4e5c-b765-b72e9a99c038-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "b5287222-1500-4b65-bbf0-8da940efb38a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "2cf41330-0012-4576-8fe3-3859e61487bc-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "8fc79b46-0ab7-4854-baa5-118c6ec363f3-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "51d40fbf-6ade-483e-8395-62843d734c5e-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "b15c56ed-c9b2-4ba1-89f6-b8b188521a4d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "d781ddc1-43ba-4e8b-a594-a4416bda1523-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

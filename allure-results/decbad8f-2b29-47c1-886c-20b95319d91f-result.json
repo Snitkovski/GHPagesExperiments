@@ -1,0 +1,267 @@
+{
+	"uuid": "decbad8f-2b29-47c1-886c-20b95319d91f",
+	"historyId": "011 Filling in the Currencies catalog.(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"name": "(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182651309,
+	"stop": 1721182652623,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Open Currency creation form",
+			"start": 1721182651825,
+			"stop": 1721182651981,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Currencies\"",
+					"start": 1721182651825,
+					"stop": 1721182651841,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Currencies"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Currencies\" window is opened",
+					"start": 1721182651856,
+					"stop": 1721182651887,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currencies"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormPickFromClassifierChanged\"",
+					"start": 1721182651919,
+					"stop": 1721182651919,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPickFromClassifierChanged"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Currency list\" window is opened",
+					"start": 1721182651950,
+					"stop": 1721182651981,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currency list"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Create USD",
+			"start": 1721182652076,
+			"stop": 1721182652217,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I go to line in \"CurrencyList\" table",
+					"start": 1721182652076,
+					"stop": 1721182652186,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CurrencyList"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "233de513-8157-4a7a-b1bf-bde7996f6376-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"CurrencyList\" table",
+					"start": 1721182652217,
+					"stop": 1721182652217,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CurrencyList"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Check data",
+			"start": 1721182652311,
+			"stop": 1721182652623,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Currencies\" table contains lines",
+					"start": 1721182652311,
+					"stop": 1721182652389,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currencies"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "6bf64c4d-7fab-40d6-b7ae-ea134718b1cd-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721182652404,
+					"stop": 1721182652623,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Filling in the \"Currencies\" catalog"
+		},
+		{
+			"name": "feature",
+			"value": "011 Filling in the Currencies catalog"
+		},
+		{
+			"name": "suite",
+			"value": "011 Filling in the Currencies catalog"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

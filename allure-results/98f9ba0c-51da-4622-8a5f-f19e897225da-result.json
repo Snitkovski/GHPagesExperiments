@@ -1,0 +1,216 @@
+{
+	"uuid": "98f9ba0c-51da-4622-8a5f-f19e897225da",
+	"historyId": "Close month.(VATOnRelease) Check the order of operations",
+	"name": "(VATOnRelease) Check the order of operations",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184185221,
+	"stop": 1721184188881,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/app/DataProcessor.ClosingMonth\"",
+			"start": 1721184186191,
+			"stop": 1721184186207,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/DataProcessor.ClosingMonth"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Closing month\" window is opened",
+			"start": 1721184186238,
+			"stop": 1721184186379,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Closing month"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save '{Format(CurrentDate(), \"DF=\"\"MMMM yyyy\"\"\")}' in \"CurrentMonth\" variable",
+			"start": 1721184186410,
+			"stop": 1721184186410,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(CurrentDate(), \"DF=\"\"MMMM yyyy\"\"\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "CurrentMonth"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"PeriodDescription\" form attribute became equal to \"iulie 2024\"",
+			"start": 1721184186441,
+			"stop": 1721184186441,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PeriodDescription"
+				},
+				{
+					"name": "Парам2",
+					"value": "iulie 2024"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If I see the attribute named \"Enterprise\" Then",
+			"start": 1721184186473,
+			"stop": 1721184188788,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Enterprise"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I see \"Exchange differences calculation\" attribute on the form",
+			"start": 1721184188803,
+			"stop": 1721184188819,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Exchange differences calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I dont see \"Income tax calculation\" attribute on the form",
+			"start": 1721184188835,
+			"stop": 1721184188850,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Income tax calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I see \"Financial result calculation\" attribute on the form",
+			"start": 1721184188866,
+			"stop": 1721184188881,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Financial result calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Check the order of operations"
+		},
+		{
+			"name": "feature",
+			"value": "Close month"
+		},
+		{
+			"name": "suite",
+			"value": "Close month"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

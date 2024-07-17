@@ -1,0 +1,519 @@
+{
+	"uuid": "eeb6833a-5dca-4d69-a857-2ac8e40a5fb8",
+	"historyId": "Documents generate on.(VATOnRelease) Purchase Invoice for InventoryItemsCommissioning",
+	"name": "(VATOnRelease) Purchase Invoice for InventoryItemsCommissioning",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721185962798,
+	"stop": 1721185966160,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721185963709,
+			"stop": 1721185963881,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+			"start": 1721185964104,
+			"stop": 1721185964120,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseInvoice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721185964136,
+			"stop": 1721185964214,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "and I delete \"16.07.2024\" variable",
+			"start": 1721185964229,
+			"stop": 1721185964229,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "16.07.2024"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save '{Format(CurrentDate() - 1*24*60*60, \"DLF=D\")}' in \"$$date$$\" variable",
+			"start": 1721185964261,
+			"stop": 1721185964261,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(CurrentDate() - 1*24*60*60, \"DLF=D\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "$$date$$"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"16.07.2024\" text in the field named \"Date\"",
+			"start": 1721185964292,
+			"stop": 1721185964370,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Date"
+				},
+				{
+					"name": "Парам2",
+					"value": "16.07.2024"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Company\"",
+			"start": 1721185964401,
+			"stop": 1721185964448,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721185964542,
+			"stop": 1721185964589,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "523bab9f-9398-423a-a89d-084da3bd5b28-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Description\" in \"List\" table",
+			"start": 1721185964620,
+			"stop": 1721185964620,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Description"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721185964651,
+			"stop": 1721185964651,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+			"start": 1721185964682,
+			"stop": 1721185964854,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+			"start": 1721185964886,
+			"stop": 1721185964932,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsProduct"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721185965021,
+			"stop": 1721185965734,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c8e0b028-41e6-4edd-b96b-57eb984339fc-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721185965765,
+			"stop": 1721185965765,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+			"start": 1721185965781,
+			"stop": 1721185965875,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"1,0000\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+			"start": 1721185965906,
+			"stop": 1721185965921,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				},
+				{
+					"name": "Парам3",
+					"value": "1,0000"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721185965953,
+			"stop": 1721185965953,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsPrice\" in \"LineItems\" table",
+			"start": 1721185965984,
+			"stop": 1721185966025,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsPrice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"LineItems\" table",
+			"start": 1721185966067,
+			"stop": 1721185966067,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"10,00\" text in the field named \"LineItemsPrice\" of \"LineItems\" table",
+			"start": 1721185966098,
+			"stop": 1721185966114,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsPrice"
+				},
+				{
+					"name": "Парам3",
+					"value": "10,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721185966145,
+			"stop": 1721185966160,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase Invoice for InventoryItemsCommissioning"
+		},
+		{
+			"name": "feature",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "suite",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

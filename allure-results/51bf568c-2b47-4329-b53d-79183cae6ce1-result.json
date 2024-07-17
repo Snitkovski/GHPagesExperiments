@@ -1,0 +1,1281 @@
+{
+	"uuid": "51bf568c-2b47-4329-b53d-79183cae6ce1",
+	"historyId": "PI gener on AIR/SI gener on AII.(VATOnRelease) Purchase Invoice Vendor VAT payer Partial advance set-off",
+	"name": "(VATOnRelease) Purchase Invoice Vendor VAT payer Partial advance set-off",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189192490,
+	"stop": 1721189204526,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <Advances>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6293)}: Table <Advances>. Line No.<1>. Column <Amount to apply>. Expected <1.000,00>, got <900,00>\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice (create) *\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: PI gener on AIR/SI gener on AII\n        ScriptName: Purchase Invoice Vendor VAT payer Partial advance set-off\n        TreeRowNumber: 36.784\n        FeatureLineNumber: 276\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_002_Advances\\PIgenerOn AIRsiGenerOnAII.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:06:42"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721189192974,
+			"stop": 1721189193167,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+			"start": 1721189193385,
+			"stop": 1721189193385,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseInvoice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721189193417,
+			"stop": 1721189193479,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Company\"",
+			"start": 1721189193510,
+			"stop": 1721189193620,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189193698,
+			"stop": 1721189193729,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "e10e09f2-2f50-4cc9-9317-3dd4ee82edd1-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189193760,
+			"stop": 1721189193760,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+			"start": 1721189193792,
+			"stop": 1721189193995,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+			"start": 1721189194020,
+			"stop": 1721189194046,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsProduct"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189194140,
+			"stop": 1721189194312,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "cf01ac3c-00a2-4743-b3c9-da610f67ae02-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189194343,
+			"stop": 1721189194343,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+			"start": 1721189194374,
+			"stop": 1721189194437,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"10,0000\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+			"start": 1721189194468,
+			"stop": 1721189194484,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				},
+				{
+					"name": "Парам3",
+					"value": "10,0000"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsLineTotal\" in \"LineItems\" table",
+			"start": 1721189194515,
+			"stop": 1721189194546,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsLineTotal"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"500,00\" text in the field named \"LineItemsLineTotal\" of \"LineItems\" table",
+			"start": 1721189194577,
+			"stop": 1721189194593,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsLineTotal"
+				},
+				{
+					"name": "Парам3",
+					"value": "500,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721189194624,
+			"stop": 1721189194624,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+			"start": 1721189194655,
+			"stop": 1721189194734,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+			"start": 1721189194765,
+			"stop": 1721189194796,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsProduct"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189194890,
+			"stop": 1721189195082,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "ebef1e95-a126-4902-97fd-16ca0a7597de-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189195098,
+			"stop": 1721189195113,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+			"start": 1721189195129,
+			"stop": 1721189195207,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"4,0000\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+			"start": 1721189195238,
+			"stop": 1721189195254,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQuantity"
+				},
+				{
+					"name": "Парам3",
+					"value": "4,0000"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsLineTotal\" in \"LineItems\" table",
+			"start": 1721189195269,
+			"stop": 1721189195316,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsLineTotal"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"400,00\" text in the field named \"LineItemsLineTotal\" of \"LineItems\" table",
+			"start": 1721189195348,
+			"stop": 1721189195363,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsLineTotal"
+				},
+				{
+					"name": "Парам3",
+					"value": "400,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721189195394,
+			"stop": 1721189195394,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I move to the tab named \"AdvancesSection\"",
+			"start": 1721189195426,
+			"stop": 1721189195504,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancesSection"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Advances\" I click the button named \"AdvancesAdd\"",
+			"start": 1721189195535,
+			"stop": 1721189195551,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				},
+				{
+					"name": "Парам2",
+					"value": "AdvancesAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189195582,
+			"stop": 1721189195629,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Advances\" table",
+			"start": 1721189195660,
+			"stop": 1721189195691,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"VATOnRelease\" variable is equal to \"NonPayer \" Then",
+			"start": 1721189195707,
+			"stop": 1721189195723,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer "
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "ElseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721189195738,
+			"stop": 1721189204526,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Advances\" table became equal by template",
+					"start": 1721189195816,
+					"stop": 1721189204526,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Table <Advances>.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6293)}: Table <Advances>. Line No.<1>. Column <Amount to apply>. Expected <1.000,00>, got <900,00>\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice (create) *\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: PI gener on AIR/SI gener on AII\n        ScriptName: Purchase Invoice Vendor VAT payer Partial advance set-off\n        TreeRowNumber: 36.784\n        FeatureLineNumber: 276\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_002_Advances\\PIgenerOn AIRsiGenerOnAII.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:06:42"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Advances"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "961e8c4f-a225-4f09-aacc-425d59fde29e-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "Differences.mxl",
+							"source": "ed01ff60-313a-4e6b-aecc-9ded511cf1a4-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "Differences.html",
+							"source": "c14bf5ca-70ca-4516-8049-cee99951b1a2-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ReferenceValueTable.mxl",
+							"source": "6b3fa417-1a0f-427c-9dcd-8dc23df2e6f3-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ReferenceValueTable.html",
+							"source": "de29bc83-b012-4c5f-911b-f34381938c0d-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "CurrentValueTable.mxl",
+							"source": "d8cf74bf-de63-409f-b5ee-6580cb94f853-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "CurrentValueTable.html",
+							"source": "e816f623-8723-48f3-8157-9fc8c2b1e527-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.mxl",
+							"source": "caf7a12f-8aed-4bd6-bd81-2d7359ba36e0-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "eab625b4-3f67-46a4-be23-5a4cec83bba1-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "be79bdb3-8d5c-42db-9cfc-6d28b3354fc7-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "b10784a7-d9f3-4072-9f07-ec8a93db406e-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "0c1c7f88-2eb9-416d-a317-fb9ba959faaf-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "8a8a3f35-5a41-467e-9fc6-40b406f33dd5-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "2e1fa0db-4528-45c0-8d6d-e25ba710faf7-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "fb920e6a-edce-4ae8-92a6-3fccf34d6759-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "372d6511-e91d-43db-9b4e-7c310b3284fd-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "acbcf2a8-6ffa-43c5-a17d-3521d02578e2-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "fb61a941-0868-4a95-866c-a9cf539e3a9c-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "bc44b7ae-a5e1-41b6-a5c5-13c0d3c3dfa6-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "d07d2c17-1339-4e0b-aada-d9cb3a0f0424-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I delete a line in \"Advances\" table",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Advances\" I click the button named \"AdvancesFillBySelection\"",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				},
+				{
+					"name": "Парам2",
+					"value": "AdvancesFillBySelection"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"$$VATPayerStatus$$\" variable is equal to \"NonPayer \" Then",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer "
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Advances\" table became equal by template",
+					"start": 1721189204526,
+					"stop": 1721189204526,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Advances"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "bb4600f5-bbcc-4b54-bb07-eb26596d4bd1-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "ElseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Advances\" table became equal by template",
+					"start": 1721189204526,
+					"stop": 1721189204526,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Advances"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "17f1909f-fad8-4c53-905a-74d8f852319d-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I delete a line in \"Advances\" table",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Advances\" I click the button named \"AdvancesAdvancesFillByFIFO\"",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				},
+				{
+					"name": "Парам2",
+					"value": "AdvancesAdvancesFillByFIFO"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"$$VATPayerStatus$$\" variable is equal to \"NonPayer \" Then",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer "
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Advances\" table became equal by template",
+					"start": 1721189204526,
+					"stop": 1721189204526,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Advances"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "7993cdaa-2f0a-4555-bb96-1acc7035a489-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "ElseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721189204526,
+			"stop": 1721189204526,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"Advances\" table became equal by template",
+					"start": 1721189204526,
+					"stop": 1721189204526,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Advances"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "2d1c9fdc-0398-4ebc-b042-66d3bdf252b7-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+							"source": "v8_CDDA_1370.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase Invoice Vendor VAT payer Partial advance set-off"
+		},
+		{
+			"name": "feature",
+			"value": "PI gener on AIR/SI gener on AII"
+		},
+		{
+			"name": "suite",
+			"value": "PI gener on AIR/SI gener on AII"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_002_Advances"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "a12a58b6-fd57-4acd-88ce-3dec1b515d44-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "e39a8612-122e-4478-820a-e36ccda2b9e4-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "5ad890f1-27dc-4fa4-b9f2-bb2336d1be0d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "0510b6b8-3ec1-405c-84a0-a73f6578ec9f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "c45a13f1-f845-45e3-ae69-87e2fbf9bf47-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "79bc8d99-19c4-4687-a431-231c7291fd29-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "4e082b94-91d8-4f6a-bf42-3509ada371cd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "ef2ee533-1af0-4aac-a480-7c832d2f5560-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "21371616-2037-4386-8bf4-c19985ebce4b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "52c1887f-b56e-4cf0-80e8-ea7655688c10-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "127e140f-55a2-4820-adfd-5c00dece2262-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "91c61a42-671f-4a9d-9048-40e7a9af586d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "dcdec4c7-d175-4264-973a-dea207082046-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "9f3e23d7-20d2-4881-8792-688f60bfbff0-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "c18e2c38-be4d-4620-a717-44a997e2a213-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "629759fc-ecab-4114-a5ae-a3eaa3bcb9af-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "e96adefd-d0ed-417d-a3b2-5820bdba5a3f-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "6759efc7-3c3e-4da4-8c25-f676553af570-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "271b63cf-a8a5-4b76-bc87-90838848ba1e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "4225303a-2d12-40df-b772-30966f4b3807-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

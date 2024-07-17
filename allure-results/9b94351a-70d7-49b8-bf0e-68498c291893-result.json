@@ -1,0 +1,821 @@
+{
+	"uuid": "9b94351a-70d7-49b8-bf0e-68498c291893",
+	"historyId": "015 Accounting items creating.(VATOnRelease) Create an Inventory item",
+	"name": "(VATOnRelease) Create an Inventory item",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182752609,
+	"stop": 1721182757288,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721182753041,
+			"stop": 1721182753223,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"Products\" catalog element with \"Description\" equal to \"Inventory item\" does not exist Then",
+			"start": 1721182753458,
+			"stop": 1721182757044,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Products"
+				},
+				{
+					"name": "Парам2",
+					"value": "Description"
+				},
+				{
+					"name": "Парам3",
+					"value": "Inventory item"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Products\"",
+					"start": 1721182753489,
+					"stop": 1721182753489,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Products"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Accounting Items\" window is opened",
+					"start": 1721182753520,
+					"stop": 1721182753567,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Accounting Items"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormList\"",
+					"start": 1721182753598,
+					"stop": 1721182753614,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormList"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And  Check products folder 'Inventory items'",
+					"start": 1721182753708,
+					"stop": 1721182755035,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "If \"List\" table contains lines Then",
+							"start": 1721182753708,
+							"stop": 1721182753833,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "71a18f5f-0469-4fad-ad53-b44b36c90ae5-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "Else",
+							"start": 1721182753864,
+							"stop": 1721182755035,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I click the button named \"FormCreateFolder\"",
+									"start": 1721182753864,
+									"stop": 1721182753864,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "FormCreateFolder"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "Then \"Accounting Items (create folder)\" window is opened",
+									"start": 1721182753895,
+									"stop": 1721182753973,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Accounting Items (create folder)"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I input \"Inventory items\" text in the field named \"Description\"",
+									"start": 1721182754015,
+									"stop": 1721182754015,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Description"
+										},
+										{
+											"name": "Парам2",
+											"value": "Inventory items"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I click the button named \"FormWriteAndClose\"",
+									"start": 1721182754040,
+									"stop": 1721182754040,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "FormWriteAndClose"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I wait \"Accounting Items (create folder) *\" window closing in 20 seconds",
+									"start": 1721182754072,
+									"stop": 1721182755035,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Accounting Items (create folder) *"
+										},
+										{
+											"name": "Парам2",
+											"value": 20
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721182755060,
+					"stop": 1721182755060,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Item (create)\" window is opened",
+					"start": 1721182755092,
+					"stop": 1721182755201,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Item (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Inventory item\" text in the field named \"Description\"",
+					"start": 1721182755232,
+					"stop": 1721182755232,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Description"
+						},
+						{
+							"name": "Парам2",
+							"value": "Inventory item"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Inventory items\" exact value from the drop-down list named \"ProductKinds\"",
+					"start": 1721182755264,
+					"stop": 1721182755279,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ProductKinds"
+						},
+						{
+							"name": "Парам2",
+							"value": "Inventory items"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Parent\"",
+					"start": 1721182755311,
+					"stop": 1721182755373,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Parent"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Accounting Items\" window is opened",
+					"start": 1721182755404,
+					"stop": 1721182755451,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Accounting Items"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721182755529,
+					"stop": 1721182755529,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "03044743-43a6-4913-b08a-6e7020126ef7-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182755560,
+					"stop": 1721182755560,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Set UoM \"buc\"",
+					"start": 1721182755592,
+					"stop": 1721182755732,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I click Choice button of the field named \"Unit\"",
+							"start": 1721182755592,
+							"stop": 1721182755607,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Unit"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I go to line in \"List\" table",
+							"start": 1721182755701,
+							"stop": 1721182755701,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "a85776e6-7778-4959-92e2-24d2629cdab2-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"List\" table",
+							"start": 1721182755732,
+							"stop": 1721182755732,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I input \"789547\" text in the field named \"SKU\"",
+					"start": 1721182755764,
+					"stop": 1721182755779,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SKU"
+						},
+						{
+							"name": "Парам2",
+							"value": "789547"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"73170020\" text in the field named \"CodeOfCustomsClassifier\"",
+					"start": 1721182755810,
+					"stop": 1721182755810,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CodeOfCustomsClassifier"
+						},
+						{
+							"name": "Парам2",
+							"value": "73170020"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWrite\"",
+					"start": 1721182755842,
+					"stop": 1721182755842,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWrite"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And the field named \"SKU\" exists",
+					"start": 1721182755873,
+					"stop": 1721182755935,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SKU"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"InventoryOrExpenseAccount\" became equal to \"303.1  Materiale de natura obiectelor de inventar\"",
+					"start": 1721182755967,
+					"stop": 1721182755967,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "InventoryOrExpenseAccount"
+						},
+						{
+							"name": "Парам2",
+							"value": "303.1  Materiale de natura obiectelor de inventar"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"InventoryItemsInExpluatationAccount\" became equal to \"803.5  Stocuri de natura obiectelor de inventar date în folosință\"",
+					"start": 1721182755998,
+					"stop": 1721182755998,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "InventoryItemsInExpluatationAccount"
+						},
+						{
+							"name": "Парам2",
+							"value": "803.5  Stocuri de natura obiectelor de inventar date în folosință"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"COGSAccount\" became equal to '603.1  Cheltuieli privind materialele de natura obiectelor de inventar'",
+					"start": 1721182756024,
+					"stop": 1721182756024,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "COGSAccount"
+						},
+						{
+							"name": "Парам2",
+							"value": "603.1  Cheltuieli privind materialele de natura obiectelor de inventar"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"IncomeAccount\" became equal to \"758.8  Alte venituri din exploatare\"",
+					"start": 1721182756049,
+					"stop": 1721182756049,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "IncomeAccount"
+						},
+						{
+							"name": "Парам2",
+							"value": "758.8  Alte venituri din exploatare"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721182756081,
+					"stop": 1721182756081,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"Item (create)\" window closing in 20 seconds",
+					"start": 1721182756112,
+					"stop": 1721182757044,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Item (create)"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721182757070,
+			"stop": 1721182757288,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Create an Inventory item"
+		},
+		{
+			"name": "feature",
+			"value": "015 Accounting items creating"
+		},
+		{
+			"name": "suite",
+			"value": "015 Accounting items creating"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

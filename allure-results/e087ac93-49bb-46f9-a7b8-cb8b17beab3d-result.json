@@ -1,0 +1,1413 @@
+{
+	"uuid": "e087ac93-49bb-46f9-a7b8-cb8b17beab3d",
+	"historyId": "VAT rates selection check.(VATOnRelease) VAT payer on release",
+	"name": "(VATOnRelease) VAT payer on release",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721187338904,
+	"stop": 1721187343551,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721187339514,
+			"stop": 1721187339702,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+			"start": 1721187339921,
+			"stop": 1721187339936,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseInvoice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "* Create a new invoice",
+			"start": 1721187339968,
+			"stop": 1721187343551,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721187339968,
+					"stop": 1721187340047,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Purchase invoice (create)\" window is opened",
+					"start": 1721187340078,
+					"stop": 1721187340234,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Purchase invoice (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Company\"",
+					"start": 1721187340266,
+					"stop": 1721187340281,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Company"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187340391,
+					"stop": 1721187340438,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "ea6da794-b749-4ff3-8e2f-7b5ba45ccfd8-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187340469,
+					"stop": 1721187340484,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Purchase invoice (create) *\" window is opened",
+					"start": 1721187340516,
+					"stop": 1721187340984,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Purchase invoice (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+					"start": 1721187341016,
+					"stop": 1721187341032,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsAdd"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+					"start": 1721187341064,
+					"stop": 1721187341111,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsProduct"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Accounting Items\" window is opened",
+					"start": 1721187341142,
+					"stop": 1721187341236,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Accounting Items"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187341251,
+					"stop": 1721187341267,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Purchase invoice (create) *\" window is opened",
+					"start": 1721187341298,
+					"stop": 1721187341376,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Purchase invoice (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+					"start": 1721187341392,
+					"stop": 1721187341423,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsQuantity"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"10\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+					"start": 1721187341470,
+					"stop": 1721187341486,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsQuantity"
+						},
+						{
+							"name": "Парам3",
+							"value": "10"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I move to the next attribute",
+					"start": 1721187341517,
+					"stop": 1721187341533,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"100,0000\" text in the field named \"LineItemsPrice\" of \"LineItems\" table",
+					"start": 1721187341564,
+					"stop": 1721187341642,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsPrice"
+						},
+						{
+							"name": "Парам3",
+							"value": "100,0000"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I move to the next attribute",
+					"start": 1721187341673,
+					"stop": 1721187341689,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"LineItemsVATRate\" in \"LineItems\" table",
+					"start": 1721187341720,
+					"stop": 1721187341814,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsVATRate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click choice button of the attribute named \"LineItemsVATRate\" in \"LineItems\" table",
+					"start": 1721187341845,
+					"stop": 1721187341892,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsVATRate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"VAT rates\" window is opened",
+					"start": 1721187341908,
+					"stop": 1721187341970,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "VAT rates"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342001,
+					"stop": 1721187342081,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342065,
+							"stop": 1721187342081,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342112,
+					"stop": 1721187342159,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342143,
+							"stop": 1721187342159,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342190,
+					"stop": 1721187342237,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342221,
+							"stop": 1721187342237,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342268,
+					"stop": 1721187342315,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342299,
+							"stop": 1721187342315,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342346,
+					"stop": 1721187342581,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342565,
+							"stop": 1721187342581,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342612,
+					"stop": 1721187342643,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342643,
+							"stop": 1721187342643,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342674,
+					"stop": 1721187342721,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342706,
+							"stop": 1721187342721,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342753,
+					"stop": 1721187342799,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342784,
+							"stop": 1721187342799,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342831,
+					"stop": 1721187342862,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342862,
+							"stop": 1721187342862,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342893,
+					"stop": 1721187342940,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187342940,
+							"stop": 1721187342940,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187342971,
+					"stop": 1721187343035,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343019,
+							"stop": 1721187343035,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343051,
+					"stop": 1721187343098,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343098,
+							"stop": 1721187343098,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343129,
+					"stop": 1721187343176,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343176,
+							"stop": 1721187343176,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343207,
+					"stop": 1721187343238,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343238,
+							"stop": 1721187343238,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343269,
+					"stop": 1721187343316,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343316,
+							"stop": 1721187343316,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343348,
+					"stop": 1721187343379,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343379,
+							"stop": 1721187343379,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343394,
+					"stop": 1721187343441,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343441,
+							"stop": 1721187343441,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343473,
+					"stop": 1721187343504,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And the field named \"OnRelease\" in \"List\" table is equal to \"True\"",
+							"start": 1721187343504,
+							"stop": 1721187343504,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "OnRelease"
+								},
+								{
+									"name": "Парам3",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And for each line of \"List\" table I do",
+					"start": 1721187343535,
+					"stop": 1721187343551,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "VAT payer on release"
+		},
+		{
+			"name": "feature",
+			"value": "VAT rates selection check"
+		},
+		{
+			"name": "suite",
+			"value": "VAT rates selection check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

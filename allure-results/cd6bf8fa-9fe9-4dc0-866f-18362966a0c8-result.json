@@ -1,0 +1,173 @@
+{
+	"uuid": "cd6bf8fa-9fe9-4dc0-866f-18362966a0c8",
+	"historyId": "Purchase Invoices generate documents.(VATOnRelease) Purchase Invoices generate Additional Expenses",
+	"name": "(VATOnRelease) Purchase Invoices generate Additional Expenses",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186095078,
+	"stop": 1721186095875,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186095172,
+			"stop": 1721186095375,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+			"start": 1721186095594,
+			"stop": 1721186095609,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseInvoice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186095687,
+			"stop": 1721186095703,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "ad87d664-954b-40f8-9679-b3748580ddff-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721186095734,
+			"stop": 1721186095750,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentAdditionalExpensesCreateBasedOn\"",
+			"start": 1721186095766,
+			"stop": 1721186095781,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentAdditionalExpensesCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Additional Expenses (create)\" window is opened",
+			"start": 1721186095812,
+			"stop": 1721186095875,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Additional Expenses (create)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase Invoices generate Additional Expenses"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

@@ -1,0 +1,596 @@
+{
+	"uuid": "eddf1f18-bd2f-4031-ac8f-28113558e20b",
+	"historyId": "Retail operations.(VATOnRelease) GoodsReturnFromRetail",
+	"name": "(VATOnRelease) GoodsReturnFromRetail",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189852111,
+	"stop": 1721189863552,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <List> does not match the standard.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <List> does not match the standard. Expected <4> lines, and it contains <3> lines.\n\nTechnical data:\n        ActiveWindowHeader: Dr / Cr: Goods return from retail 000000001 dated 17.07.2024 07:17:33\n        ActiveFormName: AccountingRegister.GeneralJournal.Form.ListForm\n        FeatureName: Retail operations\n        ScriptName: GoodsReturnFromRetail\n        TreeRowNumber: 41.576\n        FeatureLineNumber: 386\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\003RetailSalesReport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:17:41"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721189852657,
+			"stop": 1721189852845,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.GoodsReturnFromRetail\"",
+			"start": 1721189853084,
+			"stop": 1721189853084,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.GoodsReturnFromRetail"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721189853115,
+			"stop": 1721189853225,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"LocationFrom\"",
+			"start": 1721189853256,
+			"stop": 1721189853381,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LocationFrom"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189853412,
+			"stop": 1721189853443,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"LocationTo\"",
+			"start": 1721189853475,
+			"stop": 1721189853506,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LocationTo"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721189853584,
+			"stop": 1721189853600,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "fe9520de-3fb5-4257-ae4f-47e715a4d06b-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721189853615,
+			"stop": 1721189853631,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"LineItems\" I click the button named \"LineItemsFillByBalance\"",
+			"start": 1721189853646,
+			"stop": 1721189853662,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsFillByBalance"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"LineItemsQtyUnits\" in \"LineItems\" table",
+			"start": 1721189853693,
+			"stop": 1721189853756,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQtyUnits"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"LineItems\" table",
+			"start": 1721189853787,
+			"stop": 1721189853787,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"1,0000\" text in the field named \"LineItemsQtyUnits\" of \"LineItems\" table",
+			"start": 1721189853818,
+			"stop": 1721189853834,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				},
+				{
+					"name": "Парам2",
+					"value": "LineItemsQtyUnits"
+				},
+				{
+					"name": "Парам3",
+					"value": "1,0000"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"LineItems\" table",
+			"start": 1721189853865,
+			"stop": 1721189853865,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721189853896,
+			"stop": 1721189853896,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCommonCommandOpenGeneralJournalByRecorder\"",
+			"start": 1721189853928,
+			"stop": 1721189854104,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCommonCommandOpenGeneralJournalByRecorder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"List\" table became equal by template",
+			"start": 1721189854260,
+			"stop": 1721189863552,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Table <List> does not match the standard.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <List> does not match the standard. Expected <4> lines, and it contains <3> lines.\n\nTechnical data:\n        ActiveWindowHeader: Dr / Cr: Goods return from retail 000000001 dated 17.07.2024 07:17:33\n        ActiveFormName: AccountingRegister.GeneralJournal.Form.ListForm\n        FeatureName: Retail operations\n        ScriptName: GoodsReturnFromRetail\n        TreeRowNumber: 41.576\n        FeatureLineNumber: 386\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\003RetailSalesReport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:17:41"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "84c2b576-1cff-4e5f-bd8a-36f99de4e4ec-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "Differences.mxl",
+					"source": "0de50f0d-cdba-41a9-9202-2afe29e0a7c6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "Differences.html",
+					"source": "7147c47b-11d9-4c60-9aa4-38c55d56f8eb-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ReferenceValueTable.mxl",
+					"source": "298e4736-80d3-4007-90d0-7b56a5b85334-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ReferenceValueTable.html",
+					"source": "31b977ad-5013-4a43-83f6-13fa3e94a772-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "690ee5e2-921d-412b-a0d6-1c14d86bfbd7-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "376236e7-bd40-4d09-a710-ad6021e82b54-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "2dc6207f-f3b7-4b5c-8834-ebc4f4be3eea-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "385c32ba-12d5-43aa-802d-36e2902f5199-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "48df277d-23bb-44a6-a747-567f998eeec7-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "4298e866-8c3f-4372-afce-ef7cac21493b-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "7a60ac7f-b2fd-4ced-b7f7-9f7bd37f7ca4-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "a2005619-44a9-4030-8bb3-0aa086ad5010-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "3e4ad385-723c-4194-adde-12587dcbe90e-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "4576b317-2892-48ba-833e-84c06cfd261a-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "90ffc7a1-c314-450c-af3d-8a19032e109c-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "8a1340db-cc20-40d5-b43f-13bed9a7bb41-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "06f5d51c-c7c9-493c-844d-ade872f8d874-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "e450ae2f-d05b-4cce-9ec3-e8bf367b337a-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "9fed3f1a-e18a-4dea-b0cc-8a92bcf9efa2-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+					"source": "v8_CDDA_15a7.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "GoodsReturnFromRetail"
+		},
+		{
+			"name": "feature",
+			"value": "Retail operations"
+		},
+		{
+			"name": "suite",
+			"value": "Retail operations"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_003_Retail"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "4dafcf3d-6022-4f40-9059-cb5137580a2f-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "ea3e0424-4561-47d3-ad12-1f28491ab83f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "eb39da17-f8e4-47c4-93f5-e4458574d86d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "a11b60e8-ac7a-4193-9835-a2b45959acd7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "44b09008-d655-4208-ab48-ea0e1ddae922-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "b4e9269d-4d03-4a78-855f-143f1f477bd7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "8dcedaf1-2279-4cf9-a07b-17483a75ee5d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "6d39fcea-f436-474c-ac88-a7cf3f1a4e3c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "9b1a89cb-b447-46ca-90db-b7b5174980e1-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "b7acfc97-57a2-4fe8-96dd-6efe2847f006-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "56c7542b-ae46-4c50-8307-742a0d1231b6-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "2b4950b1-3261-4575-b3bd-6bc22533bd99-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "05ba2c42-1a23-43f0-9596-1642d07f57f4-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "4c9d5786-e68e-497d-bcaa-2da90c6d7fb3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "73e2792e-f506-45a5-984a-4942da239105-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "20ac1ca8-b410-4d73-80ac-956992a787aa-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "ec71ec3a-6410-43e2-bc52-63856555430d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "257155e2-4acf-4f31-a032-eb021f961e03-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "1071d472-cbb3-4acb-810f-354cd91ec40f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "0d5ec791-d3f4-486d-9182-24e8192876c0-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,298 @@
+{
+	"uuid": "0abc0920-bc8a-4c63-975d-6588b4978183",
+	"historyId": "Documents generate on.(VATOnRelease) list AdvanceReport  generate BankPayment",
+	"name": "(VATOnRelease) list AdvanceReport  generate BankPayment",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721185671224,
+	"stop": 1721185673664,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721185672319,
+			"stop": 1721185672507,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.AdvanceReport\"",
+			"start": 1721185672725,
+			"stop": 1721185672741,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.AdvanceReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721185672819,
+			"stop": 1721185672835,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "68bea01d-5284-4689-a87a-8263fddfa9e6-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721185672866,
+			"stop": 1721185672866,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate current test client window",
+			"start": 1721185672897,
+			"stop": 1721185672913,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentBankPaymentCreateBasedOn\"",
+			"start": 1721185673149,
+			"stop": 1721185673149,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentBankPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the field named \"CashFlowActivity\" is filled",
+			"start": 1721185673180,
+			"stop": 1721185673367,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the field named \"BankAccount\" is filled",
+			"start": 1721185673383,
+			"stop": 1721185673399,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "BankAccount"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+			"start": 1721185673430,
+			"stop": 1721185673430,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "elseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721185673445,
+			"stop": 1721185673602,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And \"DetailsOther\" table became equal",
+					"start": 1721185673524,
+					"stop": 1721185673602,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "DetailsOther"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "73c3233e-f5d0-4894-8621-d34cbaf1100b-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I close current window",
+			"start": 1721185673633,
+			"stop": 1721185673664,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "list AdvanceReport  generate BankPayment"
+		},
+		{
+			"name": "feature",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "suite",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

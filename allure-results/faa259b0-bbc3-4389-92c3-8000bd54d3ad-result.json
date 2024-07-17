@@ -1,0 +1,661 @@
+{
+	"uuid": "faa259b0-bbc3-4389-92c3-8000bd54d3ad",
+	"historyId": "090 Purchase invoice and Purchase return.(VATOnRelease) Purchase invoice adding lines from Notice of enry",
+	"name": "(VATOnRelease) Purchase invoice adding lines from Notice of enry",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183222024,
+	"stop": 1721183237128,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Expected active window <Vendors>, but found <Purchase Invoice (create)>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(2704)}: Expected active window <Vendors>, but found <Purchase Invoice (create)>. Window search timeout: 10\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice (create)\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: 090 Purchase invoice and Purchase return\n        ScriptName: Purchase invoice adding lines from Notice of enry\n        TreeRowNumber: 5.903\n        FeatureLineNumber: 249\n        FeatureFullPath: features\\CI\\Main\\Basic\\090_PurchaseInvoiceAndReturn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ОткрылосьОкно\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:13 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:27:15"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Create document",
+			"start": 1721183222597,
+			"stop": 1721183222706,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/List/Document.PurchaseInvoice\"",
+					"start": 1721183222597,
+					"stop": 1721183222612,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/List/Document.PurchaseInvoice"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Purchase Invoices\" window is opened",
+					"start": 1721183222644,
+					"stop": 1721183222644,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Purchase Invoices"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click \"Create\" button",
+					"start": 1721183222675,
+					"stop": 1721183222706,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Create"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Fill the attributes",
+			"start": 1721183222737,
+			"stop": 1721183237128,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click Choice button of the field named \"Company\"",
+					"start": 1721183222737,
+					"stop": 1721183222892,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Company"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Vendors\" window is opened",
+					"start": 1721183222923,
+					"stop": 1721183237128,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Expected active window <Vendors>, but found <Purchase Invoice (create)>.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(2704)}: Expected active window <Vendors>, but found <Purchase Invoice (create)>. Window search timeout: 10\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice (create)\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: 090 Purchase invoice and Purchase return\n        ScriptName: Purchase invoice adding lines from Notice of enry\n        TreeRowNumber: 5.903\n        FeatureLineNumber: 249\n        FeatureFullPath: features\\CI\\Main\\Basic\\090_PurchaseInvoiceAndReturn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ОткрылосьОкно\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:13 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:27:15"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Vendors"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "4bf96fd2-06c7-43f6-85bb-583613029bc5-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "20e0437c-c275-49fc-84b7-85ff4f00fd48-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "0863b118-86f4-45ea-bd2d-ec9a393c1afa-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "33788fdd-c604-412a-847b-03b6b64fd6ef-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "0d8eda8e-1b2c-4dbd-ace1-9ce8c7dbf649-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "cb7042b5-4a65-4499-a6de-7b9d07c064f6-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "bf1be7fe-bd2a-47ce-909a-9039ea9f1c43-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "ec8468eb-6b66-42eb-8ae9-3c126af10f19-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "b00cff2d-6b4e-47f6-be4d-9805f30faf0b-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "e1504f3d-9fe1-44e8-95d6-e5215775222d-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "cb74863c-18e7-42ac-b65b-e064b8ebd5dd-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "b2dfc6a6-150b-4360-b776-78dc8d4b2cc7-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "0bfac761-9e83-43fd-a822-5cb2d90f3f55-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormList\"",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormList"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "1501efb1-d54e-48e3-b829-003042b5a9e0-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Fill the tabular part",
+			"start": 1721183237128,
+			"stop": 1721183237128,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"Purchase Invoice (create) *\" window is opened",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Purchase Invoice (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in the table \"LineItems\" I click the button named \"LineItemsAddFromNoticeOfEntry\"",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						},
+						{
+							"name": "Парам2",
+							"value": "LineItemsAddFromNoticeOfEntry"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Notice of entries\" window is opened",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Notice of entries"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to the first line in \"List\" table",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If \"$VATPayerStatus$\" variable is equal to \"NonPayer\" Then",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "$VATPayerStatus$"
+						},
+						{
+							"name": "Парам2",
+							"value": "NonPayer"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And \"LineItems\" table became equal by template",
+							"start": 1721183237128,
+							"stop": 1721183237128,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "LineItems"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "7ef5bc6f-845b-4711-81da-b0e7c345410f-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "ElseIf \"$VATPayerStatus$\" variable is equal to \"VATOnRelease\" Then",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "$VATPayerStatus$"
+						},
+						{
+							"name": "Парам2",
+							"value": "VATOnRelease"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And \"LineItems\" table became equal by template",
+							"start": 1721183237128,
+							"stop": 1721183237128,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "LineItems"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "43e0d7b3-1d89-4cd6-9858-92ea63170390-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I click the button named \"FormPost\"",
+					"start": 1721183237128,
+					"stop": 1721183237128,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPost"
+						}
+					],
+					"attachments": [
+						{
+							"name": "Этот клиент.Vendors",
+							"source": "v8_CDDA_3f2.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_3f3.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase invoice adding lines from Notice of enry"
+		},
+		{
+			"name": "feature",
+			"value": "090 Purchase invoice and Purchase return"
+		},
+		{
+			"name": "epic",
+			"value": "VAT on release"
+		},
+		{
+			"name": "suite",
+			"value": "090 Purchase invoice and Purchase return"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "Purchases"
+		},
+		{
+			"name": "tag",
+			"value": "ExportScenarios"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.Vendors",
+			"source": "39089f35-0600-491d-b360-107f246a6e16-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "51663dea-e5ac-45ca-8505-ac7456eecc31-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "6c99adea-7e14-492d-8685-8aa54b8156a5-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "491de03e-d2bd-4ae4-a466-134a6d9912af-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "97588fe5-257c-48a9-be40-f420fee29403-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "468898bc-2953-49d4-bd9e-13d090fd5dd8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "3092a78f-bd2a-4ee4-8983-3cd117aa5a4b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "605ffd51-3975-4353-9c78-23fcece8f9f1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "c00b20a5-0940-4159-8184-eca632048b62-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "f04323f1-1991-4fef-bb11-29593f3032e8-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "414750cb-ff47-4e6b-b4e6-fa49f209371e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "31cc71b2-e135-43ed-a11d-408d2ea46e22-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "f4088552-182a-404d-8569-15e2d177771e-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "0880bde5-e893-4921-9191-fa268db9cf3c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "359789c5-d0a3-4785-bbd1-32c71086e180-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

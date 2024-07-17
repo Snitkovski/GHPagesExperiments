@@ -1,0 +1,570 @@
+{
+	"uuid": "a8aa6d1e-5adb-47cd-9651-5eb911b85588",
+	"historyId": "220 Sales invoice and Sales return.(VATOnRelease) Counterparties Individual EU creation",
+	"name": "(VATOnRelease) Counterparties Individual EU creation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183720042,
+	"stop": 1721183723097,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "If \"Companies\" catalog element with \"Description\" equal to \"Individual EU\" does not exist Then",
+			"start": 1721183720927,
+			"stop": 1721183723097,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Companies"
+				},
+				{
+					"name": "Парам2",
+					"value": "Description"
+				},
+				{
+					"name": "Парам3",
+					"value": "Individual EU"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Companies\"",
+					"start": 1721183720974,
+					"stop": 1721183720974,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Companies"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Counterparties\" window is opened",
+					"start": 1721183721006,
+					"stop": 1721183721120,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Counterparties"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721183721135,
+					"stop": 1721183721151,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Counterparty: Counterparty (create)\" window is opened",
+					"start": 1721183721182,
+					"stop": 1721183721323,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Counterparty: Counterparty (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I change checkbox named \"NonResident\"",
+					"start": 1721183721354,
+					"stop": 1721183721354,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "NonResident"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Country\"",
+					"start": 1721183721385,
+					"stop": 1721183721432,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Country"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Countries\" window is opened",
+					"start": 1721183721463,
+					"stop": 1721183721510,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Countries"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721183721588,
+					"stop": 1721183721604,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "b8115272-47dd-4811-b402-9df8a605f33a-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721183721635,
+					"stop": 1721183721635,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Counterparty: Counterparty (create) *\" window is opened",
+					"start": 1721183721948,
+					"stop": 1721183721963,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Counterparty: Counterparty (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Individual EU\" text in the field named \"Description\"",
+					"start": 1721183721979,
+					"stop": 1721183721995,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Description"
+						},
+						{
+							"name": "Парам2",
+							"value": "Individual EU"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"FR123456788\" text in the field named \"TaxRegistrationNumber\"",
+					"start": 1721183722020,
+					"stop": 1721183722046,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TaxRegistrationNumber"
+						},
+						{
+							"name": "Парам2",
+							"value": "FR123456788"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I change checkbox named \"Customer\"",
+					"start": 1721183722062,
+					"stop": 1721183722077,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Customer"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I change the radio button named \"CounterpartyKind\" value to \"Individual\"",
+					"start": 1721183722109,
+					"stop": 1721183722109,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CounterpartyKind"
+						},
+						{
+							"name": "Парам2",
+							"value": "Individual"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Individual EU\" text in the field named \"FullName\"",
+					"start": 1721183722140,
+					"stop": 1721183722218,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FullName"
+						},
+						{
+							"name": "Парам2",
+							"value": "Individual EU"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWrite\"",
+					"start": 1721183722249,
+					"stop": 1721183722249,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWrite"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Button0\"",
+					"start": 1721183722280,
+					"stop": 1721183722468,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Button0"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Contract (create)\" window is opened",
+					"start": 1721183722499,
+					"stop": 1721183722515,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Contract (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Individual EU contract\" text in the field named \"Description\"",
+					"start": 1721183722546,
+					"stop": 1721183722546,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Description"
+						},
+						{
+							"name": "Парам2",
+							"value": "Individual EU contract"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"EUR\" exact value from the drop-down list named \"Currency\"",
+					"start": 1721183722577,
+					"stop": 1721183722609,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currency"
+						},
+						{
+							"name": "Парам2",
+							"value": "EUR"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721183722640,
+					"stop": 1721183722640,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"Contract (create) *\" window closing in 20 seconds",
+					"start": 1721183722671,
+					"stop": 1721183723041,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Contract (create) *"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close current window",
+					"start": 1721183723066,
+					"stop": 1721183723097,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Counterparties Individual EU creation"
+		},
+		{
+			"name": "feature",
+			"value": "220 Sales invoice and Sales return"
+		},
+		{
+			"name": "suite",
+			"value": "220 Sales invoice and Sales return"
+		},
+		{
+			"name": "tag",
+			"value": "sales"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

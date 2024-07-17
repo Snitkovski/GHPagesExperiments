@@ -1,0 +1,339 @@
+{
+	"uuid": "ae016aed-7f77-49f6-a603-a6de98d5afdd",
+	"historyId": "Sales Invoice generate documents.(VATOnRelease) SalesOrder generate Purchase Order",
+	"name": "(VATOnRelease) SalesOrder generate Purchase Order",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186152371,
+	"stop": 1721186159060,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Unable to move to the required line in <List> table.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\u0009\u0009| 'Number' | \n\u0009\u0009| ''       | \n\nTechnical data:\n        ActiveWindowHeader: Sales orders\n        ActiveFormName: Document.SalesOrder.Form.ListForm\n        FeatureName: Sales Invoice generate documents\n        ScriptName: SalesOrder generate Purchase Order\n        TreeRowNumber: 20.107\n        FeatureLineNumber: 100\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\SIgenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:15:57"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186152449,
+			"stop": 1721186152715,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.SalesOrder\"",
+			"start": 1721186152949,
+			"stop": 1721186152949,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.SalesOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186153038,
+			"stop": 1721186159060,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Unable to move to the required line in <List> table.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\u0009\u0009| 'Number' | \n\u0009\u0009| ''       | \n\nTechnical data:\n        ActiveWindowHeader: Sales orders\n        ActiveFormName: Document.SalesOrder.Form.ListForm\n        FeatureName: Sales Invoice generate documents\n        ScriptName: SalesOrder generate Purchase Order\n        TreeRowNumber: 20.107\n        FeatureLineNumber: 100\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\SIgenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:15:57"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "789dfff0-e550-4b52-8eea-e594c0ddeaf3-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "11142c56-e0e3-40c0-97cc-6f28d8690676-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "0a901654-e03b-4bd7-bd55-79666955ceec-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "6ff95dc6-f9b2-4055-8831-32d15d598ba8-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "ba109c5b-ea53-48f1-87b1-f042de268e67-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "265945ef-a96e-46cc-8afb-10517a1eff06-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "09994a65-6639-4e50-aee8-c18e55ddca76-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "8591ff35-a95b-4f91-af04-02c460791752-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "42fd59f7-7f19-404b-9bce-b4988312d393-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "8f90bf15-f885-4251-a004-a4883a52f59c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "d94d9829-9eec-4eb0-b82b-a862d523ee87-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "135e1d7d-8715-4b6f-a9b6-32378736aaf9-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "469e4f0c-89a0-4e4b-94ac-7dd1dfd3abe8-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "bb3feedf-def2-4965-8b11-d7f71014345d-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "4a4412e4-1aca-4319-ad3a-eaaa7fb282d0-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "037d97c1-7596-4666-b68c-89c24c34a397-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721186159060,
+			"stop": 1721186159060,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentPurchaseOrderCreateBasedOn\"",
+			"start": 1721186159060,
+			"stop": 1721186159060,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentPurchaseOrderCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase Order (create)\" window is opened",
+			"start": 1721186159060,
+			"stop": 1721186159060,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase Order (create)"
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_e12.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "SalesOrder generate Purchase Order"
+		},
+		{
+			"name": "feature",
+			"value": "Sales Invoice generate documents"
+		},
+		{
+			"name": "suite",
+			"value": "Sales Invoice generate documents"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "367121bf-0a19-4731-8174-fa7eda28c992-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "2bf38317-cead-4e4d-a751-a6663648fc8b-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "8b3933b3-79df-46c3-ba7f-3f098d392b19-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "2fac404d-a552-456c-b040-1b98638af891-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "83cdbf10-3b69-413a-9a36-fd6c9bbb145e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "d5d58a56-774b-43ed-8ebe-efbeab41f412-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "32964f54-c42a-4870-a3f5-095810330f44-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "b78ebdc7-bf40-4b4e-abaa-9cdd96a03d5f-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "d002694b-e2ed-4647-813c-72c09a68d68c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "93610194-1ceb-422e-be25-fd3c49402d6e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "29c051d6-1a9b-4a9c-a4f2-e66fd4ec729d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "743add9b-f6bb-4537-8ad4-41c5a537d644-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "f9e503ae-3214-40f5-a9bd-88174fd37a63-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "8df9533c-af4c-48df-b017-34f010520a8b-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "bda35a0f-feeb-4baa-b296-3085fb93190e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "a65d11fd-4234-420a-85b2-ca0dbeea88f4-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

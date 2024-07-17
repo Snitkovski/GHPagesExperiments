@@ -1,0 +1,103 @@
+{
+	"uuid": "ff51d1de-c2d1-4615-8fa9-54a5aee7bc88",
+	"name": "Контекст_(VATOnRelease) Cash payment Advance to the accountable person",
+	"description": "",
+	"children": [
+		"a0a8bdac-4d1f-4992-8c4d-e0f1da33b179"
+	],
+	"befores": [
+		{
+			"name": "Given I open new TestClient session or connect the existing one",
+			"start": 1721182918294,
+			"stop": 1721182918435,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721182918653,
+			"stop": 1721182918841,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I get Vat payer status",
+			"start": 1721182919064,
+			"stop": 1721182919096,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "If \"VATOnRelease\" variable does not exist Then",
+					"start": 1721182919064,
+					"stop": 1721182919096,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "VATOnRelease"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I save the value of the Vanessa Automation setting \"ИмяТекущейСборки\" as \"VATOnRelease\"",
+							"start": 1721182919096,
+							"stop": 1721182919096,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ИмяТекущейСборки"
+								},
+								{
+									"name": "Парам2",
+									"value": "VATOnRelease"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"start": null,
+	"stop": null
+}

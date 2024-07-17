@@ -1,0 +1,88 @@
+{
+	"uuid": "02f41a3e-a5b4-43d2-b9c8-ccb914d8621c",
+	"name": "Контекст_(VATOnRelease) Purchase Invoice  in EUR2",
+	"description": "",
+	"children": [
+		"3acdb344-7d9d-4ca8-9fc6-0d518a2c071e"
+	],
+	"befores": [
+		{
+			"name": "Given I open new TestClient session or connect the existing one",
+			"start": 1721183090167,
+			"stop": 1721183090417,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I get Vat payer status",
+			"start": 1721183090635,
+			"stop": 1721183090667,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "If \"VATOnRelease\" variable does not exist Then",
+					"start": 1721183090635,
+					"stop": 1721183090667,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "VATOnRelease"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I save the value of the Vanessa Automation setting \"ИмяТекущейСборки\" as \"VATOnRelease\"",
+							"start": 1721183090667,
+							"stop": 1721183090667,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ИмяТекущейСборки"
+								},
+								{
+									"name": "Парам2",
+									"value": "VATOnRelease"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"start": null,
+	"stop": null
+}

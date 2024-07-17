@@ -1,0 +1,298 @@
+{
+	"uuid": "bb2c99c3-7d57-452c-b3ca-236cb58f5690",
+	"historyId": "003_1 Classifiers import.(VATOnRelease) UoM classifier import",
+	"name": "(VATOnRelease) UoM classifier import",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182591538,
+	"stop": 1721182605571,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Error calling context method (BeginPutFileToServer)\n                {Catalog.UoMClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\TemplateUomClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]",
+		"trace": "Expected <Import completed successfully> substring in user messages\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 003_1 Classifiers import\n        ScriptName: UoM classifier import\n        TreeRowNumber: 2.139\n        FeatureLineNumber: 35\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_1_ClassifiersImport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсомДополнительный\n        ProcedureName: ЯЖдуЧтоВСообщенияхПользователюБудетПодстрокаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:43\n        ErrorDetails\n                Error calling context method (BeginPutFileToServer)\n                {Catalog.UoMClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\TemplateUomClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]\n"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.UoMClassifier\"",
+			"start": 1721182592555,
+			"stop": 1721182592555,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.UoMClassifier"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"$КаталогПроекта$\\\\features\\\\Additional\\\\TemplateUomClassifier.xlsx\" file",
+			"start": 1721182592586,
+			"stop": 1721182592586,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$КаталогПроекта$\\features\\Additional\\TemplateUomClassifier.xlsx"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"ListImportFromExcel\"",
+			"start": 1721182592618,
+			"stop": 1721182592633,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ListImportFromExcel"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then I wait that in user messages the \"Import completed successfully\" substring will appear in \"3\" seconds",
+			"start": 1721182592665,
+			"stop": 1721182605571,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Error calling context method (BeginPutFileToServer)\n                {Catalog.UoMClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\TemplateUomClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]",
+				"trace": "Expected <Import completed successfully> substring in user messages\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 003_1 Classifiers import\n        ScriptName: UoM classifier import\n        TreeRowNumber: 2.139\n        FeatureLineNumber: 35\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_1_ClassifiersImport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсомДополнительный\n        ProcedureName: ЯЖдуЧтоВСообщенияхПользователюБудетПодстрокаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:43\n        ErrorDetails\n                Error calling context method (BeginPutFileToServer)\n                {Catalog.UoMClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\TemplateUomClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]\n"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Import completed successfully"
+				},
+				{
+					"name": "Парам2",
+					"value": "3"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "5b88aa72-b418-42fa-9505-3ab83ce08c1f-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "f6c78af6-7163-4697-9730-29d7da3e470e-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "ca80c02d-331f-4a4c-8b6c-5908242b9d04-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "1243f023-06bb-4345-a7b3-a8ce41dfe905-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "4baed438-9a73-463c-b3dc-fa9ef459aee2-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "ccbd407d-0866-4a0e-9b69-e077b951d4b4-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "56fd471a-436f-40d8-a106-4696020089f0-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "83663305-86fa-4cc5-a012-6ce819ea346d-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "6e3e4d4e-b85a-41a7-8c7d-94ddb05cf034-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "19d0c0f1-3d12-4b24-a899-3b225f89a2ab-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "38f4c5fd-d51c-4c61-8e33-7d1779f22a41-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "ba849e48-ac51-4fcb-a9be-55124a913f8c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "e3eba17f-f5c9-41a3-ba39-79a15b973487-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.1C:Enterprise",
+					"source": "v8_CDDA_180.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_181.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_182.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "UoM classifier import"
+		},
+		{
+			"name": "feature",
+			"value": "003_1 Classifiers import"
+		},
+		{
+			"name": "suite",
+			"value": "003_1 Classifiers import"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.1C:Enterprise",
+			"source": "9fe7313c-d3b3-4769-9763-320e540267a4-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "8ec9c673-e703-479a-a868-d02d506dae47-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "b9e1eeeb-6ef6-4670-971a-b6a7bac5e764-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "b553b0f1-6564-4e1b-9d66-1c1c8fa933fc-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "43157abd-96d2-4cc5-aec1-85afa42e8a91-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "431acca5-d700-4588-af4b-c9920bc453a9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "df79d434-6ef0-49c2-88e0-7a495f15dcfc-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "463786cc-bc1f-4c6d-952d-bffaa0481b94-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "a2ba2c89-f8dd-47d0-891c-8957a7109a50-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "84c657ab-6935-4187-8110-49fb47c4ffdd-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "2013090e-01e8-4c84-95a2-9c6df5830de4-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "9766ffff-37c1-4727-8d5f-2e42f244dccd-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "80b689f5-be07-4ae3-8d6a-1c34cd3cba07-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "4cedd90d-f7e1-4a03-8a95-c580c08701f5-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "d41f3ea9-7a3a-4573-80ff-1de970f18b27-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "ab980c43-83ca-41da-b544-fc1d6030a3a9-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

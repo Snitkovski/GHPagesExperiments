@@ -1,0 +1,1054 @@
+{
+	"uuid": "177de289-9f2f-46e0-9e98-7e0c47553ec1",
+	"historyId": "Settlements Adjustment >DR/CR.(VATOnRelease) TrialBalance By Account",
+	"name": "(VATOnRelease) TrialBalance By Account",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186706265,
+	"stop": 1721186718029,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Actual value in No.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7792)}: Actual value in No.<4> column in Spreadsheet Document is <>, and expected value is <178,50>.\n\nTechnical data:\n        ActiveWindowHeader: Trial Balance by account 401.1  for 01.07.2024 - 17.07.2024\n        ActiveFormName: Report.TrialBalanceByAccount.Form.ReportForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: TrialBalance By Account\n        TreeRowNumber: 22.689\n        FeatureLineNumber: 324\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:25:16"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186706859,
+			"stop": 1721186707239,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/app/Report.TrialBalanceByAccount\"",
+			"start": 1721186707458,
+			"stop": 1721186707473,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/Report.TrialBalanceByAccount"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input begin of the current month date in \"Period\" field",
+			"start": 1721186707505,
+			"stop": 1721186707598,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Period"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save 'CurrentDate()' in \"date\" variable",
+			"start": 1721186707630,
+			"stop": 1721186707630,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CurrentDate()"
+				},
+				{
+					"name": "Парам2",
+					"value": "date"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"17.07.2024 06:25:07\" text in the field named \"PeriodEndDate\"",
+			"start": 1721186707661,
+			"stop": 1721186707692,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PeriodEndDate"
+				},
+				{
+					"name": "Парам2",
+					"value": "17.07.2024 06:25:07"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select from the drop-down list named \"Account\" by \"401.1\" string",
+			"start": 1721186707723,
+			"stop": 1721186708005,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Account"
+				},
+				{
+					"name": "Парам2",
+					"value": "401.1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"Настройки\"",
+			"start": 1721186708040,
+			"stop": 1721186708040,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Настройки"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I move to the tab named \"Report\"",
+			"start": 1721186708072,
+			"stop": 1721186708197,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Report"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"Настройки\"",
+			"start": 1721186708228,
+			"stop": 1721186708228,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Настройки"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+			"start": 1721186708259,
+			"stop": 1721186708275,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				},
+				{
+					"name": "Парам2",
+					"value": "GroupingByUse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"GroupingBy\" table",
+			"start": 1721186708306,
+			"stop": 1721186708322,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I move to the tab named \"Report\"",
+			"start": 1721186708337,
+			"stop": 1721186708353,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Report"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"Настройки\"",
+			"start": 1721186708384,
+			"stop": 1721186708400,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Настройки"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"GroupingBy\" table does not contain line Then",
+			"start": 1721186708478,
+			"stop": 1721186708494,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "673f039e-c63d-41d7-aac6-6166077f0741-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"GroupingBy\" table",
+			"start": 1721186708525,
+			"stop": 1721186708525,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"GroupingBy\" table",
+			"start": 1721186708603,
+			"stop": 1721186708619,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "95228127-502a-43a9-a689-64581793332a-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+			"start": 1721186708650,
+			"stop": 1721186708665,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				},
+				{
+					"name": "Парам2",
+					"value": "GroupingByUse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"GroupingBy\" table",
+			"start": 1721186708697,
+			"stop": 1721186708697,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I move to the tab named \"GroupFilters\"",
+			"start": 1721186708728,
+			"stop": 1721186708728,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupFilters"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"Filters\" table",
+			"start": 1721186708822,
+			"stop": 1721186708837,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "594965ce-cde3-40d4-9f3b-241ce4359168-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"FiltersUse\" in \"Filters\" table",
+			"start": 1721186708853,
+			"stop": 1721186708869,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				},
+				{
+					"name": "Парам2",
+					"value": "FiltersUse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox named \"FiltersUse\" in \"Filters\" table",
+			"start": 1721186708900,
+			"stop": 1721186708915,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				},
+				{
+					"name": "Парам2",
+					"value": "FiltersUse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"GroupingBy\" table",
+			"start": 1721186708994,
+			"stop": 1721186709035,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "cb7570a0-560a-4a20-bd2e-607297233759-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+			"start": 1721186709061,
+			"stop": 1721186709076,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				},
+				{
+					"name": "Парам2",
+					"value": "GroupingByUse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"GroupingBy\" table",
+			"start": 1721186709092,
+			"stop": 1721186709108,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GroupingBy"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Filters\" table",
+			"start": 1721186709123,
+			"stop": 1721186709139,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"FiltersRightValue\" in \"Filters\" table",
+			"start": 1721186709170,
+			"stop": 1721186709186,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				},
+				{
+					"name": "Парам2",
+					"value": "FiltersRightValue"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"Filters\" table",
+			"start": 1721186709201,
+			"stop": 1721186709217,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"FiltersRightValue\" in \"Filters\" table",
+			"start": 1721186709248,
+			"stop": 1721186709279,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Filters"
+				},
+				{
+					"name": "Парам2",
+					"value": "FiltersRightValue"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186709358,
+			"stop": 1721186709389,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "bb0c0ad1-39d6-415f-ac4b-e98cfbdc0461-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186709420,
+			"stop": 1721186709436,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"ApplySettings\"",
+			"start": 1721186709451,
+			"stop": 1721186709483,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ApplySettings"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"GenerateReport\"",
+			"start": 1721186709498,
+			"stop": 1721186709733,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GenerateReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+			"start": 1721186709764,
+			"stop": 1721186709764,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "elseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721186709795,
+			"stop": 1721186718029,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATOnRelease"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"Result\" spreadsheet document is equal by template",
+					"start": 1721186710503,
+					"stop": 1721186718029,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Actual value in No.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7792)}: Actual value in No.<4> column in Spreadsheet Document is <>, and expected value is <178,50>.\n\nTechnical data:\n        ActiveWindowHeader: Trial Balance by account 401.1  for 01.07.2024 - 17.07.2024\n        ActiveFormName: Report.TrialBalanceByAccount.Form.ReportForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: TrialBalance By Account\n        TreeRowNumber: 22.689\n        FeatureLineNumber: 324\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:25:16"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Result"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "84938aee-3d69-405b-abdd-1e6ea79801b1-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "ReferenceValueLayout.mxl",
+							"source": "e09a489f-5e43-48ce-8a81-260b43780d8a-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ReferenceValueLayout.html",
+							"source": "ade20a14-c08c-4454-923d-afb4f0429bf4-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "CurrentValueLayout.mxl",
+							"source": "d3fdbecf-6987-4fd1-8815-6cb174d4cb29-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "CurrentValueLayout.html",
+							"source": "f0cd514e-1836-4f47-9a2e-bfad7eb1b001-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.mxl",
+							"source": "fafbe095-03e6-4daf-808a-bc435df72c24-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "baac1f62-c9c3-4292-a361-12448b33b032-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "b1f8ddb6-59cd-4fd0-83ff-ea02b42cc1cf-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "892196af-9fd0-479d-8c44-46a4bc8a87a8-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "84f13cb8-5d32-4746-9076-b7ebbbd24100-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "43b01908-807b-46e6-aaca-fb01e0b3a24b-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "7a4afe10-7f8e-42ab-8be5-150cd635240f-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "22eb0757-540e-4127-80c2-2c35e3aae5ba-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "91e8c8d4-4d4f-43c0-bb56-fc72e6840236-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "9a8bd5e7-77c9-4ecf-bf64-41de9ce715e4-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "8147ea0b-83ba-40cd-aa37-e645efe40549-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "396fa2d7-f107-4aab-a26e-4a3c7110098d-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "c764257a-c6ee-4589-9eb7-66d0c8f2b579-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And Delay \"4\"",
+			"start": 1721186718029,
+			"stop": 1721186718029,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "4"
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_ffd.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "TrialBalance By Account"
+		},
+		{
+			"name": "feature",
+			"value": "Settlements Adjustment >DR/CR"
+		},
+		{
+			"name": "suite",
+			"value": "Settlements Adjustment >DR/CR"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "SettlementsAdjustment"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "a3be69d5-dd63-403b-b426-4e2bc90954da-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "ReferenceValueLayout.mxl",
+			"source": "6a8ea520-e10e-4f0e-b0f0-aa5f272ff28d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueLayout.html",
+			"source": "10fd759c-3d63-4048-adda-8d56577265ae-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueLayout.mxl",
+			"source": "c3f16683-c9bc-4dc1-87d0-f17709c20e29-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueLayout.html",
+			"source": "465d2b3e-b14f-4598-b52e-ddca6138b91c-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "0c100d4f-ea05-4008-9313-85168e43b2c0-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "7f8b1426-4bf3-4f13-942a-e2cecec4f0ba-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "032fa172-e1cb-4f9e-8eff-558315f5627f-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "1b0ece89-1847-40a4-923c-6726f339067c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "c44861c7-5011-4d7d-b27f-b3f22d96c6db-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "d6bdff13-d699-462f-9791-7354aaeeaaa2-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "3111a2c5-6eed-452c-b2fc-5d62322652c1-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "c4d1a7fb-4e9e-49d9-8d5d-2e5b0c630689-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "3a93c9c2-1029-4bac-86ea-676676fdfe94-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "6027da56-97f4-4f35-add7-83ae3fd40510-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "0d8f4eb6-460b-485d-a77c-6481557e9932-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "8d8f7f0d-d1a3-40d0-9e0f-58a9a6a7a153-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "88c3824f-fced-4261-b7ab-a38886b4bb96-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,122 @@
+{
+	"uuid": "5889fd48-1a6b-4346-a48a-86f88f7db9f8",
+	"historyId": "Settlements Adjustment check list Document.(VATOnRelease) InformationRegister.CompanyVATPayerInformation",
+	"name": "(VATOnRelease) InformationRegister.CompanyVATPayerInformation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186582576,
+	"stop": 1721186582826,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}' in \"date\" variable",
+			"start": 1721186582655,
+			"stop": 1721186582670,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "date"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}' in \"datetime2\" variable",
+			"start": 1721186582686,
+			"stop": 1721186582686,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "datetime2"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I check or create information register \"CompanyVATPayerInformation\" records:",
+			"start": 1721186582780,
+			"stop": 1721186582826,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CompanyVATPayerInformation"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "cd8bc35b-ffe1-4170-9305-b4dfee7d4a52-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "InformationRegister.CompanyVATPayerInformation"
+		},
+		{
+			"name": "feature",
+			"value": "Settlements Adjustment check list Document"
+		},
+		{
+			"name": "suite",
+			"value": "Settlements Adjustment check list Document"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "SettlementsAdjustment"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

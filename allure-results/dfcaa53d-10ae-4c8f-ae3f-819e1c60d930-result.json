@@ -1,0 +1,570 @@
+{
+	"uuid": "dfcaa53d-10ae-4c8f-ae3f-819e1c60d930",
+	"historyId": "075 Expense report  Currency.(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"name": "(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183014381,
+	"stop": 1721183040777,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Expected window with <The currency exchange rate. (create) *> header closing for <20> seconds",
+		"trace": "Expected window with <The currency exchange rate. (create) *> header closing for <20> seconds\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 075 Expense report  Currency\n        ScriptName: Filling in the \"Currencies\" catalog\n        TreeRowNumber: 4.925\n        FeatureLineNumber: 55\n        FeatureFullPath: features\\CI\\Main\\Basic\\075_ExpenseReportCurrency.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯЖдуЗакрытияОкнаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:25 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:23:59\nТекст модального окна:\n    Record with these key fields exists! : The currency exchange rate.: 15.07.2024, EUR (Information register: Currency exchange rates)"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Open Currency creation form",
+			"start": 1721183014897,
+			"stop": 1721183015476,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721183014897,
+					"stop": 1721183015226,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Currencies\"\"",
+					"start": 1721183015445,
+					"stop": 1721183015460,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Currencies"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save '{Format(CurrentDate() - 2*24*60*60, \"DLF=D\")}' in \"date\" variable",
+					"start": 1721183015476,
+					"stop": 1721183015476,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "{Format(CurrentDate() - 2*24*60*60, \"DLF=D\")}"
+						},
+						{
+							"name": "Парам2",
+							"value": "date"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Create EUR",
+			"start": 1721183015570,
+			"stop": 1721183040777,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "try",
+					"start": 1721183015570,
+					"stop": 1721183015570,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "and I go to line in \"Currencies\" table",
+							"start": 1721183015570,
+							"stop": 1721183015570,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currencies"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "27618de4-ebd0-4e17-b0ca-275bd7ccf158-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "if I go to line in \"Currencies\" table then",
+					"start": 1721183015648,
+					"stop": 1721183040777,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currencies"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "119704fb-7e1a-4bb0-92c5-3b57886dc7e4-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": [
+						{
+							"name": "And in the table \"Currencies\" I click the button named \"CurrenciesContextMenuChange\"",
+							"start": 1721183015679,
+							"stop": 1721183015695,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currencies"
+								},
+								{
+									"name": "Парам2",
+									"value": "CurrenciesContextMenuChange"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And In this window I click command interface button \"Currency exchange rates\"",
+							"start": 1721183015726,
+							"stop": 1721183015726,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currency exchange rates"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormCreate\"",
+							"start": 1721183015757,
+							"stop": 1721183015773,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormCreate"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click Choice button of the field named \"Period\"",
+							"start": 1721183015804,
+							"stop": 1721183015820,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Period"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"15.07.2024\" text in the field named \"Period\"",
+							"start": 1721183015851,
+							"stop": 1721183015851,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Period"
+								},
+								{
+									"name": "Парам2",
+									"value": "15.07.2024"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"4,9485\" text in the field named \"Rate\"",
+							"start": 1721183015882,
+							"stop": 1721183015898,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Rate"
+								},
+								{
+									"name": "Парам2",
+									"value": "4,9485"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormWriteAndClose\"",
+							"start": 1721183015929,
+							"stop": 1721183015929,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWriteAndClose"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I wait \"The currency exchange rate. (create) *\" window closing in 20 seconds",
+							"start": 1721183015960,
+							"stop": 1721183040777,
+							"status": "failed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false,
+								"message": "Expected window with <The currency exchange rate. (create) *> header closing for <20> seconds",
+								"trace": "Expected window with <The currency exchange rate. (create) *> header closing for <20> seconds\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 075 Expense report  Currency\n        ScriptName: Filling in the \"Currencies\" catalog\n        TreeRowNumber: 4.925\n        FeatureLineNumber: 55\n        FeatureFullPath: features\\CI\\Main\\Basic\\075_ExpenseReportCurrency.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯЖдуЗакрытияОкнаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:25 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:23:59\nТекст модального окна:\n    Record with these key fields exists! : The currency exchange rate.: 15.07.2024, EUR (Information register: Currency exchange rates)"
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "The currency exchange rate. (create) *"
+								},
+								{
+									"name": "Парам2",
+									"value": 20
+								}
+							],
+							"attachments": [
+								{
+									"name": "EventLog.mxl",
+									"source": "e4a2fcac-8ea7-4bbb-9d57-6aa84ee8ae7a-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "EventLog.html",
+									"source": "c85772fa-f4f8-48d2-8c9e-b2c9329a28f4-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.xlsx",
+									"source": "571e7237-b498-401b-acd6-03cd4d562ec6-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "ActiveFormState.mxl",
+									"source": "8c4dd433-d65e-4a0e-a820-bbd64a5b0abd-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ActiveFormState.html",
+									"source": "9db79689-c4e9-451c-aa40-99aeecb3a394-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "ActiveFormState.xlsx",
+									"source": "2fcfd18f-8984-4c70-82ef-b6a20ead88e9-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "AllFormsState.mxl",
+									"source": "56a6333b-2a11-4362-b715-31fc07bbd7e8-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "AllFormsState.html",
+									"source": "f2c9f0a3-5fa1-4f49-abe2-3c1932d4d91d-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "AllFormsState.xlsx",
+									"source": "06b89433-d09b-4ba5-8fd2-011f78ab62b7-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "NetworkConnectionsData.txt",
+									"source": "2b982baf-f7b5-472d-b889-df30867784bb-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "OSProcessesData.txt",
+									"source": "82b9ac90-b7d5-43e5-9b36-278ebf8ab060-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "VariableValues.mxl",
+									"source": "e0b6c810-2719-4921-b1a8-41b024318f0f-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "VariableValues.html",
+									"source": "c865ea22-caca-4e10-affb-cca9d9baef5f-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "Этот клиент.1C:Enterprise",
+									"source": "v8_CDDA_2b9.png",
+									"type": "image/png"
+								},
+								{
+									"name": "Этот клиент.The currency exchange rate. (create) *",
+									"source": "v8_CDDA_2ba.png",
+									"type": "image/png"
+								},
+								{
+									"name": "Этот клиент.screenshot",
+									"source": "v8_CDDA_2bb.png",
+									"type": "image/png"
+								},
+								{
+									"name": "Этот клиент.The currency exchange rate. (create) *",
+									"source": "v8_CDDA_2bc.png",
+									"type": "image/png"
+								},
+								{
+									"name": "Этот клиент.screenshot",
+									"source": "v8_CDDA_2bd.png",
+									"type": "image/png"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Filling in the \"Currencies\" catalog"
+		},
+		{
+			"name": "feature",
+			"value": "075 Expense report  Currency"
+		},
+		{
+			"name": "suite",
+			"value": "075 Expense report  Currency"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.1C:Enterprise",
+			"source": "28c7c26f-681c-42dd-bbc5-2026465914c4-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.The currency exchange rate. (create) *",
+			"source": "ab14f2af-cdc5-421e-8f74-ac4031794d32-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "310abe35-e7dc-45c7-870f-90c697b638a7-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.The currency exchange rate. (create) *",
+			"source": "ed045d4f-2d52-47f2-83f0-c5da6508b5e2-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "b8d81083-351c-44d0-a26e-ce04aed0126f-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "35db0b96-a4f9-47e2-b534-5708578fcc68-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "baeace62-80ea-4fd4-9022-933fd1c9a94e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "5499753a-3ac2-4195-ac7f-eb03bfd9c7b3-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "4c419f0b-593a-437a-8cf2-0d7a63ce7ce2-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "7006a956-5517-4a4a-9e67-b3fc4d73e036-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "b3989a45-46ca-40b9-be14-d9daecd29845-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "8fa57a4f-ae72-4cc2-997d-a62e74637ee8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "295ba5d4-5619-408f-9ed5-92f35466553b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "af0a73e6-abbc-448c-b3f0-acb6d82ea3fb-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "aed6b62e-72ab-4d93-96eb-35523eb3d171-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "e6d65861-87eb-40a0-a855-6ac0a3ddecad-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "58b8a438-4adc-4786-b95b-6454fec9e595-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "6adfc27b-3637-4a0a-996f-ecbc36c6646f-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,654 @@
+{
+	"uuid": "01318c69-5596-4bca-aac6-269fe050ffc3",
+	"historyId": "Accounting reports detailing check.(VATOnRelease) Universal report",
+	"name": "(VATOnRelease) Universal report",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186385794,
+	"stop": 1721186396103,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10114)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10098)}: Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field. \n\nTechnical data:\n        ActiveWindowHeader: Universal report: Catalog \"Bank accounts\"\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Universal report\n        TreeRowNumber: 21.344\n        FeatureLineNumber: 224\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ИзВыпадающегоСпискаСИменемЯВыбираюТочноеЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:54"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/app/Report.UniversalReport\"",
+			"start": 1721186386342,
+			"stop": 1721186386358,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/Report.UniversalReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Universal report: *\" window is opened",
+			"start": 1721186386389,
+			"stop": 1721186386686,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Universal report: *"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "* Catalog report",
+			"start": 1721186386717,
+			"stop": 1721186390184,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I activate \"Object type\" field",
+					"start": 1721186386717,
+					"stop": 1721186386733,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Object type"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Catalog\" text in \"Object type\" field",
+					"start": 1721186386764,
+					"stop": 1721186386796,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Object type"
+						},
+						{
+							"name": "Парам2",
+							"value": "Catalog"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate \"Object name\" field",
+					"start": 1721186386811,
+					"stop": 1721186386842,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Object name"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"Bank accounts\" text in \"Object name\" field",
+					"start": 1721186386874,
+					"stop": 1721186387082,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Object name"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bank accounts"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Bank accounts\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem1Value\"",
+					"start": 1721186387097,
+					"stop": 1721186387285,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettingsComposerUserSettingsItem1Value"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bank accounts"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"GenerateReport\"",
+					"start": 1721186387316,
+					"stop": 1721186387488,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GenerateReport"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in \"ReportSpreadsheetDocument\" spreadsheet document I move to \"R7C2\" cell",
+					"start": 1721186387519,
+					"stop": 1721186387988,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ReportSpreadsheetDocument"
+						},
+						{
+							"name": "Парам2",
+							"value": "R7C2"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then user message window does not contain messages",
+					"start": 1721186388009,
+					"stop": 1721186388025,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721186388050,
+					"stop": 1721186390184,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Documents report",
+			"start": 1721186390403,
+			"stop": 1721186396103,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/app/Report.UniversalReport\"",
+					"start": 1721186390403,
+					"stop": 1721186390419,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/app/Report.UniversalReport"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"SettingsComposerUserSettingsItem1Value\"",
+					"start": 1721186390434,
+					"stop": 1721186390638,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettingsComposerUserSettingsItem1Value"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Document\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem1Value\"",
+					"start": 1721186390669,
+					"stop": 1721186396087,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10114)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10098)}: Failed to select <Document> value in <SettingsComposerUserSettingsItem1Value> field. \n\nTechnical data:\n        ActiveWindowHeader: Universal report: Catalog \"Bank accounts\"\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Universal report\n        TreeRowNumber: 21.344\n        FeatureLineNumber: 224\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ИзВыпадающегоСпискаСИменемЯВыбираюТочноеЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:54"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettingsComposerUserSettingsItem1Value"
+						},
+						{
+							"name": "Парам2",
+							"value": "Document"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "fe44308b-d6e7-404c-9b12-48b92f35a078-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "7655a87c-b013-4ed8-a381-8e7cf977449a-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "86878917-5730-4678-b69e-f5718de17387-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "9a12ea38-e4f5-4b24-9c68-7369e8639345-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "c82c1816-9f4e-445e-b633-17cba41d966b-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "cb4b9dd2-03b5-4db6-84d7-c6ed6b7a1f9a-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "208d6aad-4154-4959-9ee9-1de0801068b3-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "5e36aa51-06d0-472d-b1a8-4f58819d89ba-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "558e53b1-1666-4cb8-8226-72a49cae2673-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "70ff12ce-33de-4a5e-8fbf-08ce6601eda9-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "38f1b2b1-ad5e-4c50-a9b4-2c89e557ffe5-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "a25c92c2-e29f-415e-9cc7-859212ef3ae8-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "0f99e1c6-a49c-44e2-a16b-a8cfcce530ef-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"SettingsComposerUserSettingsItem2Value\"",
+					"start": 1721186396087,
+					"stop": 1721186396087,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettingsComposerUserSettingsItem2Value"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Sales invoice\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem2Value\"",
+					"start": 1721186396087,
+					"stop": 1721186396087,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettingsComposerUserSettingsItem2Value"
+						},
+						{
+							"name": "Парам2",
+							"value": "Sales invoice"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"GenerateReport\"",
+					"start": 1721186396103,
+					"stop": 1721186396103,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GenerateReport"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait for \"ReportSpreadsheetDocument\" spreadsheet document filling for \"10\" seconds",
+					"start": 1721186396103,
+					"stop": 1721186396103,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ReportSpreadsheetDocument"
+						},
+						{
+							"name": "Парам2",
+							"value": "10"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in \"ReportSpreadsheetDocument\" spreadsheet document I move to \"R9C1\" cell",
+					"start": 1721186396103,
+					"stop": 1721186396103,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ReportSpreadsheetDocument"
+						},
+						{
+							"name": "Парам2",
+							"value": "R9C1"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then user message window does not contain messages",
+					"start": 1721186396103,
+					"stop": 1721186396103,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_f14.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_f15.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Universal report"
+		},
+		{
+			"name": "feature",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "suite",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "45231d9e-6b96-4c37-a04b-51c993684b55-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "e3aed5e8-85ce-40b1-ac42-3123e927a921-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "bc0b802f-0540-4c12-a4bc-a6369de5fa12-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "c3872fbf-f71b-4015-918d-c7770b2ed213-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "3b8a7c0b-b727-4e2d-8a1c-5be3d55448cf-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "f3868adf-2a7d-46db-8804-c5341a5f6305-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "bc33d482-e6d9-4108-af52-9227d0106456-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "5fd5eff9-e00a-47a0-9ccb-a5a28a1e5453-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "2e4eb1fd-7378-45b2-8d23-bb75c9ff49c6-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "47eff8a8-212c-4393-970e-619ab1bbfefd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "26379cda-5370-4d14-b398-aada179f4370-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "1a52b759-49f8-44b1-8a4a-75c932f84f51-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "74325273-571d-4ba8-b1a7-780b687843d3-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "0ef24440-7e2f-40d3-a3e1-74eacbfb0cf7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "4b7202df-513f-429c-8171-f1b1968559c5-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

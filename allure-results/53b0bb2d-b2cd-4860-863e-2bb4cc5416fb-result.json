@@ -1,0 +1,742 @@
+{
+	"uuid": "53b0bb2d-b2cd-4860-863e-2bb4cc5416fb",
+	"historyId": "Print forms check.(VATOnRelease) Exit notice - Notă descărcare gestiune",
+	"name": "(VATOnRelease) Exit notice - Notă descărcare gestiune",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186323020,
+	"stop": 1721186328116,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Error calling context method (Expand):",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3729)}: Error calling context method (Expand): The action is not applicable to this control state.\n\nTechnical data:\n        ActiveWindowHeader: List Options\n        ActiveFormName: DynamicListSettings\n        FeatureName: Print forms check\n        ScriptName: Exit notice - Notă descărcare gestiune\n        TreeRowNumber: 20.681\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\PrintFormsCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯРазворачиваюТекущуюСтроку\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:03 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:18:46"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.ExitNotice\"",
+			"start": 1721186324160,
+			"stop": 1721186324176,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.ExitNotice"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Exit notices\" window is opened",
+			"start": 1721186324207,
+			"stop": 1721186324254,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Exit notices"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormListSettings\"",
+			"start": 1721186324285,
+			"stop": 1721186324285,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormListSettings"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"List Options\" window is opened",
+			"start": 1721186324316,
+			"stop": 1721186324441,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List Options"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"SettingsComposerUserSettingsItem0AvailableFieldsTable\" table",
+			"start": 1721186324629,
+			"stop": 1721186324645,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0AvailableFieldsTable"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "2dba89a6-75f3-4d39-a5c0-3579250b177f-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"SettingsComposerUserSettingsItem0AvailableFieldsTable\" table",
+			"start": 1721186324676,
+			"stop": 1721186324691,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0AvailableFieldsTable"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I expand current line in \"SettingsComposerUserSettingsItem0Filter\" table",
+			"start": 1721186324707,
+			"stop": 1721186328116,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Error calling context method (Expand):",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3729)}: Error calling context method (Expand): The action is not applicable to this control state.\n\nTechnical data:\n        ActiveWindowHeader: List Options\n        ActiveFormName: DynamicListSettings\n        FeatureName: Print forms check\n        ScriptName: Exit notice - Notă descărcare gestiune\n        TreeRowNumber: 20.681\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\PrintFormsCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯРазворачиваюТекущуюСтроку\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:03 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:18:46"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0Filter"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "5beb43c8-6dec-423e-bae6-79ceb1eea1fa-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "f3ae7882-e65a-418d-80b9-e4a20bc5a819-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "0d768017-52ab-4749-a037-758b540144a9-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "56dca2ed-467b-4cf0-9009-2604d6b7c774-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "14ea74b8-db52-458a-9c83-f3bb4273ec3f-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "618e3601-e4f1-43e9-834a-5ee049a5dee0-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "76f06643-0f60-4471-a786-54ef7189b8ad-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "1ecf24b7-0123-4449-bebf-dc767d7d1522-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "a46d4d7a-1c7b-467c-9dbf-d43512140a18-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "8b189701-9e7a-4409-86b1-4941eb3449c0-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "9ba3fc4b-802d-47da-87fa-5a08d221b50e-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "a88678fb-3e4e-40f3-89f6-f31542554335-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "c5323e8f-0535-4a6b-9af7-af48a75b10d2-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"SettingsComposerUserSettingsItem0FilterRightValue\" in \"SettingsComposerUserSettingsItem0Filter\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0Filter"
+				},
+				{
+					"name": "Парам2",
+					"value": "SettingsComposerUserSettingsItem0FilterRightValue"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"SettingsComposerUserSettingsItem0Filter\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0Filter"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"True\" exact value from the drop-down list named \"SettingsComposerUserSettingsItem0FilterRightValue\" in \"SettingsComposerUserSettingsItem0Filter\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0Filter"
+				},
+				{
+					"name": "Парам2",
+					"value": "SettingsComposerUserSettingsItem0FilterRightValue"
+				},
+				{
+					"name": "Парам3",
+					"value": "True"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"SettingsComposerUserSettingsItem0Filter\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettingsComposerUserSettingsItem0Filter"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormEndEdit\"",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormEndEdit"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Exit notices\" window is opened",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Exit notices"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to the first line in \"List\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "* Avis de insotire",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"PrintSubmenuOrdinary__PrintFacturaClientChitanta\"",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "PrintSubmenuOrdinary__PrintFacturaClientChitanta"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close current window",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Nota descarcare gestiune",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"PrintSubmenuOrdinary__PrintItemsWriteOff\"",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "PrintSubmenuOrdinary__PrintItemsWriteOff"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"(FI) Exit notice * dated *\" window is opened",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "(FI) Exit notice * dated *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in \"CurrentPrintForm\" spreadsheet document I move to \"R1C1:R1C9\" cell",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CurrentPrintForm"
+						},
+						{
+							"name": "Парам2",
+							"value": "R1C1:R1C9"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close \"(FI) Exit notice * dated *\" window",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "(FI) Exit notice * dated *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Accounting bill",
+			"start": 1721186328116,
+			"stop": 1721186328116,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"PrintSubmenuOrdinary__PrintGeneralJournalEntry\"",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "PrintSubmenuOrdinary__PrintGeneralJournalEntry"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"R5C2\" cell in \"CurrentPrintForm\" spreadsheet document becomes equal to \"Notă contabilă la document\" for 20 seconds",
+					"start": 1721186328116,
+					"stop": 1721186328116,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CurrentPrintForm"
+						},
+						{
+							"name": "Парам2",
+							"value": "R5C2"
+						},
+						{
+							"name": "Парам3",
+							"value": "Notă contabilă la document"
+						},
+						{
+							"name": "Парам4",
+							"value": 20
+						}
+					],
+					"attachments": [
+						{
+							"name": "Этот клиент.List Options",
+							"source": "v8_CDDA_ee5.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_ee6.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Exit notice - Notă descărcare gestiune"
+		},
+		{
+			"name": "feature",
+			"value": "Print forms check"
+		},
+		{
+			"name": "suite",
+			"value": "Print forms check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.List Options",
+			"source": "60a31286-1d09-49f5-bf1b-b4a19bbc7af4-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "21e656ed-f5e1-489c-9b15-8c4f20ab7af3-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "84295537-c3a6-4c9a-87ce-16ab26c0f4bd-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "725806db-1364-4b48-b635-83001198b83a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "a5bc183b-dd97-497a-bf09-db1a4ca22d35-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "9d9ccc74-887c-430d-bea9-e747cf5af766-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "78ed4a3f-90e3-4fd6-bdf8-0ae99d995c03-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "3acb04f0-f1f1-46ba-a21d-5ecccdbba04d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "87da72fc-2640-4e8e-afd2-23e602806a90-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "69065e3a-112e-4fe6-8d8c-1cac1d71d1de-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "25ad4cad-7fec-4041-9cf5-22ea5fb6724f-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "eedde0f1-5661-4135-97ae-b08bb07240cc-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "f51c5795-d3db-4a1e-9084-2ad36e4e92cd-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "b9d8a522-f103-417a-8d0a-52c922209f1c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "1056bb8b-4571-43a2-86b7-edf43a64414a-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,444 @@
+{
+	"uuid": "580432c1-08c0-491b-bc2d-c5275e419a4d",
+	"historyId": "Documents generate on.(VATOnRelease) FixedAssets generate",
+	"name": "(VATOnRelease) FixedAssets generate",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186044299,
+	"stop": 1721186055363,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <Assets> does not match the standard.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <Assets> does not match the standard. Expected <1> lines, and it contains <0> lines.\n\nTechnical data:\n        ActiveWindowHeader: Fixed assets reconciliation (create) *\n        ActiveFormName: Document.FixedAssetsReconciliation.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: FixedAssets generate\n        TreeRowNumber: 19.746\n        FeatureLineNumber: 3.226\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:13"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186045409,
+			"stop": 1721186045581,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.FixedAssetsReconciliation\"",
+			"start": 1721186045815,
+			"stop": 1721186045815,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.FixedAssetsReconciliation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721186045862,
+			"stop": 1721186045894,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input begin of the next month date in \"Date\" field",
+			"start": 1721186045925,
+			"stop": 1721186045956,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Date"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Location\"",
+			"start": 1721186045987,
+			"stop": 1721186046019,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Location"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186046129,
+			"stop": 1721186046145,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "4cef1229-fd00-4e35-a431-f7e6f49a0b42-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186046176,
+			"stop": 1721186046192,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Assets\" I click the button named \"FillByLocation\"",
+			"start": 1721186046223,
+			"stop": 1721186046239,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Assets"
+				},
+				{
+					"name": "Парам2",
+					"value": "FillByLocation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"Assets\" table became equal",
+			"start": 1721186046332,
+			"stop": 1721186055363,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Table <Assets> does not match the standard.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <Assets> does not match the standard. Expected <1> lines, and it contains <0> lines.\n\nTechnical data:\n        ActiveWindowHeader: Fixed assets reconciliation (create) *\n        ActiveFormName: Document.FixedAssetsReconciliation.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: FixedAssets generate\n        TreeRowNumber: 19.746\n        FeatureLineNumber: 3.226\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:13"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Assets"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "5fb23aa3-4ae0-4ab9-8860-7b1c4ad4979b-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "Differences.mxl",
+					"source": "89af3860-c844-478e-a551-91fb0a8acfb4-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "Differences.html",
+					"source": "d1b56b0a-6e06-4f0d-88d5-b88bd7d58b81-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ReferenceValueTable.mxl",
+					"source": "c171e103-7172-461b-b4f0-53cb84e5863f-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ReferenceValueTable.html",
+					"source": "d0fece57-0140-4103-a326-33061fe3b838-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "6c7a762a-8151-48f9-807e-bbd84ce5eb92-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "323b8912-1fc7-4e9d-bd3c-e458c0f1ae50-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "e12016b6-670a-478a-a57d-1296f1713a2b-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "7d535232-dcb1-4f19-90a7-fa124dd209bb-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "074ad257-296a-4164-988e-afae71675a21-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "1bf85864-ae61-46b8-b1fe-9590bd2efa47-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "0ec0c12d-6366-4edd-993c-3c66f5a622da-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "d7d837aa-f4f4-4c50-861e-da26b2132475-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "93f2a16d-b75b-4903-9f1b-b80e067724b6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "909d9da4-712c-4175-a93f-916986377cff-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "97114e99-e22b-470a-94bf-ef52977edadc-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "17811b47-7fe7-4170-98a2-4c97731d23f6-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "951b9c37-1771-4917-825a-62a77ac1441d-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "c75676bd-fd0a-49de-bd8b-e6744bc7ae64-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "d5a5a52d-914e-4873-a8f8-e444ad28b517-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_da1.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "FixedAssets generate"
+		},
+		{
+			"name": "feature",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "suite",
+			"value": "Documents generate on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "8526567e-b341-4732-8bba-42a387ae2e81-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "9c21e929-b10a-4ece-a8c3-e5abc86d4e1c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "8f552952-8148-48b0-ade6-03200a9f0dfa-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "22a0db5c-d298-4f36-b8c4-d215c451a5fa-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "0f5199d9-a52b-477d-a2e6-5a6e92c2a5a6-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "20f2bd62-d30f-4399-aaab-7d961444cfde-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "886dd15f-686d-49bc-874b-bce17b34bd6d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "c4fa89e7-7132-4ac7-9b74-b42122a8915d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "76cbc4a1-8db8-4007-b7c1-68ab685500f0-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "7ef16649-8fa6-4ab8-a52a-d6d35de511c8-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "d6bdafad-ea1c-419f-8412-50e172f81718-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "65baf948-37cf-4199-913e-c918687efc3b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "eeed694c-ad3e-4d35-87c7-5b9a9bf372b5-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "a4f6fc71-5d57-4319-96c6-02e9a01211ab-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "8ef921fb-2ae2-4e2c-86ed-61506a328553-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "40e91e45-5af1-4965-88d3-2e3a02108257-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "e33a0cf7-2cc9-4b0a-a022-b04e58902251-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "b786c272-e2eb-4787-91ae-c386d498fdb1-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "cec9fdce-541b-4b73-b0d4-df738bde3cff-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "3acd0a2c-08a5-4899-9928-d8df278d32d1-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

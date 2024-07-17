@@ -1,0 +1,713 @@
+{
+	"uuid": "de35abd6-778f-4eb0-a271-db6eab862736",
+	"historyId": "BD available not available columns.(VATOnRelease) BP Plati pentru avans de trezorerie (Val)",
+	"name": "(VATOnRelease) BP Plati pentru avans de trezorerie (Val)",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721187824578,
+	"stop": 1721187875266,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721187825126,
+			"stop": 1721187825314,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.BankPayment\"",
+			"start": 1721187825532,
+			"stop": 1721187825548,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.BankPayment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721187825579,
+			"stop": 1721187825657,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"CashFlowActivity\"",
+			"start": 1721187825673,
+			"stop": 1721187825814,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721187825892,
+			"stop": 1721187825939,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "f1e185e4-c7ca-4f36-adcf-58b1bed06460-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721187825970,
+			"stop": 1721187825985,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"DetailsOther\" I click the button named \"DetailsOtherAdd\"",
+			"start": 1721187826017,
+			"stop": 1721187826127,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				},
+				{
+					"name": "Парам2",
+					"value": "DetailsOtherAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"100,00\" text in the field named \"DetailsOtherPaymentAmount\" of \"DetailsOther\" table",
+			"start": 1721187826159,
+			"stop": 1721187826221,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				},
+				{
+					"name": "Парам2",
+					"value": "DetailsOtherPaymentAmount"
+				},
+				{
+					"name": "Парам3",
+					"value": "100,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"DetailsOther\" table",
+			"start": 1721187826237,
+			"stop": 1721187826252,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And Bank document table check",
+			"start": 1721187826284,
+			"stop": 1721187875266,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari de la fondatori din operatiuni de capital\" then",
+					"start": 1721187826284,
+					"stop": 1721187828880,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari de la fondatori din operatiuni de capital"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari de la clienti din livrari\" then",
+					"start": 1721187828911,
+					"stop": 1721187831430,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari de la clienti din livrari"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari rambursari sume neutilizate de la avans de trezorerie\" then",
+					"start": 1721187831462,
+					"stop": 1721187834168,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari rambursari sume neutilizate de la avans de trezorerie"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari rambursari sume neutilizate de la avans de trezorerie (Val)\" then",
+					"start": 1721187834200,
+					"stop": 1721187836937,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari rambursari sume neutilizate de la avans de trezorerie (Val)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari viramente interne\" then",
+					"start": 1721187836968,
+					"stop": 1721187839409,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari viramente interne"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari Numerar de la Magazine / Puncte de comerț Amanunt  (Cantitativ) \" then",
+					"start": 1721187839440,
+					"stop": 1721187842288,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari Numerar de la Magazine / Puncte de comerț Amanunt  (Cantitativ) "
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari din difrente de curs pozitive\" then",
+					"start": 1721187842319,
+					"stop": 1721187844868,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Incasari din difrente de curs pozitive"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (TVA)\" then",
+					"start": 1721187844900,
+					"stop": 1721187847341,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la stat (TVA)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plata Dividende  proprietarilor\" then",
+					"start": 1721187847372,
+					"stop": 1721187849907,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plata Dividende  proprietarilor"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la fondatori aferente rambursarii capitalului social\" then",
+					"start": 1721187849938,
+					"stop": 1721187852557,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la fondatori aferente rambursarii capitalului social"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la furnizori de stocuri\" then",
+					"start": 1721187852588,
+					"stop": 1721187855111,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la furnizori de stocuri"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Vama)\" then",
+					"start": 1721187855142,
+					"stop": 1721187857589,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la stat (Vama)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati pentru avans de trezorerie\" then",
+					"start": 1721187857620,
+					"stop": 1721187860030,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati pentru avans de trezorerie"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati pentru avans de trezorerie (Val)\" then",
+					"start": 1721187860056,
+					"stop": 1721187862455,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati pentru avans de trezorerie (Val)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati viramente interne\" then",
+					"start": 1721187862752,
+					"stop": 1721187865204,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati viramente interne"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la salariati\" then",
+					"start": 1721187865235,
+					"stop": 1721187867651,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la salariati"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati servicii bancare\" then",
+					"start": 1721187867682,
+					"stop": 1721187870118,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati servicii bancare"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Impozitul pe profit)\" then",
+					"start": 1721187870149,
+					"stop": 1721187872705,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la stat (Impozitul pe profit)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Impozitul pe venit)\" then",
+					"start": 1721187872736,
+					"stop": 1721187875266,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						},
+						{
+							"name": "Парам2",
+							"value": "Plati la stat (Impozitul pe venit)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "BP Plati pentru avans de trezorerie (Val)"
+		},
+		{
+			"name": "feature",
+			"value": "BD available not available columns"
+		},
+		{
+			"name": "suite",
+			"value": "BD available not available columns"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_001_BCDocument"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

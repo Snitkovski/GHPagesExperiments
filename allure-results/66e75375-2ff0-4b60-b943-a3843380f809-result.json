@@ -1,0 +1,577 @@
+{
+	"uuid": "66e75375-2ff0-4b60-b943-a3843380f809",
+	"historyId": "070 Expense report.(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"name": "(VATOnRelease) Filling in the \"Currencies\" catalog",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182913896,
+	"stop": 1721182917118,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Open Currency creation form",
+			"start": 1721182914869,
+			"stop": 1721182915249,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721182914869,
+					"stop": 1721182914994,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Currencies\"\"",
+					"start": 1721182915202,
+					"stop": 1721182915218,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Currencies"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save '{Format(CurrentDate() - 1*24*60*60, \"DLF=D\")}' in \"date\" variable",
+					"start": 1721182915249,
+					"stop": 1721182915249,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "{Format(CurrentDate() - 1*24*60*60, \"DLF=D\")}"
+						},
+						{
+							"name": "Парам2",
+							"value": "date"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Create EUR",
+			"start": 1721182915327,
+			"stop": 1721182917118,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "try",
+					"start": 1721182915327,
+					"stop": 1721182915343,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "and I go to line in \"Currencies\" table",
+							"start": 1721182915327,
+							"stop": 1721182915343,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currencies"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "56c51629-a329-4037-8100-5db33558abdd-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "if I go to line in \"Currencies\" table then",
+					"start": 1721182915421,
+					"stop": 1721182916129,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Currencies"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "9bc40232-f423-43df-85b0-87383e2cf30f-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": [
+						{
+							"name": "And in the table \"Currencies\" I click the button named \"CurrenciesContextMenuChange\"",
+							"start": 1721182915452,
+							"stop": 1721182915468,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currencies"
+								},
+								{
+									"name": "Парам2",
+									"value": "CurrenciesContextMenuChange"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And In this window I click command interface button \"Currency exchange rates\"",
+							"start": 1721182915499,
+							"stop": 1721182915499,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currency exchange rates"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "if I go to line in \"List\" table then",
+							"start": 1721182915593,
+							"stop": 1721182915593,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "5bf4ce71-d5a7-4765-89cc-f5dd85a2a37a-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I delete a line in \"List\" table",
+							"start": 1721182915624,
+							"stop": 1721182915624,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"Button0\"",
+							"start": 1721182915655,
+							"stop": 1721182915655,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Button0"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormCreate\"",
+							"start": 1721182915687,
+							"stop": 1721182915733,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormCreate"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click Choice button of the field named \"Period\"",
+							"start": 1721182915780,
+							"stop": 1721182915812,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Period"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"16.07.2024\" text in the field named \"Period\"",
+							"start": 1721182915843,
+							"stop": 1721182915858,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Period"
+								},
+								{
+									"name": "Парам2",
+									"value": "16.07.2024"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"4,9484\" text in the field named \"Rate\"",
+							"start": 1721182915890,
+							"stop": 1721182915890,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Rate"
+								},
+								{
+									"name": "Парам2",
+									"value": "4,9484"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormWriteAndClose\"",
+							"start": 1721182915921,
+							"stop": 1721182915937,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWriteAndClose"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I wait \"The currency exchange rate. (create) *\" window closing in 20 seconds",
+							"start": 1721182915968,
+							"stop": 1721182916129,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "The currency exchange rate. (create) *"
+								},
+								{
+									"name": "Парам2",
+									"value": 20
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I go to the last line in \"List\" table",
+					"start": 1721182916144,
+					"stop": 1721182916160,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182916191,
+					"stop": 1721182916191,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \" 4,9484\" text in the field named \"Rate\"",
+					"start": 1721182916222,
+					"stop": 1721182916254,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Rate"
+						},
+						{
+							"name": "Парам2",
+							"value": " 4,9484"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721182916285,
+					"stop": 1721182916300,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"The currency exchange rate. (create) *\" window closing in 20 seconds",
+					"start": 1721182916332,
+					"stop": 1721182917055,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "The currency exchange rate. (create) *"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close current window",
+					"start": 1721182917086,
+					"stop": 1721182917118,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Filling in the \"Currencies\" catalog"
+		},
+		{
+			"name": "feature",
+			"value": "070 Expense report"
+		},
+		{
+			"name": "suite",
+			"value": "070 Expense report"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

@@ -1,0 +1,657 @@
+{
+	"uuid": "08fe5dd1-632e-49c1-8d20-13ac052d4df9",
+	"historyId": "E-factura.(VATOnRelease) E-invoice work place Sent to ANAF",
+	"name": "(VATOnRelease) E-invoice work place Sent to ANAF",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721187039294,
+	"stop": 1721187059053,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is:",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is: \n\n, and expected is:\nSuccess\n\nTechnical data:\n        ActiveWindowHeader: E-Factura exchange\n        ActiveFormName: DataProcessor.EInvoiceExchangeWorkplace.Form.Workplace\n        FeatureName: E-factura\n        ScriptName: E-invoice work place Sent to ANAF\n        TreeRowNumber: 23.995\n        FeatureLineNumber: 146\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеСИменемИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:18 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:30:57"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Open workplace",
+			"start": 1721187040545,
+			"stop": 1721187040811,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/app/DataProcessor.EInvoiceExchangeWorkplace\"",
+					"start": 1721187040545,
+					"stop": 1721187040561,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/app/DataProcessor.EInvoiceExchangeWorkplace"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then 'E-Factura exchange' window is opened",
+					"start": 1721187040577,
+					"stop": 1721187040811,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "E-Factura exchange"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Check attributes visibility",
+			"start": 1721187040842,
+			"stop": 1721187041015,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And field \"Enterprise\" is not present on the form",
+					"start": 1721187040842,
+					"stop": 1721187041015,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Enterprise"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Save as XML",
+			"start": 1721187041031,
+			"stop": 1721187041078,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I select \".\\features\\Additional\" file",
+					"start": 1721187041031,
+					"stop": 1721187041047,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": ".\\features\\Additional"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"OutgoingDocListSaveAsXML\"",
+					"start": 1721187041078,
+					"stop": 1721187041078,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocListSaveAsXML"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Send to ANAF",
+			"start": 1721187041109,
+			"stop": 1721187059053,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"E-Factura exchange\" window is opened",
+					"start": 1721187041109,
+					"stop": 1721187041437,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "E-Factura exchange"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"All documents\" exact value from the drop-down list named \"OutgoingStatus\"",
+					"start": 1721187041469,
+					"stop": 1721187041500,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingStatus"
+						},
+						{
+							"name": "Парам2",
+							"value": "All documents"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"OutgoingDocuments\" table",
+					"start": 1721187041578,
+					"stop": 1721187041640,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "1c6d70e5-1207-4fe0-bb89-e0bb17409b43-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"OutgoingDocumentsSelect\" in \"OutgoingDocuments\" table",
+					"start": 1721187041672,
+					"stop": 1721187041687,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "OutgoingDocumentsSelect"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"OutgoingDocuments\" table",
+					"start": 1721187041718,
+					"stop": 1721187041718,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"OutgoingDocListSendToANAF\"",
+					"start": 1721187041750,
+					"stop": 1721187041765,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocListSendToANAF"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"Sent\"",
+					"start": 1721187041797,
+					"stop": 1721187042579,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "OutgoingDocumentsStatus"
+						},
+						{
+							"name": "Парам3",
+							"value": "Sent"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Delay \"10\"",
+					"start": 1721187042610,
+					"stop": 1721187052920,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "10"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"OutgoingRefresh\"",
+					"start": 1721187053140,
+					"stop": 1721187053155,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingRefresh"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And the field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table is equal to \"Success\"",
+					"start": 1721187053186,
+					"stop": 1721187059053,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is:",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6051)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6025)}: Current cell <OutgoingDocumentsStatus> of <OutgoingDocuments> table value is: \n\n, and expected is:\nSuccess\n\nTechnical data:\n        ActiveWindowHeader: E-Factura exchange\n        ActiveFormName: DataProcessor.EInvoiceExchangeWorkplace.Form.Workplace\n        FeatureName: E-factura\n        ScriptName: E-invoice work place Sent to ANAF\n        TreeRowNumber: 23.995\n        FeatureLineNumber: 146\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеПолеСИменемИмеетЗначение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:18 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:30:57"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "OutgoingDocumentsStatus"
+						},
+						{
+							"name": "Парам3",
+							"value": "Success"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "56fc229b-8b9e-4484-a498-4ea66f03b110-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "262ff1ec-ff4f-4fcf-a516-bc16fe29534a-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "66360af4-e6fd-4dd2-83f4-2e4099513902-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "68a64c7f-d8ae-4eda-a3a3-b89560d0556c-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "f2505e15-538f-4f13-9f30-bd1a63cd984a-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "c4175ddf-b80f-458e-acb3-aa51ebffce80-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "36043342-3852-4882-aece-0f3e2d3b5d50-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "844ffe21-d843-4e79-a40c-9ad33f81d53e-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "b3ce0d76-5afc-4088-8e1d-d6fb95968fc4-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "828bc22d-a705-4293-a484-dc37da6f88cb-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "f988254f-0a78-4083-acdf-b2f3476e188f-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "33c193da-332c-4f48-93d5-59782ee6ba47-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "4baac603-1878-471a-8141-80e1009b8220-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"OutgoingDocumentsStatus\" in \"OutgoingDocuments\" table",
+					"start": 1721187059053,
+					"stop": 1721187059053,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "OutgoingDocumentsStatus"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"OutgoingDocuments\" table",
+					"start": 1721187059053,
+					"stop": 1721187059053,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OutgoingDocuments"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"StatusDescription\" became equal to \"The invoice was accepted by ANAF without errors.\"",
+					"start": 1721187059053,
+					"stop": 1721187059053,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "StatusDescription"
+						},
+						{
+							"name": "Парам2",
+							"value": "The invoice was accepted by ANAF without errors."
+						}
+					],
+					"attachments": [
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_113c.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "E-invoice work place Sent to ANAF"
+		},
+		{
+			"name": "feature",
+			"value": "E-factura"
+		},
+		{
+			"name": "suite",
+			"value": "E-factura"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "TaxOfficeExchange"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "40250f71-df64-4f97-9cff-4826b6a5e15f-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "a37362d5-9add-4d3d-b21b-be72ece98e5f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "f491cee8-b2f1-4cd6-98fe-0bcd6821140f-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "3afd1e3d-074d-4dd5-a52e-5f187f3ff1fe-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "49c3ad1c-1b89-46a1-b58f-f3c7b86fdde5-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "b8ce2d44-c8e6-436c-8cf4-8bfda7f34560-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "c8ad59ec-c368-4e2f-95b2-3babefd33ff9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "c37460b5-1ab5-47ca-95ac-d974d37faf66-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "6e227088-37e7-4a10-856d-2a339bfd26b6-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "63dc5371-e119-4635-abef-1de2115026d1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "684ca013-069c-4702-9eb4-792d71cad16c-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "c7a174e5-0f61-4ad9-8aa5-e407a577adaa-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "49674f62-4563-4faf-a8c2-a8c98847b2ce-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "a8b8c5bd-8b0f-4f01-b3b7-1512fcee42de-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

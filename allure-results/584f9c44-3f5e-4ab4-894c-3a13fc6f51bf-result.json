@@ -1,0 +1,806 @@
+{
+	"uuid": "584f9c44-3f5e-4ab4-894c-3a13fc6f51bf",
+	"historyId": "Purchase order generation on.(VATOnRelease) Cash payment generation",
+	"name": "(VATOnRelease) Cash payment generation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184355125,
+	"stop": 1721184363099,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "For form element <Department>, the current value is <Main department> and <> was expected",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5822)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5766)}: For form element <Department>, the current value is <Main department> and <> was expected\n\nTechnical data:\n        ActiveWindowHeader: Cash payment (create)\n        ActiveFormName: Document.CashPayment.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Cash payment generation\n        TreeRowNumber: 11.748\n        FeatureLineNumber: 144\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЭлементФормыСИменемСталРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:46:01"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+			"start": 1721184356317,
+			"stop": 1721184356332,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase orders\" window is opened",
+			"start": 1721184356364,
+			"stop": 1721184356411,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase orders"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721184356489,
+			"stop": 1721184356504,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "a663baa9-2205-41ad-81a4-aabccf721942-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721184356536,
+			"stop": 1721184356536,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentCashPaymentCreateBasedOn\"",
+			"start": 1721184356567,
+			"stop": 1721184356676,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentCashPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If current window header is \"Purchase Order * dated *\" Then",
+			"start": 1721184356707,
+			"stop": 1721184356957,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase Order * dated *"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then I close current window",
+					"start": 1721184356926,
+					"stop": 1721184356957,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "Then \"Cash payment (create)\" window is opened",
+			"start": 1721184356989,
+			"stop": 1721184357030,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Cash payment (create)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Enterprise\" became equal to \"ROMANIA BUSINESS LABS S.R.L.\"",
+			"start": 1721184357056,
+			"stop": 1721184357087,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Enterprise"
+				},
+				{
+					"name": "Парам2",
+					"value": "ROMANIA BUSINESS LABS S.R.L."
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Department\" became equal to \"\"",
+			"start": 1721184357103,
+			"stop": 1721184363099,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "For form element <Department>, the current value is <Main department> and <> was expected",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5822)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5766)}: For form element <Department>, the current value is <Main department> and <> was expected\n\nTechnical data:\n        ActiveWindowHeader: Cash payment (create)\n        ActiveFormName: Document.CashPayment.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Cash payment generation\n        TreeRowNumber: 11.748\n        FeatureLineNumber: 144\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЭлементФормыСИменемСталРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:46:01"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Department"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "c1292429-8cab-4465-8f4d-74365f21f94e-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "cdbb521a-fa4a-4ac3-a844-369ae7327586-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "4f51ee30-4ef8-4654-9916-7bbb9934ff44-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "81f72c36-63ca-4fb1-bfee-3272a1b81076-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "219e67ad-3e52-4eb9-8fde-03bb14403193-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "2e52195c-8706-47f1-81bb-5c9aa3ce517c-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "d6f5cf24-ed3d-4d6c-9cf1-9f5489b5e624-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "f99161e4-9537-4f62-bc22-6e141842fbfb-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "3523da05-2014-42de-b1db-9c71a4c900fa-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "1beeb394-1139-43d7-b967-14b2bc3d3e4e-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "4ec18deb-b157-41a3-8cbd-cc72be17f716-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "e10b5850-555c-455a-849a-17cefbcf8d23-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "ff79b440-5276-4a11-93b9-cc3e75e4364d-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Location\" became equal to \"Cashbox\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Location"
+				},
+				{
+					"name": "Парам2",
+					"value": "Cashbox"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashAccount\" became equal to \"531.1  Casa în lei\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "531.1  Casa în lei"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Currency\" became equal to \"RON\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Currency"
+				},
+				{
+					"name": "Парам2",
+					"value": "RON"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"ExchangeRate\" became equal to \"1\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ExchangeRate"
+				},
+				{
+					"name": "Парам2",
+					"value": "1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"RegulatedCurrency\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "RegulatedCurrency"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashFlowActivity\" became equal to \"Plati la Furnizori\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				},
+				{
+					"name": "Парам2",
+					"value": "Plati la Furnizori"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"SettlementsAссount\" became equal to \"401.1  Furnizori\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementsAссount"
+				},
+				{
+					"name": "Парам2",
+					"value": "401.1  Furnizori"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Contract\" became equal to \"Contract Vendor VAT payer\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Contract"
+				},
+				{
+					"name": "Парам2",
+					"value": "Contract Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Company\" became equal to \"Vendor VAT payer\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				},
+				{
+					"name": "Парам2",
+					"value": "Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"RegulatedCurrencyTotal\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "RegulatedCurrencyTotal"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"DetailsOther\" table became equal",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "f74e6d61-b7da-4ab9-8631-bad88a63330a-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Payer\" became equal to \"Vendor VAT payer\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Payer"
+				},
+				{
+					"name": "Парам2",
+					"value": "Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AttachmentsText\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AttachmentsText"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"RepresentativePerson\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "RepresentativePerson"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"JobPosition\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "JobPosition"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Memo\" became equal to \"\"",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Memo"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721184363099,
+			"stop": 1721184363099,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5f1.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Cash payment generation"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "f0845983-f9cb-443c-8233-23fede6d82b9-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "da4813a6-7b61-43f4-b2e6-cf16f7ea9da0-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "0fb3f392-8e32-4c7d-a821-008f46fbe602-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "4299291a-f949-4350-9935-e1fce1cdf01e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "36479a64-2e8a-4d72-8990-e5eec0f6dfcb-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "ace81311-cc5c-44c2-97bd-758c75a52caf-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "de30b950-5754-4b4c-8d65-6ccb0e4e17f9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "f01e2dca-7c83-4b83-be68-d9f33d20d1fa-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "26ec9f37-e91b-4f35-b59a-65cf6febac91-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "c6af1da0-ac07-4871-8a9d-9453fcb9976f-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "3c897049-696c-432c-8797-3888fbcb9d09-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "ac649282-3ba0-49f9-9672-7241ee359f10-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "661af933-e9a0-4ea1-9e46-f467b0a22447-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "282dd9d8-c1c6-4de0-a1a5-8fee4a8c9d34-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

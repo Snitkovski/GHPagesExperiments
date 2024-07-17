@@ -1,0 +1,342 @@
+{
+	"uuid": "d884e218-7a99-4b58-b08c-6b10ecb9ae6c",
+	"historyId": "Intangible assets.(VATOnRelease) Print",
+	"name": "(VATOnRelease) Print",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184437064,
+	"stop": 1721184449028,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Expected value of <R1C2> cell in <CurrentPrintForm> Spreadsheet Document is <Societate: ROMANIA BUSINESS LABS S.R.L.>, and actual value is <Societate: >",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12194)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12175)}: Expected value of <R1C2> cell in <CurrentPrintForm> Spreadsheet Document is <Societate: ROMANIA BUSINESS LABS S.R.L.>, and actual value is <Societate: >\n\nTechnical data:\n        ActiveWindowHeader: (FI) Change of intangible asset parameters 000000002 dated 17.05.2024 05:47:00\n        ActiveFormName: CommonForm.PrintDocuments\n        FeatureName: Intangible assets\n        ScriptName: Print\n        TreeRowNumber: 12.221\n        FeatureLineNumber: 187\n        FeatureFullPath: features\\CI\\Main\\Basic\\IntangibleAssets.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТабличномДокументеЯчейкаСАдресомРавна\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:47:27"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.ChangeIntangibleAssetsParameters\"",
+			"start": 1721184438252,
+			"stop": 1721184438252,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.ChangeIntangibleAssetsParameters"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to the first line in \"List\" table",
+			"start": 1721184438283,
+			"stop": 1721184438315,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721184438346,
+			"stop": 1721184438346,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Change of intangible asset parameters * dated *\" window is opened",
+			"start": 1721184438377,
+			"stop": 1721184438408,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Change of intangible asset parameters * dated *"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"PrintSubmenuOrdinary__PrintGeneralJournalEntry\"",
+			"start": 1721184438440,
+			"stop": 1721184438440,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PrintSubmenuOrdinary__PrintGeneralJournalEntry"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"CurrentPrintForm\" spreadsheet document the cell with address \"R1C2\" is equal to \"Societate: ROMANIA BUSINESS LABS S.R.L.\"",
+			"start": 1721184438471,
+			"stop": 1721184449028,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Expected value of <R1C2> cell in <CurrentPrintForm> Spreadsheet Document is <Societate: ROMANIA BUSINESS LABS S.R.L.>, and actual value is <Societate: >",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12194)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12175)}: Expected value of <R1C2> cell in <CurrentPrintForm> Spreadsheet Document is <Societate: ROMANIA BUSINESS LABS S.R.L.>, and actual value is <Societate: >\n\nTechnical data:\n        ActiveWindowHeader: (FI) Change of intangible asset parameters 000000002 dated 17.05.2024 05:47:00\n        ActiveFormName: CommonForm.PrintDocuments\n        FeatureName: Intangible assets\n        ScriptName: Print\n        TreeRowNumber: 12.221\n        FeatureLineNumber: 187\n        FeatureFullPath: features\\CI\\Main\\Basic\\IntangibleAssets.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТабличномДокументеЯчейкаСАдресомРавна\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:47:27"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CurrentPrintForm"
+				},
+				{
+					"name": "Парам2",
+					"value": "R1C2"
+				},
+				{
+					"name": "Парам3",
+					"value": "Societate: ROMANIA BUSINESS LABS S.R.L."
+				}
+			],
+			"attachments": [
+				{
+					"name": "CurrentValueLayout.mxl",
+					"source": "131b14f6-fccf-489c-a5dd-738f89f2de34-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueLayout.html",
+					"source": "b2cbc900-95ac-4b0c-b869-dc7f87b9a0e8-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "b08ef40e-ea69-4e9e-8d1f-cd2d456e3584-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "0b8ddc39-5a24-49b1-a63d-bb00f5f089a0-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "dd7f9083-5c96-4d0f-bca2-de60f66ac46d-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "345667d9-5a23-49c7-a108-73fbf80763b4-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "31cd5b28-ccf4-4bd0-950c-556b99cda979-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "f8b51fe0-dba3-401d-87ba-d9d13f713ffb-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "f8d85bb9-81d7-40b2-a6bc-8220fb36695c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "00a2a04c-ecec-4ab0-a3cc-0db1088e072e-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "1fbfd7fd-cef9-4a90-ba0f-da562a334424-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "b787f106-1f55-4cbc-89e4-21570592c543-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "f0cd5709-27e0-4f7f-96c6-58dd780b72aa-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "5a61801f-e8f9-4f8f-acbe-6a10b8eb7f69-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "1e310d7e-590f-4b44-8413-973502e24bfd-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_645.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Print"
+		},
+		{
+			"name": "feature",
+			"value": "Intangible assets"
+		},
+		{
+			"name": "suite",
+			"value": "Intangible assets"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "4fbcc3f6-d44a-4c88-aa7a-553695e1ac78-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "CurrentValueLayout.mxl",
+			"source": "6803ee1b-50f0-4e26-8879-e31244147d6b-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueLayout.html",
+			"source": "2d84a31d-c528-4639-a477-4001714f2337-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "cdb86034-fee4-465f-a8d3-d89cc868e65b-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "95411268-13d2-407a-bb7d-62ca060e351e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "a478196e-2d45-48b8-b93c-18f4823b82b0-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "f843b3eb-bb8c-4823-8ec4-acd320228d82-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "dad1e063-00b9-4fdb-a22a-ef89cb74c005-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "d83a8df9-1f84-4eb2-882c-a3f406e954aa-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "4bbf07d9-f7da-4be6-b3af-d58fcfbf73f8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "4beb2c76-8be3-40cb-81b8-27796985fb37-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "122610ef-46e7-4b7c-8a19-98a051e94e8d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "df6bfb6d-7bf6-4efb-94ea-e5d1ca6a9ab0-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "af7be355-72bf-4ac3-abb0-d447609a015d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "78eaf709-d7ad-4cc7-a98f-ec3303bcab30-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "3bae245e-a9b1-45b1-b3a0-5d482553a876-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

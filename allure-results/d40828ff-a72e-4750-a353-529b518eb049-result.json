@@ -1,0 +1,192 @@
+{
+	"uuid": "d40828ff-a72e-4750-a353-529b518eb049",
+	"historyId": "160 Assembly build and Specification creation.(VATOnRelease) Purchase Invoice",
+	"name": "(VATOnRelease) Purchase Invoice",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183535761,
+	"stop": 1721183538306,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I save \"CurrentDate()\" in \"CurrentDate\" variable",
+			"start": 1721183536250,
+			"stop": 1721183536250,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CurrentDate()"
+				},
+				{
+					"name": "Парам2",
+					"value": "CurrentDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I check or create document \"PurchaseInvoice\" objects:",
+			"start": 1721183536344,
+			"stop": 1721183536469,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "9bc3614c-6e87-4d38-ac95-fb8d69b76eb2-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I refill object tabular section \"LineItems\":",
+			"start": 1721183536562,
+			"stop": 1721183536625,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "3ac8f295-51e9-4c4d-b378-c38e93c5c933-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/data/Document.PurchaseInvoice?ref=b2d1ebd1cc5fb6dd11ee699dcd850ebb\"",
+			"start": 1721183536656,
+			"stop": 1721183536687,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/data/Document.PurchaseInvoice?ref=b2d1ebd1cc5fb6dd11ee699dcd850ebb"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPostAndClose\"",
+			"start": 1721183536719,
+			"stop": 1721183537848,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPostAndClose"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I wait \"Purchase Invoice * dated *\" window closing in 20 seconds",
+			"start": 1721183537880,
+			"stop": 1721183538306,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase Invoice * dated *"
+				},
+				{
+					"name": "Парам2",
+					"value": 20
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase Invoice"
+		},
+		{
+			"name": "feature",
+			"value": "160 Assembly build and Specification creation"
+		},
+		{
+			"name": "suite",
+			"value": "160 Assembly build and Specification creation"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

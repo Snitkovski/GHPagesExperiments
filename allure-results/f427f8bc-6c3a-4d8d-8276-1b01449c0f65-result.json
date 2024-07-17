@@ -1,0 +1,825 @@
+{
+	"uuid": "f427f8bc-6c3a-4d8d-8276-1b01449c0f65",
+	"historyId": "Close month.(VATOnRelease) Close month",
+	"name": "(VATOnRelease) Close month",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184191073,
+	"stop": 1721184205684,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/app/DataProcessor.ClosingMonth\"",
+			"start": 1721184192074,
+			"stop": 1721184192090,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/DataProcessor.ClosingMonth"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Closing month\" window is opened",
+			"start": 1721184192105,
+			"stop": 1721184192308,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Closing month"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I restore sequence in Closing month",
+			"start": 1721184192340,
+			"stop": 1721184198222,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I clear user message window",
+					"start": 1721184192340,
+					"stop": 1721184192340,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If I see the attribute named \"ActualizeAccountingData\" on the form Then",
+					"start": 1721184192371,
+					"stop": 1721184198222,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ActualizeAccountingData"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I click the button named \"ActualizeAccountingData\"",
+							"start": 1721184192402,
+							"stop": 1721184192418,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ActualizeAccountingData"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"Document Posting\" window is opened",
+							"start": 1721184192449,
+							"stop": 1721184192465,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Document Posting"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And in the table \"SequenceList\" I click the button named \"SequenceListDoRestore\"",
+							"start": 1721184192496,
+							"stop": 1721184192512,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "SequenceList"
+								},
+								{
+									"name": "Парам2",
+									"value": "SequenceListDoRestore"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And Delay \"5\"",
+							"start": 1721184192543,
+							"stop": 1721184197752,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "5"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Try",
+							"start": 1721184197971,
+							"stop": 1721184197986,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "When TestClient log message does not contain \"An error occurred while restoring the sequence.\" string",
+									"start": 1721184197971,
+									"stop": 1721184197986,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "An error occurred while restoring the sequence."
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close current window",
+							"start": 1721184198002,
+							"stop": 1721184198034,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"DecreasePeriod\"",
+							"start": 1721184198050,
+							"stop": 1721184198066,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DecreasePeriod"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"IncreasePeriod\"",
+							"start": 1721184198081,
+							"stop": 1721184198222,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "IncreasePeriod"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "And I save '{Format(CurrentDate(), \"DF=\"\"MMMM yyyy\"\"\")}' in \"CurrentMonth\" variable",
+			"start": 1721184198253,
+			"stop": 1721184198253,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(CurrentDate(), \"DF=\"\"MMMM yyyy\"\"\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "CurrentMonth"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"PeriodDescription\" form attribute became equal to \"iulie 2024\"",
+			"start": 1721184198269,
+			"stop": 1721184198378,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PeriodDescription"
+				},
+				{
+					"name": "Парам2",
+					"value": "iulie 2024"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"IntangibleAssetsDepreciationCheck\" became equal to \"Intangible assets depreciation check\"",
+			"start": 1721184198409,
+			"stop": 1721184198409,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "IntangibleAssetsDepreciationCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "Intangible assets depreciation check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"IntangibleAssetsDepreciationOperation\" became equal to \"Intangible assets depreciation\"",
+			"start": 1721184198441,
+			"stop": 1721184198441,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "IntangibleAssetsDepreciationOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Intangible assets depreciation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"FixedAssetsDepreciationCheck\" became equal to \"Fixed assets depreciation check\"",
+			"start": 1721184198456,
+			"stop": 1721184198472,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FixedAssetsDepreciationCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "Fixed assets depreciation check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"FixedAssetsDepreciationOperation\" became equal to \"Fixed assets depreciation\"",
+			"start": 1721184198488,
+			"stop": 1721184198488,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FixedAssetsDepreciationOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Fixed assets depreciation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AdvancedExpensesWriteoffCheck\" became equal to \"AdvancedExpensesWriteoffCheck\"",
+			"start": 1721184198519,
+			"stop": 1721184198519,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancedExpensesWriteoffCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "AdvancedExpensesWriteoffCheck"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AdvancedExpensesWriteoffOperation\" became equal to \"Advanced expenses writeoff\"",
+			"start": 1721184198534,
+			"stop": 1721184198550,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancedExpensesWriteoffOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Advanced expenses writeoff"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AdvancedIncomeWriteoffCheck\" became equal to \"Advanced income writeoff check\"",
+			"start": 1721184198566,
+			"stop": 1721184198566,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancedIncomeWriteoffCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "Advanced income writeoff check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AdvancedIncomeWriteoffOperation\" became equal to \"Advanced income writeoff\"",
+			"start": 1721184198597,
+			"stop": 1721184198597,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancedIncomeWriteoffOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Advanced income writeoff"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"ExchangeDifferencesCalculationCheck\" became equal to \"Exchange differences calculation check\"",
+			"start": 1721184198628,
+			"stop": 1721184198628,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ExchangeDifferencesCalculationCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "Exchange differences calculation check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"ExchangeDifferencesCalculationOperation\" became equal to \"Exchange differences calculation\"",
+			"start": 1721184198644,
+			"stop": 1721184198659,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ExchangeDifferencesCalculationOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Exchange differences calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"VATCalculationCheck\" became equal to \"VATCalculation check\"",
+			"start": 1721184198675,
+			"stop": 1721184198675,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATCalculationCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATCalculation check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"VATCalculationOperation\" became equal to \"VAT calculation\"",
+			"start": 1721184198706,
+			"stop": 1721184198706,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATCalculationOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "VAT calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"FinancialResultCalculationCheck\" became equal to \"Financial result calculation check\"",
+			"start": 1721184198738,
+			"stop": 1721184198738,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FinancialResultCalculationCheck"
+				},
+				{
+					"name": "Парам2",
+					"value": "Financial result calculation check"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"FinancialResultCalculationOperation\" became equal to \"Financial result calculation\"",
+			"start": 1721184198769,
+			"stop": 1721184198769,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FinancialResultCalculationOperation"
+				},
+				{
+					"name": "Парам2",
+					"value": "Financial result calculation"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Closing month\" window is opened",
+			"start": 1721184198816,
+			"stop": 1721184198816,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Closing month"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I restore sequence in Closing month",
+			"start": 1721184198847,
+			"stop": 1721184201179,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I clear user message window",
+					"start": 1721184198847,
+					"stop": 1721184198847,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If I see the attribute named \"ActualizeAccountingData\" on the form Then",
+					"start": 1721184198878,
+					"stop": 1721184201179,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ActualizeAccountingData"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I click the button named \"CloseMonth\"",
+			"start": 1721184201194,
+			"stop": 1721184201210,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CloseMonth"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And Delay \"4\"",
+			"start": 1721184201226,
+			"stop": 1721184205465,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "4"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then user message window does not contain messages",
+			"start": 1721184205684,
+			"stop": 1721184205684,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Close month"
+		},
+		{
+			"name": "feature",
+			"value": "Close month"
+		},
+		{
+			"name": "suite",
+			"value": "Close month"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

@@ -1,0 +1,437 @@
+{
+	"uuid": "79fab967-8542-463a-8770-e8c5b57e4865",
+	"historyId": "ReportIncoming VAT display Document.(VATOnRelease) Incoming VAT",
+	"name": "(VATOnRelease) Incoming VAT",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184380898,
+	"stop": 1721184403934,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Expected value of <R2C2> cell in <ResultDocument> Spreadsheet Document is <PURCHASES JOURNAL>, and actual value is <>",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12194)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12175)}: Expected value of <R2C2> cell in <ResultDocument> Spreadsheet Document is <PURCHASES JOURNAL>, and actual value is <>\n\nTechnical data:\n        ActiveWindowHeader: Incoming VAT journal\n        ActiveFormName: Report.IncomingVAT.Form.ReportForm\n        FeatureName: ReportIncoming VAT display Document\n        ScriptName: Incoming VAT\n        TreeRowNumber: 11.908\n        FeatureLineNumber: 168\n        FeatureFullPath: features\\CI\\Main\\Basic\\IncomingVAT.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТабличномДокументеЯчейкаСАдресомРавна\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:22 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:46:42"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721184381525,
+			"stop": 1721184381712,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/app/Report.IncomingVAT\"",
+			"start": 1721184381931,
+			"stop": 1721184381946,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/app/Report.IncomingVAT"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Company\"",
+			"start": 1721184381962,
+			"stop": 1721184381993,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721184382073,
+			"stop": 1721184382104,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "52aced2d-977c-4473-8e04-4e95ad00152a-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721184382120,
+			"stop": 1721184382135,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormGenerate\"",
+			"start": 1721184382151,
+			"stop": 1721184382166,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormGenerate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Incoming VAT journal\" window is opened",
+			"start": 1721184382198,
+			"stop": 1721184382510,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Incoming VAT journal"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormGenerate\"",
+			"start": 1721184382541,
+			"stop": 1721184382557,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormGenerate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"ResultDocument\" spreadsheet document I move to \"R2C2:R2C14\" cell",
+			"start": 1721184382573,
+			"stop": 1721184382885,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ResultDocument"
+				},
+				{
+					"name": "Парам2",
+					"value": "R2C2:R2C14"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in \"ResultDocument\" spreadsheet document the cell with address \"R2C2\" is equal to \"PURCHASES JOURNAL\"",
+			"start": 1721184382916,
+			"stop": 1721184403934,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Expected value of <R2C2> cell in <ResultDocument> Spreadsheet Document is <PURCHASES JOURNAL>, and actual value is <>",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12194)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(12175)}: Expected value of <R2C2> cell in <ResultDocument> Spreadsheet Document is <PURCHASES JOURNAL>, and actual value is <>\n\nTechnical data:\n        ActiveWindowHeader: Incoming VAT journal\n        ActiveFormName: Report.IncomingVAT.Form.ReportForm\n        FeatureName: ReportIncoming VAT display Document\n        ScriptName: Incoming VAT\n        TreeRowNumber: 11.908\n        FeatureLineNumber: 168\n        FeatureFullPath: features\\CI\\Main\\Basic\\IncomingVAT.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТабличномДокументеЯчейкаСАдресомРавна\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:22 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:46:42"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ResultDocument"
+				},
+				{
+					"name": "Парам2",
+					"value": "R2C2"
+				},
+				{
+					"name": "Парам3",
+					"value": "PURCHASES JOURNAL"
+				}
+			],
+			"attachments": [
+				{
+					"name": "CurrentValueLayout.mxl",
+					"source": "236da518-7809-4af6-8f36-4757482e6e8c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueLayout.html",
+					"source": "dff47076-3a32-4539-b609-5a2ff879912c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "22344eec-d00a-4f52-91ee-cbbfb970160f-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "5aae1430-1016-4133-ac23-4bc012319f28-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "cff40421-099e-445f-86d9-d48dbbdf97e4-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "b1000d5b-5cdb-4547-a0a5-f11eedca1f09-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "6135b280-3457-4ebe-bc37-8945c7430b02-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "256523dd-3bd4-4524-be4a-669990ef4696-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "0ac0c4fc-da7b-4cbd-b156-294ff86f12ab-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "49ce5fd6-29e7-4511-ba53-100026b8ccfc-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "6aa19ad7-34c7-4782-b6f5-326f07ecb30e-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "61566432-7603-4776-a129-ec09c4f318ea-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "4e57ec1f-ca05-4ef7-96fb-5bc069c917e8-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "cfec2740-3db8-4aa3-835b-25038cadb6fe-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "dcb59303-fe2a-43f3-9000-4dffed03aa04-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_60b.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_60c.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Incoming VAT"
+		},
+		{
+			"name": "feature",
+			"value": "ReportIncoming VAT display Document"
+		},
+		{
+			"name": "suite",
+			"value": "ReportIncoming VAT display Document"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "42cf26ad-82c8-4692-91f1-42ea3af3359e-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "c16d21c8-44f0-47d0-b988-78e6e5c792bb-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "CurrentValueLayout.mxl",
+			"source": "702e6cba-2695-4371-904b-036be96e5396-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueLayout.html",
+			"source": "113e95bf-c640-4bd4-978f-6ea7b13e0695-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "d12cfb11-6523-4be0-a090-31daae40874f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "c5087999-68ff-4af6-b268-b264142f4bf1-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "9139e392-8578-4ac5-b4ce-1be5e426507d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "2895cc91-cb4b-4278-a4c6-749f07c08468-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "3c3eb13b-4aa0-493f-9ac3-4a65c770e481-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "fe288257-d95b-4360-92dc-25afe4c02312-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "0ef74b85-c778-4f0c-97eb-24c6b606f2a2-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "87a84e76-7c3e-4914-a039-cf441393d0da-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "b0ca9617-cab3-4b68-9fdb-bfe28a213808-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "b5588877-af2f-4bf7-a946-f9f7844b2738-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "a34e9ec4-d92a-48c1-b923-c556b168ed95-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "0c4e405e-339f-4d67-87cf-999ae1e25a13-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "1a12a8d2-b2b3-4b11-86a1-77dad83040ed-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

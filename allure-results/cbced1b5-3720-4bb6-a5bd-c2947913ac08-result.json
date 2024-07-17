@@ -1,0 +1,909 @@
+{
+	"uuid": "cbced1b5-3720-4bb6-a5bd-c2947913ac08",
+	"historyId": "004_QuickSettings.(VATOnRelease) Set addresses",
+	"name": "(VATOnRelease) Set addresses",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182386873,
+	"stop": 1721182393976,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Unable to move to the required line in <List> table.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\u0009\u0009| 'Postal code' | 'Postal district'                                        | 'SIRUTA' | 'World country' | \n\u0009\u0009| '030967'      | 'Bucuresti / Bucuresti / Bulevard / Decebal / nr. 10-14' | '179169' | 'ROMANIA'       | \n\nTechnical data:\n        ActiveWindowHeader: Postal districts\n        ActiveFormName: Catalog.PostalDistricts.Form.ListForm\n        FeatureName: 004_QuickSettings\n        ScriptName: Set addresses\n        TreeRowNumber: 1.288\n        FeatureLineNumber: 168\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\040_QuickSettings.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:13:12"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721182386967,
+			"stop": 1721182387280,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.Enterprises\"",
+			"start": 1721182387499,
+			"stop": 1721182387499,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.Enterprises"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721182387530,
+			"stop": 1721182387562,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"ROMANIA BUSINESS LABS S.R.L. (Enterprise)\" window is opened",
+			"start": 1721182387593,
+			"stop": 1721182387827,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Region\"",
+			"start": 1721182387859,
+			"stop": 1721182387874,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Region"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Provinces\" window is opened",
+			"start": 1721182387905,
+			"stop": 1721182387984,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Provinces"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721182388079,
+			"stop": 1721182388079,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c9ccf5b5-da9b-4949-b878-31443807809e-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721182388110,
+			"stop": 1721182388126,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"PostalDistrict\"",
+			"start": 1721182388142,
+			"stop": 1721182388157,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PostalDistrict"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Postal districts\" window is opened",
+			"start": 1721182388188,
+			"stop": 1721182388267,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Postal districts"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721182388360,
+			"stop": 1721182393976,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Unable to move to the required line in <List> table.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\u0009\u0009| 'Postal code' | 'Postal district'                                        | 'SIRUTA' | 'World country' | \n\u0009\u0009| '030967'      | 'Bucuresti / Bucuresti / Bulevard / Decebal / nr. 10-14' | '179169' | 'ROMANIA'       | \n\nTechnical data:\n        ActiveWindowHeader: Postal districts\n        ActiveFormName: Catalog.PostalDistricts.Form.ListForm\n        FeatureName: 004_QuickSettings\n        ScriptName: Set addresses\n        TreeRowNumber: 1.288\n        FeatureLineNumber: 168\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\040_QuickSettings.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:13:12"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "3d456870-0acf-4509-a1a1-b82cbffd3ea2-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "7231bec3-ea7a-4e4c-93e0-dae10baee23a-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "181594a7-237b-42b1-a9cf-bb6e4207b5da-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "1dd7a4cc-843b-478b-93d3-4c67c8271e01-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "af122093-6a97-4f3a-aabd-c1c73f40b06c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "33fea662-0ec1-464f-b7cd-9c9a17fa4627-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "b196f713-4ad7-444a-ae7e-d65288b1c9c1-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "a3057ec7-8f8b-4161-843c-939404b1bd0b-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "d02c57d9-9703-4cd9-beb7-d8a4ad84c1fa-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "72222a24-7457-4766-a98e-d279641df058-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "6f311d29-9e44-4781-8065-a056fae7b200-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "2b8aeda9-30a0-4f1a-9204-ffaf266c49b4-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "9f82f0ff-7d60-4e3f-9b3c-b124a9cc1049-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "cf0e7e69-333c-4407-a808-2990f73157b2-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "3cfa5456-008f-446d-84e5-ca3dce48777a-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "f40de461-51ef-4e8a-ac7a-9ef7b2483c45-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I move to the tab named \"ContactInformationGroup\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ContactInformationGroup"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click \"Legal address\" hyperlink",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Legal address"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Legal address\" window is opened",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Legal address"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"BUCUREȘTI\" exact value from the drop-down list named \"State\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "State"
+				},
+				{
+					"name": "Парам2",
+					"value": "BUCUREȘTI"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"SECTOR 3\" text in the field named \"City\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "City"
+				},
+				{
+					"name": "Парам2",
+					"value": "SECTOR 3"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"B-DUL DECEBAL\" text in the field named \"AddressLine1\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AddressLine1"
+				},
+				{
+					"name": "Парам2",
+					"value": "B-DUL DECEBAL"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"12\" text in the field named \"AddressLine2\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AddressLine2"
+				},
+				{
+					"name": "Парам2",
+					"value": "12"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"30967\" text in the field named \"PostalCode\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PostalCode"
+				},
+				{
+					"name": "Парам2",
+					"value": "30967"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormOKCommand\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormOKCommand"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click \"Actual address\" hyperlink",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Actual address"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Actual address\" window is opened",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Actual address"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"BUCUREȘTI\" exact value from the drop-down list named \"State\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "State"
+				},
+				{
+					"name": "Парам2",
+					"value": "BUCUREȘTI"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"SECTOR 3\" text in the field named \"City\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "City"
+				},
+				{
+					"name": "Парам2",
+					"value": "SECTOR 3"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"B-DUL DECEBAL\" text in the field named \"AddressLine1\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AddressLine1"
+				},
+				{
+					"name": "Парам2",
+					"value": "B-DUL DECEBAL"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"12\" text in the field named \"AddressLine2\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AddressLine2"
+				},
+				{
+					"name": "Парам2",
+					"value": "12"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"30967\" text in the field named \"PostalCode\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PostalCode"
+				},
+				{
+					"name": "Парам2",
+					"value": "30967"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormOKCommand\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormOKCommand"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormWriteAndClose\"",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormWriteAndClose"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I wait \"ROMANIA BUSINESS LABS S.R.L. (Enterprise) *\" window closing in 20 seconds",
+			"start": 1721182393976,
+			"stop": 1721182393976,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise) *"
+				},
+				{
+					"name": "Парам2",
+					"value": 20
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.Postal districts",
+					"source": "v8_CDDA_f8.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. (Enterprise) *",
+					"source": "v8_CDDA_f9.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_fa.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Set addresses"
+		},
+		{
+			"name": "feature",
+			"value": "004_QuickSettings"
+		},
+		{
+			"name": "suite",
+			"value": "004_QuickSettings"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "tag",
+			"value": "CI"
+		},
+		{
+			"name": "package",
+			"value": "001_TestDataExport"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.Postal districts",
+			"source": "ff1af17e-230a-45d6-9e4e-2476fc72a555-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. (Enterprise) *",
+			"source": "5770828d-87e9-4814-8869-1971e0a55589-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "ed5c4f1b-855f-41b5-8dfb-21072d048aa7-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "dee67aa2-df43-4f4e-b642-7212079a6f4e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "a9fe1e1b-c3a0-4a1d-a06a-72ef69116f85-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "5c053c2a-2645-447d-a095-f73f64df2f6f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "3f02501b-e5be-4681-a806-b30a45c37981-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "1cb0be6b-ffed-48ca-9c77-152eed2c0f53-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "ea3f027f-6abd-4360-a241-e3b4a513edca-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "85812410-e512-4954-afda-d9d09c30e7a4-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "5851014c-fa8a-415e-98ea-09fe71b5ea75-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "5cf97191-d5d2-4de6-aa27-8bda48ed9159-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "cb9a0e36-0473-4109-b4ae-90d37069aa44-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "128feaf6-4c8a-437a-9ecc-ae7a1e36b217-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "dd3d811d-04db-44e6-b0fb-e17a0b28d3a4-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "414e218f-ba1c-482a-ad6c-0cca116e3b7d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "191c4ead-e1d6-4b5d-8b17-eea219fb3589-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "3b7c742d-8424-4bc8-9357-228f2df70bfe-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

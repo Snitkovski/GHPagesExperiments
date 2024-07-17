@@ -1,0 +1,310 @@
+{
+	"uuid": "06709c22-953a-4ed8-8341-a44c887e88d3",
+	"historyId": "001 Smoke Tests Catalogs.(VATOnRelease) Object form opening \"CustomsClassifier\"",
+	"name": "(VATOnRelease) Object form opening \"CustomsClassifier\"",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182175728,
+	"stop": 1721182181865,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Не удалось открыть форму справочника CustomsClassifier",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_Условие.Form(263)}: Не удалось открыть форму справочника CustomsClassifier\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 001 Smoke Tests Catalogs\n        ScriptName: Object form opening \"CustomsClassifier\"\n        TreeRowNumber: 466\n        FeatureLineNumber: 665\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_SmokeTestsCatalogs.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_Условие\n        ProcedureName: ЯВызываюИсключение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 20100\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:09:40\nТекст модального окна:\n    Insufficient rights to create  Try to clarify the parameters of the action or contact application administrator for granting rights."
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open \"CustomsClassifier\" reference main form",
+			"start": 1721182176576,
+			"stop": 1721182176592,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CustomsClassifier"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If the warning is displayed then",
+			"start": 1721182176607,
+			"stop": 1721182181849,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then I raise \"Не удалось открыть форму справочника CustomsClassifier\" exception",
+					"start": 1721182178028,
+					"stop": 1721182181849,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Не удалось открыть форму справочника CustomsClassifier",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_Условие.Form(263)}: Не удалось открыть форму справочника CustomsClassifier\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 001 Smoke Tests Catalogs\n        ScriptName: Object form opening \"CustomsClassifier\"\n        TreeRowNumber: 466\n        FeatureLineNumber: 665\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_SmokeTestsCatalogs.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_Условие\n        ProcedureName: ЯВызываюИсключение\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 20100\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:05 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:09:40\nТекст модального окна:\n    Insufficient rights to create  Try to clarify the parameters of the action or contact application administrator for granting rights."
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Не удалось открыть форму справочника CustomsClassifier"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "311f0c03-dfa9-4940-b43a-c2540788f59e-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "be58ab07-dd2f-45fa-8aa0-2a5cb3a2b110-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "83bccb5a-a943-41e7-abcc-a3c9e70d6ab6-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "8c67f4e2-adad-413c-876e-6f3a8a042788-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "2981f11b-cc11-404c-888f-73638aca9d2d-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "92e1d3e0-901d-4192-b110-6610a7ce9387-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "186f0806-7184-4ee6-abe5-b151c301afbc-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "e6d59fc5-29ba-4bb8-a55d-83eea18608f4-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "61b09bb8-3221-47a4-96e6-84572e8c7639-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "2a957bcd-4e65-471d-adee-f82393283095-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "f36a2fc4-5077-4ac7-9f50-c9ed329726db-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "c223cf05-ee81-4e4d-b0b3-f5fc1c4c5bce-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "62e87a92-9783-4d34-ab07-9427a5882d0f-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I close current window",
+			"start": 1721182181865,
+			"stop": 1721182181865,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_59.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.1C:Enterprise",
+					"source": "v8_CDDA_5a.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5b.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5c.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5d.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Object form opening \"CustomsClassifier\""
+		},
+		{
+			"name": "feature",
+			"value": "001 Smoke Tests Catalogs"
+		},
+		{
+			"name": "suite",
+			"value": "001 Smoke Tests Catalogs"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "0b6f3405-5209-4851-8e12-6630a9bd5de0-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.1C:Enterprise",
+			"source": "4788e79d-d552-4e2c-b457-73d79cb1a5cc-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "4f290675-a6a8-4978-9ae5-06af3b10f28c-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "5c2f99b4-96be-4812-8288-869711f4aabd-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "3f06ea08-1965-4861-8c01-5f8b3beffcdc-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "3dec8964-f15e-4e5d-94fb-4fb390a4f9bf-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "e4eaf663-ca32-40f5-97e0-b442184d28ed-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "08dca065-7916-411b-8c25-a7bd340bae83-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "88d034fa-297b-4858-95ab-fca44e2ad218-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "8feaf5cd-f9c7-4d30-bb15-6460d4c17a33-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "774b8b5e-6a7b-4205-8424-79f8415b7bf8-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "4c5f14f0-76f2-4372-b5e1-93154952b9dc-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "5ac1ccbe-c443-4874-907e-363ba0a1d0ba-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "30fc4092-204a-48f8-bbe7-dd14b349ffd9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "b54447aa-7b1b-4378-b111-2ed208609366-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "b6efa701-15b7-4f78-8198-2486ca255c75-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "51fdb352-932f-473d-9e7b-d061d0af7631-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "ac3dda95-9eb8-4489-be07-646ddb8edb75-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

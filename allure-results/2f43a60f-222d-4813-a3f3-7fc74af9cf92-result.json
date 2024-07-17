@@ -1,0 +1,298 @@
+{
+	"uuid": "2f43a60f-222d-4813-a3f3-7fc74af9cf92",
+	"historyId": "003_1 Classifiers import.(VATOnRelease) VAT Rates classifier import",
+	"name": "(VATOnRelease) VAT Rates classifier import",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182550460,
+	"stop": 1721182563814,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Error calling context method (BeginPutFileToServer)\n                {Catalog.VATCodeClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\Template_VATCodeClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]",
+		"trace": "Expected <Import was completed successfully> substring in user messages\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 003_1 Classifiers import\n        ScriptName: VAT Rates classifier import\n        TreeRowNumber: 2.127\n        FeatureLineNumber: 21\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_1_ClassifiersImport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсомДополнительный\n        ProcedureName: ЯЖдуЧтоВСообщенияхПользователюБудетПодстрокаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:02\n        ErrorDetails\n                Error calling context method (BeginPutFileToServer)\n                {Catalog.VATCodeClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\Template_VATCodeClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]\n"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.VATCodeClassifier\"",
+			"start": 1721182551527,
+			"stop": 1721182551542,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.VATCodeClassifier"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"$КаталогПроекта$\\\\features\\\\Additional\\\\Template_VATCodeClassifier.xlsx\" file",
+			"start": 1721182551558,
+			"stop": 1721182551573,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$КаталогПроекта$\\features\\Additional\\Template_VATCodeClassifier.xlsx"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"ListImportFromExcel\"",
+			"start": 1721182551605,
+			"stop": 1721182551605,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ListImportFromExcel"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then I wait that in user messages the \"Import was completed successfully\" substring will appear in \"3\" seconds",
+			"start": 1721182551636,
+			"stop": 1721182563814,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Error calling context method (BeginPutFileToServer)\n                {Catalog.VATCodeClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\Template_VATCodeClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]",
+				"trace": "Expected <Import was completed successfully> substring in user messages\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: ErrorWindow\n        FeatureName: 003_1 Classifiers import\n        ScriptName: VAT Rates classifier import\n        TreeRowNumber: 2.127\n        FeatureLineNumber: 21\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_1_ClassifiersImport.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсомДополнительный\n        ProcedureName: ЯЖдуЧтоВСообщенияхПользователюБудетПодстрокаВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:02\n        ErrorDetails\n                Error calling context method (BeginPutFileToServer)\n                {Catalog.VATCodeClassifier.Form.ListForm.Form(13)}:BeginPutFileToServer(Handler,,,, Dialog);\n                \n                [ScriptRuntimeError]\n                , reason:\n                Directory not found '\\features\\Additional\\Template_VATCodeClassifier.xlsx'. 3(0x00000003): The system cannot find the path specified. \n                [LocalFileAccessError]\n"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Import was completed successfully"
+				},
+				{
+					"name": "Парам2",
+					"value": "3"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "80b4250d-0335-4a00-b8de-a0c3be0705a6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "1f7a067f-9f41-4f0f-ba41-06e02aab8897-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "a1a1281a-93d1-4b26-9f51-7d496fd7b1d7-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "8b532c09-6e54-412f-806a-c6dfa970d704-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "6f33f94e-7804-471a-af02-6ff4458ded0f-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "4adb7ac0-0998-4ffb-b3bc-aae0b33400a7-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "5a519cec-9473-4e97-9305-de01748af518-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "99efa65e-28c4-489c-ab52-aabef46b57c0-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "a1fc9385-05c0-4e8c-a2a0-d2d081d6b475-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "8fd0a6bd-e136-4e42-baac-087840edc99e-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "126522c2-7997-4fab-8fda-847541bd5cda-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "07b4ee17-c3f4-4e22-9952-755f73cee701-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "05a105ad-a571-4867-a5a3-2955b87d9afd-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.1C:Enterprise",
+					"source": "v8_CDDA_152.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_153.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_154.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "VAT Rates classifier import"
+		},
+		{
+			"name": "feature",
+			"value": "003_1 Classifiers import"
+		},
+		{
+			"name": "suite",
+			"value": "003_1 Classifiers import"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.1C:Enterprise",
+			"source": "bdad7c37-a46c-4779-8b85-5bf6f6aaa372-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "5ce9816a-5205-4a0f-8b1f-dc79961bc9c1-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "433f26fb-8511-441d-98de-752a389d250c-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "3a7fe315-e6ac-4f85-9a8d-cfc85013526c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "0acca779-e034-47a3-ae1a-94958ba4ea30-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "22b797f3-2563-48c4-a6ff-07ee9a39c2a8-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "e850db9a-84fd-45c4-b611-182e077c1141-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "4206b5aa-f8b7-4053-b9e0-22bd4c752ed4-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "182f380b-5bcd-4eba-8781-4df766b9be1e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "73eb3758-43d2-497f-93f5-b6f3cf20249f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "e337ba2f-77f3-4066-97ef-26d70150d2ff-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "c6aeb701-4cca-4370-aa6f-445bede8fb16-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "662c6ba3-707e-4b18-bab7-292acffce796-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "83a73197-4fd0-4e6b-bae4-007c46f33f2d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "6a4d24e5-95e9-45c3-afb6-78c875090bae-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "36b4c1d4-049b-42eb-8322-2d118ed4c619-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

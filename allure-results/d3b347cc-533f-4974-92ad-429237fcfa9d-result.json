@@ -1,0 +1,612 @@
+{
+	"uuid": "d3b347cc-533f-4974-92ad-429237fcfa9d",
+	"historyId": "Work Document Bank Payment > changes Cash flow activities.(VATOnRelease) Create Bank Payment cash flow activity 409.1",
+	"name": "(VATOnRelease) Create Bank Payment cash flow activity 409.1",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721188535856,
+	"stop": 1721188538781,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I save '{Format(CurrentDate(), \"DLF = D\")}' in \"CurrentDate\" variable",
+			"start": 1721188536357,
+			"stop": 1721188536357,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{Format(CurrentDate(), \"DLF = D\")}"
+				},
+				{
+					"name": "Парам2",
+					"value": "CurrentDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721188536388,
+			"stop": 1721188536747,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And Bank payment for \"AAM COM GRUP SRL\" amount \"600\" with cash flow activity \"409.1  Furnizori - debitori pentru cumpărări de bunuri de natura stocurilor\" from \"$CurrentDate$\"",
+			"start": 1721188536966,
+			"stop": 1721188538781,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "* Document creating",
+					"start": 1721188536966,
+					"stop": 1721188537077,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Given I open hyperlink \"e1cib/list/Document.BankPayment\"",
+							"start": 1721188536966,
+							"stop": 1721188536982,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/list/Document.BankPayment"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormCreate\"",
+							"start": 1721188537014,
+							"stop": 1721188537077,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormCreate"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "* Attributes filling",
+					"start": 1721188537108,
+					"stop": 1721188537858,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I input \"17.07.2024\" text in the field named \"Date\"",
+							"start": 1721188537108,
+							"stop": 1721188537233,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Date"
+								},
+								{
+									"name": "Парам2",
+									"value": "17.07.2024"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click Choice button of the field named \"CashFlowActivity\"",
+							"start": 1721188537249,
+							"stop": 1721188537296,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "CashFlowActivity"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormList\"",
+							"start": 1721188537327,
+							"stop": 1721188537405,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormList"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I go to line in \"List\" table by template",
+							"start": 1721188537483,
+							"stop": 1721188537561,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "5fdae68e-2796-4f64-a1e1-2e438b77d804-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"List\" table",
+							"start": 1721188537593,
+							"stop": 1721188537593,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click Choice button of the field named \"Company\"",
+							"start": 1721188537624,
+							"stop": 1721188537718,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Company"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I go to line in \"List\" table",
+							"start": 1721188537811,
+							"stop": 1721188537827,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "d11ab74b-241e-4c7e-bf86-b51770d07541-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"List\" table",
+							"start": 1721188537858,
+							"stop": 1721188537858,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "* Tabular part filling",
+					"start": 1721188537889,
+					"stop": 1721188538781,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And in the table \"DetailsOther\" I click the button named \"DetailsOtherAdd\"",
+							"start": 1721188537889,
+							"stop": 1721188538031,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DetailsOther"
+								},
+								{
+									"name": "Парам2",
+									"value": "DetailsOtherAdd"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "If \"DetailsOther\" table contains column \"Document\" Then",
+							"start": 1721188538062,
+							"stop": 1721188538437,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DetailsOther"
+								},
+								{
+									"name": "Парам2",
+									"value": "Document"
+								}
+							],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I activate field named \"DetailsOtherExtDimension3\" in \"DetailsOther\" table",
+									"start": 1721188538172,
+									"stop": 1721188538187,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "DetailsOther"
+										},
+										{
+											"name": "Парам2",
+											"value": "DetailsOtherExtDimension3"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I select current line in \"DetailsOther\" table",
+									"start": 1721188538219,
+									"stop": 1721188538219,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "DetailsOther"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I select current line in \"List\" table",
+									"start": 1721188538250,
+									"stop": 1721188538437,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "List"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I select current line in \"DetailsOther\" table",
+							"start": 1721188538469,
+							"stop": 1721188538469,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DetailsOther"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"600\" text in the field named \"DetailsOtherPaymentAmount\" of \"DetailsOther\" table",
+							"start": 1721188538500,
+							"stop": 1721188538547,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DetailsOther"
+								},
+								{
+									"name": "Парам2",
+									"value": "DetailsOtherPaymentAmount"
+								},
+								{
+									"name": "Парам3",
+									"value": "600"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I finish line editing in \"DetailsOther\" table",
+							"start": 1721188538562,
+							"stop": 1721188538578,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DetailsOther"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormPost\"",
+							"start": 1721188538609,
+							"stop": 1721188538609,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormPost"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "and I delete \"00000000000000000010\" variable",
+							"start": 1721188538641,
+							"stop": 1721188538641,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "00000000000000000010"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I save the value of the field named \"Number\" as \"$$NumberBP$$\"",
+							"start": 1721188538672,
+							"stop": 1721188538781,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Number"
+								},
+								{
+									"name": "Парам2",
+									"value": "$$NumberBP$$"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Create Bank Payment cash flow activity 409.1"
+		},
+		{
+			"name": "feature",
+			"value": "Work Document Bank Payment > changes Cash flow activities"
+		},
+		{
+			"name": "suite",
+			"value": "Work Document Bank Payment > changes Cash flow activities"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_001_BCDocument"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

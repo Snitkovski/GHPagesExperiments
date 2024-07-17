@@ -1,0 +1,1381 @@
+{
+	"uuid": "aaed439c-010f-418e-97fb-8abe028118d0",
+	"historyId": "220 Sales invoice and Sales return.(VATOnRelease) Sales return",
+	"name": "(VATOnRelease) Sales return",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183699022,
+	"stop": 1721183712429,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <LineItems>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <LineItems>. Line No.<1>. Column <Accounts>. Expected <<...>, <...>, 704.1 , Birou principal, Venituri din servicii prestate>, got <704.1 , Birou principal, Venituri din servicii prestate, 442.7 >\n\nTechnical data:\n        ActiveWindowHeader: Sales return (create) *\n        ActiveFormName: Document.SalesReturn.Form.DocumentForm\n        FeatureName: 220 Sales invoice and Sales return\n        ScriptName: Sales return\n        TreeRowNumber: 8.805\n        FeatureLineNumber: 237\n        FeatureFullPath: features\\CI\\Main\\Basic\\220_SalesInvoiceAndSalesReturn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:35:10"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Preparation",
+			"start": 1721183700211,
+			"stop": 1721183700398,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721183700211,
+					"stop": 1721183700398,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Open Sales invoice",
+			"start": 1721183700617,
+			"stop": 1721183700852,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.SalesInvoice\"",
+					"start": 1721183700617,
+					"stop": 1721183700617,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.SalesInvoice"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Sales invoices\" window is opened",
+					"start": 1721183700648,
+					"stop": 1721183700727,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Sales invoices"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721183700820,
+					"stop": 1721183700820,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "0f58af07-80d8-42c5-8bc4-71a3d275acd2-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721183700852,
+					"stop": 1721183700852,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Generate Sales Return",
+			"start": 1721183700883,
+			"stop": 1721183712429,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormDocumentSalesReturnCreateBasedOn\"",
+					"start": 1721183700883,
+					"stop": 1721183701071,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormDocumentSalesReturnCreateBasedOn"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Sales return (create)\" window is opened",
+					"start": 1721183701103,
+					"stop": 1721183702370,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Sales return (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select seria \"RR\"",
+					"start": 1721183702401,
+					"stop": 1721183702666,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I click Choice button of the field named \"Seria\"",
+							"start": 1721183702401,
+							"stop": 1721183702416,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Seria"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"Series\" window is opened",
+							"start": 1721183702448,
+							"stop": 1721183702495,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Series"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I go to line in \"List\" table",
+							"start": 1721183702588,
+							"stop": 1721183702620,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "867a195a-e944-4702-932f-54181d0eca3d-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormSelect\"",
+							"start": 1721183702651,
+							"stop": 1721183702666,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormSelect"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I click Choice button of the field named \"CostCenter\"",
+					"start": 1721183702682,
+					"stop": 1721183702698,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CostCenter"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Locations\" window is opened",
+					"start": 1721183702854,
+					"stop": 1721183702885,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Locations"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721183702963,
+					"stop": 1721183702995,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "39585fcb-6823-4cee-bc77-9bbdb12f8968-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721183703026,
+					"stop": 1721183703042,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"1C:Enterprise\" window is opened",
+					"start": 1721183703074,
+					"stop": 1721183703074,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "1C:Enterprise"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Button0\"",
+					"start": 1721183703105,
+					"stop": 1721183703121,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Button0"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+					"start": 1721183703152,
+					"stop": 1721183703152,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "VATOnRelease"
+						},
+						{
+							"name": "Парам2",
+							"value": "NonPayer"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "ElseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+					"start": 1721183703183,
+					"stop": 1721183703215,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "VATOnRelease"
+						},
+						{
+							"name": "Парам2",
+							"value": "VATOnRelease"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I save \"310309 / 19%\" in \"VATRate\" variable",
+							"start": 1721183703215,
+							"stop": 1721183703215,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "310309 / 19%"
+								},
+								{
+									"name": "Парам2",
+									"value": "VATRate"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And \"LineItems\" table became equal",
+					"start": 1721183703293,
+					"stop": 1721183712429,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Table <LineItems>.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <LineItems>. Line No.<1>. Column <Accounts>. Expected <<...>, <...>, 704.1 , Birou principal, Venituri din servicii prestate>, got <704.1 , Birou principal, Venituri din servicii prestate, 442.7 >\n\nTechnical data:\n        ActiveWindowHeader: Sales return (create) *\n        ActiveFormName: Document.SalesReturn.Form.DocumentForm\n        FeatureName: 220 Sales invoice and Sales return\n        ScriptName: Sales return\n        TreeRowNumber: 8.805\n        FeatureLineNumber: 237\n        FeatureFullPath: features\\CI\\Main\\Basic\\220_SalesInvoiceAndSalesReturn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:35:10"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LineItems"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "ee0e6586-631b-4583-a18e-bd71b39f0d0e-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "Differences.mxl",
+							"source": "b5246e9b-1aae-4353-8f14-e5c9e59a2d0d-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "Differences.html",
+							"source": "860c869e-c6a2-429b-94d7-44c844840735-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ReferenceValueTable.mxl",
+							"source": "4a8a86c6-1346-46d5-a848-66d5fc80ecc6-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ReferenceValueTable.html",
+							"source": "923395c5-dc11-4258-9181-c0cf408107e6-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "CurrentValueTable.mxl",
+							"source": "3b204c68-f1a5-455f-a6c3-5f00d00de806-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "CurrentValueTable.html",
+							"source": "778577c3-f3ef-4c9d-807f-9578a927da79-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.mxl",
+							"source": "0bde5538-bb39-44e8-ac69-52c8c2db3979-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "e7770d84-ef40-41ce-ba94-4a2ff05de993-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "2bcda5a3-b5d3-4242-ac03-20547568a787-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "bf94cc9f-e9b6-492c-950f-4f715f9b5cfc-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "5dcf64ed-4245-40ac-a7e6-f9c53d4c8c59-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "35a3fcf1-de6c-4ea9-ac96-c1a4e8f5bc03-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "706b3530-fbe6-46fc-9afc-6671f924c8f4-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "e65a5df0-b3be-4fc8-9d38-6397c8f05188-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "6b871c53-41ad-4def-a32f-d8e91593ef4d-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "197ed55b-5ceb-478b-8820-e994b51a38e9-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "0b023b15-7841-442f-bf92-ad7d8dd2832e-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "522be8a1-9def-41e7-9733-cb7ecad0c7fa-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "fbed2dc5-3798-4838-a2f4-ae5764a09790-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Write\"",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Write"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of \"Number\" field as \"Number\"",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Number"
+						},
+						{
+							"name": "Парам2",
+							"value": "Number"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of \"Date\" field as \"Date\"",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Date"
+						},
+						{
+							"name": "Парам2",
+							"value": "Date"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save \"Sales return $Number$ dated $Date$\" in \"SalesReturn\" variable",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Sales return $Number$ dated $Date$"
+						},
+						{
+							"name": "Парам2",
+							"value": "SalesReturn"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormPost\"",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPost"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Check document GJ records",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I click the button named \"FormCommonCommandOpenGeneralJournalByRecorder\"",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormCommonCommandOpenGeneralJournalByRecorder"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "If \"$$VATPayerStatus$$\" variable is equal to \"NonPayer\" Then",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "$$VATPayerStatus$$"
+								},
+								{
+									"name": "Парам2",
+									"value": "NonPayer"
+								}
+							],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I save \"310324 / 0%\" in \"VATRate\" variable",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "310324 / 0%"
+										},
+										{
+											"name": "Парам2",
+											"value": "VATRate"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And \"List\" table became equal by template",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "List"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "de6047a2-1473-4421-b5ea-e5a7fd2ed695-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "ElseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnRelease\" Then",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "$$VATPayerStatus$$"
+								},
+								{
+									"name": "Парам2",
+									"value": "VATOnRelease"
+								}
+							],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I save \"310309 / 19%\" in \"VATRate\" variable",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "310309 / 19%"
+										},
+										{
+											"name": "Парам2",
+											"value": "VATRate"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And \"List\" table became equal by template",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "List"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "c9b3c1eb-fcfb-41a7-b49e-e15a095763f8-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "ElseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnEncashment\" Then",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "$$VATPayerStatus$$"
+								},
+								{
+									"name": "Парам2",
+									"value": "VATOnEncashment"
+								}
+							],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I save \"310335 / 19%\" in \"VATRate\" variable",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "310335 / 19%"
+										},
+										{
+											"name": "Парам2",
+											"value": "VATRate"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And \"List\" table became equal by template",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "List"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "ceb0eb10-484c-4a98-86c7-00fe570fe55e-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close current window",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And Check document flow report",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Try",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then user message window does not contain messages",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "Except",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I save message text as \"UserMessage\"",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "UserMessage"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I log the error \"$UserMessage$\" by exception data",
+									"start": 1721183712429,
+									"stop": 1721183712429,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "$UserMessage$"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I activate current test client window",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"ReportsSubmenuSeeAlso__Auto_239F7DC8AFCADEC7C8F6303E3528E133\"",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ReportsSubmenuSeeAlso__Auto_239F7DC8AFCADEC7C8F6303E3528E133"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And Delay \"10\"",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "10"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I activate \"Document register records: Horizontal layout\" window",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Document register records: Horizontal layout"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"ReportSpreadsheetDocument\" spreadsheet document is equal by template",
+							"start": 1721183712429,
+							"stop": 1721183712429,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ReportSpreadsheetDocument"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "6eaa9ae5-5d31-4bb5-bab5-43e655d07c4e-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721183712429,
+					"stop": 1721183712429,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_4dc.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Sales return"
+		},
+		{
+			"name": "feature",
+			"value": "220 Sales invoice and Sales return"
+		},
+		{
+			"name": "suite",
+			"value": "220 Sales invoice and Sales return"
+		},
+		{
+			"name": "tag",
+			"value": "sales"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "af9634e8-d27a-41ba-95e7-4915841a7e0b-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "47f17f94-b4ae-4945-a7c1-c310c5de80d5-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "e42a177f-2ad6-40a4-b8cd-36af864556dd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "8da34cd6-df48-4e6d-9648-38f112af16e1-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "d2ac5c92-5b56-47c8-86ee-56e0602517b4-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "265597e4-58f4-48e5-af0c-fa57a0400243-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "da8234f9-36e5-42f1-bc34-cffd358fb77c-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "9959818e-3bee-418d-92b4-c45d63069c3c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "e9d99df6-2d12-4790-8b54-3732f8479895-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "78db98c1-1953-4388-b5c3-df8d838940df-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "ea3e471d-a3c3-42e1-a0bd-81d4498f96da-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "70985f78-1e96-499d-85cd-d1d9c008837d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "75aa3f00-54cf-4c53-9939-ae8df21d94db-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "1dd345e6-1a68-4f31-87ca-be9a20448587-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "508ac9bc-1f3d-4c21-ae44-301cef19e841-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "0f9c9aef-f035-4985-a113-a25e534bb469-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "c226b858-7d7e-40a7-9b77-025fd7e2cb24-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "e5592741-eebf-46ac-bf8d-adefe9c19bea-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "b8cfbe80-1f70-4581-9caf-17442bc15bf6-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "c5642833-ea4d-4ac8-bee7-35c6cda64b19-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

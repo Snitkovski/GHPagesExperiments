@@ -1,0 +1,768 @@
+{
+	"uuid": "7c59b0d4-2c57-41dc-a06a-8dda8b44be58",
+	"historyId": "Accounting reports detailing check.(VATOnRelease) Trial Balance by account 401 filter",
+	"name": "(VATOnRelease) Trial Balance by account 401 filter",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186361483,
+	"stop": 1721186375109,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Form table named <Filters> is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7758)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(6887)}: Form table named <Filters> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Filter field selection\n        ActiveFormName: CommonForm.AvailableFieldSelectionForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Trial Balance by account 401 filter\n        TreeRowNumber: 21.287\n        FeatureLineNumber: 159\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:33"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "*https://one-c-ro.atlassian.net/browse/DOC-1086",
+			"start": 1721186361967,
+			"stop": 1721186375109,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/app/Report.TrialBalanceByAccount\"",
+					"start": 1721186361967,
+					"stop": 1721186361983,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/app/Report.TrialBalanceByAccount"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Trial Balance by account * for * - *\" window is opened",
+					"start": 1721186362015,
+					"stop": 1721186362015,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Trial Balance by account * for * - *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Account\"",
+					"start": 1721186362047,
+					"stop": 1721186362062,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Account"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Chart of accounts\" window is opened",
+					"start": 1721186362094,
+					"stop": 1721186362187,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Chart of accounts"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721186362265,
+					"stop": 1721186362344,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "b3b63c7a-9478-405d-8763-56f30724feb5-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721186362375,
+					"stop": 1721186362375,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Настройки\"",
+					"start": 1721186362406,
+					"stop": 1721186362547,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Настройки"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"GroupingBy\" table became equal by template",
+					"start": 1721186362687,
+					"stop": 1721186362719,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GroupingBy"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "b22baac6-4103-4a45-929e-97b6079188bf-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I move to the tab named \"GroupFilters\"",
+					"start": 1721186362984,
+					"stop": 1721186363000,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GroupFilters"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"FiltersLeftValue\" in \"Filters\" table",
+					"start": 1721186363032,
+					"stop": 1721186363079,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						},
+						{
+							"name": "Парам2",
+							"value": "FiltersLeftValue"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"Filters\" table became equal",
+					"start": 1721186363235,
+					"stop": 1721186363267,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "57237777-3cfd-4acc-a72a-09a08a6e8cec-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"Filters\" table",
+					"start": 1721186363345,
+					"stop": 1721186363360,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "0f127284-100d-486d-b40e-cbc609ab2526-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"Filters\" table",
+					"start": 1721186363392,
+					"stop": 1721186363392,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"Filters\" table",
+					"start": 1721186363470,
+					"stop": 1721186375109,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Form table named <Filters> is not found.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7758)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(6887)}: Form table named <Filters> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Filter field selection\n        ActiveFormName: CommonForm.AvailableFieldSelectionForm\n        FeatureName: Accounting reports detailing check\n        ScriptName: Trial Balance by account 401 filter\n        TreeRowNumber: 21.287\n        FeatureLineNumber: 159\n        FeatureFullPath: features\\CI\\Main\\Basic\\Reports.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:19:33"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "62d2e820-60ca-4d2d-bce1-8747f6612912-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "EventLog.mxl",
+							"source": "19e4b264-c4aa-4696-8c6f-787f69fe0667-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "e43358e5-7374-44f1-84f6-9cda3f11112b-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "c8d1facd-613c-4e9f-b997-5ad07c1b51e5-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "0fa670ce-6d8d-4b29-8025-34bba56a6148-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "42b65e2d-0be4-4bac-b11e-10d9f8016722-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "6559bbff-5f4b-405b-a090-d279a3febc3a-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "71bea697-464c-4dd3-8af2-dfb8e320bc0f-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "3b939491-e01a-49fc-b40e-f143a52bb394-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "66c24000-33f6-4679-99d4-a0a32c737fc8-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "e72c8a27-8b4f-41bc-86c1-88bc5bb043db-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "52f3c31c-62cd-4bdf-94a6-6c44840a0da2-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "f93bf532-c102-4e2c-b8f3-8e43cea66e97-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "1a6645fe-e4a0-4753-80dd-f1fb8e3a7c5b-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"Filters\" table",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click choice button of the attribute named \"FiltersRightValue\" in \"Filters\" table",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						},
+						{
+							"name": "Парам2",
+							"value": "FiltersRightValue"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "9f7fc7a3-c058-4c4b-a98c-a3b57665b83b-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"ApplySettings\"",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ApplySettings"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Given I open hyperlink \"e1cib/app/Report.TrialBalanceByAccount\"",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/app/Report.TrialBalanceByAccount"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"Настройки\"",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Настройки"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I move to the tab named \"GroupFilters\"",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GroupFilters"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"FiltersLeftValue\" in \"Filters\" table",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						},
+						{
+							"name": "Парам2",
+							"value": "FiltersLeftValue"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"Filters\" table became equal",
+					"start": 1721186375109,
+					"stop": 1721186375109,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Filters"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "eff2772a-ce1b-40cd-b906-f15cb0edf3be-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "Этот клиент.Filter field selection",
+							"source": "v8_CDDA_efc.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_efd.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Trial Balance by account 401 filter"
+		},
+		{
+			"name": "feature",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "suite",
+			"value": "Accounting reports detailing check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.Filter field selection",
+			"source": "ce133c82-b572-4d7c-8505-cd2c4ca30d38-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "5378f473-317a-49c2-9122-77b6c1907ae5-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "85eb1469-0853-4b00-aa77-664dba287dc8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "8cc15935-2cfc-4bb7-ae80-c380081eb5b0-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "2edc2f7c-4035-4057-b856-86b1af01acc9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "b3d7c39e-4ab5-45a0-8257-02c3aa263f5a-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "d4dded4b-e89f-43b5-95ee-7ad5eeba5217-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "627292eb-69ae-4f19-82ad-ac800a6723cc-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "cc59553f-9a8b-4c1f-a7d4-ff9e3e515f3d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "2e5773c2-dfa0-43a4-9c5b-3dd5b2182764-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "9369db50-a81f-4a9d-8b98-b51b1b6ad05f-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "660567fa-85f6-43fc-80ca-f218748b4263-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "da47fa66-1e22-402e-a6dc-db0cfd04a684-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "85c69b30-bf40-47c4-8975-382d89afd19c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "0e585a82-63d5-46a9-81e2-2649cba1f357-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

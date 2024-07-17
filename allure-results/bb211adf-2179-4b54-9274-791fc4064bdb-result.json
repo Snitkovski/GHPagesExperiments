@@ -1,0 +1,320 @@
+{
+	"uuid": "bb211adf-2179-4b54-9274-791fc4064bdb",
+	"historyId": "Purchase Invoices generate documents.(VATOnRelease) PurchaseOrder generate PurchaseInvoice",
+	"name": "(VATOnRelease) PurchaseOrder generate PurchaseInvoice",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186070526,
+	"stop": 1721186083044,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "The button named <FormAddPurchaseInvoice> is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase orders\n\nTechnical data:\n        ActiveWindowHeader: Purchase orders\n        ActiveFormName: Document.PurchaseOrder.Form.ListForm\n        FeatureName: Purchase Invoices generate documents\n        ScriptName: PurchaseOrder generate PurchaseInvoice\n        TreeRowNumber: 19.848\n        FeatureLineNumber: 78\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\PurchaseInvoiceGenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:41"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186070619,
+			"stop": 1721186070994,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+			"start": 1721186071218,
+			"stop": 1721186071218,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186071311,
+			"stop": 1721186071327,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "b7d07cdf-9c83-4a65-aaac-8c6f56e556d1-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"Number\" in \"List\" table",
+			"start": 1721186071358,
+			"stop": 1721186071358,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "Number"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormAddPurchaseInvoice\"",
+			"start": 1721186071389,
+			"stop": 1721186083044,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "The button named <FormAddPurchaseInvoice> is not found.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase orders\n\nTechnical data:\n        ActiveWindowHeader: Purchase orders\n        ActiveFormName: Document.PurchaseOrder.Form.ListForm\n        FeatureName: Purchase Invoices generate documents\n        ScriptName: PurchaseOrder generate PurchaseInvoice\n        TreeRowNumber: 19.848\n        FeatureLineNumber: 78\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\PurchaseInvoiceGenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:41"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormAddPurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "898fbf44-b11a-43ab-bbf7-5aaea0e3e28a-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "d55c31d1-0dc8-4e5e-8064-f80ac329b44a-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "c52bcced-5bc8-46f4-8e1c-aa720b9128e2-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "8294972d-4752-4d73-8667-111d5b100a1c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "9800a83d-a29a-4a89-9cf5-8fe269dda6d3-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "0bc6ca3f-bcc0-4898-9dfa-a3acd3ab4b5f-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "c8bd35fa-8c7c-43d9-bc98-9aa22fd83134-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "b373e50a-9031-436b-b89b-295d4278986c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "527bcbc3-67c5-4b3d-b24b-630d5ed3c04a-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "ba4d36d1-8faf-43e0-af41-3c1f88901df9-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "1bfa8ada-8f22-4514-ba2f-4405298fd50f-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "70a51b2f-57cd-43e1-b7db-5a3a9787d400-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "3c3bfe97-30a1-4769-bb6d-ffdb5b81959b-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase Invoice (create)\" window is opened",
+			"start": 1721186083044,
+			"stop": 1721186083044,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase Invoice (create)"
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_db6.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "PurchaseOrder generate PurchaseInvoice"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase Invoices generate documents"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "MiscellaneousForOllCompany"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "eb1dd2e0-cfee-4e01-aa5b-bb27dec84373-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "3a94d729-94a7-45da-bf8b-3f65a4477486-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "c671122d-cb34-40ca-b352-ae5dd606458b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "b613008d-297d-4e54-8353-d41ecfdd5900-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "797ef6ef-cabd-4896-9d3d-dd991155ef83-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "adb85b3d-98af-4820-abe9-b7c50b48b55a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "ca6c2909-6c7e-4ed2-8d12-09d58cd03d25-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "ea89d745-bb88-4236-9278-83c5058fd834-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "dffb4c3f-9a78-4820-bf45-92b93cd51f0a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "f86d396f-13db-439a-8e74-47dd8986131a-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "934d69ac-0b9d-4001-808b-d2c949de49fb-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "b3716ce6-5be6-4bde-abbc-1554788a0698-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "e6b67a11-e36b-462d-a535-e3841579db07-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "9abdcf91-d446-4c61-ab6a-7a0fdb47edc1-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

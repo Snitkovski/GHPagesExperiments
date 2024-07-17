@@ -1,0 +1,746 @@
+{
+	"uuid": "4742c19f-4917-46f9-b851-4d0f86005d6e",
+	"historyId": "Purchase order generation on.(VATOnRelease) Bank Payment generation",
+	"name": "(VATOnRelease) Bank Payment generation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184334981,
+	"stop": 1721184351034,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Expected active window <Bank payment (create)>, but found <Purchase Order 00000000003 dated 17.07.2024 05:45:17>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(2704)}: Expected active window <Bank payment (create)>, but found <Purchase Order 00000000003 dated 17.07.2024 05:45:17>. Window search timeout: 10\n\nTechnical data:\n        ActiveWindowHeader: Purchase Order 00000000003 dated 17.07.2024 05:45:17\n        ActiveFormName: Document.PurchaseOrder.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Bank Payment generation\n        TreeRowNumber: 11.715\n        FeatureLineNumber: 109\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ОткрылосьОкно\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:15 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:45:49"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+			"start": 1721184335969,
+			"stop": 1721184335985,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase orders\" window is opened",
+			"start": 1721184336001,
+			"stop": 1721184336052,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase orders"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721184336146,
+			"stop": 1721184336146,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "96974e49-ddab-4875-a301-7f8f5677ef63-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721184336177,
+			"stop": 1721184336193,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentBankPaymentCreateBasedOn\"",
+			"start": 1721184336208,
+			"stop": 1721184336318,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentBankPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Bank payment (create)\" window is opened",
+			"start": 1721184336349,
+			"stop": 1721184351034,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Expected active window <Bank payment (create)>, but found <Purchase Order 00000000003 dated 17.07.2024 05:45:17>.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(2704)}: Expected active window <Bank payment (create)>, but found <Purchase Order 00000000003 dated 17.07.2024 05:45:17>. Window search timeout: 10\n\nTechnical data:\n        ActiveWindowHeader: Purchase Order 00000000003 dated 17.07.2024 05:45:17\n        ActiveFormName: Document.PurchaseOrder.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Bank Payment generation\n        TreeRowNumber: 11.715\n        FeatureLineNumber: 109\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ОткрылосьОкно\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:15 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:45:49"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Bank payment (create)"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "70b1dd04-7bec-4033-933a-5de02636bd32-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "db0cdda8-c762-4b0d-bd38-33be398010a5-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "dda4924a-50e7-4c20-bdb3-a683482a9c20-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "1c3f0062-0cb0-4f06-8698-8a44c423a584-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "8f6054c3-bedb-49d8-90b8-e094f7431c87-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "343dda55-b912-4c6b-8c73-90421c755403-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "7f26470c-de5b-4431-865d-78faa3f94b01-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "59b9c8dd-c1fd-42aa-8eb1-281bf4b98426-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "a83798e1-c38f-47e2-ad6f-e063f7941f61-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "6f709bee-d143-4f70-9e07-37bb995ac71e-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "800956ed-1fb3-4504-8d84-094a3d10ca8b-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "0bdff3d4-29ac-4d34-bb6c-c407909f5c70-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "07d36e19-7dc5-4bfa-ab1e-432410bf3537-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then \"Cash flow activity\" form attribute became equal to \"Plati la Furnizori\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Cash flow activity"
+				},
+				{
+					"name": "Парам2",
+					"value": "Plati la Furnizori"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Enterprise\" became equal to \"$$Enterprise$$\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Enterprise"
+				},
+				{
+					"name": "Парам2",
+					"value": "$$Enterprise$$"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Department\" became equal to \"\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Department"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"UseSeveralCashFlows\" became equal to \"False\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "UseSeveralCashFlows"
+				},
+				{
+					"name": "Парам2",
+					"value": "False"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashAccount\" became equal to \"512.1  Conturi curente la bănci în lei\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "512.1  Conturi curente la bănci în lei"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Currency\" became equal to \"RON\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Currency"
+				},
+				{
+					"name": "Парам2",
+					"value": "RON"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"ExchangeRate\" became equal to \"1\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ExchangeRate"
+				},
+				{
+					"name": "Парам2",
+					"value": "1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"RegulatedCurrency\" became equal to \"RON\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "RegulatedCurrency"
+				},
+				{
+					"name": "Парам2",
+					"value": "RON"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashFlowActivity\" became equal to \"Plati la Furnizori\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				},
+				{
+					"name": "Парам2",
+					"value": "Plati la Furnizori"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"SettlementsAссount\" became equal to \"401.1  Furnizori\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementsAссount"
+				},
+				{
+					"name": "Парам2",
+					"value": "401.1  Furnizori"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"BankAccount\" became equal to \"RO49BRDE410SV50694914100, BRD SOCIETE GENERALE (RON)\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "BankAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "RO49BRDE410SV50694914100, BRD SOCIETE GENERALE (RON)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"SettlementsBankAccount\" became equal to \"\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementsBankAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Contract\" became equal to \"Contract Vendor VAT payer\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Contract"
+				},
+				{
+					"name": "Парам2",
+					"value": "Contract Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Company\" became equal to \"Vendor VAT payer\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				},
+				{
+					"name": "Парам2",
+					"value": "Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"DetailsOther\" table became equal",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "acb0449b-c2e2-4e81-861b-4eeba12625de-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"ReceiverBankAccount\" became equal to \"\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ReceiverBankAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Memo\" became equal to \"\"",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Memo"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721184351034,
+			"stop": 1721184351034,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5dc.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Bank Payment generation"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "c4a6a8ad-7af1-4524-aa29-a58b5813da70-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "a18c042d-042d-407d-934f-b74248bcbe10-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "fa8cb86a-f592-4116-b84e-c7a5aaa8f689-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "c68b3ee6-1625-491b-8675-f18cf48d2fa1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "9bfe1638-3922-4542-82f2-d68781d76fff-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "be3de5e6-4710-41ce-b1a2-593c22667f1a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "8997cd1d-6bcb-44b6-8d7a-b73c880d27d8-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "a6da58de-d8cf-4a3a-8914-816e6efca944-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "9e833471-de36-49b8-8d3d-a279efada37b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "be04f1de-46e9-4588-970b-2045ebde107b-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "940c133a-206a-45c3-a81c-cbff80ab8fd5-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "af162cb7-3abb-43d7-acf1-1cff203d9220-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "95b7abbf-b9cb-4890-97d6-532f54d5da9d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "ed60bdd6-5871-447e-9edb-66e86d3fb24c-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

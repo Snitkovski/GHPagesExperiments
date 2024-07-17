@@ -1,0 +1,1104 @@
+{
+	"uuid": "3a4a9311-01dc-4a7d-8e5d-06517e2ae05d",
+	"historyId": "040 Bank receipt document create.(VATOnRelease) Obtinere credit de la banca",
+	"name": "(VATOnRelease) Obtinere credit de la banca",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182868064,
+	"stop": 1721182890124,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Spreadsheet document contains 20 lines, and expected 14 lines.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7705)}: Spreadsheet document contains 20 lines, and expected 14 lines.\n\nTechnical data:\n        ActiveWindowHeader: Document register records: Horizontal layout\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: 040 Bank receipt document create\n        ScriptName: Obtinere credit de la banca\n        TreeRowNumber: 4.094\n        FeatureLineNumber: 20\n        FeatureFullPath: features\\CI\\Main\\Basic\\040_Bank1Receipt.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:20 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:21:28"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Preparation",
+			"start": 1721182868892,
+			"stop": 1721182869522,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721182868892,
+					"stop": 1721182869084,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I check or create catalog \"Companies\" objects:",
+					"start": 1721182869350,
+					"stop": 1721182869397,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Companies"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "4c9113bf-ec3c-4471-b4e6-3d621d9b830c-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I check or create catalog \"Contracts\" objects:",
+					"start": 1721182869475,
+					"stop": 1721182869522,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Contracts"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "4c902017-93a7-4764-9152-215fc2754c0d-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Create document",
+			"start": 1721182869553,
+			"stop": 1721182869787,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.BankReceipt\"",
+					"start": 1721182869553,
+					"stop": 1721182869553,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.BankReceipt"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Bank receipts\" window is opened",
+					"start": 1721182869584,
+					"stop": 1721182869631,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Bank receipts"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721182869662,
+					"stop": 1721182869662,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Bank receipt (create)\" window is opened",
+					"start": 1721182869694,
+					"stop": 1721182869787,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Bank receipt (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Attributes filling",
+			"start": 1721182869803,
+			"stop": 1721182870839,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click Choice button of the field named \"CashFlowActivity\"",
+					"start": 1721182869803,
+					"stop": 1721182869819,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CashFlowActivity"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Cash flow activities\" window is opened",
+					"start": 1721182869850,
+					"stop": 1721182869881,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Cash flow activities"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormList\"",
+					"start": 1721182869912,
+					"stop": 1721182869928,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormList"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721182870006,
+					"stop": 1721182870032,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "ece10328-8622-45fe-9141-b36504958aa5-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182870058,
+					"stop": 1721182870058,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"SettlementsAccount\" became equal to \"162.1  Credite bancare pe termen lung\"",
+					"start": 1721182870089,
+					"stop": 1721182870183,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SettlementsAccount"
+						},
+						{
+							"name": "Парам2",
+							"value": "162.1  Credite bancare pe termen lung"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Company\"",
+					"start": 1721182870214,
+					"stop": 1721182870229,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Company"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Counterparties\" window is opened",
+					"start": 1721182870245,
+					"stop": 1721182870292,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Counterparties"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormList\"",
+					"start": 1721182870323,
+					"stop": 1721182870323,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormList"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721182870401,
+					"stop": 1721182870401,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "c1080861-3772-4d9b-9e36-cafe84a384ef-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182870433,
+					"stop": 1721182870448,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Bank receipt (create) *\" window is opened",
+					"start": 1721182870464,
+					"stop": 1721182870620,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Bank receipt (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Contract\"",
+					"start": 1721182870651,
+					"stop": 1721182870667,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Contract"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Contracts\" window is opened",
+					"start": 1721182870683,
+					"stop": 1721182870714,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Contracts"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721182870808,
+					"stop": 1721182870808,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "ae080a52-d18f-4d71-a429-060b6509b1e1-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182870839,
+					"stop": 1721182870839,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Tabular part filling",
+			"start": 1721182870870,
+			"stop": 1721182871203,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And in the table \"DetailsOther\" I click the button named \"DetailsOtherAdd\"",
+					"start": 1721182870870,
+					"stop": 1721182870901,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "DetailsOther"
+						},
+						{
+							"name": "Парам2",
+							"value": "DetailsOtherAdd"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"200000\" text in the field named \"DetailsOtherPaymentAmount\" of \"DetailsOther\" table",
+					"start": 1721182870933,
+					"stop": 1721182871011,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "DetailsOther"
+						},
+						{
+							"name": "Парам2",
+							"value": "DetailsOtherPaymentAmount"
+						},
+						{
+							"name": "Парам3",
+							"value": "200000"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I finish line editing in \"DetailsOther\" table",
+					"start": 1721182871037,
+					"stop": 1721182871037,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "DetailsOther"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"DetailsOther\" table became equal by template",
+					"start": 1721182871109,
+					"stop": 1721182871203,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "DetailsOther"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "43ec1f22-b438-4d76-80b7-d8d2d61bfaab-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Posting",
+			"start": 1721182871234,
+			"stop": 1721182890124,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormPost\"",
+					"start": 1721182871234,
+					"stop": 1721182871234,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormPost"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Delay \"3\"",
+					"start": 1721182871265,
+					"stop": 1721182874358,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "3"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Check document flow report",
+					"start": 1721182874576,
+					"stop": 1721182890124,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Try",
+							"start": 1721182874576,
+							"stop": 1721182874608,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then user message window does not contain messages",
+									"start": 1721182874576,
+									"stop": 1721182874608,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I activate current test client window",
+							"start": 1721182874639,
+							"stop": 1721182874639,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"ReportsSubmenuSeeAlso__Auto_239F7DC8AFCADEC7C8F6303E3528E133\"",
+							"start": 1721182874780,
+							"stop": 1721182874795,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ReportsSubmenuSeeAlso__Auto_239F7DC8AFCADEC7C8F6303E3528E133"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And Delay \"10\"",
+							"start": 1721182874826,
+							"stop": 1721182884117,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "10"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I activate \"Document register records: Horizontal layout\" window",
+							"start": 1721182884351,
+							"stop": 1721182884351,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Document register records: Horizontal layout"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"ReportSpreadsheetDocument\" spreadsheet document is equal by template",
+							"start": 1721182884773,
+							"stop": 1721182890124,
+							"status": "failed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false,
+								"message": "Spreadsheet document contains 20 lines, and expected 14 lines.",
+								"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7705)}: Spreadsheet document contains 20 lines, and expected 14 lines.\n\nTechnical data:\n        ActiveWindowHeader: Document register records: Horizontal layout\n        ActiveFormName: CommonForm.ReportForm\n        FeatureName: 040 Bank receipt document create\n        ScriptName: Obtinere credit de la banca\n        TreeRowNumber: 4.094\n        FeatureLineNumber: 20\n        FeatureFullPath: features\\CI\\Main\\Basic\\040_Bank1Receipt.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:20 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:21:28"
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ReportSpreadsheetDocument"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "631ddfd9-9297-4988-8670-61e4649e9689-attachment.csv",
+									"type": "text/csv"
+								},
+								{
+									"name": "ReferenceValueLayout.mxl",
+									"source": "95f622fd-e139-4a9b-a6e3-3303dece3496-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ReferenceValueLayout.html",
+									"source": "4285bfea-8b95-4b6a-9d77-6e159e75b5a8-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "CurrentValueLayout.mxl",
+									"source": "66522105-50ec-42fb-ab3f-a49cc712e09c-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "CurrentValueLayout.html",
+									"source": "11fffb41-d2f7-4561-b5f9-0c810efc2dc5-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.mxl",
+									"source": "10f5ffed-6cb4-4309-99d4-f1ba9cc97a48-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "EventLog.html",
+									"source": "02e903e9-f84e-4a39-87bd-d06de5675d8e-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.xlsx",
+									"source": "dd2ffaf1-d1cf-411e-8110-6206c964b837-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "ActiveFormState.mxl",
+									"source": "43066b6e-ce55-4073-bc92-cfcf63b6c9e0-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ActiveFormState.html",
+									"source": "66dd21ac-f3bb-450b-8a6e-3eed63e5d79f-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "ActiveFormState.xlsx",
+									"source": "93eef499-4a9b-4e2a-8805-3db46df07b92-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "AllFormsState.mxl",
+									"source": "bc8db237-5c0b-4de4-a8a1-9a34b93b76d4-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "AllFormsState.html",
+									"source": "2645d19c-5cd5-490b-9a2b-eec777dba4b1-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "AllFormsState.xlsx",
+									"source": "02cda3f0-e262-4874-a15d-c68d9613b968-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "NetworkConnectionsData.txt",
+									"source": "c9b4308b-4ec9-45e1-b50f-586d0d6957bf-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "OSProcessesData.txt",
+									"source": "f1cd1e93-1877-4754-a392-bc86cd8fe2a2-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "VariableValues.mxl",
+									"source": "50721bc9-21d1-4f47-b2ab-468ab13d082f-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "VariableValues.html",
+									"source": "4e6625bf-4552-40ef-890f-bcc37be58ee3-attachment.html",
+									"type": "html"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721182890124,
+					"stop": 1721182890124,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_283.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Obtinere credit de la banca"
+		},
+		{
+			"name": "feature",
+			"value": "040 Bank receipt document create"
+		},
+		{
+			"name": "suite",
+			"value": "040 Bank receipt document create"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "f73c9aa1-7cb9-4789-b7cc-a4f91fc1484d-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "ReferenceValueLayout.mxl",
+			"source": "cb879a02-38f4-4591-a321-e2292c048269-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueLayout.html",
+			"source": "322317cb-08b8-4345-b32e-1c0ad6db4309-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueLayout.mxl",
+			"source": "8205a151-4779-4572-ab5f-33351f69b6d1-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueLayout.html",
+			"source": "cc877e02-5879-458b-9a50-36cb97e9287a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "8bc69823-7241-49ae-8108-5057ab2eefae-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "c0b9ef8d-fc4a-4e73-b686-770861ca5dd5-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "5523fc18-5ab7-4ecf-84af-a47e21a55297-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "94ce7eac-d348-4b55-8c39-aa815791eb88-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "e08738ce-3c1f-49b9-9f35-13e989179a71-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "f6eeadc9-987e-4729-bfe7-1d6a0d491919-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "418bfca6-c416-46ad-898b-c15de6561eb4-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "013fcb11-f3cb-449b-9ba9-6114c9c9bd20-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "4c355193-12d1-4fdf-987b-e0e17a5dbd07-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "3994d66c-db06-4170-8cf3-df45ba88677a-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "a925eef1-b1e2-43e0-ad69-dc5d416144ae-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "2fe96e92-3b10-4122-9988-1dba826224cb-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "f47fc8d9-b271-4a6f-befe-7c9c7ed771db-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

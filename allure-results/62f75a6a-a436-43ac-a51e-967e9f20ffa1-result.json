@@ -1,0 +1,1502 @@
+{
+	"uuid": "62f75a6a-a436-43ac-a51e-967e9f20ffa1",
+	"historyId": "Work Document Bank Payment > changes Cash flow activities.(VATOnRelease) Data preparation",
+	"name": "(VATOnRelease) Data preparation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721188515003,
+	"stop": 1721188531898,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Data preparation For All Companies",
+			"start": 1721188515633,
+			"stop": 1721188531898,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "* Correct buc um",
+					"start": 1721188515633,
+					"stop": 1721188517012,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I close all client application windows",
+							"start": 1721188515633,
+							"stop": 1721188515820,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Given I open hyperlink \"e1cib/list/Catalog.Units\"",
+							"start": 1721188516059,
+							"stop": 1721188516059,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/list/Catalog.Units"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I go to line in \"List\" table",
+							"start": 1721188516153,
+							"stop": 1721188516169,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "6b2bba6d-e108-4b7a-bcac-a1c3e21b6e5e-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And in the table \"List\" I click the button named \"ListContextMenuChange\"",
+							"start": 1721188516184,
+							"stop": 1721188516200,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "ListContextMenuChange"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"BUC\" text in the field named \"Description\"",
+							"start": 1721188516231,
+							"stop": 1721188516262,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Description"
+								},
+								{
+									"name": "Парам2",
+									"value": "BUC"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormWriteAndClose\"",
+							"start": 1721188516278,
+							"stop": 1721188516294,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWriteAndClose"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I wait \"Bucată (Unit) *\" window closing in 20 seconds",
+							"start": 1721188516325,
+							"stop": 1721188517012,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Bucată (Unit) *"
+								},
+								{
+									"name": "Парам2",
+									"value": 20
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "* set Updating counterparties = False",
+					"start": 1721188517038,
+					"stop": 1721188517658,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I close all client application windows",
+							"start": 1721188517038,
+							"stop": 1721188517251,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Given I open hyperlink \"e1cib/app/DataProcessor.SettingsManager\"",
+							"start": 1721188517470,
+							"stop": 1721188517486,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/app/DataProcessor.SettingsManager"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"Settings\" window is opened",
+							"start": 1721188517517,
+							"stop": 1721188517564,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Settings"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I select \"Disabled\" exact value from the drop-down list named \"UpdatingCompanies\"",
+							"start": 1721188517595,
+							"stop": 1721188517626,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "UpdatingCompanies"
+								},
+								{
+									"name": "Парам2",
+									"value": "Disabled"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I close \"Settings\" window",
+							"start": 1721188517658,
+							"stop": 1721188517658,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Settings"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188517783,
+					"stop": 1721188517861,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.WorldCountries",
+							"start": 1721188517783,
+							"stop": 1721188517861,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"WorldCountries\" objects:",
+									"start": 1721188517783,
+									"stop": 1721188517861,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "WorldCountries"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "49e73d39-17ac-4363-a7e7-3d433e0a5824-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188517939,
+					"stop": 1721188517986,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.ActivityTypes",
+							"start": 1721188517939,
+							"stop": 1721188517986,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"ActivityTypes\" objects:",
+									"start": 1721188517939,
+									"stop": 1721188517986,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "ActivityTypes"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "70f955b4-d2a7-494a-ae46-375fedc119fd-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518053,
+					"stop": 1721188518100,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.Series",
+							"start": 1721188518053,
+							"stop": 1721188518100,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Series\" objects:",
+									"start": 1721188518053,
+									"stop": 1721188518100,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Series"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "9e20ab42-2a6c-48c3-955c-25fae3c1b812-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518179,
+					"stop": 1721188518210,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.States",
+							"start": 1721188518179,
+							"stop": 1721188518210,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"States\" objects:",
+									"start": 1721188518179,
+									"stop": 1721188518210,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "States"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "fdcfe93a-2161-43f1-8ce8-07745dccedac-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518288,
+					"stop": 1721188518350,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.Employees",
+							"start": 1721188518288,
+							"stop": 1721188518350,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Employees\" objects:",
+									"start": 1721188518288,
+									"stop": 1721188518350,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Employees"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "bc326cb8-aea5-4ba9-a92a-ca75df301908-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518429,
+					"stop": 1721188518460,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Create catalog Banks objects",
+							"start": 1721188518429,
+							"stop": 1721188518460,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Try",
+									"start": 1721188518429,
+									"stop": 1721188518460,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [],
+									"attachments": [],
+									"steps": [
+										{
+											"name": "And I check or create catalog \"Banks\" objects:",
+											"start": 1721188518429,
+											"stop": 1721188518460,
+											"status": "passed",
+											"stage": "finished",
+											"statusDetails": {
+												"known": false,
+												"muted": false,
+												"flaky": false
+											},
+											"parameters": [
+												{
+													"name": "Парам1",
+													"value": "Banks"
+												}
+											],
+											"attachments": [
+												{
+													"name": "table",
+													"source": "67911023-958f-4f7e-9304-2b8bdad85a37-attachment.csv",
+													"type": "text/csv"
+												}
+											],
+											"steps": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518585,
+					"stop": 1721188518663,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.Currencies",
+							"start": 1721188518585,
+							"stop": 1721188518663,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Currencies\" objects:",
+									"start": 1721188518585,
+									"stop": 1721188518663,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Currencies"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "dc748266-b116-421e-980f-a936f87805cf-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188518741,
+					"stop": 1721188519430,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.Companies",
+							"start": 1721188518741,
+							"stop": 1721188519430,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Companies\" objects:",
+									"start": 1721188518741,
+									"stop": 1721188518788,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Companies"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "1e8b9392-d79f-47ed-96ed-8b8a50103f9b-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I refill object tabular section \"ContactInformation\":",
+									"start": 1721188518882,
+									"stop": 1721188518929,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "ContactInformation"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "1eb9954a-f3cd-4d87-989a-b61ff08754ea-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I check or create catalog \"Contracts\" objects:",
+									"start": 1721188519007,
+									"stop": 1721188519055,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Contracts"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "75097360-3a64-40b3-8b6c-3d39a80dc6df-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I check or create catalog \"PostalDistricts\" objects:",
+									"start": 1721188519149,
+									"stop": 1721188519180,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "PostalDistricts"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "f2a404aa-f5b3-4c2b-b05a-f9034dfcdebc-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I check or create catalog \"States\" objects:",
+									"start": 1721188519274,
+									"stop": 1721188519305,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "States"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "8a17464f-221e-42a3-81ea-06f108525b7a-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I check or create information register \"CompanyVATPayerInformation\" records:",
+									"start": 1721188519383,
+									"stop": 1721188519430,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "CompanyVATPayerInformation"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "389aeb41-0518-4e6c-aa89-44f1d6366472-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188519461,
+					"stop": 1721188520353,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And InformationRegister.CompanyVATPayerInformation",
+							"start": 1721188519461,
+							"stop": 1721188520353,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}' in \"date\" variable",
+									"start": 1721188519461,
+									"stop": 1721188519461,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}"
+										},
+										{
+											"name": "Парам2",
+											"value": "date"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}' in \"datetime\" variable",
+									"start": 1721188519477,
+									"stop": 1721188519477,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}"
+										},
+										{
+											"name": "Парам2",
+											"value": "datetime"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+									"start": 1721188519508,
+									"stop": 1721188519508,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "VATOnRelease"
+										},
+										{
+											"name": "Парам2",
+											"value": "NonPayer"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								},
+								{
+									"name": "Else",
+									"start": 1721188519539,
+									"stop": 1721188519539,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [],
+									"attachments": [],
+									"steps": [
+										{
+											"name": "And I save \"Enum.VATPayerStatus.VAT_OnRelease\" in \"Enum\" variable",
+											"start": 1721188519539,
+											"stop": 1721188519539,
+											"status": "passed",
+											"stage": "finished",
+											"statusDetails": {
+												"known": false,
+												"muted": false,
+												"flaky": false
+											},
+											"parameters": [
+												{
+													"name": "Парам1",
+													"value": "Enum.VATPayerStatus.VAT_OnRelease"
+												},
+												{
+													"name": "Парам2",
+													"value": "Enum"
+												}
+											],
+											"attachments": [],
+											"steps": []
+										}
+									]
+								},
+								{
+									"name": "And I check or create information register \"CompanyVATPayerInformation\" records:",
+									"start": 1721188520103,
+									"stop": 1721188520353,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "CompanyVATPayerInformation"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "80b2d3cc-b695-4809-8599-2a1cea8ac17f-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188520822,
+					"stop": 1721188520962,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Contact Information",
+							"start": 1721188520822,
+							"stop": 1721188520962,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I refill object tabular section \"ContactInformation\":",
+									"start": 1721188520822,
+									"stop": 1721188520962,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "ContactInformation"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "ba86313e-0a93-479a-bf3c-9efbdeb108f8-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188521729,
+					"stop": 1721188522152,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Create catalog Contracts objects",
+							"start": 1721188521729,
+							"stop": 1721188522152,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Contracts\" objects:",
+									"start": 1721188521729,
+									"stop": 1721188522152,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Contracts"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "6aeb7226-22cd-4bb9-b66b-da3694cd3ddc-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188524045,
+					"stop": 1721188525234,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Create catalog Products objects",
+							"start": 1721188524045,
+							"stop": 1721188525234,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Products\" objects:",
+									"start": 1721188524045,
+									"stop": 1721188525109,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Products"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "3b49c273-6ee7-4deb-ac03-f0427f3865de-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								},
+								{
+									"name": "And I check or create catalog \"Products\" objects:",
+									"start": 1721188525187,
+									"stop": 1721188525234,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Products"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "92e6646e-7c4b-4953-a35c-7a94f6f8d998-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "try",
+					"start": 1721188525406,
+					"stop": 1721188525484,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Create Information Register ApplicabilityParametersForNumerators",
+							"start": 1721188525406,
+							"stop": 1721188525484,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create information register \"ApplicabilityParametersForNumerators\" records:",
+									"start": 1721188525406,
+									"stop": 1721188525484,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "ApplicabilityParametersForNumerators"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "8052ca25-5af3-474f-9fa2-6803dd9ca972-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "try",
+					"start": 1721188525703,
+					"stop": 1721188525796,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Create catalog FixedAssetsClassifier objects",
+							"start": 1721188525703,
+							"stop": 1721188525796,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"FixedAssetsClassifier\" objects:",
+									"start": 1721188525703,
+									"stop": 1721188525796,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "FixedAssetsClassifier"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "4a5e348d-5c2b-4a78-8b44-e9f88f01763b-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Try",
+					"start": 1721188525921,
+					"stop": 1721188531898,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And Catalog.CustomsClassifier",
+							"start": 1721188525921,
+							"stop": 1721188531898,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"CustomsClassifier\" objects:",
+									"start": 1721188525921,
+									"stop": 1721188531898,
+									"status": "broken",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "CustomsClassifier"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "1cc8183a-42bd-4843-9c9f-1b7e18bd42eb-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Data preparation"
+		},
+		{
+			"name": "feature",
+			"value": "Work Document Bank Payment > changes Cash flow activities"
+		},
+		{
+			"name": "suite",
+			"value": "Work Document Bank Payment > changes Cash flow activities"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_001_BCDocument"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

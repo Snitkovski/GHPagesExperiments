@@ -1,0 +1,781 @@
+{
+	"uuid": "29a6b876-68bd-43c3-bb5d-c24cbb1e7cc6",
+	"historyId": "Settlements Adjustment >DR/CR.(VATOnRelease) avansa Settlements Adjustment DR/ 401.2 KR/ 409.33",
+	"name": "(VATOnRelease) avansa Settlements Adjustment DR/ 401.2 KR/ 409.33",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186941442,
+	"stop": 1721186951041,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Form attribute named <Seria> is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7624)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7393)}: Form attribute named <Seria> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Settlements adjustment (create) *\n        ActiveFormName: Document.SettlementsAdjustment.Form.DocumentForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: avansa Settlements Adjustment DR/ 401.2 KR/ 409.33\n        TreeRowNumber: 23.635\n        FeatureLineNumber: 1.561\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюКнопкуВыбораУПоляСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:08 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:29:09"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721186941989,
+			"stop": 1721186942384,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.SettlementsAdjustment\"",
+			"start": 1721186942602,
+			"stop": 1721186942618,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.SettlementsAdjustment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721186942649,
+			"stop": 1721186942696,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"EUR\" exact value from the drop-down list named \"Currency\"",
+			"start": 1721186942727,
+			"stop": 1721186942821,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Currency"
+				},
+				{
+					"name": "Парам2",
+					"value": "EUR"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Seria\"",
+			"start": 1721186942852,
+			"stop": 1721186951041,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Form attribute named <Seria> is not found.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7624)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7393)}: Form attribute named <Seria> is not found.\n\nTechnical data:\n        ActiveWindowHeader: Settlements adjustment (create) *\n        ActiveFormName: Document.SettlementsAdjustment.Form.DocumentForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: avansa Settlements Adjustment DR/ 401.2 KR/ 409.33\n        TreeRowNumber: 23.635\n        FeatureLineNumber: 1.561\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюКнопкуВыбораУПоляСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:08 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:29:09"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Seria"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "c1c07015-0f50-4d5c-ac95-7c3ec64c6b04-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "1d3e3a86-9493-40f2-90dc-6560f22c9198-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "20a18fb0-9e56-4634-ae16-3c77d0523777-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "dc97313f-72d6-4d5b-9c13-db1a144e42d6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "2ff79c2a-e56a-433c-8112-82f9c19d4fec-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "5af2b779-dc34-4d23-a140-3ab69dc2b717-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "087e5416-f0a9-49d6-992e-1e181b30388c-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "7ea5491d-0d67-43ba-a0b6-cbcb2dd4fa0a-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "7cca2f2b-78b9-4d17-a06e-e1718df11338-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "f2416f0e-9c21-40f6-8d76-0fd95301bd52-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "d870fc95-e65d-4107-b707-2512a6354ee3-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "a48c1904-286a-4b68-9c29-f23fefe88ab0-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "19b2518b-8cab-48e8-9250-78fadac4e2f7-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Company\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c7412c82-928c-400e-a17a-5497429b99de-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"SettlementAccountDr\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementAccountDr"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "82b19187-5acb-4899-800d-d629574880aa-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Debit\" I click the button named \"DebitFillByBalanceDr\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Debit"
+				},
+				{
+					"name": "Парам2",
+					"value": "DebitFillByBalanceDr"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"$$VATPayerStatus$$\" variable is equal to \"NonPayer\" Then",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "NonPayer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "elseIf \"$$VATPayerStatus$$\" variable is equal to \"VATOnRelease\" Then",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$$VATPayerStatus$$"
+				},
+				{
+					"name": "Парам2",
+					"value": "VATOnRelease"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I go to line in \"Debit\" table",
+					"start": 1721186951041,
+					"stop": 1721186951041,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Debit"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "166ddb2d-c54d-4407-8a30-611f85ae6325-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"DebitDocument\" in \"Debit\" table",
+					"start": 1721186951041,
+					"stop": 1721186951041,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Debit"
+						},
+						{
+							"name": "Парам2",
+							"value": "DebitDocument"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I delete a line in \"Debit\" table",
+					"start": 1721186951041,
+					"stop": 1721186951041,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Debit"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I input \"409.33\" text in the field named \"SettlementAccountCr\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementAccountCr"
+				},
+				{
+					"name": "Парам2",
+					"value": "409.33"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Credit\" I click the button named \"CreditFillByBalanceCr\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Credit"
+				},
+				{
+					"name": "Парам2",
+					"value": "CreditFillByBalanceCr"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Debit\" I click the button named \"DebitFillAmountByDistributionDr\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Debit"
+				},
+				{
+					"name": "Парам2",
+					"value": "DebitFillAmountByDistributionDr"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"Button0\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Button0"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Credit\" table",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Credit"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate current test client window",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCommonCommandOpenGeneralJournalByRecorder\"",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCommonCommandOpenGeneralJournalByRecorder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"List\" table became equal by template",
+			"start": 1721186951041,
+			"stop": 1721186951041,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c20b9eaa-79e1-4469-8832-6376965e374f-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_10e8.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "avansa Settlements Adjustment DR/ 401.2 KR/ 409.33"
+		},
+		{
+			"name": "feature",
+			"value": "Settlements Adjustment >DR/CR"
+		},
+		{
+			"name": "suite",
+			"value": "Settlements Adjustment >DR/CR"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "SettlementsAdjustment"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "845ecaf7-ad6c-410e-91cb-2c0c5ee8e8a7-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "de087307-8ca2-43af-8848-6f07347e2bd2-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "120e6de8-8952-43c9-b840-d950469ad7dd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "f711554f-e99d-4996-872f-fe8952256510-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "eef87d77-31b8-4122-88d3-e48d4f7b8eea-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "3ce4dec0-2166-471c-9e8f-e2f386c1d29d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "26561cc1-ad43-436d-88fd-5b7eb277f1a1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "99faf648-900b-42c3-841c-c6996ab1d93c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "c0df9c97-9d8c-4799-b1d6-ebe398adf188-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "7e43c7dc-93c7-44cf-a0a6-d19abf89b095-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "f72b3260-ec2b-4ac8-a395-da832e79e82d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "abbfcc1c-c1ff-4a97-8981-0b4219a7d977-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "34962523-2e05-4235-954d-dac05a8fbf43-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "f62821b3-18c2-4676-af5c-855868cf521d-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

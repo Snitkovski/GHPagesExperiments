@@ -1,0 +1,506 @@
+{
+	"uuid": "4ab8e25e-bf51-49b7-8537-da7f66eb539f",
+	"historyId": "Document mark/unmark for deletion.(VATOnRelease) Cash Payment",
+	"name": "(VATOnRelease) Cash Payment",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189087117,
+	"stop": 1721189095065,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "The current row of <List> table is not marked for deletion.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(16381)}: The current row of <List> table is not marked for deletion.\n\nTechnical data:\n        ActiveWindowHeader: Cash payments\n        ActiveFormName: Document.CashPayment.Form.ListForm\n        FeatureName: Document mark/unmark for deletion\n        ScriptName: Cash Payment\n        TreeRowNumber: 36.354\n        FeatureLineNumber: 17\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_001_DocsMarkUnmarkForDeletion.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеТекущаяСтрокаПомеченаНаУдаление\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:04:53"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Document unposting mark/unmark for deletion \"e1cib/list/Document.CashPayment\"",
+			"start": 1721189087696,
+			"stop": 1721189095065,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721189087696,
+					"stop": 1721189087883,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.CashPayment\"",
+					"start": 1721189088103,
+					"stop": 1721189088119,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.CashPayment"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If number of \"List\" table lines is \"more\" \"0\" Then",
+					"start": 1721189088150,
+					"stop": 1721189095065,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						},
+						{
+							"name": "Парам2",
+							"value": "more"
+						},
+						{
+							"name": "Парам3",
+							"value": "0"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Then I go to the first line in \"List\" table",
+							"start": 1721189088259,
+							"stop": 1721189088275,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormSetDeletionMark\"",
+							"start": 1721189088291,
+							"stop": 1721189088306,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormSetDeletionMark"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"1C:Enterprise\" window is opened",
+							"start": 1721189088337,
+							"stop": 1721189088337,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "1C:Enterprise"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"Button0\"",
+							"start": 1721189088369,
+							"stop": 1721189088369,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Button0"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And the current row in \"List\" table is marked for deletion",
+							"start": 1721189088400,
+							"stop": 1721189095065,
+							"status": "failed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false,
+								"message": "The current row of <List> table is not marked for deletion.",
+								"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(16381)}: The current row of <List> table is not marked for deletion.\n\nTechnical data:\n        ActiveWindowHeader: Cash payments\n        ActiveFormName: Document.CashPayment.Form.ListForm\n        FeatureName: Document mark/unmark for deletion\n        ScriptName: Cash Payment\n        TreeRowNumber: 36.354\n        FeatureLineNumber: 17\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_001_DocsMarkUnmarkForDeletion.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеТекущаяСтрокаПомеченаНаУдаление\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:04:53"
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [
+								{
+									"name": "EventLog.mxl",
+									"source": "ad4f9e98-b64b-4788-9479-2c9574b7b526-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "EventLog.html",
+									"source": "3280df47-cd4e-4e06-a76d-5c18d7281812-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.xlsx",
+									"source": "4b922244-5bcd-42a0-bf52-9696c2960f26-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "ActiveFormState.mxl",
+									"source": "9ddc5ee9-b047-42fd-a4f8-c6541f97e733-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ActiveFormState.html",
+									"source": "d3ab686b-f74d-41d3-82a5-313cc111cc5e-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "ActiveFormState.xlsx",
+									"source": "9a907f00-ab24-497c-a53e-088fd3d516b1-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "AllFormsState.mxl",
+									"source": "0e9b5f66-4002-4bf9-8229-5a3eec735270-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "AllFormsState.html",
+									"source": "c9f74717-146f-49b2-ad5e-f8706047812e-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "AllFormsState.xlsx",
+									"source": "923c7a48-851b-4d6d-8e86-cee158cf5fad-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "NetworkConnectionsData.txt",
+									"source": "4aa9c82c-c6ef-4777-8f10-56e2dfd864be-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "OSProcessesData.txt",
+									"source": "ac740853-eb52-465d-ac7f-1fdbb8a5a94a-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "VariableValues.mxl",
+									"source": "0e5336f4-cb02-4d95-81ec-52ae0c691c11-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "VariableValues.html",
+									"source": "323cff21-9af2-41b7-8e0f-912c6035e20b-attachment.html",
+									"type": "html"
+								}
+							],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormSetDeletionMark\"",
+							"start": 1721189095065,
+							"stop": 1721189095065,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormSetDeletionMark"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then \"1C:Enterprise\" window is opened",
+							"start": 1721189095065,
+							"stop": 1721189095065,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "1C:Enterprise"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"Button0\"",
+							"start": 1721189095065,
+							"stop": 1721189095065,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Button0"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And the current row in \"List\" table is not marked for deletion",
+							"start": 1721189095065,
+							"stop": 1721189095065,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "Else",
+					"start": 1721189095065,
+					"stop": 1721189095065,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Then I raise \"There are no documents $DocumentType$\" exception",
+							"start": 1721189095065,
+							"stop": 1721189095065,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "There are no documents $DocumentType$"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721189095065,
+					"stop": 1721189095065,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [
+						{
+							"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+							"source": "v8_CDDA_132e.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Cash Payment"
+		},
+		{
+			"name": "feature",
+			"value": "Document mark/unmark for deletion"
+		},
+		{
+			"name": "suite",
+			"value": "Document mark/unmark for deletion"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "fe21511a-23c1-4321-b558-a8cc446cc4ae-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "40107e5b-b749-4650-9645-7b9a251d6245-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "34288b1c-8246-45e2-9a92-01563f652d6f-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "857c6ccd-b29d-4745-a8c9-a86429f3848e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "dfeff773-bb6e-4abf-9ea9-4b6004ea9fb7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "a285a132-1e7f-4cbd-ad46-f1542090efe1-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "2578fdd5-41eb-4a84-85c5-976302e31e0d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "02fb29bb-d378-43e1-86a3-d9d93a9ebfa8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "726a149f-75c8-45dc-aac4-9326cbd60296-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "31e684b7-efd2-45cf-8d67-5a2e57096717-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "8a8247cb-a518-4023-93da-235d6d4245e9-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "1985ce08-0745-4e63-baba-723bf2c2f012-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "40b1c8b0-e0e7-4096-b2f7-a4fac4f81c68-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "4f827820-81dd-42c8-b693-0b01afceb04f-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

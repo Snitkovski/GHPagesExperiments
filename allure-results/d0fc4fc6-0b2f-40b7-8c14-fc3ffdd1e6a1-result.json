@@ -1,0 +1,568 @@
+{
+	"uuid": "d0fc4fc6-0b2f-40b7-8c14-fc3ffdd1e6a1",
+	"historyId": "Payment request ingoing.(VATOnRelease) Accounts check",
+	"name": "(VATOnRelease) Accounts check",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186277230,
+	"stop": 1721186284997,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "For form element <Account>, the current value is <413.1  Efecte de primit de la clienți> and <511.2  Cecuri de încasat> was expected",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5822)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5766)}: For form element <Account>, the current value is <413.1  Efecte de primit de la clienți> and <511.2  Cecuri de încasat> was expected\n\nTechnical data:\n        ActiveWindowHeader: Payment request ingoing (create) *\n        ActiveFormName: Document.PaymentRequestIngoing.Form.DocumentForm\n        FeatureName: Payment request ingoing\n        ScriptName: Accounts check\n        TreeRowNumber: 20.432\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\PaymentRequestIngoing.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЭлементФормыСИменемСталРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:18:03"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Preparation",
+			"start": 1721186277793,
+			"stop": 1721186278188,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721186277793,
+					"stop": 1721186278188,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Create new document",
+			"start": 1721186278407,
+			"stop": 1721186278532,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.PaymentRequestIngoing\"",
+					"start": 1721186278407,
+					"stop": 1721186278423,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.PaymentRequestIngoing"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721186278454,
+					"stop": 1721186278532,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Fill the attributes\"",
+			"start": 1721186278563,
+			"stop": 1721186278985,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I input \"{Date(CurrentDate() + 24*60*60)}\" expression value in \"Date\" field",
+					"start": 1721186278563,
+					"stop": 1721186278610,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Date"
+						},
+						{
+							"name": "Парам2",
+							"value": "{Date(CurrentDate() + 24*60*60)}"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Company\"",
+					"start": 1721186278626,
+					"stop": 1721186278673,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Company"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Customers\" window is opened",
+					"start": 1721186278704,
+					"stop": 1721186278751,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Customers"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721186278844,
+					"stop": 1721186278860,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "0910a0c0-7d7d-43d5-854e-1a2cc22c3f96-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721186278891,
+					"stop": 1721186278907,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"OperationKind\" became equal to \"Bank check\"",
+					"start": 1721186278938,
+					"stop": 1721186278985,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OperationKind"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bank check"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Additional information tab",
+			"start": 1721186279026,
+			"stop": 1721186284997,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then the form attribute named \"Account\" became equal to \"511.2  Cecuri de încasat\"",
+					"start": 1721186279026,
+					"stop": 1721186284997,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "For form element <Account>, the current value is <413.1  Efecte de primit de la clienți> and <511.2  Cecuri de încasat> was expected",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5822)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(5766)}: For form element <Account>, the current value is <413.1  Efecte de primit de la clienți> and <511.2  Cecuri de încasat> was expected\n\nTechnical data:\n        ActiveWindowHeader: Payment request ingoing (create) *\n        ActiveFormName: Document.PaymentRequestIngoing.Form.DocumentForm\n        FeatureName: Payment request ingoing\n        ScriptName: Accounts check\n        TreeRowNumber: 20.432\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\PaymentRequestIngoing.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЭлементФормыСИменемСталРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:18:03"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Account"
+						},
+						{
+							"name": "Парам2",
+							"value": "511.2  Cecuri de încasat"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "eb3a39fb-a3e0-4547-b681-a6ed11972286-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "8261f3d4-229b-4955-b5f5-694d2ba8e4d4-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "121d6c2f-61dd-473c-8470-6249f6812489-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "e17683b0-dcb9-4496-bd33-89025ced1a27-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "7be1693a-0604-4400-a2ff-b4c09df8a17b-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "f55baf8b-dc4a-4992-8ad1-ede51bdc1db8-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "ed45e4d6-14e9-41c2-b2d6-37bb395feeda-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "2348265f-dbe3-4413-b5f1-322095f76839-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "0ee1bbe6-416e-4519-8c38-9fe6f34b4a3b-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "c9d2e217-a6dd-4735-a26d-2cb6dda13ef3-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "b4ba6618-87e4-4a60-af80-d6dfe907b71b-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "d20ecb1c-f27e-4be5-ab6a-17e195701ec6-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "c941e937-0a8c-4bb1-b52e-a198522a1de6-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Promissory note\" exact value from the drop-down list named \"OperationKind\"",
+					"start": 1721186284997,
+					"stop": 1721186284997,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OperationKind"
+						},
+						{
+							"name": "Парам2",
+							"value": "Promissory note"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Account\" became equal to \"511.3  Efecte de încasat\"",
+					"start": 1721186284997,
+					"stop": 1721186284997,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Account"
+						},
+						{
+							"name": "Парам2",
+							"value": "511.3  Efecte de încasat"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select \"Bank check\" exact value from the drop-down list named \"OperationKind\"",
+					"start": 1721186284997,
+					"stop": 1721186284997,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "OperationKind"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bank check"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Account\" became equal to \"511.2  Cecuri de încasat\"",
+					"start": 1721186284997,
+					"stop": 1721186284997,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Account"
+						},
+						{
+							"name": "Парам2",
+							"value": "511.2  Cecuri de încasat"
+						}
+					],
+					"attachments": [
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_ebb.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Accounts check"
+		},
+		{
+			"name": "feature",
+			"value": "Payment request ingoing"
+		},
+		{
+			"name": "suite",
+			"value": "Payment request ingoing"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "2ec609ac-16ff-4fe3-a1ec-51ce35111325-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "91f1096a-afbc-4448-b005-61d80dea5573-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "483c4747-4d0e-46f3-8f73-09a8043e434d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "69c8391e-0c6d-4ea6-ac71-ec83db3c697c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "3d80b4ca-4033-40ac-ab0e-7f60c9223a86-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "fde42883-2751-4058-89e3-2177c4478e8a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "5bd56599-8839-4617-9f77-0faec8a0254a-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "a3e91656-98bd-4736-a561-4f19f5f9a682-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "aba28726-210d-4655-af4c-d6e51d3f7f50-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "90393b62-6287-43e2-ace8-778f5caf1bc1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "618932f3-ca70-412f-b8e7-7f401e27dc29-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "d208ac58-38e4-4a2d-8440-910b13fa9423-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "5caf0368-6982-4009-95ee-78aa180c4a09-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "0e6a31c1-8a05-425a-9311-af12fcd58b85-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,1707 @@
+{
+	"uuid": "76d77950-eb6a-449a-874d-df715b572877",
+	"historyId": "075 Expense report  Currency.(VATOnRelease) Use Multi Currency Expense report",
+	"name": "(VATOnRelease) Use Multi Currency Expense report",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183128087,
+	"stop": 1721183142487,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Table <DetailsOther>.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <DetailsOther>. Line No.<1>. Column <Payment amount>. Expected <594,85>, got <594,84>\n\nTechnical data:\n        ActiveWindowHeader: Cash payment (create)\n        ActiveFormName: Document.CashPayment.Form.DocumentForm\n        FeatureName: 075 Expense report  Currency\n        ScriptName: Use Multi Currency Expense report\n        TreeRowNumber: 5.468\n        FeatureLineNumber: 650\n        FeatureFullPath: features\\CI\\Main\\Basic\\075_ExpenseReportCurrency.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:25:40"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721183128743,
+			"stop": 1721183129061,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.AdvanceReport\"",
+			"start": 1721183129279,
+			"stop": 1721183129295,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.AdvanceReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721183129326,
+			"stop": 1721183129373,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click Choice button of the field named \"Employee\"",
+			"start": 1721183129686,
+			"stop": 1721183129701,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Employee"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183129795,
+			"stop": 1721183129795,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "52949687-3fe0-4e5e-b990-d31c259d24ba-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183129826,
+			"stop": 1721183129842,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox named \"MultiCurrencyExpenses\"",
+			"start": 1721183129857,
+			"stop": 1721183129889,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "MultiCurrencyExpenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesLineNumber\" in \"Expenses\" table",
+			"start": 1721183129920,
+			"stop": 1721183129920,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesLineNumber"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And form attribute named \"PricesAndCurrency\" is unavailable",
+			"start": 1721183129951,
+			"stop": 1721183129951,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PricesAndCurrency"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Expenses\" I click the button named \"ExpensesAdd\"",
+			"start": 1721183129982,
+			"stop": 1721183129998,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input current date in \"Date of payment\" field",
+			"start": 1721183130024,
+			"stop": 1721183130066,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Date of payment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesDateOfPayment\" in \"Expenses\" table",
+			"start": 1721183130097,
+			"stop": 1721183130113,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesDateOfPayment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesCashFlowActivity\" in \"Expenses\" table",
+			"start": 1721183130144,
+			"stop": 1721183130175,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesCashFlowActivity\" in \"Expenses\" table",
+			"start": 1721183130207,
+			"stop": 1721183130207,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183130316,
+			"stop": 1721183130316,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "b5dadca6-f87c-4970-b422-5812d876c668-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183130347,
+			"stop": 1721183130363,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension1\" in \"Expenses\" table",
+			"start": 1721183130394,
+			"stop": 1721183130425,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesExtDimension1\" in \"Expenses\" table",
+			"start": 1721183130457,
+			"stop": 1721183130488,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183130582,
+			"stop": 1721183130597,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "2531eceb-7244-4345-94b1-b26b190d5201-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183130628,
+			"stop": 1721183130628,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension2\" in \"Expenses\" table",
+			"start": 1721183130660,
+			"stop": 1721183130691,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension2"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesExtDimension2\" in \"Expenses\" table",
+			"start": 1721183130722,
+			"stop": 1721183130738,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension2"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183130832,
+			"stop": 1721183130847,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c114ae4f-3b37-4598-a893-77ef23e9d882-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183130878,
+			"stop": 1721183130878,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Expenses\" table",
+			"start": 1721183130910,
+			"stop": 1721183130910,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension3\" in \"Expenses\" table",
+			"start": 1721183130941,
+			"stop": 1721183130957,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension3"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesCurrencyAmount\" in \"Expenses\" table",
+			"start": 1721183130988,
+			"stop": 1721183130988,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrencyAmount"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"Expenses\" table",
+			"start": 1721183131020,
+			"stop": 1721183131020,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"100,00\" text in the field named \"ExpensesCurrencyAmount\" of \"Expenses\" table",
+			"start": 1721183131052,
+			"stop": 1721183131067,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrencyAmount"
+				},
+				{
+					"name": "Парам3",
+					"value": "100,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Expenses\" table",
+			"start": 1721183131098,
+			"stop": 1721183131098,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And in the table \"Expenses\" I click the button named \"ExpensesAdd\"",
+			"start": 1721183131130,
+			"stop": 1721183131130,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesAdd"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input current date in \"Date of payment\" field",
+			"start": 1721183131161,
+			"stop": 1721183131192,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Date of payment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesDateOfPayment\" in \"Expenses\" table",
+			"start": 1721183131223,
+			"stop": 1721183131239,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesDateOfPayment"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesCashFlowActivity\" in \"Expenses\" table",
+			"start": 1721183131270,
+			"stop": 1721183131302,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesCashFlowActivity\" in \"Expenses\" table",
+			"start": 1721183131333,
+			"stop": 1721183131348,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCashFlowActivity"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183131442,
+			"stop": 1721183131458,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "6bf0becd-3c43-4ae1-ab0a-45e1f229f25e-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183131489,
+			"stop": 1721183131489,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension1\" in \"Expenses\" table",
+			"start": 1721183131520,
+			"stop": 1721183131567,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesExtDimension1\" in \"Expenses\" table",
+			"start": 1721183131598,
+			"stop": 1721183131614,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension1"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183131708,
+			"stop": 1721183131708,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c221ee0f-23ca-42d6-8256-dfc9d6f52b1c-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183131739,
+			"stop": 1721183131755,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension2\" in \"Expenses\" table",
+			"start": 1721183131786,
+			"stop": 1721183131817,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension2"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesExtDimension2\" in \"Expenses\" table",
+			"start": 1721183131848,
+			"stop": 1721183131864,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension2"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721183131942,
+			"stop": 1721183131973,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "e2e303f2-172c-4774-afce-9c1a1027fb87-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721183132005,
+			"stop": 1721183132005,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Expenses\" table",
+			"start": 1721183132037,
+			"stop": 1721183132053,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension3\" in \"Expenses\" table",
+			"start": 1721183132084,
+			"stop": 1721183132084,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension3"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesCurrencyAmount\" in \"Expenses\" table",
+			"start": 1721183132115,
+			"stop": 1721183132131,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrencyAmount"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesCurrency\" in \"Expenses\" table",
+			"start": 1721183132146,
+			"stop": 1721183132162,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrency"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click choice button of the attribute named \"ExpensesCurrency\" in \"Expenses\" table",
+			"start": 1721183132193,
+			"stop": 1721183132225,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrency"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"EUR\" from the list",
+			"start": 1721183132271,
+			"stop": 1721183132271,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "EUR"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"Expenses\" table",
+			"start": 1721183132303,
+			"stop": 1721183132303,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Expenses\" table",
+			"start": 1721183132334,
+			"stop": 1721183132350,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"100,00\" text in the field named \"ExpensesCurrencyAmount\" of \"Expenses\" table",
+			"start": 1721183132537,
+			"stop": 1721183132600,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesCurrencyAmount"
+				},
+				{
+					"name": "Парам3",
+					"value": "100,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Expenses\" table",
+			"start": 1721183132631,
+			"stop": 1721183132631,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate field named \"ExpensesExtDimension3\" in \"Expenses\" table",
+			"start": 1721183132662,
+			"stop": 1721183132662,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Expenses"
+				},
+				{
+					"name": "Парам2",
+					"value": "ExpensesExtDimension3"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormPost\"",
+			"start": 1721183132693,
+			"stop": 1721183132709,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormPost"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I activate current test client window",
+			"start": 1721183132740,
+			"stop": 1721183132740,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentCashPaymentCreateBasedOn\"",
+			"start": 1721183132959,
+			"stop": 1721183132959,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentCashPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"DetailsOther\" table became equal",
+			"start": 1721183133054,
+			"stop": 1721183142487,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Table <DetailsOther>.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6320)}: Table <DetailsOther>. Line No.<1>. Column <Payment amount>. Expected <594,85>, got <594,84>\n\nTechnical data:\n        ActiveWindowHeader: Cash payment (create)\n        ActiveFormName: Document.CashPayment.Form.DocumentForm\n        FeatureName: 075 Expense report  Currency\n        ScriptName: Use Multi Currency Expense report\n        TreeRowNumber: 5.468\n        FeatureLineNumber: 650\n        FeatureFullPath: features\\CI\\Main\\Basic\\075_ExpenseReportCurrency.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:12 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:25:40"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DetailsOther"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "77240b63-8203-4c8e-9251-2b2c2993bf7a-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "Differences.mxl",
+					"source": "b3321b30-f025-4b60-b97d-54d41b9fa77e-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "Differences.html",
+					"source": "9c8e61fb-bceb-4055-a6b5-6ffa6a3b225c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ReferenceValueTable.mxl",
+					"source": "08fb8441-7520-4d0b-b2f4-4b772f529d53-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ReferenceValueTable.html",
+					"source": "d2289e0a-ac11-4752-8a43-246a1c95fa14-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "40b26bf5-7534-49d8-b6af-d4cf00f0b897-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "4734fcd1-8be4-4585-9294-551d0d234f66-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "8affc3b3-1bea-40f8-9edf-d5d4a53e6ae2-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "edc793f9-389d-452f-9226-ae300b10920b-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "65550ce3-085e-4ee5-9197-ddd1a7982edf-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "4b1c882f-beef-40e4-ae19-876f8412eac0-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "a4e640a7-cecc-4ece-9ff9-e3d2fceb65cf-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "74e13cd8-6e4f-4e9c-bb35-0f185ee5e1ea-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "89ed8db9-690b-4b9e-ba01-be3a497120b1-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "9aa8b7c9-fb7c-4c77-b9ff-c9f6c0b22b38-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "49d04482-a73f-4365-86b9-84f273890bea-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "a5ffbe57-0b3d-436d-96da-4520d3539f13-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "e0eb6f08-1e11-4673-8be1-fbabfdaa9736-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "d88865ae-f09b-44c9-a5ff-2371d04a470e-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "76c3455f-665f-4d26-bf4d-cf9e2560fa83-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashFlowActivity\" became equal to \"Plati (restituiri) supraplati la decontul de cheltuieli\"",
+			"start": 1721183142487,
+			"stop": 1721183142487,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				},
+				{
+					"name": "Парам2",
+					"value": "Plati (restituiri) supraplati la decontul de cheltuieli"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"SettlementsAccount\" became equal to \"428.1  Alte datorii în legătură cu personalul\"",
+			"start": 1721183142487,
+			"stop": 1721183142487,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "SettlementsAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "428.1  Alte datorii în legătură cu personalul"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I close current window",
+			"start": 1721183142487,
+			"stop": 1721183142487,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormDocumentBankPaymentCreateBasedOn\"",
+			"start": 1721183142487,
+			"stop": 1721183142487,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormDocumentBankPaymentCreateBasedOn"
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_386.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.Cash payment (create)",
+					"source": "v8_CDDA_387.png",
+					"type": "image/png"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_388.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Use Multi Currency Expense report"
+		},
+		{
+			"name": "feature",
+			"value": "075 Expense report  Currency"
+		},
+		{
+			"name": "suite",
+			"value": "075 Expense report  Currency"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "f259cc3b-2ae6-479a-97f2-667cbc649694-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.Cash payment (create)",
+			"source": "96783687-cb41-4524-a65b-47b25ad37ded-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "fb72e324-25a1-4281-a0e4-d08a1239dd2f-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Differences.mxl",
+			"source": "c29fb426-5fbb-4391-9fb9-c0650b283c7b-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "Differences.html",
+			"source": "3e67a392-40c1-46fd-bb2e-57036bf7cddd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ReferenceValueTable.mxl",
+			"source": "7f009923-ccf6-4856-915f-78b73200a457-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueTable.html",
+			"source": "b2c7b9c0-bb57-4152-8994-5b6362f12cf2-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "0866e8b5-7652-4f86-87fe-6edae299f465-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "0fc8671a-97f6-438d-b7cf-fcdcd24111ff-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "561ae260-bff5-49b0-8c0f-bedc786d41f3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "a522160c-3b60-4582-8ba9-07fe4268c918-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "0572fda7-c971-41bf-8c25-8c449121f1d7-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "48f7fcfd-6b4e-49e3-9e87-47917e8d5b02-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "bdd41408-1013-434d-a17f-63cc064d58bd-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "49cec5d0-cd7e-41c8-9484-3fa5c73e999c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "33468632-70cd-465a-a1cd-95db9e2bef7a-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "907ea0da-95eb-427e-b3ff-834df801ec79-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "04e50c92-b810-4db6-88f0-e3d546383662-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "610c07fd-4022-47a0-9bc6-8e0637f45062-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "2c88e377-bdfb-4796-a295-8b1013119ff8-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "347baae6-6361-45c1-9b44-f3be21aad381-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "fc906a6f-7e10-46c1-8681-844972d944d4-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

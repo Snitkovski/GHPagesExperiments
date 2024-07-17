@@ -1,0 +1,315 @@
+{
+	"uuid": "1b815775-f27d-40d7-ac60-985e1efda940",
+	"historyId": "Close month.(VATOnRelease) Create Year item",
+	"name": "(VATOnRelease) Create Year item",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184188881,
+	"stop": 1721184191073,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.Years\"",
+			"start": 1721184189851,
+			"stop": 1721184189867,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.Years"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Years\" window is opened",
+			"start": 1721184190056,
+			"stop": 1721184190072,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Years"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save '{BegOfYear(CurrentDate())}' in \"BegOfYear\" variable",
+			"start": 1721184190087,
+			"stop": 1721184190087,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{BegOfYear(CurrentDate())}"
+				},
+				{
+					"name": "Парам2",
+					"value": "BegOfYear"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save 'Format(BegOfYear(CurrentDate()), \"DF=\"\"yyyy\"\"\")' in \"Year\" variable",
+			"start": 1721184190118,
+			"stop": 1721184190118,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Format(BegOfYear(CurrentDate()), \"DF=\"\"yyyy\"\"\")"
+				},
+				{
+					"name": "Парам2",
+					"value": "Year"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If \"List\" table does not contain line Then",
+			"start": 1721184190197,
+			"stop": 1721184191073,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "c376c354-8e54-47f7-94f5-e12246f2d37c-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721184190228,
+					"stop": 1721184190243,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Year (create)\" window is opened",
+					"start": 1721184190275,
+					"stop": 1721184190306,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Year (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"FistDayOfTheYear\"",
+					"start": 1721184190337,
+					"stop": 1721184190353,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FistDayOfTheYear"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"01.01.2024 00:00:00\" text in the field named \"FistDayOfTheYear\"",
+					"start": 1721184190368,
+					"stop": 1721184190384,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FistDayOfTheYear"
+						},
+						{
+							"name": "Парам2",
+							"value": "01.01.2024 00:00:00"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"2024\" text in the field named \"Description\"",
+					"start": 1721184190415,
+					"stop": 1721184190431,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Description"
+						},
+						{
+							"name": "Парам2",
+							"value": "2024"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721184190447,
+					"stop": 1721184190462,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"Year (create) *\" window closing in 20 seconds",
+					"start": 1721184190493,
+					"stop": 1721184191073,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Year (create) *"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Create Year item"
+		},
+		{
+			"name": "feature",
+			"value": "Close month"
+		},
+		{
+			"name": "suite",
+			"value": "Close month"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

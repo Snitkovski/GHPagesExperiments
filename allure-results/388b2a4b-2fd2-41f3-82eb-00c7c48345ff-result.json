@@ -1,0 +1,333 @@
+{
+	"uuid": "388b2a4b-2fd2-41f3-82eb-00c7c48345ff",
+	"historyId": "Chart of accounts check.(VATOnRelease) Chart of accounts SAFT codes check",
+	"name": "(VATOnRelease) Chart of accounts SAFT codes check",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184031632,
+	"stop": 1721184032949,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/ChartOfAccounts.ChartOfAccounts\"",
+			"start": 1721184032527,
+			"stop": 1721184032527,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/ChartOfAccounts.ChartOfAccounts"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormList\"",
+			"start": 1721184032558,
+			"stop": 1721184032668,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormList"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save 'False' in \"Errors\" variable",
+			"start": 1721184032683,
+			"stop": 1721184032699,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "False"
+				},
+				{
+					"name": "Парам2",
+					"value": "Errors"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And for each line of \"List\" table I do",
+			"start": 1721184032715,
+			"stop": 1721184032933,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I save the value of the field named \"Code\" of \"List\" table as \"Code\"",
+					"start": 1721184032762,
+					"stop": 1721184032762,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Code"
+						},
+						{
+							"name": "Парам2",
+							"value": "List"
+						},
+						{
+							"name": "Парам3",
+							"value": "Code"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"SAFTCode\" of \"List\" table as \"SAFTCode\"",
+					"start": 1721184032777,
+					"stop": 1721184032793,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "SAFTCode"
+						},
+						{
+							"name": "Парам2",
+							"value": "List"
+						},
+						{
+							"name": "Парам3",
+							"value": "SAFTCode"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save 'TrimAll(1   )' in \"SAFTCode\" variable",
+					"start": 1721184032808,
+					"stop": 1721184032808,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TrimAll(1   )"
+						},
+						{
+							"name": "Парам2",
+							"value": "SAFTCode"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save 'StrLen(1)' in \"SAFTCodeLength\" variable",
+					"start": 1721184032840,
+					"stop": 1721184032840,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "StrLen(1)"
+						},
+						{
+							"name": "Парам2",
+							"value": "SAFTCodeLength"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save 'Find(1.    , \".\")' in \"Point\" variable",
+					"start": 1721184032871,
+					"stop": 1721184032871,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Find(1.    , \".\")"
+						},
+						{
+							"name": "Парам2",
+							"value": "Point"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save 'TrimAll(Left(1.    , $Point$-1) + Mid(1.    , $Point$+1, $SAFTCodeLength$ - $Point$ +1))' in \"AccountCode\" variable",
+					"start": 1721184032902,
+					"stop": 1721184032902,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TrimAll(Left(1.    , $Point$-1) + Mid(1.    , $Point$+1, $SAFTCodeLength$ - $Point$ +1))"
+						},
+						{
+							"name": "Парам2",
+							"value": "AccountCode"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If \"1\" variable is equal to \"1\" Then",
+					"start": 1721184032933,
+					"stop": 1721184032933,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "1"
+						},
+						{
+							"name": "Парам2",
+							"value": "1"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "If \"False\" variable is equal to \"Ture\" Then",
+			"start": 1721184032949,
+			"stop": 1721184032949,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "False"
+				},
+				{
+					"name": "Парам2",
+					"value": "Ture"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Chart of accounts SAFT codes check"
+		},
+		{
+			"name": "feature",
+			"value": "Chart of accounts check"
+		},
+		{
+			"name": "suite",
+			"value": "Chart of accounts check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

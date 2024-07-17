@@ -1,0 +1,1697 @@
+{
+	"uuid": "81c2cd89-ce9a-4734-9c0d-9696655bb932",
+	"historyId": "E-transport sending files.(VATOnRelease) Consignment note posting 30-Transport pe teritoriul naţional for sending",
+	"name": "(VATOnRelease) Consignment note posting 30-Transport pe teritoriul naţional for sending",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721187237068,
+	"stop": 1721187260121,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "String <Document Consignment note * dated * was sent successfully.> is not found in user messages window.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСОкномСообщений.Form(150)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСОкномСообщений.Form(137)}: String <Document Consignment note * dated * was sent successfully.> is not found in user messages window. Message box status:\nError occurred while sending consignment notes to tax office: Counterparty address is not filled.\n\n\nTechnical data:\n        ActiveWindowHeader: Consignment note 00000000013 dated 17.07.2024 06:34:02\n        ActiveFormName: Document.ConsignmentNote.Form.DocumentForm\n        FeatureName: E-transport sending files\n        ScriptName: Consignment note posting 30-Transport pe teritoriul naţional for sending\n        TreeRowNumber: 25.111\n        FeatureLineNumber: 205\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Transport_Sending.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСОкномСообщений\n        ProcedureName: ВЛогеСообщенийTestClientЕстьСтрокаПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:21 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:34:18"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I create a new Consignment note \"Customer VAT payer\"",
+			"start": 1721187237943,
+			"stop": 1721187240791,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.ConsignmentNote\"",
+					"start": 1721187237943,
+					"stop": 1721187237943,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.ConsignmentNote"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Consignment notes\" window is opened",
+					"start": 1721187237975,
+					"stop": 1721187238054,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Consignment notes"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormCreate\"",
+					"start": 1721187238085,
+					"stop": 1721187238101,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCreate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Consignment note (create)\" window is opened",
+					"start": 1721187238132,
+					"stop": 1721187238210,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Consignment note (create)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "If I see the attribute named \"Organization\" on the form Then",
+					"start": 1721187238226,
+					"stop": 1721187240556,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Organization"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Counterparty\"",
+					"start": 1721187240588,
+					"stop": 1721187240619,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Counterparty"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187240713,
+					"stop": 1721187240744,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "c6bc6301-e7d6-4535-8a87-d542f5647e6e-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187240775,
+					"stop": 1721187240791,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I set a car",
+			"start": 1721187240822,
+			"stop": 1721187241401,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"Consignment note (create) *\" window is opened",
+					"start": 1721187240822,
+					"stop": 1721187240822,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Consignment note (create) *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Car\"",
+					"start": 1721187240853,
+					"stop": 1721187240885,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Car"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Vehicles\" window is opened",
+					"start": 1721187240916,
+					"stop": 1721187240947,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Vehicles"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187241042,
+					"stop": 1721187241058,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "4105a62f-61f2-4a1f-8037-e96752222c2e-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187241089,
+					"stop": 1721187241089,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I expand the group named \"TrailersGroup\"",
+					"start": 1721187241120,
+					"stop": 1721187241136,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TrailersGroup"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click Choice button of the field named \"Trailer1\"",
+					"start": 1721187241151,
+					"stop": 1721187241183,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Trailer1"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Vehicles\" window is opened",
+					"start": 1721187241214,
+					"stop": 1721187241245,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Vehicles"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187241339,
+					"stop": 1721187241355,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "b344f2f1-f3dd-4ffb-b01a-84feff310a7c-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187241386,
+					"stop": 1721187241401,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "And I select \"30-Transport pe teritoriul naţional\" exact value from the drop-down list named \"OperationType\"",
+			"start": 1721187241433,
+			"stop": 1721187241448,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "OperationType"
+				},
+				{
+					"name": "Парам2",
+					"value": "30-Transport pe teritoriul naţional"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I select \"101-Comercializare\" exact value from the drop-down list named \"OperationKind\"",
+			"start": 1721187241480,
+			"stop": 1721187241511,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "OperationKind"
+				},
+				{
+					"name": "Парам2",
+					"value": "101-Comercializare"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "* Start place",
+			"start": 1721187241542,
+			"stop": 1721187241808,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click Choice button of the field named \"RouteStartPlace\"",
+					"start": 1721187241542,
+					"stop": 1721187241573,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "RouteStartPlace"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Locations\" window is opened",
+					"start": 1721187241605,
+					"stop": 1721187241636,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Locations"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187241730,
+					"stop": 1721187241761,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "f408b2b9-b118-44c2-afe4-f10b3a2686a0-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187241792,
+					"stop": 1721187241808,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* End place",
+			"start": 1721187241839,
+			"stop": 1721187242574,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click Choice button of the field named \"RouteEndPlace\"",
+					"start": 1721187241839,
+					"stop": 1721187241855,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "RouteEndPlace"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Locations\" window is opened",
+					"start": 1721187241901,
+					"stop": 1721187241948,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Locations"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721187242027,
+					"stop": 1721187242059,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "9689a50e-0ebd-4e6c-86a8-0d224445793f-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187242090,
+					"stop": 1721187242106,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWrite\"",
+					"start": 1721187242403,
+					"stop": 1721187242403,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWrite"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I check writing",
+					"start": 1721187242449,
+					"stop": 1721187242574,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I click the button named \"FormWrite\"",
+							"start": 1721187242449,
+							"stop": 1721187242512,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWrite"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then user message window does not contain messages",
+							"start": 1721187242543,
+							"stop": 1721187242574,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "* Documents list",
+			"start": 1721187242606,
+			"stop": 1721187243763,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I move to the tab named \"GroupGoods\"",
+					"start": 1721187242606,
+					"stop": 1721187242621,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GroupGoods"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Consignment note * dated *\" window is opened",
+					"start": 1721187242653,
+					"stop": 1721187242653,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Consignment note * dated *"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I move to the tab named \"GroupGoods\"",
+					"start": 1721187242684,
+					"stop": 1721187242699,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GroupGoods"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in the table \"BaseDocuments\" I click the button named \"AddBaseDocument_SalesInvoice\"",
+					"start": 1721187242731,
+					"stop": 1721187242746,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "BaseDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "AddBaseDocument_SalesInvoice"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Sales invoices\" window is opened",
+					"start": 1721187242778,
+					"stop": 1721187242918,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Sales invoices"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to the last line in \"List\" table",
+					"start": 1721187242949,
+					"stop": 1721187242965,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721187242996,
+					"stop": 1721187242996,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"BaseDocumentsBasis\" in \"BaseDocuments\" table",
+					"start": 1721187243028,
+					"stop": 1721187243060,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "BaseDocuments"
+						},
+						{
+							"name": "Парам2",
+							"value": "BaseDocumentsBasis"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I activate field named \"GoodsProduct\" in \"Goods\" table",
+					"start": 1721187243091,
+					"stop": 1721187243123,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Goods"
+						},
+						{
+							"name": "Парам2",
+							"value": "GoodsProduct"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"BaseDocuments\" table became equal by template",
+					"start": 1721187243201,
+					"stop": 1721187243248,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "BaseDocuments"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "2ed90f37-a5d0-44b5-aa2d-0b9cbad0ddaf-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "If number of \"Goods\" table lines is \"more\" \"0\" Then",
+					"start": 1721187243279,
+					"stop": 1721187243763,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Goods"
+						},
+						{
+							"name": "Парам2",
+							"value": "more"
+						},
+						{
+							"name": "Парам3",
+							"value": "0"
+						}
+					],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I go to the first line in \"Goods\" table",
+							"start": 1721187243341,
+							"stop": 1721187243357,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I activate field named \"GoodsNetWeight\" in \"Goods\" table",
+							"start": 1721187243388,
+							"stop": 1721187243404,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								},
+								{
+									"name": "Парам2",
+									"value": "GoodsNetWeight"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"Goods\" table",
+							"start": 1721187243435,
+							"stop": 1721187243435,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"40,000\" text in the field named \"GoodsNetWeight\" of \"Goods\" table",
+							"start": 1721187243466,
+							"stop": 1721187243498,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								},
+								{
+									"name": "Парам2",
+									"value": "GoodsNetWeight"
+								},
+								{
+									"name": "Парам3",
+									"value": "40,000"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I finish line editing in \"Goods\" table",
+							"start": 1721187243529,
+							"stop": 1721187243529,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I move to the next attribute",
+							"start": 1721187243560,
+							"stop": 1721187243576,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"Goods\" table",
+							"start": 1721187243607,
+							"stop": 1721187243607,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I input \"40,100\" text in the field named \"GoodsGrossWeight\" of \"Goods\" table",
+							"start": 1721187243638,
+							"stop": 1721187243669,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								},
+								{
+									"name": "Парам2",
+									"value": "GoodsGrossWeight"
+								},
+								{
+									"name": "Парам3",
+									"value": "40,100"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I finish line editing in \"Goods\" table",
+							"start": 1721187243716,
+							"stop": 1721187243716,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Goods"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormWrite\"",
+							"start": 1721187243748,
+							"stop": 1721187243763,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWrite"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "* Send to ANAF",
+			"start": 1721187243794,
+			"stop": 1721187260121,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormCommonCommandSendDocumentsToTaxOfficeETransport\"",
+					"start": 1721187243794,
+					"stop": 1721187243841,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCommonCommandSendDocumentsToTaxOfficeETransport"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Delay \"10\"",
+					"start": 1721187243873,
+					"stop": 1721187253151,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "10"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "When TestClient log message contains 'Document Consignment note * dated * was sent successfully.' string by template",
+					"start": 1721187253370,
+					"stop": 1721187260121,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "String <Document Consignment note * dated * was sent successfully.> is not found in user messages window.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСОкномСообщений.Form(150)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСОкномСообщений.Form(137)}: String <Document Consignment note * dated * was sent successfully.> is not found in user messages window. Message box status:\nError occurred while sending consignment notes to tax office: Counterparty address is not filled.\n\n\nTechnical data:\n        ActiveWindowHeader: Consignment note 00000000013 dated 17.07.2024 06:34:02\n        ActiveFormName: Document.ConsignmentNote.Form.DocumentForm\n        FeatureName: E-transport sending files\n        ScriptName: Consignment note posting 30-Transport pe teritoriul naţional for sending\n        TreeRowNumber: 25.111\n        FeatureLineNumber: 205\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Transport_Sending.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСОкномСообщений\n        ProcedureName: ВЛогеСообщенийTestClientЕстьСтрокаПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:21 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:34:18"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Document Consignment note * dated * was sent successfully."
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "c182249c-180f-4bf1-8d69-0d7527132bf7-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "1cf85575-f464-46d4-a9f2-1fb32816ab94-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "c830be9f-6632-49c6-a36c-e0ccebeafdb4-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "e374943a-1fde-4e0b-a392-17bab87528b1-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "00c54c73-1a74-4db6-84d0-27641a6c65f5-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "af74f54a-3a4a-4176-8f27-17d741d22110-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "60681c89-e907-4f82-bf13-661a15a99f1c-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "477ec685-6190-4ca2-950d-d6bd7cb12283-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "18ba9bc6-72f0-4e0d-8870-4441a7ace67a-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "604c63a4-4715-4608-94d5-39db8eb9cd5d-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "40b3f67b-de91-40f5-a20c-215769a7da02-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "549b5ad5-d097-44f1-8618-58835861662b-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "e3931971-8dc8-4178-93ac-7a6d88d55ba0-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Show XML",
+			"start": 1721187260121,
+			"stop": 1721187260121,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I click the button named \"FormCommonCommandShowFileToBeTransferredToTaxOfficeETransport\"",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormCommonCommandShowFileToBeTransferredToTaxOfficeETransport"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"Invoice_*.xml\" window opening in \"2\" seconds",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Invoice_*.xml"
+						},
+						{
+							"name": "Парам2",
+							"value": "2"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Check sending status",
+			"start": 1721187260121,
+			"stop": 1721187260121,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Document.ConsignmentNote\"",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Document.ConsignmentNote"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to the last line in \"List\" table",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I check status",
+					"start": 1721187260121,
+					"stop": 1721187260121,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I activate field named \"ETransportStatus\" in \"List\" table",
+							"start": 1721187260121,
+							"stop": 1721187260121,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								},
+								{
+									"name": "Парам2",
+									"value": "ETransportStatus"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"List\" table",
+							"start": 1721187260121,
+							"stop": 1721187260121,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Then the form attribute named \"StatusDescription\" became equal to \"The consignment note was accepted by ANAF without errors.\"",
+							"start": 1721187260121,
+							"stop": 1721187260121,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "StatusDescription"
+								},
+								{
+									"name": "Парам2",
+									"value": "The consignment note was accepted by ANAF without errors."
+								}
+							],
+							"attachments": [
+								{
+									"name": "Этот клиент.screenshot",
+									"source": "v8_CDDA_11a9.png",
+									"type": "image/png"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Consignment note posting 30-Transport pe teritoriul naţional for sending"
+		},
+		{
+			"name": "feature",
+			"value": "E-transport sending files"
+		},
+		{
+			"name": "suite",
+			"value": "E-transport sending files"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "TaxOfficeExchange"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "5021fed1-5ee7-4732-8fee-7ec8c7875530-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "02e30bce-fe4f-414a-b134-e9a8ca05c760-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "a1c1d957-96fb-4694-8556-fe1697aea839-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "d7b4ba06-6483-46f7-a11c-c06aedbecff5-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "ce1360e0-36e7-4c52-bbbf-8844eb103161-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "760808bb-85ef-441e-b886-6721481c4177-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "ebce89d9-c5e3-4055-89cb-1b114073a845-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "cce24abd-f296-4a12-81e7-0a7fb886b752-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "79836e2d-f82d-46c2-93e9-153343d4a233-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "63edc25f-a1fd-49a3-8144-ed4a1a46473e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "80bf91de-0d38-44d0-95ec-81948ebb0014-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "ece81a72-a9f8-41d5-9407-70c2a320d1a2-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "37a86851-7c1c-4fe8-a8f0-e1573e8fa4a4-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "0c8c39a8-e6b0-4662-b59d-89aa747e2495-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

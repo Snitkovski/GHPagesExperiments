@@ -1,0 +1,227 @@
+{
+	"uuid": "67e94355-21a2-44e6-9263-fb828be12866",
+	"historyId": "Y_002 Department functional option check.(VATOnRelease) Report AccountCard False",
+	"name": "(VATOnRelease) Report AccountCard False",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189612362,
+	"stop": 1721189614387,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Department field check reports \"AccountCard\", \"False\"",
+			"start": 1721189612784,
+			"stop": 1721189614387,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I save \"True\" value to \"True\" variable",
+					"start": 1721189612784,
+					"stop": 1721189612784,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "True"
+						},
+						{
+							"name": "Парам2",
+							"value": "True"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save \"False\" value to \"False\" variable",
+					"start": 1721189612816,
+					"stop": 1721189612816,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "False"
+						},
+						{
+							"name": "Парам2",
+							"value": "False"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "* Open object form",
+					"start": 1721189612847,
+					"stop": 1721189614387,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Given I open hyperlink \"e1cib/app/Report.AccountCard\"",
+							"start": 1721189612847,
+							"stop": 1721189612847,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/app/Report.AccountCard"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "If \"False\" variable is equal to \"True\" Then",
+							"start": 1721189612878,
+							"stop": 1721189612878,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "False"
+								},
+								{
+									"name": "Парам2",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Else",
+							"start": 1721189612909,
+							"stop": 1721189614008,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then I dont see \"Department\" attribute",
+									"start": 1721189612909,
+									"stop": 1721189614008,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Department"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close all client application windows",
+							"start": 1721189614033,
+							"stop": 1721189614387,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Report AccountCard False"
+		},
+		{
+			"name": "feature",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "suite",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

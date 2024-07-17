@@ -1,0 +1,777 @@
+{
+	"uuid": "699b4d6e-0638-4924-9596-a89d49e44645",
+	"historyId": "PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat 0 %.(VATOnRelease) Company Non Payer",
+	"name": "(VATOnRelease) Company Non Payer",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189753600,
+	"stop": 1721189758968,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Error calling context method (PredefinedValue):",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.ПодготовкаИЗагрузкаДанных.Form(2029)}: Error calling context method (PredefinedValue): Enum.TypesOfDocumentsForSeries.SettlementsAdjustments. The predefined item is not found in the infobase data\n\nTechnical data:\n        ActiveWindowHeader: Dr / Cr: Goods transfer to retail 000000001 dated 17.07.2024 07:15:53\n        ActiveFormName: AccountingRegister.GeneralJournal.Form.ListForm\n        FeatureName: PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat 0 %\n        ScriptName: Company Non Payer\n        TreeRowNumber: 41.139\n        FeatureLineNumber: 128\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\002PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat%.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_ПодготовкаИЗагрузкаДанных\n        ProcedureName: ЯПроверяюИлиСоздаюДляРегистраСведенийЗаписи\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:04 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:15:57"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Vat Non Payer Enterprise Data preparation",
+			"start": 1721189754307,
+			"stop": 1721189758968,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "* Catalog.Series",
+					"start": 1721189754307,
+					"stop": 1721189754339,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create catalog \"Series\" objects:",
+							"start": 1721189754307,
+							"stop": 1721189754339,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Series"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "7f6e2d03-19b7-4b08-bcbc-5b9c641b9177-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "* Catalog.Currencies",
+					"start": 1721189754448,
+					"stop": 1721189754495,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create catalog \"Currencies\" objects:",
+							"start": 1721189754448,
+							"stop": 1721189754495,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "Currencies"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "c50978e7-5ec7-4ed5-bf49-7c73c8a4aa84-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "* Create catalog Banks objects",
+					"start": 1721189754573,
+					"stop": 1721189754604,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Try",
+							"start": 1721189754573,
+							"stop": 1721189754604,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create catalog \"Banks\" objects:",
+									"start": 1721189754573,
+									"stop": 1721189754604,
+									"status": "passed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Banks"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "76948c49-b132-4802-a988-5d8fb67daf9e-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "* Catalog.WorldCountries",
+					"start": 1721189754698,
+					"stop": 1721189754745,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create catalog \"WorldCountries\" objects:",
+							"start": 1721189754698,
+							"stop": 1721189754745,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "WorldCountries"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "25f6751d-1ac5-43d5-bda9-089f632ca01e-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*BankAccountsOfEnterprises",
+					"start": 1721189754917,
+					"stop": 1721189754979,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create catalog \"BankAccountsOfEnterprises\" objects:",
+							"start": 1721189754917,
+							"stop": 1721189754979,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "BankAccountsOfEnterprises"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "e0c16e33-7beb-478b-b8ad-8cbfc4dbf9dc-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*InformationRegister.DefaultLocations",
+					"start": 1721189755249,
+					"stop": 1721189755359,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create information register \"DefaultLocations\" records:",
+							"start": 1721189755249,
+							"stop": 1721189755359,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "DefaultLocations"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "949838fa-6d30-4016-856b-dc5668d10893-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*InformationRegister.MainBankAccounts",
+					"start": 1721189755437,
+					"stop": 1721189755468,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create information register \"MainBankAccounts\" records:",
+							"start": 1721189755437,
+							"stop": 1721189755468,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "MainBankAccounts"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "ddb8eb47-02b0-4baf-984d-e9d4ec457340-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*Create information register ApplicabilityParametersForNumerators records",
+					"start": 1721189755640,
+					"stop": 1721189758968,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create information register \"ApplicabilityParametersForNumerators\" records:",
+							"start": 1721189755640,
+							"stop": 1721189758968,
+							"status": "failed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false,
+								"message": "Error calling context method (PredefinedValue):",
+								"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.ПодготовкаИЗагрузкаДанных.Form(2029)}: Error calling context method (PredefinedValue): Enum.TypesOfDocumentsForSeries.SettlementsAdjustments. The predefined item is not found in the infobase data\n\nTechnical data:\n        ActiveWindowHeader: Dr / Cr: Goods transfer to retail 000000001 dated 17.07.2024 07:15:53\n        ActiveFormName: AccountingRegister.GeneralJournal.Form.ListForm\n        FeatureName: PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat 0 %\n        ScriptName: Company Non Payer\n        TreeRowNumber: 41.139\n        FeatureLineNumber: 128\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_003_Retail\\002PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat%.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_ПодготовкаИЗагрузкаДанных\n        ProcedureName: ЯПроверяюИлиСоздаюДляРегистраСведенийЗаписи\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:04 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:15:57"
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "ApplicabilityParametersForNumerators"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "df0c8b4b-910f-47d7-afb1-a7033612e9d8-attachment.csv",
+									"type": "text/csv"
+								},
+								{
+									"name": "EventLog.mxl",
+									"source": "5541e6c0-e7aa-446e-8302-bf4b52b31abe-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "EventLog.html",
+									"source": "00a9bc94-e16e-4418-815a-c47d644e7a58-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "EventLog.xlsx",
+									"source": "76e9be99-2095-43af-83ed-1bb9d77602a1-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "ActiveFormState.mxl",
+									"source": "65caa43e-3221-42e9-a8fd-8852fd5c914a-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "ActiveFormState.html",
+									"source": "b16a5e2b-0e25-45c2-9ee1-19cf6fb7d63d-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "ActiveFormState.xlsx",
+									"source": "7adcdfb8-348d-4447-8007-b7bb52c843ed-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "AllFormsState.mxl",
+									"source": "83644f63-7c23-49e3-9e7c-a817e9c59110-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "AllFormsState.html",
+									"source": "e1120913-ee56-4a5f-b005-31b07c9a8a65-attachment.html",
+									"type": "html"
+								},
+								{
+									"name": "AllFormsState.xlsx",
+									"source": "0c23dd80-7473-41af-9abd-77f093829dc2-attachment.xlsx",
+									"type": "xlsx"
+								},
+								{
+									"name": "NetworkConnectionsData.txt",
+									"source": "f64af2ea-e232-495c-b73d-db3467e00ec1-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "OSProcessesData.txt",
+									"source": "43b0ccb1-c0dc-4e2d-9942-62c32c9b0b94-attachment.txt",
+									"type": "txt"
+								},
+								{
+									"name": "VariableValues.mxl",
+									"source": "50ef9c56-9a5b-4183-b1ba-e2b6b00f9fa5-attachment.mxl",
+									"type": "mxl"
+								},
+								{
+									"name": "VariableValues.html",
+									"source": "72a7941e-800d-442f-92fb-e2af1cdacba1-attachment.html",
+									"type": "html"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*InformationRegister.CompanyDefaultContracts",
+					"start": 1721189758968,
+					"stop": 1721189758968,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I check or create information register \"CompanyDefaultContracts\" records:",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "CompanyDefaultContracts"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "b0ca2d63-0f9b-49b7-9c31-8db20d4e1407-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "*InformationRegister.AccountingPolicy",
+					"start": 1721189758968,
+					"stop": 1721189758968,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Try",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "And I check or create information register \"AccountingPolicy\" records:",
+									"start": 1721189758968,
+									"stop": 1721189758968,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "AccountingPolicy"
+										}
+									],
+									"attachments": [
+										{
+											"name": "table",
+											"source": "0c04b779-099e-4bad-b31e-2353617c3094-attachment.csv",
+											"type": "text/csv"
+										}
+									],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close all client application windows",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "Given I open hyperlink \"e1cib/list/Catalog.Enterprises\"",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/list/Catalog.Enterprises"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I select current line in \"List\" table",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "List"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FillByTaxRegistrationNumber\"",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FillByTaxRegistrationNumber"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"RefreshCompanyData\"",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "RefreshCompanyData"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "And I click the button named \"FormWriteAndClose\"",
+							"start": 1721189758968,
+							"stop": 1721189758968,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "FormWriteAndClose"
+								}
+							],
+							"attachments": [
+								{
+									"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+									"source": "v8_CDDA_14cc.png",
+									"type": "image/png"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Company Non Payer"
+		},
+		{
+			"name": "feature",
+			"value": "PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat 0 %"
+		},
+		{
+			"name": "suite",
+			"value": "PIShipToPunctDeComertAmanuntPrincipalTabTradeAllowancesVat 0 %"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Y_003_Retail"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "11f6df2f-c080-4890-8a48-93cd427199c0-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "bf087c10-b827-4fd8-ba31-eb2f1134f404-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "3ff5ac8a-528a-46e9-885c-41b5a736b918-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "e8168d9a-59c7-48aa-9e6d-adfe8d670473-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "cf05ffda-80fe-4417-bb82-f21511c76a9d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "f0d9826e-2738-473d-ba92-908a8173f033-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "6f16b071-97e1-4cb2-bd13-7e934d66d826-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "0f4e5490-296a-4e45-8895-8b648c1b041a-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "190c299a-fb5d-495e-8be6-15ac121d775c-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "be6a5c08-ef4e-453b-8ce4-9ba71682dbb9-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "83c49f08-3f78-49d1-b2be-826effbf86c0-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "7ab0a0a6-b3de-4d7f-8269-6f06c28af81c-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "a144912e-1f6c-4f43-bd69-c221a2856a0c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "c289c77f-8fba-4b4c-9aaa-fe8bb0750d6b-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

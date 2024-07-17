@@ -1,0 +1,279 @@
+{
+	"uuid": "640e388d-ddaf-46bf-a402-531d5f38ab38",
+	"historyId": "003_FirstLaunchCatalogsFilling.(VATOnRelease) Catalog VATRates objects",
+	"name": "(VATOnRelease) Catalog VATRates objects",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182633127,
+	"stop": 1721182642017,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "One or more standard table lines are not found in the \n",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7100)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7067)}: One or more standard table lines are not found in the \n| '300101 / 19%' | 'Achiziţii intracomunitare de bunuri pentru care cumpărătorul este obligat la plata TVA (taxare inversă) 19% altele decat achiziţiile intracomunitare pentru care cumpărătorul este obligat la plata TVA (taxare inversă), iar furnizorul este înregistrat în sc' | 'Purchase' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '300101' | 'ROMANIA' | 'True' | 'False' |\n| '306303 / 19%' | 'Achizitii intra-comunitare de produsele accizabile' | 'Purchase' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '306303' | 'ROMANIA' | 'True' | 'False' |\n| '310317 / 19%' | 'Regularizări taxă colectată 19% ' | 'Sale' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '310317' | 'ROMANIA' | 'False' | 'False' |\n| '378302 / 0%' | 'Achiziţii de bunuri şi servicii scutite de taxă  sau neimpozabile altele decat AIC servicii scutite de taxa' | 'Purchase' | 'True' | '' | 'False' | '' | 'False' | 'False' | '378302' | 'ROMANIA' | 'True' | 'True' |\n table on the form\n\nTechnical data:\n        ActiveWindowHeader: VAT rates\n        ActiveFormName: Catalog.VATRates.Form.ListForm\n        FeatureName: 003_FirstLaunchCatalogsFilling\n        ScriptName: Catalog VATRates objects\n        TreeRowNumber: 2.330\n        FeatureLineNumber: 215\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_FirstLaunchCatalogsFilling.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСодержитСтроки\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:17:20"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.VATRates\"",
+			"start": 1721182633752,
+			"stop": 1721182633783,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.VATRates"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"List\" table contains lines",
+			"start": 1721182634586,
+			"stop": 1721182642017,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "One or more standard table lines are not found in the \n",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7100)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7067)}: One or more standard table lines are not found in the \n| '300101 / 19%' | 'Achiziţii intracomunitare de bunuri pentru care cumpărătorul este obligat la plata TVA (taxare inversă) 19% altele decat achiziţiile intracomunitare pentru care cumpărătorul este obligat la plata TVA (taxare inversă), iar furnizorul este înregistrat în sc' | 'Purchase' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '300101' | 'ROMANIA' | 'True' | 'False' |\n| '306303 / 19%' | 'Achizitii intra-comunitare de produsele accizabile' | 'Purchase' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '306303' | 'ROMANIA' | 'True' | 'False' |\n| '310317 / 19%' | 'Regularizări taxă colectată 19% ' | 'Sale' | 'False' | '19,0' | 'False' | '' | 'False' | 'False' | '310317' | 'ROMANIA' | 'False' | 'False' |\n| '378302 / 0%' | 'Achiziţii de bunuri şi servicii scutite de taxă  sau neimpozabile altele decat AIC servicii scutite de taxa' | 'Purchase' | 'True' | '' | 'False' | '' | 'False' | 'False' | '378302' | 'ROMANIA' | 'True' | 'True' |\n table on the form\n\nTechnical data:\n        ActiveWindowHeader: VAT rates\n        ActiveFormName: Catalog.VATRates.Form.ListForm\n        FeatureName: 003_FirstLaunchCatalogsFilling\n        ScriptName: Catalog VATRates objects\n        TreeRowNumber: 2.330\n        FeatureLineNumber: 215\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_FirstLaunchCatalogsFilling.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСодержитСтроки\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:17:20"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "9287c999-3182-4d66-9e10-92c993331c35-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "RowsSearchedInTable.mxl",
+					"source": "78115942-8b62-46da-a291-e2485faf0cd5-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "RowsSearchedInTable.html",
+					"source": "43b2e8f4-b456-418c-8bcb-26ec26302448-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueTable.mxl",
+					"source": "1c57a1aa-374c-4967-a7fd-d1deb32711b9-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueTable.html",
+					"source": "3cd9cf1e-a3e4-4ef4-b364-9146e460ea95-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "749e15b8-9876-41f9-b3b1-62abf97725f6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "38736114-9150-4822-8a80-8567a838db3c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "3063275e-8e7f-456a-b099-2720f28695c3-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "94e3c50f-70b1-4a1c-bcce-46632bddd73b-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "d57dab45-0272-4c53-a385-e93953482b92-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "e56f76c4-8840-4523-8731-8db092ac3878-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "82b6fa50-0dfb-4b07-ae75-6213375facba-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "d5c28723-8a07-4dd6-b1e2-907ef04e10e8-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "fc4efbc9-edd4-4c0b-bb3d-4c95382799a3-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "f879628f-4917-457a-8307-42e03b13caa1-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "ad5a2af0-3e32-4aed-ac08-a6078a8a1647-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "28149369-252b-48c0-b22d-f44d54fbee66-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "54f4946c-d813-4380-ae6a-44e4609960fb-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_1b6.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Catalog VATRates objects"
+		},
+		{
+			"name": "feature",
+			"value": "003_FirstLaunchCatalogsFilling"
+		},
+		{
+			"name": "suite",
+			"value": "003_FirstLaunchCatalogsFilling"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "47ef72f4-1f00-44d2-bc19-117397d02364-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "RowsSearchedInTable.mxl",
+			"source": "e777b4e6-fd07-4b8c-bdf6-ed97545b6aea-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "RowsSearchedInTable.html",
+			"source": "6a8eec67-3e0c-4980-8728-301ae51bfe69-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueTable.mxl",
+			"source": "0314dd63-ea5f-4c24-a1d9-29a0bc5aff91-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueTable.html",
+			"source": "c43a1e2b-b103-46a1-8f33-249999dd2b10-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "423c11f1-b687-4253-9f97-abcec78c3cab-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "4cd88514-fa30-4d52-be1d-5aaceb9ec7eb-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "2e33b8d0-3b06-4a46-8a7a-fd97b5a432f1-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "b52fedfe-e781-4ba6-90df-feaba2e69a24-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "218aeee7-8c4b-46be-b828-44772298561a-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "fecc6625-8649-4e91-b285-39070ae1bf71-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "1b8ad7e8-520e-444e-9d4f-bfac5dcc45fb-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "f1c6aff4-b587-42b0-9278-361ab8b1463d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "a41987f9-f52d-4b84-a4b5-ef5e42fd91e0-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "670fe617-1d7d-467e-9ef6-6a9d020c6279-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "691169ed-a325-4872-957f-5f4ced8e127e-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "8d07a6e0-f284-4b68-aa21-50e7778db7c9-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "73e0f745-af7f-4be9-bd04-d403e465c31c-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

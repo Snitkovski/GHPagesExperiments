@@ -1,0 +1,395 @@
+{
+	"uuid": "dac67681-4d43-4f26-90c5-bd1bdffa84c2",
+	"historyId": "Y_002 Department functional option check.(VATOnRelease) Report Cash book True",
+	"name": "(VATOnRelease) Report Cash book True",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721189690002,
+	"stop": 1721189699391,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Form attribute with <Department> header is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10980)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7393)}: Form attribute with <Department> header is not found.\n\nTechnical data:\n        ActiveWindowHeader: Cash book\n        ActiveFormName: Report.CashBook.Form\n        FeatureName: Y_002 Department functional option check\n        ScriptName: Report Cash book True\n        TreeRowNumber: 40.569\n        FeatureLineNumber: 18\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_002_DepartmentFunctionalOptionCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯВижуЭлемент\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:14:57"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And Department field check reports \"CashBook\", \"True\"",
+			"start": 1721189690444,
+			"stop": 1721189699391,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I save \"True\" value to \"True\" variable",
+					"start": 1721189690444,
+					"stop": 1721189690444,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "True"
+						},
+						{
+							"name": "Парам2",
+							"value": "True"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save \"False\" value to \"False\" variable",
+					"start": 1721189690475,
+					"stop": 1721189690475,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "False"
+						},
+						{
+							"name": "Парам2",
+							"value": "False"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "* Open object form",
+					"start": 1721189690491,
+					"stop": 1721189699391,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Given I open hyperlink \"e1cib/app/Report.CashBook\"",
+							"start": 1721189690491,
+							"stop": 1721189690507,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "e1cib/app/Report.CashBook"
+								}
+							],
+							"attachments": [],
+							"steps": []
+						},
+						{
+							"name": "If \"True\" variable is equal to \"True\" Then",
+							"start": 1721189690538,
+							"stop": 1721189699391,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "True"
+								},
+								{
+									"name": "Парам2",
+									"value": "True"
+								}
+							],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then I see \"Department\" attribute",
+									"start": 1721189690569,
+									"stop": 1721189699391,
+									"status": "failed",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false,
+										"message": "Form attribute with <Department> header is not found.",
+										"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(10980)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7393)}: Form attribute with <Department> header is not found.\n\nTechnical data:\n        ActiveWindowHeader: Cash book\n        ActiveFormName: Report.CashBook.Form\n        FeatureName: Y_002 Department functional option check\n        ScriptName: Report Cash book True\n        TreeRowNumber: 40.569\n        FeatureLineNumber: 18\n        FeatureFullPath: features\\CI\\Main\\Basic\\Y_002_DepartmentFunctionalOptionCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯВижуЭлемент\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 22424\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 07:14:57"
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Department"
+										}
+									],
+									"attachments": [
+										{
+											"name": "EventLog.mxl",
+											"source": "577f5e2e-0502-4740-8e74-4929de8b44d4-attachment.mxl",
+											"type": "mxl"
+										},
+										{
+											"name": "EventLog.html",
+											"source": "e2ad202f-35a0-476d-aaca-8a7889a9aefc-attachment.html",
+											"type": "html"
+										},
+										{
+											"name": "EventLog.xlsx",
+											"source": "a61b3fb9-85ab-4094-8363-3648ff3ef6f8-attachment.xlsx",
+											"type": "xlsx"
+										},
+										{
+											"name": "ActiveFormState.mxl",
+											"source": "675c5937-3701-4457-a213-4c09b8e78f5b-attachment.mxl",
+											"type": "mxl"
+										},
+										{
+											"name": "ActiveFormState.html",
+											"source": "44b820a1-6f0a-42c9-a95d-15e90da0b465-attachment.html",
+											"type": "html"
+										},
+										{
+											"name": "ActiveFormState.xlsx",
+											"source": "75b6313e-8893-42f4-abb9-256bbcf44512-attachment.xlsx",
+											"type": "xlsx"
+										},
+										{
+											"name": "AllFormsState.mxl",
+											"source": "3c82f6f7-1bf6-44bc-9c08-22a83c7c3620-attachment.mxl",
+											"type": "mxl"
+										},
+										{
+											"name": "AllFormsState.html",
+											"source": "d3ea393b-f1bf-4d13-aed8-adbecdde104e-attachment.html",
+											"type": "html"
+										},
+										{
+											"name": "AllFormsState.xlsx",
+											"source": "cd44964d-c2d4-4f74-947d-99a985ef4340-attachment.xlsx",
+											"type": "xlsx"
+										},
+										{
+											"name": "NetworkConnectionsData.txt",
+											"source": "9a2a351a-91b9-4adf-b9eb-fe76b14aa717-attachment.txt",
+											"type": "txt"
+										},
+										{
+											"name": "OSProcessesData.txt",
+											"source": "bd4a8f9a-e5a3-444e-9e27-f461921f747f-attachment.txt",
+											"type": "txt"
+										},
+										{
+											"name": "VariableValues.mxl",
+											"source": "cece2f73-3b4c-4945-9a38-eed7a570fc5f-attachment.mxl",
+											"type": "mxl"
+										},
+										{
+											"name": "VariableValues.html",
+											"source": "128bc7e8-ad26-42cc-8a9b-77bb12a6ca6d-attachment.html",
+											"type": "html"
+										}
+									],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "Else",
+							"start": 1721189699391,
+							"stop": 1721189699391,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [],
+							"steps": [
+								{
+									"name": "Then I dont see \"Department\" attribute",
+									"start": 1721189699391,
+									"stop": 1721189699391,
+									"status": "skipped",
+									"stage": "finished",
+									"statusDetails": {
+										"known": false,
+										"muted": false,
+										"flaky": false
+									},
+									"parameters": [
+										{
+											"name": "Парам1",
+											"value": "Department"
+										}
+									],
+									"attachments": [],
+									"steps": []
+								}
+							]
+						},
+						{
+							"name": "And I close all client application windows",
+							"start": 1721189699391,
+							"stop": 1721189699391,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [
+								{
+									"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+									"source": "v8_CDDA_14a2.png",
+									"type": "image/png"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Report Cash book True"
+		},
+		{
+			"name": "feature",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "suite",
+			"value": "Y_002 Department functional option check"
+		},
+		{
+			"name": "tag",
+			"value": "fresh"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. / ",
+			"source": "3246129f-6305-47e2-96a5-8f5f6cbf3c80-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "aa6bb326-9254-4cce-b404-afcba45beb3d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "ad3bf71a-dfdf-4fc0-8536-fb8a2295b296-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "6ff8c97f-2ded-4863-af40-172a30cdb47b-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "486cf66f-812e-42f2-b91f-57c1410121a2-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "287e6f2f-0624-40be-8ec1-364abe406228-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "a8dadfd5-c151-4820-8784-df96194c24e6-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "43786228-41ee-4dbe-b91a-7b7cce407fcd-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "418ade86-e7ef-45dc-bbfe-ed9a823687e6-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "f5567253-02a4-4187-80ae-2d4eb530f7a8-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "224b8bb8-78b2-4c46-9478-310bfa468087-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "1d09d248-3bc5-4bb6-aac1-b011925175ef-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "9e0d8c59-944e-48a4-8d5a-04ea607c3b89-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "13960e0b-d596-4b49-8e30-c8dac237d4c4-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

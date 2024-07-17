@@ -1,0 +1,640 @@
+{
+	"uuid": "660ac96d-7108-44cd-b562-fb3701c8ac51",
+	"historyId": "E-factura.(VATOnRelease) Refresh token",
+	"name": "(VATOnRelease) Refresh token",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721186986278,
+	"stop": 1721187008929,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Waited for <Token expiration date> field to have the value other than <17.07.2024 06:29:48> for <10> seconds.",
+		"trace": "Waited for <Token expiration date> field to have the value other than <17.07.2024 06:29:48> for <10> seconds. Current value <17.07.2024 06:29:48>.\n\nTechnical data:\n        ActiveWindowHeader: Tax office integration settings\n        ActiveFormName: InformationRegister.TaxOfficeIntegrationSettings.Form.RecordForm\n        FeatureName: E-factura\n        ScriptName: Refresh token\n        TreeRowNumber: 23.890\n        FeatureLineNumber: 86\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: УПоляЯЖдуЗначенияОтличногоОтВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:21 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:30:07"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* Change expired date",
+			"start": 1721186987311,
+			"stop": 1721186989000,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I close all client application windows",
+					"start": 1721186987311,
+					"stop": 1721186987498,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Given I open hyperlink \"e1cib/list/InformationRegister.TaxOfficeIntegrationSettings\"",
+					"start": 1721186987717,
+					"stop": 1721186987733,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/InformationRegister.TaxOfficeIntegrationSettings"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721186987811,
+					"stop": 1721186987827,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "52de85ff-cbde-4982-a2cb-dd4cd229e7a9-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721186987858,
+					"stop": 1721186987858,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"Token\" as \"Token\"",
+					"start": 1721186987889,
+					"stop": 1721186987905,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Token"
+						},
+						{
+							"name": "Парам2",
+							"value": "Token"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"RefreshToken\" as \"RefreshToken\"",
+					"start": 1721186987936,
+					"stop": 1721186987952,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "RefreshToken"
+						},
+						{
+							"name": "Парам2",
+							"value": "RefreshToken"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"TokenExpirationDate\" as \"OldTokenExpirationDate\"",
+					"start": 1721186987983,
+					"stop": 1721186987998,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TokenExpirationDate"
+						},
+						{
+							"name": "Парам2",
+							"value": "OldTokenExpirationDate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save \"CurrentDate()\" in \"CurrentDate\" variable",
+					"start": 1721186988031,
+					"stop": 1721186988031,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "CurrentDate()"
+						},
+						{
+							"name": "Парам2",
+							"value": "CurrentDate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I input \"17.07.2024 06:29:48\" text in \"Token expiration date\" field",
+					"start": 1721186988062,
+					"stop": 1721186988078,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Token expiration date"
+						},
+						{
+							"name": "Парам2",
+							"value": "17.07.2024 06:29:48"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save the value of the field named \"TokenExpirationDate\" as \"OldTokenExpirationDate\"",
+					"start": 1721186988109,
+					"stop": 1721186988125,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TokenExpirationDate"
+						},
+						{
+							"name": "Парам2",
+							"value": "OldTokenExpirationDate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721186988140,
+					"stop": 1721186988156,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"Tax office integration settings *\" window closing in 20 seconds",
+					"start": 1721186988187,
+					"stop": 1721186989000,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Tax office integration settings *"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Run RefreshTaxOfficeToken",
+			"start": 1721186989016,
+			"stop": 1721186994210,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I Refresh Tax Office Token",
+					"start": 1721186989016,
+					"stop": 1721186989032,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And Delay \"5\"",
+					"start": 1721186989063,
+					"stop": 1721186994210,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "5"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Check after",
+			"start": 1721186994491,
+			"stop": 1721187008929,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I go to line in \"List\" table",
+					"start": 1721186994491,
+					"stop": 1721186994507,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "c5fc9892-a0be-4f2f-8a98-335c67cc6b52-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721186994523,
+					"stop": 1721186994538,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Tax office integration settings\" window is opened",
+					"start": 1721186994569,
+					"stop": 1721186994569,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Tax office integration settings"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And in \"Token expiration date\" field I wait for value other than \"17.07.2024 06:29:48\" for \"2\" seconds\"",
+					"start": 1721186994601,
+					"stop": 1721187008929,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Waited for <Token expiration date> field to have the value other than <17.07.2024 06:29:48> for <10> seconds.",
+						"trace": "Waited for <Token expiration date> field to have the value other than <17.07.2024 06:29:48> for <10> seconds. Current value <17.07.2024 06:29:48>.\n\nTechnical data:\n        ActiveWindowHeader: Tax office integration settings\n        ActiveFormName: InformationRegister.TaxOfficeIntegrationSettings.Form.RecordForm\n        FeatureName: E-factura\n        ScriptName: Refresh token\n        TreeRowNumber: 23.890\n        FeatureLineNumber: 86\n        FeatureFullPath: features\\CI\\Main\\Basic\\TaxOfficeExchange\\E_Factura.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: УПоляЯЖдуЗначенияОтличногоОтВТечениеСекунд\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:21 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:30:07"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Token expiration date"
+						},
+						{
+							"name": "Парам2",
+							"value": "17.07.2024 06:29:48"
+						},
+						{
+							"name": "Парам3",
+							"value": "2"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "7c86fcf2-2538-4a57-856b-e7d3b49e85d3-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "f1c00c9c-3c9d-4f58-8d53-d7a5920ea0f7-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "c2e10173-d772-419e-835d-309a021661ca-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "e3d157db-3971-4aa7-a65e-423d012b8a1a-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "b6fc6617-cd4f-49b3-bc52-7172d93850d5-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "3e649912-697b-4e37-a09e-c33676df6efb-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "3e3969b7-f68c-452b-b1c3-fb10aca867fe-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "7204250f-88d1-497f-be09-9d0cb1b59b43-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "121b12ec-07cd-4a2c-9daf-2b6b812dde61-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "57dd30e9-051d-4a67-99f6-5dff8f986dc6-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "3d56c5c3-51b2-48e0-9b95-300704a36266-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "fce67beb-d858-4ad3-92bf-239354877ad9-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "3b02a78c-9bce-4996-9196-f34fc5a25e8f-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_1112.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Refresh token"
+		},
+		{
+			"name": "feature",
+			"value": "E-factura"
+		},
+		{
+			"name": "suite",
+			"value": "E-factura"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "TaxOfficeExchange"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "bb089b97-4887-41d5-8ecd-79ac2ca588ab-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "6310ae53-302a-430f-8edc-87fe61613da2-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "d309bd2c-26fd-4dbd-8d60-15225b8c6222-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "ff1b8964-b5e1-46ac-a741-19d98eae24f6-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "f15b33b5-7548-4eb5-96ed-0c7f817daf5b-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "d0a30021-bf85-4927-bafa-161067ddae9b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "796251a5-2794-49f4-b8bb-f4b2d25cf7fc-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "7146e66b-6e39-4cdb-84f8-8b05197ce35e-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "12f94e6e-5ae7-4703-a5dd-4bcfc6b6b081-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "815c98e7-83e9-458c-b9bd-e622144302a7-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "a0de0436-3cda-46d1-a8a8-110784c3da37-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "d0b9401a-3c53-420e-8c8e-5a1dbbab305b-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "028635a9-fef6-4c8c-a19b-f3a279c00227-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "e3f5c313-7d07-4cfc-96c9-95dfd4ee3228-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

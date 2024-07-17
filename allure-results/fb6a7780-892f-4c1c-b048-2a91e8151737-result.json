@@ -1,0 +1,124 @@
+{
+	"uuid": "fb6a7780-892f-4c1c-b048-2a91e8151737",
+	"historyId": "120 Additional expenses.(VATOnRelease) Data preparation Purchase Invoice",
+	"name": "(VATOnRelease) Data preparation Purchase Invoice",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721183476096,
+	"stop": 1721183477069,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false
+	},
+	"status": "passed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I save \"CurrentDate() - 2*24*60*60\" in variable \"PurchaseDate\"",
+			"start": 1721183476674,
+			"stop": 1721183476674,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CurrentDate() - 2*24*60*60"
+				},
+				{
+					"name": "Парам2",
+					"value": "PurchaseDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I check or create document \"PurchaseInvoice\" objects:",
+			"start": 1721183476768,
+			"stop": 1721183476893,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "211318cf-7d30-4f02-bf6e-764d3f4f01a0-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I refill object tabular section \"LineItems\":",
+			"start": 1721183477028,
+			"stop": 1721183477069,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "7db089ca-6714-422a-8976-48bda8ff2305-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Data preparation Purchase Invoice"
+		},
+		{
+			"name": "feature",
+			"value": "120 Additional expenses"
+		},
+		{
+			"name": "suite",
+			"value": "120 Additional expenses"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [],
+	"description": null
+}

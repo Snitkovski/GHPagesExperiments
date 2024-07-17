@@ -1,0 +1,1025 @@
+{
+	"uuid": "9e522093-d1e1-4ae5-8784-310f61dfce75",
+	"historyId": "Purchase order generation on.(VATOnRelease) Purchase invoice generation",
+	"name": "(VATOnRelease) Purchase invoice generation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184318266,
+	"stop": 1721184330946,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "The button named <FormAddPurchaseInvoice> is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase Order 00000000003 dated 17.07.2024 05:45:17\n\nTechnical data:\n        ActiveWindowHeader: Purchase Order 00000000003 dated 17.07.2024 05:45:17\n        ActiveFormName: Document.PurchaseOrder.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Purchase invoice generation\n        TreeRowNumber: 11.675\n        FeatureLineNumber: 68\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:45:29"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And I close all client application windows",
+			"start": 1721184319099,
+			"stop": 1721184319286,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+			"start": 1721184319505,
+			"stop": 1721184319520,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Document.PurchaseOrder"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase orders\" window is opened",
+			"start": 1721184319536,
+			"stop": 1721184319583,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase orders"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I display \"$Number$\" variable value",
+			"start": 1721184319614,
+			"stop": 1721184319614,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "$Number$"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"List\" table",
+			"start": 1721184319692,
+			"stop": 1721184319708,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "e294e4b7-485b-423f-a7ed-9b27815b31f5-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I select current line in \"List\" table",
+			"start": 1721184319724,
+			"stop": 1721184319739,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormAddPurchaseInvoice\"",
+			"start": 1721184319770,
+			"stop": 1721184330946,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "The button named <FormAddPurchaseInvoice> is not found.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase Order 00000000003 dated 17.07.2024 05:45:17\n\nTechnical data:\n        ActiveWindowHeader: Purchase Order 00000000003 dated 17.07.2024 05:45:17\n        ActiveFormName: Document.PurchaseOrder.Form.DocumentForm\n        FeatureName: Purchase order generation on\n        ScriptName: Purchase invoice generation\n        TreeRowNumber: 11.675\n        FeatureLineNumber: 68\n        FeatureFullPath: features\\CI\\Main\\Basic\\GenerationOnPurchaseOrder.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:45:29"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormAddPurchaseInvoice"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "cb284a9b-9d85-4ab4-a596-9f6807848be9-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "110afaa4-0c99-448d-a47c-d30b43fe4620-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "4c3468d5-d3a7-44d1-a1fb-b209cf9e1f85-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "0ae7a7eb-0539-4dc4-a440-50b31580bb4e-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "8722bff9-b997-4161-90f3-9cb801a5b0fe-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "92b20bf3-6fc8-408b-b0c8-e13a0420c0ff-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "72a96f8d-ce23-489b-ad22-5f474c9e63a6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "ff7321ad-5a2a-4daf-bc8e-ab2e2e16ed85-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "8c4f318d-d016-4269-af08-c11305f20460-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "93fe25ac-0f51-49cd-aa0a-deb1a614dacf-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "65ac348c-169c-4909-aaa5-ad541abaeef7-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "4c102b8e-2519-4bea-a9be-5de02fa4b2a4-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "4dbdcf69-a066-4df6-8099-30f265fc246c-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "Then \"Purchase Invoice (create)\" window is opened",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Purchase Invoice (create)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"InvoiceStatusPresentation\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "InvoiceStatusPresentation"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Enterprise\" became equal to \"$$Enterprise$$\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Enterprise"
+				},
+				{
+					"name": "Парам2",
+					"value": "$$Enterprise$$"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"LocationActual\" became equal to \"Main warehouse\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LocationActual"
+				},
+				{
+					"name": "Парам2",
+					"value": "Main warehouse"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Department\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Department"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Company\" became equal to \"Vendor VAT payer\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Company"
+				},
+				{
+					"name": "Парам2",
+					"value": "Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"BaseDocument\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "BaseDocument"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Contract\" became equal to \"Contract Vendor VAT payer\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Contract"
+				},
+				{
+					"name": "Парам2",
+					"value": "Contract Vendor VAT payer"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the editing text of form attribute named \"DueDate\" became equal to \"  .  .    \"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DueDate"
+				},
+				{
+					"name": "Парам2",
+					"value": "  .  .    "
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"PricesAndCurrency\" became equal to \"Amount excludes VAT\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "PricesAndCurrency"
+				},
+				{
+					"name": "Парам2",
+					"value": "Amount excludes VAT"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CashFlowActivity\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CashFlowActivity"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"BankAccount\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "BankAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the number of \"Advances\" table lines is \"равно\" 0",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Advances"
+				},
+				{
+					"name": "Парам2",
+					"value": "равно"
+				},
+				{
+					"name": "Парам3",
+					"value": 0
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the editing text of form attribute named \"DeliveryDateActual\" became equal to \"  .  .    \"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DeliveryDateActual"
+				},
+				{
+					"name": "Парам2",
+					"value": "  .  .    "
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"APAccount\" became equal to \"401.2  Furnizori (Valuta straina)\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "APAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "401.2  Furnizori (Valuta straina)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"AdvancesAccount\" became equal to \"409.11 Furnizori din străinătate - debitori pentru cumpărări de bunuri de natura stocurilor\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "AdvancesAccount"
+				},
+				{
+					"name": "Парам2",
+					"value": "409.11 Furnizori din străinătate - debitori pentru cumpărări de bunuri de natura stocurilor"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Vehicle\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Vehicle"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"VehicleNumber\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VehicleNumber"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"IngoingDocumentNumber\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "IngoingDocumentNumber"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the editing text of form attribute named \"IngoingDocumentDate\" became equal to \"  .  .    \"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "IngoingDocumentDate"
+				},
+				{
+					"name": "Парам2",
+					"value": "  .  .    "
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"DocumentTotal\" became equal to \"500\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DocumentTotal"
+				},
+				{
+					"name": "Парам2",
+					"value": "500"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the editing text of form attribute named \"DocumentTotal\" became equal to \"500,00\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DocumentTotal"
+				},
+				{
+					"name": "Парам2",
+					"value": "500,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"CurrencyPresentationTransaction\" became equal to \"RON\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "CurrencyPresentationTransaction"
+				},
+				{
+					"name": "Парам2",
+					"value": "RON"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"VATTotal\" became equal to \"95\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATTotal"
+				},
+				{
+					"name": "Парам2",
+					"value": "95"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And the editing text of form attribute named \"VATTotal\" became equal to \"95,00\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "VATTotal"
+				},
+				{
+					"name": "Парам2",
+					"value": "95,00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"DocumentTotalWithVAT\" became equal to \"595\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "DocumentTotalWithVAT"
+				},
+				{
+					"name": "Парам2",
+					"value": "595"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then the form attribute named \"Memo\" became equal to \"\"",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Memo"
+				},
+				{
+					"name": "Парам2",
+					"value": ""
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And \"LineItems\" table became equal",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "LineItems"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "b9dd3227-b87e-45ed-a290-bfd2726eca2d-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I close all client application windows",
+			"start": 1721184330946,
+			"stop": 1721184330946,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_5c7.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Purchase invoice generation"
+		},
+		{
+			"name": "feature",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "suite",
+			"value": "Purchase order generation on"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "79083def-1d20-4952-a01a-c53a3440f83b-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "1070f63f-f420-4332-98cc-a15530f4b3b5-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "830e5c94-ef1d-4ae5-9590-f5e96d90b997-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "e3db7bf4-ec9a-499a-b4af-7e7567c512a3-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "e4687d57-2ec4-4d8b-a285-50fca8e53f04-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "ff91b493-f489-468b-8174-5ce7c244c8b6-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "9985ed44-ca72-4888-8c70-65751cd99f5d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "01c17ce2-bbd1-4b12-a82d-7b2c63fc12fe-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "ba1f74c1-1f63-4af3-a06b-c0b628bed8ac-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "46c9e36d-d3dd-475a-88c2-100055b023fb-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "031820ef-79e3-4f04-9636-d9ceecbdd398-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "df9429ee-948a-40bc-b951-5f02c32c92ad-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "4d979a5b-0e7e-4541-81d2-1a081d1a65f0-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "0c0e79ad-9cd2-407b-b2ea-7d1f9a708c96-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,1282 @@
+{
+	"uuid": "cec5db8a-cac3-4db4-9aa0-fb937462440f",
+	"historyId": "004_QuickSettings.(VATOnRelease) Check company info",
+	"name": "(VATOnRelease) Check company info",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182400094,
+	"stop": 1721182403972,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "<List> table does not contain lines to select.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3836)}: <List> table does not contain lines to select.\n\nTechnical data:\n        ActiveWindowHeader: Postal districts\n        ActiveFormName: Catalog.PostalDistricts.Form.ListForm\n        FeatureName: 004_QuickSettings\n        ScriptName: Check company info\n        TreeRowNumber: 1.356\n        FeatureLineNumber: 239\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\040_QuickSettings.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯВыбираюТекущуюСтроку\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:02 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:13:22"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "* General info",
+			"start": 1721182400172,
+			"stop": 1721182403972,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Given I open hyperlink \"e1cib/list/Catalog.Enterprises\"",
+					"start": 1721182400172,
+					"stop": 1721182400172,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/list/Catalog.Enterprises"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182400203,
+					"stop": 1721182403972,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "<List> table does not contain lines to select.",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3836)}: <List> table does not contain lines to select.\n\nTechnical data:\n        ActiveWindowHeader: Postal districts\n        ActiveFormName: Catalog.PostalDistricts.Form.ListForm\n        FeatureName: 004_QuickSettings\n        ScriptName: Check company info\n        TreeRowNumber: 1.356\n        FeatureLineNumber: 239\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\040_QuickSettings.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯВыбираюТекущуюСтроку\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:02 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:13:22"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "EventLog.mxl",
+							"source": "bba8ced0-f5a0-4390-a634-50198f3ab7f0-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "2c49940a-e9d3-41ca-9246-efc010c9016c-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "36d55e57-21ea-4bf5-bd85-3e343d130253-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "138e417f-ab61-45c7-880d-138df2adb15e-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "ec0eda7a-8f63-4016-a34b-c45d3976121f-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "3dd68cb1-9286-46a5-be4d-bae3c21dec82-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "177e09a5-8e8e-4c2c-a29e-f647c777d9a8-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "50debada-f9b0-4edd-9737-bc606e3fe950-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "73b73ef7-a925-4649-a39e-c2eda86626d5-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "d3d987aa-4c0d-4a90-b257-ac1da6101e2d-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "978e2285-a797-4ccd-bad2-42b30595782e-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "ce335b1a-7008-4ecd-9323-94b1854ca4ab-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "612bef9c-06c4-4c60-a52b-8a0f117514fc-attachment.html",
+							"type": "html"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "Then 'ROMANIA BUSINESS LABS S.R.L. (Enterprise)' window is opened",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"FullName\" became equal to 'ROMANIA BUSINESS LABS S.R.L.'",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FullName"
+						},
+						{
+							"name": "Парам2",
+							"value": "ROMANIA BUSINESS LABS S.R.L."
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"LevelEstablishment\" became equal to \"Head office\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LevelEstablishment"
+						},
+						{
+							"name": "Парам2",
+							"value": "Head office"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"HeadOffice\" became equal to \"\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "HeadOffice"
+						},
+						{
+							"name": "Парам2",
+							"value": ""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"TaxRegistrationNumber\" became equal to \"RO29617927\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "TaxRegistrationNumber"
+						},
+						{
+							"name": "Парам2",
+							"value": "RO29617927"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Description\" became equal to \"ROMANIA BUSINESS LABS S.R.L.\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Description"
+						},
+						{
+							"name": "Парам2",
+							"value": "ROMANIA BUSINESS LABS S.R.L."
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Prefix\" became equal to \"\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Prefix"
+						},
+						{
+							"name": "Парам2",
+							"value": ""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"LegalForm\" became equal to \"Limited liability company\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LegalForm"
+						},
+						{
+							"name": "Парам2",
+							"value": "Limited liability company"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"RecordNumberInCommercialRegister\" became equal to \"J40/997/2012\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "RecordNumberInCommercialRegister"
+						},
+						{
+							"name": "Парам2",
+							"value": "J40/997/2012"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"InsuranceHouse\" became equal to \"\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "InsuranceHouse"
+						},
+						{
+							"name": "Парам2",
+							"value": ""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"NrANPM\" became equal to \"\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "NrANPM"
+						},
+						{
+							"name": "Парам2",
+							"value": ""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"GLN\" became equal to \"\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "GLN"
+						},
+						{
+							"name": "Парам2",
+							"value": ""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Country\" became equal to \"ROMANIA\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Country"
+						},
+						{
+							"name": "Парам2",
+							"value": "ROMANIA"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"Region\" became equal to \"Bucureşti\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Region"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bucureşti"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"PostalDistrict\" became equal to 'Bucuresti / Bucuresti / Bulevard / Decebal / nr. 10-14'",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "PostalDistrict"
+						},
+						{
+							"name": "Парам2",
+							"value": "Bucuresti / Bucuresti / Bulevard / Decebal / nr. 10-14"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"ActivityTypes\" table became equal",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ActivityTypes"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "6e5fe0de-f2ef-4764-bc25-4cd06eff1459-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I move to the tab named \"ContactInformationGroup\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ContactInformationGroup"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Legal address\" form attribute became equal to \"BUCUREȘTI, SECTOR 3, B-DUL DECEBAL, 12, 30967\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Legal address"
+						},
+						{
+							"name": "Парам2",
+							"value": "BUCUREȘTI, SECTOR 3, B-DUL DECEBAL, 12, 30967"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then \"Actual address\" form attribute became equal to \"BUCUREȘTI, SECTOR 3, B-DUL DECEBAL, 12, 30967\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Actual address"
+						},
+						{
+							"name": "Парам2",
+							"value": "BUCUREȘTI, SECTOR 3, B-DUL DECEBAL, 12, 30967"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Try",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And \"VATPayerInformation\" table contains lines",
+							"start": 1721182403972,
+							"stop": 1721182403972,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "VATPayerInformation"
+								}
+							],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "b7b8aff9-c815-43c0-8273-3749042089ac-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				},
+				{
+					"name": "Except",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "And I log the error \"VAT informtion is not correct.\" by exception data",
+							"start": 1721182403972,
+							"stop": 1721182403972,
+							"status": "skipped",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [
+								{
+									"name": "Парам1",
+									"value": "VAT informtion is not correct."
+								}
+							],
+							"attachments": [],
+							"steps": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "* Accounting policy",
+			"start": 1721182403972,
+			"stop": 1721182403972,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And In this window I click command interface button \"Accounting policy\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Accounting policy"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I select current line in \"List\" table",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And the editing text of form attribute named \"Period\" became equal to \"2024\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Period"
+						},
+						{
+							"name": "Парам2",
+							"value": "2024"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"InventoryValuationMethod\" became equal to \"FIFO\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "InventoryValuationMethod"
+						},
+						{
+							"name": "Парам2",
+							"value": "FIFO"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"LocationForExchangeDifferencesCalculation\" became equal to 'Birou principal'",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "LocationForExchangeDifferencesCalculation"
+						},
+						{
+							"name": "Парам2",
+							"value": "Birou principal"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"IncomeForExchangeDifferencesCalculation\" became equal to \"Diferente favorabile de curs valutar legate de elementele monetare exprimate in valuta\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "IncomeForExchangeDifferencesCalculation"
+						},
+						{
+							"name": "Парам2",
+							"value": "Diferente favorabile de curs valutar legate de elementele monetare exprimate in valuta"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "Then the form attribute named \"ExpenseForExchangeDifferencesCalculation\" became equal to \"Diferente nefavorabile de curs valutar legate de elementele monetare exprimate in valuta\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ExpenseForExchangeDifferencesCalculation"
+						},
+						{
+							"name": "Парам2",
+							"value": "Diferente nefavorabile de curs valutar legate de elementele monetare exprimate in valuta"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I click the button named \"FormWriteAndClose\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "FormWriteAndClose"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I wait \"AccountingPolicy\" window closing in 20 seconds",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "AccountingPolicy"
+						},
+						{
+							"name": "Парам2",
+							"value": 20
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Bank accounts",
+			"start": 1721182403972,
+			"stop": 1721182403972,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"ROMANIA BUSINESS LABS S.R.L. (Enterprise)\" window is opened",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And In this window I click command interface button \"Bank accounts of enterprises\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Bank accounts of enterprises"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Default locations",
+			"start": 1721182403972,
+			"stop": 1721182403972,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"ROMANIA BUSINESS LABS S.R.L. (Enterprise)\" window is opened",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And In this window I click command interface button \"Default locations\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Default locations"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"List\" table became equal",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "baac745a-e9ca-4c4f-9a98-e8df3e58ec0b-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* Enterprises information history",
+			"start": 1721182403972,
+			"stop": 1721182403972,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Then \"ROMANIA BUSINESS LABS S.R.L. (Enterprise)\" window is opened",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ROMANIA BUSINESS LABS S.R.L. (Enterprise)"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And In this window I click command interface button \"Enterprises information history\"",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Enterprises information history"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And I save 'Format(CurrentDate(), \"DLF = D\")' in \"CurrentDate\" variable",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Format(CurrentDate(), \"DLF = D\")"
+						},
+						{
+							"name": "Парам2",
+							"value": "CurrentDate"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "And \"List\" table contains lines",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "List"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "87b05bd2-d5ec-4991-8afe-ab419f1e19fb-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "And I close all client application windows",
+					"start": 1721182403972,
+					"stop": 1721182403972,
+					"status": "skipped",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [
+						{
+							"name": "Этот клиент.Postal districts",
+							"source": "v8_CDDA_10f.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. (Enterprise) *",
+							"source": "v8_CDDA_110.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_111.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Check company info"
+		},
+		{
+			"name": "feature",
+			"value": "004_QuickSettings"
+		},
+		{
+			"name": "suite",
+			"value": "004_QuickSettings"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "tag",
+			"value": "CI"
+		},
+		{
+			"name": "package",
+			"value": "001_TestDataExport"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.Postal districts",
+			"source": "d017d948-f31e-4388-9436-3e05ab7944dd-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.ROMANIA BUSINESS LABS S.R.L. (Enterprise) *",
+			"source": "4e0ab60f-ec80-40fd-b0fd-d46b23bc8cb2-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "44eb6991-9dee-4864-aa73-6de440d7ccda-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "2ec32ceb-dbda-40d8-8c69-d1e34c23afa7-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "ea83ea48-b05c-474b-a953-57ded43ce717-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "a2485464-c441-42ac-af89-1676406855ef-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "b37e0b4e-6060-488a-bda5-1d6dfa996d4d-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "8eb02d73-ba07-41e5-a5ff-bc0a1f9a7da3-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "10189455-959e-4c10-9ad6-3f468ac32969-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "48b60322-c11a-49a1-8199-5b82caf753f9-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "c5c0952b-ff08-45d7-b8be-f0fd801ac03f-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "a746332a-2336-4331-b714-1de92a11238c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "800f6622-5c76-419e-afa7-abceb9f8a4d1-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "b4095249-30eb-43d1-b805-2d3d659bfb52-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "06854787-45d2-44f1-8eda-0e1c68554639-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "2b7df61a-9193-4477-bf72-cac792134819-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

@@ -1,0 +1,413 @@
+{
+	"uuid": "7c9ed8b8-4bb2-4f40-9256-04e6cb4f8672",
+	"historyId": "Chief accountant profile check.(VATOnRelease) Access group profile creation",
+	"name": "(VATOnRelease) Access group profile creation",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184141755,
+	"stop": 1721184149089,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Field with <RolesCheck> header is not found.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(1592)}: Field with <RolesCheck> header is not found.\n\nTechnical data:\n        ActiveWindowHeader: Access group profile (create)\n        ActiveFormName: Catalog.AccessGroupProfiles.Form.ItemForm\n        FeatureName: Chief accountant profile check\n        ScriptName: Access group profile creation\n        TreeRowNumber: 10.808\n        FeatureLineNumber: 23\n        FeatureFullPath: features\\CI\\Main\\Basic\\ChiefAccountantProfileCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯУстанавливаюФлаг\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:42:27"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.AccessGroupProfiles\"",
+			"start": 1721184142307,
+			"stop": 1721184142307,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.AccessGroupProfiles"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Access group profiles\" window is opened",
+			"start": 1721184142338,
+			"stop": 1721184142432,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Access group profiles"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormCreate\"",
+			"start": 1721184142463,
+			"stop": 1721184142463,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormCreate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Access group profile (create)\" window is opened",
+			"start": 1721184142494,
+			"stop": 1721184142713,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Access group profile (create)"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I go to line in \"Roles\" table",
+			"start": 1721184142791,
+			"stop": 1721184142822,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Roles"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "5282b048-170c-4b49-871c-4ae3a91db645-attachment.csv",
+					"type": "text/csv"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I set checkbox \"RolesCheck\" in \"Roles\" table",
+			"start": 1721184142854,
+			"stop": 1721184149089,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Field with <RolesCheck> header is not found.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(1592)}: Field with <RolesCheck> header is not found.\n\nTechnical data:\n        ActiveWindowHeader: Access group profile (create)\n        ActiveFormName: Catalog.AccessGroupProfiles.Form.ItemForm\n        FeatureName: Chief accountant profile check\n        ScriptName: Access group profile creation\n        TreeRowNumber: 10.808\n        FeatureLineNumber: 23\n        FeatureFullPath: features\\CI\\Main\\Basic\\ChiefAccountantProfileCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯУстанавливаюФлаг\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:42:27"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Roles"
+				},
+				{
+					"name": "Парам2",
+					"value": "RolesCheck"
+				}
+			],
+			"attachments": [
+				{
+					"name": "EventLog.mxl",
+					"source": "41b174f4-9665-4ea9-bdad-5237fd2adf1a-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "5314832b-2568-400d-9564-8450528494de-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "195707c1-3463-4d36-a2f3-0297322d8526-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "e2d6258d-861b-45d2-a40d-18a5ca288e61-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "3fb1b86a-7b99-48e7-8842-2fafd4515c3c-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "13273621-4e28-4ca1-99de-11f2c9f4d3a4-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "67b5b612-86ce-4d6a-bc78-12725a22e821-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "b889b72b-05c5-4542-88aa-e53f711a0ab2-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "d4e17d95-7eb4-4a56-9aa1-0103f68fb312-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "ab04edfd-400c-475a-ab5a-909ca924e84d-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "fdfe4803-7d11-4028-84cd-bcb4432544fd-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "a24d1d41-364f-482d-a847-cc144828fa30-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "3e061eaa-a7a4-4f20-8285-4dabf60673a5-attachment.html",
+					"type": "html"
+				}
+			],
+			"steps": []
+		},
+		{
+			"name": "And I finish line editing in \"Roles\" table",
+			"start": 1721184149089,
+			"stop": 1721184149089,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Roles"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"Chif accountant\" text in the field named \"Description\"",
+			"start": 1721184149089,
+			"stop": 1721184149089,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Description"
+				},
+				{
+					"name": "Парам2",
+					"value": "Chif accountant"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"FormWriteAndClose\"",
+			"start": 1721184149089,
+			"stop": 1721184149089,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "FormWriteAndClose"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I wait \"Access group profile (create) *\" window closing in 20 seconds",
+			"start": 1721184149089,
+			"stop": 1721184149089,
+			"status": "skipped",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Access group profile (create) *"
+				},
+				{
+					"name": "Парам2",
+					"value": 20
+				}
+			],
+			"attachments": [
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_56d.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Access group profile creation"
+		},
+		{
+			"name": "feature",
+			"value": "Chief accountant profile check"
+		},
+		{
+			"name": "suite",
+			"value": "Chief accountant profile check"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "7257c142-749f-4ff0-bc21-e7bf5b982016-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "02c738dd-1f7b-45e1-978c-e3896a320227-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "12ec9b8b-4c65-41b5-a61c-02c80a9eba98-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "75a26640-3b11-4611-88e7-98653db26ebd-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "08854fbf-8c56-4739-86c9-4f30b2199519-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "5069fc30-9fd4-42f8-ab6c-ae59b0961a3d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "c2a9417c-3543-41f4-bb9d-d7fe45b96ca4-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "b8918134-ade1-433d-b029-9d86ee3c05c3-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "1d1ffab3-7f71-47ff-8342-6b017a799452-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "d5e803ef-3807-4aff-8543-58f89a138c21-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "acc13b02-2e0b-4216-9c86-ca4efef7e35d-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "117b6e33-bade-4f50-a292-2ba403cea8ad-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "5d4e4a36-2957-497d-a1ae-ce99e079914c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "cdba21de-256f-441d-8a59-6651d3670d08-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

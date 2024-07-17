@@ -1,0 +1,282 @@
+{
+	"uuid": "cb0293d0-958b-4030-8169-c26b1832c5ca",
+	"historyId": "Export scenarios for Products catalog.(VATOnRelease) Create catalog UoMClassifier objects",
+	"name": "(VATOnRelease) Create catalog UoMClassifier objects",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721182310089,
+	"stop": 1721182314967,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Error calling context method (CreateItem):",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.ПодготовкаИЗагрузкаДанных.Form(272)}: Error calling context method (CreateItem): Access violation!\n\nTechnical data:\n        ActiveWindowHeader: UoM classifier\n        ActiveFormName: Catalog.UoMClassifier.Form.ListForm\n        FeatureName: Export scenarios for Products catalog\n        ScriptName: Create catalog UoMClassifier objects\n        TreeRowNumber: 1.148\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\030_DataExport_ProductCatalog.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_ПодготовкаИЗагрузкаДанных\n        ProcedureName: ЯПроверяюИлиСоздаюДляСправочникаОбъекты\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 20100\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:03 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:11:53"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "Given I open hyperlink \"e1cib/list/Catalog.UoMClassifier\"",
+			"start": 1721182310730,
+			"stop": 1721182310730,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "e1cib/list/Catalog.UoMClassifier"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "If number of \"List\" table lines is \"equal\" \"0\" Then",
+			"start": 1721182310761,
+			"stop": 1721182314967,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "List"
+				},
+				{
+					"name": "Парам2",
+					"value": "equal"
+				},
+				{
+					"name": "Парам3",
+					"value": "0"
+				}
+			],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "And I check or create catalog \"UoMClassifier\" objects:",
+					"start": 1721182311406,
+					"stop": 1721182314967,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Error calling context method (CreateItem):",
+						"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.ПодготовкаИЗагрузкаДанных.Form(272)}: Error calling context method (CreateItem): Access violation!\n\nTechnical data:\n        ActiveWindowHeader: UoM classifier\n        ActiveFormName: Catalog.UoMClassifier.Form.ListForm\n        FeatureName: Export scenarios for Products catalog\n        ScriptName: Create catalog UoMClassifier objects\n        TreeRowNumber: 1.148\n        FeatureLineNumber: 31\n        FeatureFullPath: features\\CI\\Main\\Basic\\001_TestDataExport\\030_DataExport_ProductCatalog.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_ПодготовкаИЗагрузкаДанных\n        ProcedureName: ЯПроверяюИлиСоздаюДляСправочникаОбъекты\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 20100\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:03 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:11:53"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "UoMClassifier"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "e684030c-132d-472a-8b71-10ebd2c524a4-attachment.csv",
+							"type": "text/csv"
+						},
+						{
+							"name": "EventLog.mxl",
+							"source": "c4d9c8ef-2391-4a1f-bf8d-c5e2b9f10a62-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "EventLog.html",
+							"source": "044c482f-5826-4718-90de-86f7c4221e23-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "EventLog.xlsx",
+							"source": "a9bb6118-efac-460c-9655-e7930b8cfeb4-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ActiveFormState.mxl",
+							"source": "ff8397f8-0580-4d13-9f96-80ecc143d669-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ActiveFormState.html",
+							"source": "8ea5186d-2885-4ee8-b9d9-90717edc3d28-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ActiveFormState.xlsx",
+							"source": "d3739ed5-e7ca-4e2b-a698-0055806e4a4e-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "AllFormsState.mxl",
+							"source": "5f82dec9-1fe9-4dca-8099-a4f28c66ff28-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "AllFormsState.html",
+							"source": "9f4e2d6d-5ed7-49dc-a846-a5f7d07ab768-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "AllFormsState.xlsx",
+							"source": "7c912ea3-d697-415f-a3ef-dd2888f64369-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "NetworkConnectionsData.txt",
+							"source": "72664ba2-f955-43fb-be96-6166efd1a028-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "OSProcessesData.txt",
+							"source": "d905d8d3-680d-425a-a48c-e77872020583-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "VariableValues.mxl",
+							"source": "9032842a-14f2-4059-b209-5682f2e784e6-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "VariableValues.html",
+							"source": "e92ecd5a-6f83-4416-9d3f-a9fa1b3d1d3f-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_a4.png",
+							"type": "image/png"
+						},
+						{
+							"name": "Этот клиент.screenshot",
+							"source": "v8_CDDA_a5.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Create catalog UoMClassifier objects"
+		},
+		{
+			"name": "feature",
+			"value": "Export scenarios for Products catalog"
+		},
+		{
+			"name": "suite",
+			"value": "Export scenarios for Products catalog"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "tag",
+			"value": "CI"
+		},
+		{
+			"name": "package",
+			"value": "001_TestDataExport"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "8b4293c3-6b81-42f7-b673-6ab473667f8c-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "896eac8e-b533-4120-a4e5-473e4e3d4636-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "40a08879-2577-4c04-89ad-644ca5f24c92-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "781b8553-cbda-464e-87ad-b90b96fb4508-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "2365d82a-d958-4fb1-a9fa-dd53cd3f7cd7-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "c1e428fb-85ae-4914-b2ea-feca97bd5137-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "8da1a019-1a58-49d1-90b7-e96cb08bde4d-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "27b0c883-f33a-4226-925c-1d840cd8873e-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "36f19e96-c461-4b12-9235-ba5da3c2361c-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "47ae8454-8717-4f38-ae60-a3ac1648f73e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "bc515a73-ced4-4297-ba05-e3792071f039-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "bcc6b4aa-9646-4972-a0da-31951ec56e04-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "62b70c6f-5fa0-4470-9a1a-c97909d23542-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "e95c5c94-609a-4356-b31e-adbf4a9b2868-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "28705854-4928-4ed3-bca9-439e3da09b22-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}

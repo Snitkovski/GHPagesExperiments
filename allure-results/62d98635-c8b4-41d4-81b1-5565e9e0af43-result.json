@@ -1,0 +1,419 @@
+{
+	"uuid": "62d98635-c8b4-41d4-81b1-5565e9e0af43",
+	"historyId": "Intangible assets.(VATOnRelease) Intangible assets book",
+	"name": "(VATOnRelease) Intangible assets book",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1721184479379,
+	"stop": 1721184489051,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Spreadsheet document contains 19columns, and expected 18 columns.",
+		"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7733)}: Spreadsheet document contains 19columns, and expected 18 columns.\n\nTechnical data:\n        ActiveWindowHeader: Intangible assets book\n        ActiveFormName: Report.IntangibleAssetsBook.Form\n        FeatureName: Intangible assets\n        ScriptName: Intangible assets book\n        TreeRowNumber: 12.333\n        FeatureLineNumber: 292\n        FeatureFullPath: features\\CI\\Main\\Basic\\IntangibleAssets.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:08 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:48:07"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "And In the command interface I select \"Quick menu\" \"Intangible assets book\"",
+			"start": 1721184480384,
+			"stop": 1721184480415,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Quick menu"
+				},
+				{
+					"name": "Парам2",
+					"value": "Intangible assets book"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"Intangible assets book\" window is opened",
+			"start": 1721184480446,
+			"stop": 1721184480618,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Intangible assets book"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save \"{BegOfMonth(CurrentDate())}\" in \"Period1StartDate\" variable",
+			"start": 1721184480649,
+			"stop": 1721184480649,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{BegOfMonth(CurrentDate())}"
+				},
+				{
+					"name": "Парам2",
+					"value": "Period1StartDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I save \"{EndOfMonth(CurrentDate())}\" in \"Period1EndDate\" variable",
+			"start": 1721184480681,
+			"stop": 1721184480681,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "{EndOfMonth(CurrentDate())}"
+				},
+				{
+					"name": "Парам2",
+					"value": "Period1EndDate"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"01.07.2024 00:00:00\" text in the field named \"Period1StartDate\"",
+			"start": 1721184480696,
+			"stop": 1721184480712,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Period1StartDate"
+				},
+				{
+					"name": "Парам2",
+					"value": "01.07.2024 00:00:00"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I input \"31.07.2024 23:59:59\" text in the field named \"Period1EndDate\"",
+			"start": 1721184480743,
+			"stop": 1721184480774,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "Period1EndDate"
+				},
+				{
+					"name": "Парам2",
+					"value": "31.07.2024 23:59:59"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "And I click the button named \"GenerateReport\"",
+			"start": 1721184480806,
+			"stop": 1721184480806,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "GenerateReport"
+				}
+			],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "Then \"ReportSpreadsheetDocument\" spreadsheet document is equal",
+			"start": 1721184481076,
+			"stop": 1721184489051,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false,
+				"message": "Spreadsheet document contains 19columns, and expected 18 columns.",
+				"trace": "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7733)}: Spreadsheet document contains 19columns, and expected 18 columns.\n\nTechnical data:\n        ActiveWindowHeader: Intangible assets book\n        ActiveFormName: Report.IntangibleAssetsBook.Form\n        FeatureName: Intangible assets\n        ScriptName: Intangible assets book\n        TreeRowNumber: 12.333\n        FeatureLineNumber: 292\n        FeatureFullPath: features\\CI\\Main\\Basic\\IntangibleAssets.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавен\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:08 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:48:07"
+			},
+			"parameters": [
+				{
+					"name": "Парам1",
+					"value": "ReportSpreadsheetDocument"
+				}
+			],
+			"attachments": [
+				{
+					"name": "table",
+					"source": "2ef3293c-34a4-4aea-a4de-bd95e6403527-attachment.csv",
+					"type": "text/csv"
+				},
+				{
+					"name": "ReferenceValueLayout.mxl",
+					"source": "6904c2d5-eff1-4983-96b3-82d7e76f8fdf-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ReferenceValueLayout.html",
+					"source": "d8ab10d6-1bc8-4e3b-aa7d-6097bb4150af-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "CurrentValueLayout.mxl",
+					"source": "c272f2e2-97a6-41da-ae54-32cdf837793b-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "CurrentValueLayout.html",
+					"source": "e3c9284b-b237-4eb5-942a-ee3b343108da-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.mxl",
+					"source": "c261f1d8-ac63-4bcc-868e-c38cc2912112-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "EventLog.html",
+					"source": "7178bc50-fe27-4297-9e15-d28fbe21849a-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "EventLog.xlsx",
+					"source": "30128669-7666-43d3-8525-df54433f8512-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "ActiveFormState.mxl",
+					"source": "c7d08c99-cd1c-4c9b-b70d-29c7b6f929a6-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "ActiveFormState.html",
+					"source": "7565a6ae-6ec1-457a-a88e-166373a7835e-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "ActiveFormState.xlsx",
+					"source": "515f8d1a-f159-41e0-80bf-6de20009ae5f-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "AllFormsState.mxl",
+					"source": "bc206d2c-d3e5-4c23-89f5-01194a536893-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "AllFormsState.html",
+					"source": "203da604-810f-45ef-9ef5-eda9f2ced6ca-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "AllFormsState.xlsx",
+					"source": "4e6730b0-f092-4881-ac98-a2e0e043032f-attachment.xlsx",
+					"type": "xlsx"
+				},
+				{
+					"name": "NetworkConnectionsData.txt",
+					"source": "652a8fce-f969-4d49-ba1a-a535061d8c97-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "OSProcessesData.txt",
+					"source": "26f6676d-fb8a-40b7-8794-73ecd2918188-attachment.txt",
+					"type": "txt"
+				},
+				{
+					"name": "VariableValues.mxl",
+					"source": "7c168678-ac42-43ec-9c81-3d892680a658-attachment.mxl",
+					"type": "mxl"
+				},
+				{
+					"name": "VariableValues.html",
+					"source": "de802d22-6b1b-423b-b4b6-2d2bab488dee-attachment.html",
+					"type": "html"
+				},
+				{
+					"name": "Этот клиент.screenshot",
+					"source": "v8_CDDA_685.png",
+					"type": "image/png"
+				}
+			],
+			"steps": []
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "Intangible assets book"
+		},
+		{
+			"name": "feature",
+			"value": "Intangible assets"
+		},
+		{
+			"name": "suite",
+			"value": "Intangible assets"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "package",
+			"value": "Basic"
+		},
+		{
+			"name": "host",
+			"value": "WIN-Fresh01"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "Этот клиент.screenshot",
+			"source": "1d739890-da75-4415-ab0f-72544b001c19-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "ReferenceValueLayout.mxl",
+			"source": "d604e6e5-9bdd-4d1a-97b7-4bc73ffbf67a-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ReferenceValueLayout.html",
+			"source": "7b2bd829-c16a-458f-a688-76ee70f65f0e-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "CurrentValueLayout.mxl",
+			"source": "016e79b4-8fc0-4b23-8153-0d6a87075f77-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "CurrentValueLayout.html",
+			"source": "8d7a7bef-ee6e-4bf2-af58-b94f1e3af373-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.mxl",
+			"source": "9f0061e4-4928-442b-a301-fa4970e21cc8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "EventLog.html",
+			"source": "8932fc8f-d1a3-4b2f-bef1-84fc267d7d8b-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "EventLog.xlsx",
+			"source": "a74dc84b-d117-40f3-9e0e-2c7ec46a6262-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ActiveFormState.mxl",
+			"source": "f3245ba8-0a71-4bf3-b668-87f5bf36337a-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ActiveFormState.html",
+			"source": "fda5538e-81b7-4a84-acf6-a90153ce3973-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ActiveFormState.xlsx",
+			"source": "e8e73d45-1904-441f-814e-ba0929591f3d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "AllFormsState.mxl",
+			"source": "1ce51ddf-f5a8-46ba-9485-721a54461329-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "AllFormsState.html",
+			"source": "e61cc787-d791-4043-aa0e-6820a26dd214-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "AllFormsState.xlsx",
+			"source": "c22dd904-ef19-429a-9650-abdc3d9f7193-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "NetworkConnectionsData.txt",
+			"source": "ee6044d7-1f3b-44b1-8567-8568d3f3599b-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "OSProcessesData.txt",
+			"source": "f092ff2a-9436-4d06-b544-da9a92ed6396-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "VariableValues.mxl",
+			"source": "c2fff5a9-c9cd-4215-b5ed-aa073107a6dd-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "VariableValues.html",
+			"source": "a24f7cc8-39f1-416a-9fef-c9eaf01b5ab1-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}
