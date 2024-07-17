@@ -55,9 +55,19 @@ jobs:
         run: |
           allure generate allure-results --clean -o allure-report
 
+      - name: Check Allure Report Directory
+        run: |
+          ls -la allure-report
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
+
+      - name: Check gh-pages Branch
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          ls -la
