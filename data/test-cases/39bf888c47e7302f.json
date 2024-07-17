@@ -1,0 +1,177 @@
+{
+  "uid" : "39bf888c47e7302f",
+  "name" : "(VATOnRelease) PurchaseOrder generate BankPayment",
+  "historyId" : "Purchase Invoices generate documents.(VATOnRelease) PurchaseOrder generate BankPayment",
+  "time" : {
+    "start" : 1721186087307,
+    "stop" : 1721186088264,
+    "duration" : 957
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186087385,
+        "stop" : 1721186087666,
+        "duration" : 281
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+      "time" : {
+        "start" : 1721186087885,
+        "stop" : 1721186087901,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseOrder"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186087979,
+        "stop" : 1721186087994,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "92666842cf24be53",
+        "name" : "table",
+        "source" : "92666842cf24be53.csv",
+        "type" : "text/csv",
+        "size" : 26
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"Number\" in \"List\" table",
+      "time" : {
+        "start" : 1721186088020,
+        "stop" : 1721186088036,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "Number"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormDocumentBankPaymentCreateBasedOn\"",
+      "time" : {
+        "start" : 1721186088061,
+        "stop" : 1721186088077,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentBankPaymentCreateBasedOn"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Bank payment (create)\" window is opened",
+      "time" : {
+        "start" : 1721186088093,
+        "stop" : 1721186088264,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Bank payment (create)"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "PurchaseOrder generate BankPayment"
+  }, {
+    "name" : "feature",
+    "value" : "Purchase Invoices generate documents"
+  }, {
+    "name" : "suite",
+    "value" : "Purchase Invoices generate documents"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "MiscellaneousForOllCompany"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "39bf888c47e7302f.json",
+  "parameterValues" : [ ]
+}

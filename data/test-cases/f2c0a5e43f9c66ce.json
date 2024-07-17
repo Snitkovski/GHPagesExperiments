@@ -1,0 +1,666 @@
+{
+  "uid" : "f2c0a5e43f9c66ce",
+  "name" : "(VATOnRelease) BP Plati la stat (Impozitul pe profit)",
+  "historyId" : "BD available not available columns.(VATOnRelease) BP Plati la stat (Impozitul pe profit)",
+  "time" : {
+    "start" : 1721188027459,
+    "stop" : 1721188077838,
+    "duration" : 50379
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721188027538,
+      "stop" : 1721188027834,
+      "duration" : 296
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721188028054,
+        "stop" : 1721188028242,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.BankPayment\"",
+      "time" : {
+        "start" : 1721188028461,
+        "stop" : 1721188028476,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.BankPayment"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormCreate\"",
+      "time" : {
+        "start" : 1721188028508,
+        "stop" : 1721188028570,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormCreate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"CashFlowActivity\"",
+      "time" : {
+        "start" : 1721188028601,
+        "stop" : 1721188028726,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CashFlowActivity"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721188028804,
+        "stop" : 1721188028836,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d9ab97bd332f724d",
+        "name" : "table",
+        "source" : "d9ab97bd332f724d.csv",
+        "type" : "text/csv",
+        "size" : 55
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721188028867,
+        "stop" : 1721188028867,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And in the table \"DetailsOther\" I click the button named \"DetailsOtherAdd\"",
+      "time" : {
+        "start" : 1721188028898,
+        "stop" : 1721188029008,
+        "duration" : 110
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "DetailsOther"
+      }, {
+        "name" : "Парам2",
+        "value" : "DetailsOtherAdd"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"100,00\" text in the field named \"DetailsOtherPaymentAmount\" of \"DetailsOther\" table",
+      "time" : {
+        "start" : 1721188029024,
+        "stop" : 1721188029071,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "DetailsOther"
+      }, {
+        "name" : "Парам2",
+        "value" : "DetailsOtherPaymentAmount"
+      }, {
+        "name" : "Парам3",
+        "value" : "100,00"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"DetailsOther\" table",
+      "time" : {
+        "start" : 1721188029103,
+        "stop" : 1721188029103,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "DetailsOther"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Bank document table check",
+      "time" : {
+        "start" : 1721188029134,
+        "stop" : 1721188077838,
+        "duration" : 48704
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari de la fondatori din operatiuni de capital\" then",
+        "time" : {
+          "start" : 1721188029134,
+          "stop" : 1721188031746,
+          "duration" : 2612
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari de la fondatori din operatiuni de capital"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari de la clienti din livrari\" then",
+        "time" : {
+          "start" : 1721188031777,
+          "stop" : 1721188034296,
+          "duration" : 2519
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari de la clienti din livrari"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari rambursari sume neutilizate de la avans de trezorerie\" then",
+        "time" : {
+          "start" : 1721188034328,
+          "stop" : 1721188036986,
+          "duration" : 2658
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari rambursari sume neutilizate de la avans de trezorerie"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari rambursari sume neutilizate de la avans de trezorerie (Val)\" then",
+        "time" : {
+          "start" : 1721188037034,
+          "stop" : 1721188039771,
+          "duration" : 2737
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari rambursari sume neutilizate de la avans de trezorerie (Val)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari viramente interne\" then",
+        "time" : {
+          "start" : 1721188039802,
+          "stop" : 1721188042228,
+          "duration" : 2426
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari viramente interne"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari Numerar de la Magazine / Puncte de comerț Amanunt  (Cantitativ) \" then",
+        "time" : {
+          "start" : 1721188042259,
+          "stop" : 1721188045060,
+          "duration" : 2801
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari Numerar de la Magazine / Puncte de comerț Amanunt  (Cantitativ) "
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Incasari din difrente de curs pozitive\" then",
+        "time" : {
+          "start" : 1721188045310,
+          "stop" : 1721188047859,
+          "duration" : 2549
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Incasari din difrente de curs pozitive"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (TVA)\" then",
+        "time" : {
+          "start" : 1721188047875,
+          "stop" : 1721188050286,
+          "duration" : 2411
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la stat (TVA)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plata Dividende  proprietarilor\" then",
+        "time" : {
+          "start" : 1721188050317,
+          "stop" : 1721188052775,
+          "duration" : 2458
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plata Dividende  proprietarilor"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la fondatori aferente rambursarii capitalului social\" then",
+        "time" : {
+          "start" : 1721188052806,
+          "stop" : 1721188055398,
+          "duration" : 2592
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la fondatori aferente rambursarii capitalului social"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la furnizori de stocuri\" then",
+        "time" : {
+          "start" : 1721188055429,
+          "stop" : 1721188057923,
+          "duration" : 2494
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la furnizori de stocuri"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Vama)\" then",
+        "time" : {
+          "start" : 1721188057954,
+          "stop" : 1721188060375,
+          "duration" : 2421
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la stat (Vama)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati pentru avans de trezorerie\" then",
+        "time" : {
+          "start" : 1721188060390,
+          "stop" : 1721188062915,
+          "duration" : 2525
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati pentru avans de trezorerie"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati pentru avans de trezorerie (Val)\" then",
+        "time" : {
+          "start" : 1721188062946,
+          "stop" : 1721188065523,
+          "duration" : 2577
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati pentru avans de trezorerie (Val)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati viramente interne\" then",
+        "time" : {
+          "start" : 1721188065538,
+          "stop" : 1721188067982,
+          "duration" : 2444
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati viramente interne"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la salariati\" then",
+        "time" : {
+          "start" : 1721188067998,
+          "stop" : 1721188070423,
+          "duration" : 2425
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la salariati"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati servicii bancare\" then",
+        "time" : {
+          "start" : 1721188070455,
+          "stop" : 1721188072895,
+          "duration" : 2440
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati servicii bancare"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Impozitul pe profit)\" then",
+        "time" : {
+          "start" : 1721188072926,
+          "stop" : 1721188075320,
+          "duration" : 2394
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la stat (Impozitul pe profit)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "if the form attribute named \"CashFlowActivity\" became equal to \"Plati la stat (Impozitul pe venit)\" then",
+        "time" : {
+          "start" : 1721188075351,
+          "stop" : 1721188077838,
+          "duration" : 2487
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "CashFlowActivity"
+        }, {
+          "name" : "Парам2",
+          "value" : "Plati la stat (Impozitul pe venit)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 19,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 29,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "BP Plati la stat (Impozitul pe profit)"
+  }, {
+    "name" : "feature",
+    "value" : "BD available not available columns"
+  }, {
+    "name" : "suite",
+    "value" : "BD available not available columns"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Y_001_BCDocument"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "f2c0a5e43f9c66ce.json",
+  "parameterValues" : [ ]
+}

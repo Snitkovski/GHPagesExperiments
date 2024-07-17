@@ -1,0 +1,534 @@
+{
+  "uid" : "1c56d0da9b259740",
+  "name" : "(VATOnRelease) Fixed assets depreciation",
+  "historyId" : "101 Change Fixed Assets Parameters.(VATOnRelease) Fixed assets depreciation",
+  "time" : {
+    "start" : 1721183364419,
+    "stop" : 1721183377057,
+    "duration" : 12638
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183364497,
+      "stop" : 1721183364638,
+      "duration" : 141
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721183364856,
+        "stop" : 1721183365064,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/app/DataProcessor.ClosingMonth\"",
+      "time" : {
+        "start" : 1721183365283,
+        "stop" : 1721183365299,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/DataProcessor.ClosingMonth"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I fill Enterprise \"ROMANIA BUSINESS LABS S.R.L.\"",
+      "time" : {
+        "start" : 1721183365330,
+        "stop" : 1721183370259,
+        "duration" : 4929
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "If I see \"Enterprise\" attribute on the form Then",
+        "time" : {
+          "start" : 1721183365330,
+          "stop" : 1721183370259,
+          "duration" : 4929
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Enterprise"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* Check operation visibility",
+      "time" : {
+        "start" : 1721183370290,
+        "stop" : 1721183375720,
+        "duration" : 5430
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the button named \"IncreasePeriod\"",
+        "time" : {
+          "start" : 1721183370290,
+          "stop" : 1721183370290,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "IncreasePeriod"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And the field named \"FixedAssetsDepreciationOperation\" exists on the form",
+        "time" : {
+          "start" : 1721183370322,
+          "stop" : 1721183370525,
+          "duration" : 203
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FixedAssetsDepreciationOperation"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I restore sequence in Closing month",
+        "time" : {
+          "start" : 1721183370556,
+          "stop" : 1721183375720,
+          "duration" : 5164
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I clear user message window",
+          "time" : {
+            "start" : 1721183370556,
+            "stop" : 1721183370556,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "If I see the attribute named \"ActualizeAccountingData\" on the form Then",
+          "time" : {
+            "start" : 1721183370572,
+            "stop" : 1721183375720,
+            "duration" : 5148
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I click the button named \"ActualizeAccountingData\"",
+            "time" : {
+              "start" : 1721183370603,
+              "stop" : 1721183370619,
+              "duration" : 16
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "ActualizeAccountingData"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "Then \"Document Posting\" window is opened",
+            "time" : {
+              "start" : 1721183370650,
+              "stop" : 1721183370697,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Document Posting"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And in the table \"SequenceList\" I click the button named \"SequenceListDoRestore\"",
+            "time" : {
+              "start" : 1721183370728,
+              "stop" : 1721183370759,
+              "duration" : 31
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "SequenceList"
+            }, {
+              "name" : "Парам2",
+              "value" : "SequenceListDoRestore"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And Delay \"5\"",
+            "time" : {
+              "start" : 1721183370790,
+              "stop" : 1721183375012,
+              "duration" : 4222
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "5"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "Try",
+            "time" : {
+              "start" : 1721183375235,
+              "stop" : 1721183375454,
+              "duration" : 219
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "When TestClient log message does not contain \"An error occurred while restoring the sequence.\" string",
+              "time" : {
+                "start" : 1721183375235,
+                "stop" : 1721183375454,
+                "duration" : 219
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "Парам1",
+                "value" : "An error occurred while restoring the sequence."
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And I close current window",
+            "time" : {
+              "start" : 1721183375485,
+              "stop" : 1721183375517,
+              "duration" : 32
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "And I click the button named \"DecreasePeriod\"",
+            "time" : {
+              "start" : 1721183375532,
+              "stop" : 1721183375548,
+              "duration" : 16
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "DecreasePeriod"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And I click the button named \"IncreasePeriod\"",
+            "time" : {
+              "start" : 1721183375563,
+              "stop" : 1721183375720,
+              "duration" : 157
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "IncreasePeriod"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ActualizeAccountingData"
+          } ],
+          "stepsCount" : 9,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 11,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 14,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* Calculate Fixed Assets Depreciation",
+      "time" : {
+        "start" : 1721183375751,
+        "stop" : 1721183377057,
+        "duration" : 1306
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I click the hyperlink named \"FixedAssetsDepreciationOperation\"",
+        "time" : {
+          "start" : 1721183375751,
+          "stop" : 1721183375892,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FixedAssetsDepreciationOperation"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And on the form menu I select \"Execute operation\"",
+        "time" : {
+          "start" : 1721183375923,
+          "stop" : 1721183375923,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Execute operation"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the hyperlink named \"FixedAssetsDepreciationOperation\"",
+        "time" : {
+          "start" : 1721183375954,
+          "stop" : 1721183376271,
+          "duration" : 317
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FixedAssetsDepreciationOperation"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And on the form menu I select \"Show records\"",
+        "time" : {
+          "start" : 1721183376302,
+          "stop" : 1721183376318,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Show records"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And \"List\" table became equal by template",
+        "time" : {
+          "start" : 1721183376506,
+          "stop" : 1721183376677,
+          "duration" : 171
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bae7a28a49a6be0d",
+          "name" : "table",
+          "source" : "bae7a28a49a6be0d.csv",
+          "type" : "text/csv",
+          "size" : 1426
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721183376709,
+          "stop" : 1721183377057,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 26,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Fixed assets depreciation"
+  }, {
+    "name" : "feature",
+    "value" : "101 Change Fixed Assets Parameters"
+  }, {
+    "name" : "suite",
+    "value" : "101 Change Fixed Assets Parameters"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "fixedassets"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh", "fixedassets" ]
+  },
+  "source" : "1c56d0da9b259740.json",
+  "parameterValues" : [ ]
+}

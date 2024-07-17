@@ -1,0 +1,630 @@
+{
+  "uid" : "781a000f23a0f374",
+  "name" : "(VATOnRelease) Accounting policy creation",
+  "historyId" : "004_QuickSettings.(VATOnRelease) Accounting policy creation",
+  "time" : {
+    "start" : 1721182397293,
+    "stop" : 1721182400094,
+    "duration" : 2801
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/InformationRegister.AccountingPolicy\"",
+      "time" : {
+        "start" : 1721182397371,
+        "stop" : 1721182397387,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/InformationRegister.AccountingPolicy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Accounting policy\" window is opened",
+      "time" : {
+        "start" : 1721182397418,
+        "stop" : 1721182397496,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Accounting policy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If number of \"List\" table lines is \"equal\" \"0\" Then",
+      "time" : {
+        "start" : 1721182397528,
+        "stop" : 1721182397543,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "equal"
+      }, {
+        "name" : "Парам3",
+        "value" : "0"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Else",
+      "time" : {
+        "start" : 1721182397575,
+        "stop" : 1721182397575,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1721182397575,
+          "stop" : 1721182397575,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select \"Profit\" exact value from the drop-down list named \"IncomeTaxationType\"",
+      "time" : {
+        "start" : 1721182397606,
+        "stop" : 1721182397684,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "IncomeTaxationType"
+      }, {
+        "name" : "Парам2",
+        "value" : "Profit"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"LocationForTaxation\"",
+      "time" : {
+        "start" : 1721182397715,
+        "stop" : 1721182397731,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LocationForTaxation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Locations\" window is opened",
+      "time" : {
+        "start" : 1721182397762,
+        "stop" : 1721182397856,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Locations"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721182397934,
+        "stop" : 1721182397950,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e6d7052de802d134",
+        "name" : "table",
+        "source" : "e6d7052de802d134.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721182397981,
+        "stop" : 1721182397981,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"ExpenseForTaxation\"",
+      "time" : {
+        "start" : 1721182398013,
+        "stop" : 1721182398028,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ExpenseForTaxation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Income and Expense items\" window is opened",
+      "time" : {
+        "start" : 1721182398044,
+        "stop" : 1721182398185,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Income and Expense items"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721182398279,
+        "stop" : 1721182398279,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ab9954672f95dc9e",
+        "name" : "table",
+        "source" : "ab9954672f95dc9e.csv",
+        "type" : "text/csv",
+        "size" : 49
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721182398310,
+        "stop" : 1721182398326,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select \"FIFO\" exact value from the drop-down list named \"InventoryValuationMethod\"",
+      "time" : {
+        "start" : 1721182398466,
+        "stop" : 1721182398498,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "InventoryValuationMethod"
+      }, {
+        "name" : "Парам2",
+        "value" : "FIFO"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"LocationForExchangeDifferencesCalculation\"",
+      "time" : {
+        "start" : 1721182398529,
+        "stop" : 1721182398545,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LocationForExchangeDifferencesCalculation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Locations\" window is opened",
+      "time" : {
+        "start" : 1721182398560,
+        "stop" : 1721182398607,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Locations"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721182398685,
+        "stop" : 1721182398685,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a4a7cabfd0e7dded",
+        "name" : "table",
+        "source" : "a4a7cabfd0e7dded.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721182398716,
+        "stop" : 1721182398716,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"IncomeForExchangeDifferencesCalculation\"",
+      "time" : {
+        "start" : 1721182398748,
+        "stop" : 1721182398763,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "IncomeForExchangeDifferencesCalculation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Income and Expense items\" window is opened",
+      "time" : {
+        "start" : 1721182398795,
+        "stop" : 1721182398841,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Income and Expense items"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721182398920,
+        "stop" : 1721182398935,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a2fd1e7632c1f8a1",
+        "name" : "table",
+        "source" : "a2fd1e7632c1f8a1.csv",
+        "type" : "text/csv",
+        "size" : 109
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721182398951,
+        "stop" : 1721182398966,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"ExpenseForExchangeDifferencesCalculation\"",
+      "time" : {
+        "start" : 1721182398982,
+        "stop" : 1721182398998,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ExpenseForExchangeDifferencesCalculation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Income and Expense items\" window is opened",
+      "time" : {
+        "start" : 1721182399030,
+        "stop" : 1721182399077,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Income and Expense items"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721182399155,
+        "stop" : 1721182399186,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "87b08ce3aea61739",
+        "name" : "table",
+        "source" : "87b08ce3aea61739.csv",
+        "type" : "text/csv",
+        "size" : 111
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721182399202,
+        "stop" : 1721182399218,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormWriteAndClose\"",
+      "time" : {
+        "start" : 1721182399233,
+        "stop" : 1721182399249,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormWriteAndClose"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I wait \"AccountingPolicy (create) *\" window closing in 20 seconds",
+      "time" : {
+        "start" : 1721182399280,
+        "stop" : 1721182400094,
+        "duration" : 814
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AccountingPolicy (create) *"
+      }, {
+        "name" : "Парам2",
+        "value" : "20"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 29,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Accounting policy creation"
+  }, {
+    "name" : "feature",
+    "value" : "004_QuickSettings"
+  }, {
+    "name" : "suite",
+    "value" : "004_QuickSettings"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "tag",
+    "value" : "CI"
+  }, {
+    "name" : "package",
+    "value" : "001_TestDataExport"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "CI", "tree" ]
+  },
+  "source" : "781a000f23a0f374.json",
+  "parameterValues" : [ ]
+}

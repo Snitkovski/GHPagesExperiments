@@ -1,0 +1,501 @@
+{
+  "uid" : "f715c549c661bac5",
+  "name" : "(VATOnRelease) Check Advanced expenses write off last month",
+  "historyId" : "Set Advanced Expenses Write off Parameters.(VATOnRelease) Check Advanced expenses write off last month",
+  "time" : {
+    "start" : 1721186533263,
+    "stop" : 1721186547495,
+    "duration" : 14232
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186533341,
+      "stop" : 1721186533669,
+      "duration" : 328
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And the previous scenario executed successfully",
+      "time" : {
+        "start" : 1721186533888,
+        "stop" : 1721186533888,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186533919,
+        "stop" : 1721186534112,
+        "duration" : 193
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/app/DataProcessor.ClosingMonth\"",
+      "time" : {
+        "start" : 1721186534299,
+        "stop" : 1721186534315,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/DataProcessor.ClosingMonth"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Closing month\" window is opened",
+      "time" : {
+        "start" : 1721186534346,
+        "stop" : 1721186534518,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Closing month"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"DecreasePeriod\"",
+      "time" : {
+        "start" : 1721186534549,
+        "stop" : 1721186534549,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "DecreasePeriod"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I restore sequence in Closing month",
+      "time" : {
+        "start" : 1721186534580,
+        "stop" : 1721186546244,
+        "duration" : 11664
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I clear user message window",
+        "time" : {
+          "start" : 1721186534580,
+          "stop" : 1721186534752,
+          "duration" : 172
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "If I see the attribute named \"ActualizeAccountingData\" on the form Then",
+        "time" : {
+          "start" : 1721186534768,
+          "stop" : 1721186546244,
+          "duration" : 11476
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click the button named \"ActualizeAccountingData\"",
+          "time" : {
+            "start" : 1721186534799,
+            "stop" : 1721186534815,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "ActualizeAccountingData"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then \"Document Posting\" window is opened",
+          "time" : {
+            "start" : 1721186534846,
+            "stop" : 1721186534862,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Document Posting"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And in the table \"SequenceList\" I click the button named \"SequenceListDoRestore\"",
+          "time" : {
+            "start" : 1721186534893,
+            "stop" : 1721186534924,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "SequenceList"
+          }, {
+            "name" : "Парам2",
+            "value" : "SequenceListDoRestore"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And Delay \"5\"",
+          "time" : {
+            "start" : 1721186534955,
+            "stop" : 1721186539157,
+            "duration" : 4202
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "5"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Try",
+          "time" : {
+            "start" : 1721186539376,
+            "stop" : 1721186545946,
+            "duration" : 6570
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "When TestClient log message does not contain \"An error occurred while restoring the sequence.\" string",
+            "time" : {
+              "start" : 1721186539376,
+              "stop" : 1721186545946,
+              "duration" : 6570
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "An error occurred while restoring the sequence."
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I close current window",
+          "time" : {
+            "start" : 1721186545977,
+            "stop" : 1721186546009,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "And I click the button named \"DecreasePeriod\"",
+          "time" : {
+            "start" : 1721186546041,
+            "stop" : 1721186546056,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "DecreasePeriod"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"IncreasePeriod\"",
+          "time" : {
+            "start" : 1721186546072,
+            "stop" : 1721186546244,
+            "duration" : 172
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "IncreasePeriod"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ActualizeAccountingData"
+        } ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 11,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the hyperlink named \"AdvancedExpensesWriteoffOperation\"",
+      "time" : {
+        "start" : 1721186546275,
+        "stop" : 1721186546463,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AdvancedExpensesWriteoffOperation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And on the form menu I select \"Execute operation\"",
+      "time" : {
+        "start" : 1721186546494,
+        "stop" : 1721186546494,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Execute operation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the hyperlink named \"AdvancedExpensesWriteoffOperation\"",
+      "time" : {
+        "start" : 1721186546525,
+        "stop" : 1721186546775,
+        "duration" : 250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AdvancedExpensesWriteoffOperation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And on the form menu I select \"Show records\"",
+      "time" : {
+        "start" : 1721186546806,
+        "stop" : 1721186546806,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Show records"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save '{endofmonth(AddMonth(CurrentDate(), -1))}' in \"WriteOffSchedulePeriod\" variable",
+      "time" : {
+        "start" : 1721186546853,
+        "stop" : 1721186546853,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "{endofmonth(AddMonth(CurrentDate(), -1))}"
+      }, {
+        "name" : "Парам2",
+        "value" : "WriteOffSchedulePeriod"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And \"List\" table became equal by template",
+      "time" : {
+        "start" : 1721186546947,
+        "stop" : 1721186547151,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "59f99fca8689989a",
+        "name" : "table",
+        "source" : "59f99fca8689989a.csv",
+        "type" : "text/csv",
+        "size" : 512
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186547198,
+        "stop" : 1721186547495,
+        "duration" : 297
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 24,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Check Advanced expenses write off last month"
+  }, {
+    "name" : "feature",
+    "value" : "Set Advanced Expenses Write off Parameters"
+  }, {
+    "name" : "suite",
+    "value" : "Set Advanced Expenses Write off Parameters"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "f715c549c661bac5.json",
+  "parameterValues" : [ ]
+}

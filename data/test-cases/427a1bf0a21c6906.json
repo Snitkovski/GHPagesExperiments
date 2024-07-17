@@ -1,0 +1,141 @@
+{
+  "uid" : "427a1bf0a21c6906",
+  "name" : "(VATOnRelease) Data preparation Catalog.VATRates",
+  "historyId" : "100 Fixed and intangible assets.(VATOnRelease) Data preparation Catalog.VATRates",
+  "time" : {
+    "start" : 1721183241318,
+    "stop" : 1721183242666,
+    "duration" : 1348
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183241443,
+      "stop" : 1721183241677,
+      "duration" : 234
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I close all client application windows",
+    "time" : {
+      "start" : 1721183241896,
+      "stop" : 1721183242291,
+      "duration" : 395
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Catalog.VATRates\"",
+      "time" : {
+        "start" : 1721183242510,
+        "stop" : 1721183242526,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.VATRates"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If \"List\" table does not contain line Then",
+      "time" : {
+        "start" : 1721183242604,
+        "stop" : 1721183242666,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f00fe7281412c530",
+        "name" : "table",
+        "source" : "f00fe7281412c530.csv",
+        "type" : "text/csv",
+        "size" : 47
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Data preparation Catalog.VATRates"
+  }, {
+    "name" : "feature",
+    "value" : "100 Fixed and intangible assets"
+  }, {
+    "name" : "suite",
+    "value" : "100 Fixed and intangible assets"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "fixedassets"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh", "fixedassets" ]
+  },
+  "source" : "427a1bf0a21c6906.json",
+  "parameterValues" : [ ]
+}

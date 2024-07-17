@@ -1,0 +1,276 @@
+{
+  "uid" : "d7b40c4ee4af20cc",
+  "name" : "(VATOnRelease) Report Fix asset card Calculator Lenovo SN456",
+  "historyId" : "101 Change Fixed Assets Parameters.(VATOnRelease) Report Fix asset card Calculator Lenovo SN456",
+  "time" : {
+    "start" : 1721183330122,
+    "stop" : 1721183333719,
+    "duration" : 3597
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183330200,
+      "stop" : 1721183330466,
+      "duration" : 266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721183330684,
+        "stop" : 1721183331076,
+        "duration" : 392
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I save 'Format(CurrentDate() + 24*60*60, \"DLF = D\")' in \"DocDate\" variable",
+      "time" : {
+        "start" : 1721183331295,
+        "stop" : 1721183331295,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Format(CurrentDate() + 24*60*60, \"DLF = D\")"
+      }, {
+        "name" : "Парам2",
+        "value" : "DocDate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save 'Format(CurrentDate(), \"DLF = D\")' in \"PurchaseDocDate\" variable",
+      "time" : {
+        "start" : 1721183331326,
+        "stop" : 1721183331326,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Format(CurrentDate(), \"DLF = D\")"
+      }, {
+        "name" : "Парам2",
+        "value" : "PurchaseDocDate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/app/Report.FixedAssetCard\"",
+      "time" : {
+        "start" : 1721183331358,
+        "stop" : 1721183331358,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/Report.FixedAssetCard"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"FixedAsset\"",
+      "time" : {
+        "start" : 1721183331389,
+        "stop" : 1721183331420,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FixedAsset"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721183331498,
+        "stop" : 1721183331514,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e579591be1bc912e",
+        "name" : "table",
+        "source" : "e579591be1bc912e.csv",
+        "type" : "text/csv",
+        "size" : 43
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721183331545,
+        "stop" : 1721183331545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormGenerate\"",
+      "time" : {
+        "start" : 1721183331576,
+        "stop" : 1721183331576,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormGenerate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"FixedAssetCard\" spreadsheet document is equal by template",
+      "time" : {
+        "start" : 1721183332374,
+        "stop" : 1721183333423,
+        "duration" : 1049
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3f5298594202e533",
+        "name" : "table",
+        "source" : "3f5298594202e533.csv",
+        "type" : "text/csv",
+        "size" : 2666
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FixedAssetCard"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721183333454,
+        "stop" : 1721183333719,
+        "duration" : 265
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Report Fix asset card Calculator Lenovo SN456"
+  }, {
+    "name" : "feature",
+    "value" : "101 Change Fixed Assets Parameters"
+  }, {
+    "name" : "suite",
+    "value" : "101 Change Fixed Assets Parameters"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "fixedassets"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh", "fixedassets" ]
+  },
+  "source" : "d7b40c4ee4af20cc.json",
+  "parameterValues" : [ ]
+}

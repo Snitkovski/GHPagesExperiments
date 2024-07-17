@@ -1,0 +1,1039 @@
+{
+  "uid" : "f4a9983d75b35a7e",
+  "name" : "(VATOnRelease) TrialBalance By Account",
+  "historyId" : "Settlements Adjustment >DR/CR.(VATOnRelease) TrialBalance By Account",
+  "time" : {
+    "start" : 1721186706265,
+    "stop" : 1721186718029,
+    "duration" : 11764
+  },
+  "status" : "failed",
+  "statusMessage" : "Actual value in No.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7792)}: Actual value in No.<4> column in Spreadsheet Document is <>, and expected value is <178,50>.\n\nTechnical data:\n        ActiveWindowHeader: Trial Balance by account 401.1  for 01.07.2024 - 17.07.2024\n        ActiveFormName: Report.TrialBalanceByAccount.Form.ReportForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: TrialBalance By Account\n        TreeRowNumber: 22.689\n        FeatureLineNumber: 324\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:25:16",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186706359,
+      "stop" : 1721186706625,
+      "duration" : 266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Actual value in No.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7792)}: Actual value in No.<4> column in Spreadsheet Document is <>, and expected value is <178,50>.\n\nTechnical data:\n        ActiveWindowHeader: Trial Balance by account 401.1  for 01.07.2024 - 17.07.2024\n        ActiveFormName: Report.TrialBalanceByAccount.Form.ReportForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: TrialBalance By Account\n        TreeRowNumber: 22.689\n        FeatureLineNumber: 324\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:25:16",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186706859,
+        "stop" : 1721186707239,
+        "duration" : 380
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/app/Report.TrialBalanceByAccount\"",
+      "time" : {
+        "start" : 1721186707458,
+        "stop" : 1721186707473,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/Report.TrialBalanceByAccount"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input begin of the current month date in \"Period\" field",
+      "time" : {
+        "start" : 1721186707505,
+        "stop" : 1721186707598,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Period"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save 'CurrentDate()' in \"date\" variable",
+      "time" : {
+        "start" : 1721186707630,
+        "stop" : 1721186707630,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CurrentDate()"
+      }, {
+        "name" : "Парам2",
+        "value" : "date"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"17.07.2024 06:25:07\" text in the field named \"PeriodEndDate\"",
+      "time" : {
+        "start" : 1721186707661,
+        "stop" : 1721186707692,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "PeriodEndDate"
+      }, {
+        "name" : "Парам2",
+        "value" : "17.07.2024 06:25:07"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select from the drop-down list named \"Account\" by \"401.1\" string",
+      "time" : {
+        "start" : 1721186707723,
+        "stop" : 1721186708005,
+        "duration" : 282
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Account"
+      }, {
+        "name" : "Парам2",
+        "value" : "401.1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"Настройки\"",
+      "time" : {
+        "start" : 1721186708040,
+        "stop" : 1721186708040,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Настройки"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I move to the tab named \"Report\"",
+      "time" : {
+        "start" : 1721186708072,
+        "stop" : 1721186708197,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Report"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"Настройки\"",
+      "time" : {
+        "start" : 1721186708228,
+        "stop" : 1721186708228,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Настройки"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708259,
+        "stop" : 1721186708275,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      }, {
+        "name" : "Парам2",
+        "value" : "GroupingByUse"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708306,
+        "stop" : 1721186708322,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I move to the tab named \"Report\"",
+      "time" : {
+        "start" : 1721186708337,
+        "stop" : 1721186708353,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Report"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"Настройки\"",
+      "time" : {
+        "start" : 1721186708384,
+        "stop" : 1721186708400,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Настройки"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If \"GroupingBy\" table does not contain line Then",
+      "time" : {
+        "start" : 1721186708478,
+        "stop" : 1721186708494,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "54d5db1bb5cd8f05",
+        "name" : "table",
+        "source" : "54d5db1bb5cd8f05.csv",
+        "type" : "text/csv",
+        "size" : 29
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708525,
+        "stop" : 1721186708525,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708603,
+        "stop" : 1721186708619,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5f3f1bc616ef58c1",
+        "name" : "table",
+        "source" : "5f3f1bc616ef58c1.csv",
+        "type" : "text/csv",
+        "size" : 29
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708650,
+        "stop" : 1721186708665,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      }, {
+        "name" : "Парам2",
+        "value" : "GroupingByUse"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708697,
+        "stop" : 1721186708697,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I move to the tab named \"GroupFilters\"",
+      "time" : {
+        "start" : 1721186708728,
+        "stop" : 1721186708728,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupFilters"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"Filters\" table",
+      "time" : {
+        "start" : 1721186708822,
+        "stop" : 1721186708837,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "41dfb5daeb2665cd",
+        "name" : "table",
+        "source" : "41dfb5daeb2665cd.csv",
+        "type" : "text/csv",
+        "size" : 26
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"FiltersUse\" in \"Filters\" table",
+      "time" : {
+        "start" : 1721186708853,
+        "stop" : 1721186708869,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      }, {
+        "name" : "Парам2",
+        "value" : "FiltersUse"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I set checkbox named \"FiltersUse\" in \"Filters\" table",
+      "time" : {
+        "start" : 1721186708900,
+        "stop" : 1721186708915,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      }, {
+        "name" : "Парам2",
+        "value" : "FiltersUse"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186708994,
+        "stop" : 1721186709035,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "51b9a05774da07c6",
+        "name" : "table",
+        "source" : "51b9a05774da07c6.csv",
+        "type" : "text/csv",
+        "size" : 29
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I set checkbox named \"GroupingByUse\" in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186709061,
+        "stop" : 1721186709076,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      }, {
+        "name" : "Парам2",
+        "value" : "GroupingByUse"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"GroupingBy\" table",
+      "time" : {
+        "start" : 1721186709092,
+        "stop" : 1721186709108,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"Filters\" table",
+      "time" : {
+        "start" : 1721186709123,
+        "stop" : 1721186709139,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"FiltersRightValue\" in \"Filters\" table",
+      "time" : {
+        "start" : 1721186709170,
+        "stop" : 1721186709186,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      }, {
+        "name" : "Парам2",
+        "value" : "FiltersRightValue"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"Filters\" table",
+      "time" : {
+        "start" : 1721186709201,
+        "stop" : 1721186709217,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click choice button of the attribute named \"FiltersRightValue\" in \"Filters\" table",
+      "time" : {
+        "start" : 1721186709248,
+        "stop" : 1721186709279,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Filters"
+      }, {
+        "name" : "Парам2",
+        "value" : "FiltersRightValue"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186709358,
+        "stop" : 1721186709389,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2c4852171ce62520",
+        "name" : "table",
+        "source" : "2c4852171ce62520.csv",
+        "type" : "text/csv",
+        "size" : 22
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186709420,
+        "stop" : 1721186709436,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"ApplySettings\"",
+      "time" : {
+        "start" : 1721186709451,
+        "stop" : 1721186709483,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ApplySettings"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"GenerateReport\"",
+      "time" : {
+        "start" : 1721186709498,
+        "stop" : 1721186709733,
+        "duration" : 235
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GenerateReport"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+      "time" : {
+        "start" : 1721186709764,
+        "stop" : 1721186709764,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      }, {
+        "name" : "Парам2",
+        "value" : "NonPayer"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "elseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+      "time" : {
+        "start" : 1721186709795,
+        "stop" : 1721186718029,
+        "duration" : 8234
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Then \"Result\" spreadsheet document is equal by template",
+        "time" : {
+          "start" : 1721186710503,
+          "stop" : 1721186718029,
+          "duration" : 7526
+        },
+        "status" : "failed",
+        "statusMessage" : "Actual value in No.",
+        "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(7792)}: Actual value in No.<4> column in Spreadsheet Document is <>, and expected value is <178,50>.\n\nTechnical data:\n        ActiveWindowHeader: Trial Balance by account 401.1  for 01.07.2024 - 17.07.2024\n        ActiveFormName: Report.TrialBalanceByAccount.Form.ReportForm\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: TrialBalance By Account\n        TreeRowNumber: 22.689\n        FeatureLineNumber: 324\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТабличныйДокументРавенПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:10 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:25:16",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b49016396dc9a74",
+          "name" : "table",
+          "source" : "b49016396dc9a74.csv",
+          "type" : "text/csv",
+          "size" : 1284
+        }, {
+          "uid" : "f9cc7cfe22059cae",
+          "name" : "ReferenceValueLayout.mxl",
+          "source" : "f9cc7cfe22059cae.mxl",
+          "type" : "mxl",
+          "size" : 6074
+        }, {
+          "uid" : "8ff19e1aac34f6e8",
+          "name" : "ReferenceValueLayout.html",
+          "source" : "8ff19e1aac34f6e8.html",
+          "type" : "html",
+          "size" : 12167
+        }, {
+          "uid" : "1b3005a7d39bc4cb",
+          "name" : "CurrentValueLayout.mxl",
+          "source" : "1b3005a7d39bc4cb.mxl",
+          "type" : "mxl",
+          "size" : 6046
+        }, {
+          "uid" : "52587740369106cd",
+          "name" : "CurrentValueLayout.html",
+          "source" : "52587740369106cd.html",
+          "type" : "html",
+          "size" : 12009
+        }, {
+          "uid" : "99c8a249177f47a7",
+          "name" : "EventLog.mxl",
+          "source" : "99c8a249177f47a7.mxl",
+          "type" : "mxl",
+          "size" : 75848
+        }, {
+          "uid" : "3bfa959d57803af4",
+          "name" : "EventLog.html",
+          "source" : "3bfa959d57803af4.html",
+          "type" : "html",
+          "size" : 77942
+        }, {
+          "uid" : "eed0596226717b5d",
+          "name" : "EventLog.xlsx",
+          "source" : "eed0596226717b5d.xlsx",
+          "type" : "xlsx",
+          "size" : 15135
+        }, {
+          "uid" : "eaffa82d2dd2033c",
+          "name" : "ActiveFormState.mxl",
+          "source" : "eaffa82d2dd2033c.mxl",
+          "type" : "mxl",
+          "size" : 48550
+        }, {
+          "uid" : "a537cb37947c26ce",
+          "name" : "ActiveFormState.html",
+          "source" : "a537cb37947c26ce.html",
+          "type" : "html",
+          "size" : 104860
+        }, {
+          "uid" : "c93d3c6247559bf6",
+          "name" : "ActiveFormState.xlsx",
+          "source" : "c93d3c6247559bf6.xlsx",
+          "type" : "xlsx",
+          "size" : 13523
+        }, {
+          "uid" : "f2cd590038107817",
+          "name" : "AllFormsState.mxl",
+          "source" : "f2cd590038107817.mxl",
+          "type" : "mxl",
+          "size" : 193126
+        }, {
+          "uid" : "f6717b302f1025f8",
+          "name" : "AllFormsState.html",
+          "source" : "f6717b302f1025f8.html",
+          "type" : "html",
+          "size" : 391247
+        }, {
+          "uid" : "91c0069a363a815a",
+          "name" : "AllFormsState.xlsx",
+          "source" : "91c0069a363a815a.xlsx",
+          "type" : "xlsx",
+          "size" : 30034
+        }, {
+          "uid" : "6a94ddd046a9526f",
+          "name" : "NetworkConnectionsData.txt",
+          "source" : "6a94ddd046a9526f.txt",
+          "type" : "txt",
+          "size" : 3460
+        }, {
+          "uid" : "bec34f150b5caab7",
+          "name" : "OSProcessesData.txt",
+          "source" : "bec34f150b5caab7.txt",
+          "type" : "txt",
+          "size" : 23564
+        }, {
+          "uid" : "f1a5c2d90bdddc99",
+          "name" : "VariableValues.mxl",
+          "source" : "f1a5c2d90bdddc99.mxl",
+          "type" : "mxl",
+          "size" : 11318
+        }, {
+          "uid" : "395eae43fbabca69",
+          "name" : "VariableValues.html",
+          "source" : "395eae43fbabca69.html",
+          "type" : "html",
+          "size" : 24142
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Result"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 18,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      }, {
+        "name" : "Парам2",
+        "value" : "VATOnRelease"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 18,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Delay \"4\"",
+      "time" : {
+        "start" : 1721186718029,
+        "stop" : 1721186718029,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d047cb7520339c7a",
+        "name" : "Этот клиент.screenshot",
+        "source" : "d047cb7520339c7a.png",
+        "type" : "image/png",
+        "size" : 68562
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "4"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e3f1da34969bd2fb",
+      "name" : "Этот клиент.screenshot",
+      "source" : "e3f1da34969bd2fb.png",
+      "type" : "image/png",
+      "size" : 68562
+    }, {
+      "uid" : "ca2fbe44978a41d4",
+      "name" : "ReferenceValueLayout.mxl",
+      "source" : "ca2fbe44978a41d4.mxl",
+      "type" : "mxl",
+      "size" : 6074
+    }, {
+      "uid" : "67265593c6aba771",
+      "name" : "ReferenceValueLayout.html",
+      "source" : "67265593c6aba771.html",
+      "type" : "html",
+      "size" : 12167
+    }, {
+      "uid" : "d0f7790cc1d0617a",
+      "name" : "CurrentValueLayout.mxl",
+      "source" : "d0f7790cc1d0617a.mxl",
+      "type" : "mxl",
+      "size" : 6046
+    }, {
+      "uid" : "5ae0fd0d6513540a",
+      "name" : "CurrentValueLayout.html",
+      "source" : "5ae0fd0d6513540a.html",
+      "type" : "html",
+      "size" : 12009
+    }, {
+      "uid" : "1501b3d9c3f06c54",
+      "name" : "EventLog.mxl",
+      "source" : "1501b3d9c3f06c54.mxl",
+      "type" : "mxl",
+      "size" : 75848
+    }, {
+      "uid" : "692834cfbb9d7963",
+      "name" : "EventLog.html",
+      "source" : "692834cfbb9d7963.html",
+      "type" : "html",
+      "size" : 77942
+    }, {
+      "uid" : "4318521b6c6e4c8e",
+      "name" : "EventLog.xlsx",
+      "source" : "4318521b6c6e4c8e.xlsx",
+      "type" : "xlsx",
+      "size" : 15135
+    }, {
+      "uid" : "5557373c116e4539",
+      "name" : "ActiveFormState.mxl",
+      "source" : "5557373c116e4539.mxl",
+      "type" : "mxl",
+      "size" : 48550
+    }, {
+      "uid" : "e3767507bfe1b19f",
+      "name" : "ActiveFormState.html",
+      "source" : "e3767507bfe1b19f.html",
+      "type" : "html",
+      "size" : 104860
+    }, {
+      "uid" : "7d9215a6c4cbab8e",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "7d9215a6c4cbab8e.xlsx",
+      "type" : "xlsx",
+      "size" : 13523
+    }, {
+      "uid" : "c4b732018ca662ba",
+      "name" : "AllFormsState.mxl",
+      "source" : "c4b732018ca662ba.mxl",
+      "type" : "mxl",
+      "size" : 193126
+    }, {
+      "uid" : "c41353dcf8a6ac69",
+      "name" : "AllFormsState.html",
+      "source" : "c41353dcf8a6ac69.html",
+      "type" : "html",
+      "size" : 391247
+    }, {
+      "uid" : "98b9845e55783550",
+      "name" : "AllFormsState.xlsx",
+      "source" : "98b9845e55783550.xlsx",
+      "type" : "xlsx",
+      "size" : 30034
+    }, {
+      "uid" : "a0afb19d04c713fa",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "a0afb19d04c713fa.txt",
+      "type" : "txt",
+      "size" : 3460
+    }, {
+      "uid" : "c15a12b724031590",
+      "name" : "OSProcessesData.txt",
+      "source" : "c15a12b724031590.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "1e37b91ae254c722",
+      "name" : "VariableValues.mxl",
+      "source" : "1e37b91ae254c722.mxl",
+      "type" : "mxl",
+      "size" : 11318
+    }, {
+      "uid" : "ea56fe8155c97926",
+      "name" : "VariableValues.html",
+      "source" : "ea56fe8155c97926.html",
+      "type" : "html",
+      "size" : 24142
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 37,
+    "attachmentsCount" : 42,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "TrialBalance By Account"
+  }, {
+    "name" : "feature",
+    "value" : "Settlements Adjustment >DR/CR"
+  }, {
+    "name" : "suite",
+    "value" : "Settlements Adjustment >DR/CR"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "SettlementsAdjustment"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "f4a9983d75b35a7e.json",
+  "parameterValues" : [ ]
+}

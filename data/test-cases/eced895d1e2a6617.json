@@ -1,0 +1,225 @@
+{
+  "uid" : "eced895d1e2a6617",
+  "name" : "(VATOnRelease) Report AccountTurnover True",
+  "historyId" : "Y_002 Department functional option check.(VATOnRelease) Report AccountTurnover True",
+  "time" : {
+    "start" : 1721189686551,
+    "stop" : 1721189687774,
+    "duration" : 1223
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721189686644,
+      "stop" : 1721189686957,
+      "duration" : 313
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And Department field check reports \"AccountTurnover\", \"True\"",
+      "time" : {
+        "start" : 1721189687196,
+        "stop" : 1721189687774,
+        "duration" : 578
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I save \"True\" value to \"True\" variable",
+        "time" : {
+          "start" : 1721189687196,
+          "stop" : 1721189687196,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "True"
+        }, {
+          "name" : "Парам2",
+          "value" : "True"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I save \"False\" value to \"False\" variable",
+        "time" : {
+          "start" : 1721189687227,
+          "stop" : 1721189687227,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "False"
+        }, {
+          "name" : "Парам2",
+          "value" : "False"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* Open object form",
+        "time" : {
+          "start" : 1721189687259,
+          "stop" : 1721189687774,
+          "duration" : 515
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Given I open hyperlink \"e1cib/app/Report.AccountTurnover\"",
+          "time" : {
+            "start" : 1721189687259,
+            "stop" : 1721189687259,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/app/Report.AccountTurnover"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "If \"True\" variable is equal to \"True\" Then",
+          "time" : {
+            "start" : 1721189687290,
+            "stop" : 1721189687430,
+            "duration" : 140
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Then I see \"Department\" attribute",
+            "time" : {
+              "start" : 1721189687321,
+              "stop" : 1721189687430,
+              "duration" : 109
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Department"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "True"
+          }, {
+            "name" : "Парам2",
+            "value" : "True"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1721189687462,
+            "stop" : 1721189687774,
+            "duration" : 312
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 4,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Report AccountTurnover True"
+  }, {
+    "name" : "feature",
+    "value" : "Y_002 Department functional option check"
+  }, {
+    "name" : "suite",
+    "value" : "Y_002 Department functional option check"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh" ]
+  },
+  "source" : "eced895d1e2a6617.json",
+  "parameterValues" : [ ]
+}

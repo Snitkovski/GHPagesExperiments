@@ -1,0 +1,147 @@
+{
+  "uid" : "a4182382f885957e",
+  "name" : "(VATOnRelease) Data preparation Purchase Invoice",
+  "historyId" : "120 Additional expenses.(VATOnRelease) Data preparation Purchase Invoice",
+  "time" : {
+    "start" : 1721183476096,
+    "stop" : 1721183477069,
+    "duration" : 973
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183476189,
+      "stop" : 1721183476455,
+      "duration" : 266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I save \"CurrentDate() - 2*24*60*60\" in variable \"PurchaseDate\"",
+      "time" : {
+        "start" : 1721183476674,
+        "stop" : 1721183476674,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CurrentDate() - 2*24*60*60"
+      }, {
+        "name" : "Парам2",
+        "value" : "PurchaseDate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I check or create document \"PurchaseInvoice\" objects:",
+      "time" : {
+        "start" : 1721183476768,
+        "stop" : 1721183476893,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "320480176e4e8e28",
+        "name" : "table",
+        "source" : "320480176e4e8e28.csv",
+        "type" : "text/csv",
+        "size" : 1554
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I refill object tabular section \"LineItems\":",
+      "time" : {
+        "start" : 1721183477028,
+        "stop" : 1721183477069,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1817a687a58794cc",
+        "name" : "table",
+        "source" : "1817a687a58794cc.csv",
+        "type" : "text/csv",
+        "size" : 2481
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Data preparation Purchase Invoice"
+  }, {
+    "name" : "feature",
+    "value" : "120 Additional expenses"
+  }, {
+    "name" : "suite",
+    "value" : "120 Additional expenses"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "a4182382f885957e.json",
+  "parameterValues" : [ ]
+}

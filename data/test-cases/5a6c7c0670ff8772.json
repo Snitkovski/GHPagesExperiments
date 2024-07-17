@@ -1,0 +1,343 @@
+{
+  "uid" : "5a6c7c0670ff8772",
+  "name" : "(VATOnRelease) Income and Expences catalog",
+  "historyId" : "003_FirstLaunchCatalogsFilling.(VATOnRelease) Income and Expences catalog",
+  "time" : {
+    "start" : 1721182614649,
+    "stop" : 1721182619937,
+    "duration" : 5288
+  },
+  "status" : "failed",
+  "statusMessage" : "Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(11222)}: Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found. Empty project directory.\n\nTechnical data:\n        ActiveWindowHeader: Income and Expense items\n        ActiveFormName: Catalog.IncomeAndExpenseItems.Form.ListForm\n        FeatureName: 003_FirstLaunchCatalogsFilling\n        ScriptName: Income and Expences catalog\n        TreeRowNumber: 2.180\n        FeatureLineNumber: 54\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_FirstLaunchCatalogsFilling.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаРавнаМакетуПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:04 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:58",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721182614727,
+      "stop" : 1721182614852,
+      "duration" : 125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(11222)}: Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found. Empty project directory.\n\nTechnical data:\n        ActiveWindowHeader: Income and Expense items\n        ActiveFormName: Catalog.IncomeAndExpenseItems.Form.ListForm\n        FeatureName: 003_FirstLaunchCatalogsFilling\n        ScriptName: Income and Expences catalog\n        TreeRowNumber: 2.180\n        FeatureLineNumber: 54\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_FirstLaunchCatalogsFilling.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаРавнаМакетуПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:04 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:58",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721182615059,
+        "stop" : 1721182615247,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Catalog.IncomeAndExpenseItems\"",
+      "time" : {
+        "start" : 1721182615466,
+        "stop" : 1721182615481,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.IncomeAndExpenseItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormList\"",
+      "time" : {
+        "start" : 1721182615497,
+        "stop" : 1721182615559,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormList"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And \"List\" table is equal to \"$КаталогПроекта$\\\\features\\\\Additional\\\\IncomeAndExpense.mxl\" by template",
+      "time" : {
+        "start" : 1721182615591,
+        "stop" : 1721182619937,
+        "duration" : 4346
+      },
+      "status" : "failed",
+      "statusMessage" : "Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(11222)}: Standard template <\\features\\Additional\\IncomeAndExpense.mxl> is not found. Empty project directory.\n\nTechnical data:\n        ActiveWindowHeader: Income and Expense items\n        ActiveFormName: Catalog.IncomeAndExpenseItems.Form.ListForm\n        FeatureName: 003_FirstLaunchCatalogsFilling\n        ScriptName: Income and Expences catalog\n        TreeRowNumber: 2.180\n        FeatureLineNumber: 54\n        FeatureFullPath: features\\CI\\Main\\Basic\\003_FirstLaunchCatalogsFilling.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаРавнаМакетуПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:04 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:16:58",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bf63e6cfab1a387b",
+        "name" : "EventLog.mxl",
+        "source" : "bf63e6cfab1a387b.mxl",
+        "type" : "mxl",
+        "size" : 27674
+      }, {
+        "uid" : "8467665029368717",
+        "name" : "EventLog.html",
+        "source" : "8467665029368717.html",
+        "type" : "html",
+        "size" : 29251
+      }, {
+        "uid" : "cf01a67478d897ec",
+        "name" : "EventLog.xlsx",
+        "source" : "cf01a67478d897ec.xlsx",
+        "type" : "xlsx",
+        "size" : 12749
+      }, {
+        "uid" : "3208f48684f1524d",
+        "name" : "ActiveFormState.mxl",
+        "source" : "3208f48684f1524d.mxl",
+        "type" : "mxl",
+        "size" : 43052
+      }, {
+        "uid" : "c0101bcf2c945073",
+        "name" : "ActiveFormState.html",
+        "source" : "c0101bcf2c945073.html",
+        "type" : "html",
+        "size" : 89891
+      }, {
+        "uid" : "f5193a513b667411",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "f5193a513b667411.xlsx",
+        "type" : "xlsx",
+        "size" : 13697
+      }, {
+        "uid" : "252a3f4a21e81999",
+        "name" : "AllFormsState.mxl",
+        "source" : "252a3f4a21e81999.mxl",
+        "type" : "mxl",
+        "size" : 72426
+      }, {
+        "uid" : "e4dfca732052b64d",
+        "name" : "AllFormsState.html",
+        "source" : "e4dfca732052b64d.html",
+        "type" : "html",
+        "size" : 151063
+      }, {
+        "uid" : "6f0dfbf2b810aee6",
+        "name" : "AllFormsState.xlsx",
+        "source" : "6f0dfbf2b810aee6.xlsx",
+        "type" : "xlsx",
+        "size" : 17671
+      }, {
+        "uid" : "ca06a8dfa5294e43",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "ca06a8dfa5294e43.txt",
+        "type" : "txt",
+        "size" : 3833
+      }, {
+        "uid" : "56b7264b6a2b5174",
+        "name" : "OSProcessesData.txt",
+        "source" : "56b7264b6a2b5174.txt",
+        "type" : "txt",
+        "size" : 23410
+      }, {
+        "uid" : "37835358259abb6f",
+        "name" : "VariableValues.mxl",
+        "source" : "37835358259abb6f.mxl",
+        "type" : "mxl",
+        "size" : 3178
+      }, {
+        "uid" : "b8f49ebe19b183c1",
+        "name" : "VariableValues.html",
+        "source" : "b8f49ebe19b183c1.html",
+        "type" : "html",
+        "size" : 6643
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "$КаталогПроекта$\\features\\Additional\\IncomeAndExpense.mxl"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721182619937,
+        "stop" : 1721182619937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "304b6573249fcd1d",
+        "name" : "Этот клиент.screenshot",
+        "source" : "304b6573249fcd1d.png",
+        "type" : "image/png",
+        "size" : 88912
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "597af1154a754029",
+      "name" : "Этот клиент.screenshot",
+      "source" : "597af1154a754029.png",
+      "type" : "image/png",
+      "size" : 88912
+    }, {
+      "uid" : "5e88d833028a0913",
+      "name" : "EventLog.mxl",
+      "source" : "5e88d833028a0913.mxl",
+      "type" : "mxl",
+      "size" : 27674
+    }, {
+      "uid" : "643268b4ec651f2f",
+      "name" : "EventLog.html",
+      "source" : "643268b4ec651f2f.html",
+      "type" : "html",
+      "size" : 29251
+    }, {
+      "uid" : "cdbf1b8150f74c10",
+      "name" : "EventLog.xlsx",
+      "source" : "cdbf1b8150f74c10.xlsx",
+      "type" : "xlsx",
+      "size" : 12749
+    }, {
+      "uid" : "9e1b72d40e6205c9",
+      "name" : "ActiveFormState.mxl",
+      "source" : "9e1b72d40e6205c9.mxl",
+      "type" : "mxl",
+      "size" : 43052
+    }, {
+      "uid" : "ce9b5eca7676b439",
+      "name" : "ActiveFormState.html",
+      "source" : "ce9b5eca7676b439.html",
+      "type" : "html",
+      "size" : 89891
+    }, {
+      "uid" : "8716241ddf524737",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "8716241ddf524737.xlsx",
+      "type" : "xlsx",
+      "size" : 13697
+    }, {
+      "uid" : "a81e9c42fd1e3150",
+      "name" : "AllFormsState.mxl",
+      "source" : "a81e9c42fd1e3150.mxl",
+      "type" : "mxl",
+      "size" : 72426
+    }, {
+      "uid" : "6bb52801d21fb150",
+      "name" : "AllFormsState.html",
+      "source" : "6bb52801d21fb150.html",
+      "type" : "html",
+      "size" : 151063
+    }, {
+      "uid" : "4451816c55b5ba56",
+      "name" : "AllFormsState.xlsx",
+      "source" : "4451816c55b5ba56.xlsx",
+      "type" : "xlsx",
+      "size" : 17671
+    }, {
+      "uid" : "e61c9166e399fadd",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "e61c9166e399fadd.txt",
+      "type" : "txt",
+      "size" : 3833
+    }, {
+      "uid" : "acead2e1226c5573",
+      "name" : "OSProcessesData.txt",
+      "source" : "acead2e1226c5573.txt",
+      "type" : "txt",
+      "size" : 23410
+    }, {
+      "uid" : "f08641d4f6ecaacd",
+      "name" : "VariableValues.mxl",
+      "source" : "f08641d4f6ecaacd.mxl",
+      "type" : "mxl",
+      "size" : 3178
+    }, {
+      "uid" : "cbcb28d7938f85cd",
+      "name" : "VariableValues.html",
+      "source" : "cbcb28d7938f85cd.html",
+      "type" : "html",
+      "size" : 6643
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 28,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Income and Expences catalog"
+  }, {
+    "name" : "feature",
+    "value" : "003_FirstLaunchCatalogsFilling"
+  }, {
+    "name" : "suite",
+    "value" : "003_FirstLaunchCatalogsFilling"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "5a6c7c0670ff8772.json",
+  "parameterValues" : [ ]
+}

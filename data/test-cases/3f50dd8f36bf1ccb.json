@@ -1,0 +1,937 @@
+{
+  "uid" : "3f50dd8f36bf1ccb",
+  "name" : "(VATOnRelease) Create a received service Service received test created",
+  "historyId" : "015 Accounting items creating.(VATOnRelease) Create a received service Service received test created",
+  "time" : {
+    "start" : 1721182713237,
+    "stop" : 1721182722076,
+    "duration" : 8839
+  },
+  "status" : "failed",
+  "statusMessage" : "Unable to move to the required line in <List> table.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\t\t| 'Unit' | \n\t\t| 'ora'  | \n\nTechnical data:\n        ActiveWindowHeader: Units\n        ActiveFormName: Catalog.Units.Form.ChoiceForm\n        FeatureName: 015 Accounting items creating\n        ScriptName: Create a received service Service received test created\n        TreeRowNumber: 2.874\n        FeatureLineNumber: 10\n        FeatureFullPath: features\\CI\\Main\\Basic\\015_ProductsCreating.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:18:40",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721182713315,
+      "stop" : 1721182713580,
+      "duration" : 265
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Unable to move to the required line in <List> table.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\t\t| 'Unit' | \n\t\t| 'ora'  | \n\nTechnical data:\n        ActiveWindowHeader: Units\n        ActiveFormName: Catalog.Units.Form.ChoiceForm\n        FeatureName: 015 Accounting items creating\n        ScriptName: Create a received service Service received test created\n        TreeRowNumber: 2.874\n        FeatureLineNumber: 10\n        FeatureFullPath: features\\CI\\Main\\Basic\\015_ProductsCreating.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:18:40",
+    "steps" : [ {
+      "name" : "* find o create a new folder",
+      "time" : {
+        "start" : 1721182713799,
+        "stop" : 1721182714785,
+        "duration" : 986
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721182713799,
+          "stop" : 1721182714191,
+          "duration" : 392
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Given I open hyperlink \"e1cib/list/Catalog.Products\"",
+        "time" : {
+          "start" : 1721182714425,
+          "stop" : 1721182714425,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.Products"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Accounting Items\" window is opened",
+        "time" : {
+          "start" : 1721182714457,
+          "stop" : 1721182714519,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Accounting Items"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"FormList\"",
+        "time" : {
+          "start" : 1721182714550,
+          "stop" : 1721182714550,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormList"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And  Check products folder 'Services'",
+        "time" : {
+          "start" : 1721182714644,
+          "stop" : 1721182714785,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "If \"List\" table contains lines Then",
+          "time" : {
+            "start" : 1721182714644,
+            "stop" : 1721182714785,
+            "duration" : 141
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "ba99b9f9cc27f085",
+            "name" : "table",
+            "source" : "ba99b9f9cc27f085.csv",
+            "type" : "text/csv",
+            "size" : 28
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* creat a new receieved service",
+      "time" : {
+        "start" : 1721182714800,
+        "stop" : 1721182722076,
+        "duration" : 7276
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Given I open hyperlink \"e1cib/list/Catalog.Products\"",
+        "time" : {
+          "start" : 1721182714800,
+          "stop" : 1721182714816,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Catalog.Products"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Accounting Items\" window is opened",
+        "time" : {
+          "start" : 1721182714832,
+          "stop" : 1721182714847,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Accounting Items"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"FormCreate\"",
+        "time" : {
+          "start" : 1721182714863,
+          "stop" : 1721182714878,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormCreate"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Item (create)\" window is opened",
+        "time" : {
+          "start" : 1721182714894,
+          "stop" : 1721182715020,
+          "duration" : 126
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Item (create)"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I input \"Service received test created\" text in the field named \"Description\"",
+        "time" : {
+          "start" : 1721182715052,
+          "stop" : 1721182715052,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Description"
+        }, {
+          "name" : "Парам2",
+          "value" : "Service received test created"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select \"Services received\" exact value from the drop-down list named \"ProductKinds\"",
+        "time" : {
+          "start" : 1721182715083,
+          "stop" : 1721182715098,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ProductKinds"
+        }, {
+          "name" : "Парам2",
+          "value" : "Services received"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click Choice button of the field named \"Parent\"",
+        "time" : {
+          "start" : 1721182715130,
+          "stop" : 1721182715177,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Parent"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Accounting Items\" window is opened",
+        "time" : {
+          "start" : 1721182715208,
+          "stop" : 1721182715270,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Accounting Items"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1721182715348,
+          "stop" : 1721182715348,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "8bfeb44146618ea2",
+          "name" : "table",
+          "source" : "8bfeb44146618ea2.csv",
+          "type" : "text/csv",
+          "size" : 28
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1721182715380,
+          "stop" : 1721182715380,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click Choice button of the field named \"IncomeAndExpense\"",
+        "time" : {
+          "start" : 1721182715411,
+          "stop" : 1721182715427,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "IncomeAndExpense"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Income and Expense items\" window is opened",
+        "time" : {
+          "start" : 1721182715458,
+          "stop" : 1721182715505,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Income and Expense items"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I go to line in \"List\" table",
+        "time" : {
+          "start" : 1721182715583,
+          "stop" : 1721182715598,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2133e7d933311603",
+          "name" : "table",
+          "source" : "2133e7d933311603.csv",
+          "type" : "text/csv",
+          "size" : 52
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I select current line in \"List\" table",
+        "time" : {
+          "start" : 1721182715630,
+          "stop" : 1721182715630,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And Set UoM \"ora\"",
+        "time" : {
+          "start" : 1721182715661,
+          "stop" : 1721182722076,
+          "duration" : 6415
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click Choice button of the field named \"Unit\"",
+          "time" : {
+            "start" : 1721182715661,
+            "stop" : 1721182715661,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Unit"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1721182715755,
+            "stop" : 1721182722076,
+            "duration" : 6321
+          },
+          "status" : "failed",
+          "statusMessage" : "Unable to move to the required line in <List> table.",
+          "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <List> table. \n\t\t| 'Unit' | \n\t\t| 'ora'  | \n\nTechnical data:\n        ActiveWindowHeader: Units\n        ActiveFormName: Catalog.Units.Form.ChoiceForm\n        FeatureName: 015 Accounting items creating\n        ScriptName: Create a received service Service received test created\n        TreeRowNumber: 2.874\n        FeatureLineNumber: 10\n        FeatureFullPath: features\\CI\\Main\\Basic\\015_ProductsCreating.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:18:40",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d0228a6843df17e6",
+            "name" : "table",
+            "source" : "d0228a6843df17e6.csv",
+            "type" : "text/csv",
+            "size" : 16
+          }, {
+            "uid" : "2c4d2c180866ae99",
+            "name" : "CurrentValueTable.mxl",
+            "source" : "2c4d2c180866ae99.mxl",
+            "type" : "mxl",
+            "size" : 1154
+          }, {
+            "uid" : "886fee5aeee28eed",
+            "name" : "CurrentValueTable.html",
+            "source" : "886fee5aeee28eed.html",
+            "type" : "html",
+            "size" : 2313
+          }, {
+            "uid" : "87dda95607f4230d",
+            "name" : "EventLog.mxl",
+            "source" : "87dda95607f4230d.mxl",
+            "type" : "mxl",
+            "size" : 71793
+          }, {
+            "uid" : "86c5a553defad91",
+            "name" : "EventLog.html",
+            "source" : "86c5a553defad91.html",
+            "type" : "html",
+            "size" : 72434
+          }, {
+            "uid" : "c145b0e583ac82dd",
+            "name" : "EventLog.xlsx",
+            "source" : "c145b0e583ac82dd.xlsx",
+            "type" : "xlsx",
+            "size" : 15491
+          }, {
+            "uid" : "70bd2003761e73f4",
+            "name" : "ActiveFormState.mxl",
+            "source" : "70bd2003761e73f4.mxl",
+            "type" : "mxl",
+            "size" : 10659
+          }, {
+            "uid" : "bd013300c922b04c",
+            "name" : "ActiveFormState.html",
+            "source" : "bd013300c922b04c.html",
+            "type" : "html",
+            "size" : 23198
+          }, {
+            "uid" : "40d5c3e3f6729ab",
+            "name" : "ActiveFormState.xlsx",
+            "source" : "40d5c3e3f6729ab.xlsx",
+            "type" : "xlsx",
+            "size" : 8252
+          }, {
+            "uid" : "8ad5240f6e2f5b7f",
+            "name" : "AllFormsState.mxl",
+            "source" : "8ad5240f6e2f5b7f.mxl",
+            "type" : "mxl",
+            "size" : 85647
+          }, {
+            "uid" : "ea36e20048ae1af5",
+            "name" : "AllFormsState.html",
+            "source" : "ea36e20048ae1af5.html",
+            "type" : "html",
+            "size" : 182926
+          }, {
+            "uid" : "5a957ba35ee7e825",
+            "name" : "AllFormsState.xlsx",
+            "source" : "5a957ba35ee7e825.xlsx",
+            "type" : "xlsx",
+            "size" : 18253
+          }, {
+            "uid" : "5dcdc3b52b15ac03",
+            "name" : "NetworkConnectionsData.txt",
+            "source" : "5dcdc3b52b15ac03.txt",
+            "type" : "txt",
+            "size" : 4121
+          }, {
+            "uid" : "2f0adc83ae51fb76",
+            "name" : "OSProcessesData.txt",
+            "source" : "2f0adc83ae51fb76.txt",
+            "type" : "txt",
+            "size" : 23564
+          }, {
+            "uid" : "e82264a25863debc",
+            "name" : "VariableValues.mxl",
+            "source" : "e82264a25863debc.mxl",
+            "type" : "mxl",
+            "size" : 3409
+          }, {
+            "uid" : "9da6b30c9352fc2d",
+            "name" : "VariableValues.html",
+            "source" : "9da6b30c9352fc2d.html",
+            "type" : "html",
+            "size" : 7155
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 16,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "And I select current line in \"List\" table",
+          "time" : {
+            "start" : 1721182722076,
+            "stop" : 1721182722076,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 16,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"FormWrite\"",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormWrite"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 19,
+      "attachmentsCount" : 18,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* save the code",
+      "time" : {
+        "start" : 1721182722076,
+        "stop" : 1721182722076,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And I save the value of \"Code\" field as \"Code\"",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Code"
+        }, {
+          "name" : "Парам2",
+          "value" : "Code"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I click the button named \"FormWriteAndClose\"",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "FormWriteAndClose"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I wait \"Service received test created (Item)\" window closing in 20 seconds",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Service received test created (Item)"
+        }, {
+          "name" : "Парам2",
+          "value" : "20"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "* check if the item was created",
+      "time" : {
+        "start" : 1721182722076,
+        "stop" : 1721182722076,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "And \"List\" table contains lines",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d478a8c4571ae121",
+          "name" : "table",
+          "source" : "d478a8c4571ae121.csv",
+          "type" : "text/csv",
+          "size" : 19
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "List"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721182722076,
+          "stop" : 1721182722076,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e1c97d78e855b514",
+          "name" : "Этот клиент.Units",
+          "source" : "e1c97d78e855b514.png",
+          "type" : "image/png",
+          "size" : 11998
+        }, {
+          "uid" : "2b0d1c7b533d045c",
+          "name" : "Этот клиент.Item (create) *",
+          "source" : "2b0d1c7b533d045c.png",
+          "type" : "image/png",
+          "size" : 19705
+        }, {
+          "uid" : "3f906149d9293ba4",
+          "name" : "Этот клиент.screenshot",
+          "source" : "3f906149d9293ba4.png",
+          "type" : "image/png",
+          "size" : 76067
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "10616ba9f0bdf9a6",
+      "name" : "Этот клиент.Units",
+      "source" : "10616ba9f0bdf9a6.png",
+      "type" : "image/png",
+      "size" : 11998
+    }, {
+      "uid" : "e9a3b45b6e788f50",
+      "name" : "Этот клиент.Item (create) *",
+      "source" : "e9a3b45b6e788f50.png",
+      "type" : "image/png",
+      "size" : 19705
+    }, {
+      "uid" : "91c8de4232c136e3",
+      "name" : "Этот клиент.screenshot",
+      "source" : "91c8de4232c136e3.png",
+      "type" : "image/png",
+      "size" : 76067
+    }, {
+      "uid" : "81430acf12408525",
+      "name" : "CurrentValueTable.mxl",
+      "source" : "81430acf12408525.mxl",
+      "type" : "mxl",
+      "size" : 1154
+    }, {
+      "uid" : "816497fb608e86b0",
+      "name" : "CurrentValueTable.html",
+      "source" : "816497fb608e86b0.html",
+      "type" : "html",
+      "size" : 2313
+    }, {
+      "uid" : "e612abcb7bfa11fc",
+      "name" : "EventLog.mxl",
+      "source" : "e612abcb7bfa11fc.mxl",
+      "type" : "mxl",
+      "size" : 71793
+    }, {
+      "uid" : "15a4619689afb80",
+      "name" : "EventLog.html",
+      "source" : "15a4619689afb80.html",
+      "type" : "html",
+      "size" : 72434
+    }, {
+      "uid" : "355ec1f2b958b58f",
+      "name" : "EventLog.xlsx",
+      "source" : "355ec1f2b958b58f.xlsx",
+      "type" : "xlsx",
+      "size" : 15491
+    }, {
+      "uid" : "30b1b3d7bea12a66",
+      "name" : "ActiveFormState.mxl",
+      "source" : "30b1b3d7bea12a66.mxl",
+      "type" : "mxl",
+      "size" : 10659
+    }, {
+      "uid" : "ca1782365726c9e1",
+      "name" : "ActiveFormState.html",
+      "source" : "ca1782365726c9e1.html",
+      "type" : "html",
+      "size" : 23198
+    }, {
+      "uid" : "c9794d068bc8a9d4",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "c9794d068bc8a9d4.xlsx",
+      "type" : "xlsx",
+      "size" : 8252
+    }, {
+      "uid" : "e8e37b7ab3473838",
+      "name" : "AllFormsState.mxl",
+      "source" : "e8e37b7ab3473838.mxl",
+      "type" : "mxl",
+      "size" : 85647
+    }, {
+      "uid" : "5c14303b46485e67",
+      "name" : "AllFormsState.html",
+      "source" : "5c14303b46485e67.html",
+      "type" : "html",
+      "size" : 182926
+    }, {
+      "uid" : "b05fe09684808421",
+      "name" : "AllFormsState.xlsx",
+      "source" : "b05fe09684808421.xlsx",
+      "type" : "xlsx",
+      "size" : 18253
+    }, {
+      "uid" : "7a28f86d45d47d1a",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "7a28f86d45d47d1a.txt",
+      "type" : "txt",
+      "size" : 4121
+    }, {
+      "uid" : "2c2a713a823c0fa9",
+      "name" : "OSProcessesData.txt",
+      "source" : "2c2a713a823c0fa9.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "80c04f15f20b8ccc",
+      "name" : "VariableValues.mxl",
+      "source" : "80c04f15f20b8ccc.mxl",
+      "type" : "mxl",
+      "size" : 3409
+    }, {
+      "uid" : "f60231ebfd335e7",
+      "name" : "VariableValues.html",
+      "source" : "f60231ebfd335e7.html",
+      "type" : "html",
+      "size" : 7155
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 34,
+    "attachmentsCount" : 41,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Create a received service Service received test created"
+  }, {
+    "name" : "feature",
+    "value" : "015 Accounting items creating"
+  }, {
+    "name" : "suite",
+    "value" : "015 Accounting items creating"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree", "fresh" ]
+  },
+  "source" : "3f50dd8f36bf1ccb.json",
+  "parameterValues" : [ ]
+}

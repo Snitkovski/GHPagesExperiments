@@ -1,0 +1,537 @@
+{
+  "uid" : "13d3d91c3369e3b6",
+  "name" : "(VATOnRelease) Peparation Purchase invocie",
+  "historyId" : "160 Assembly build and Specification creation.(VATOnRelease) Peparation Purchase invocie",
+  "time" : {
+    "start" : 1721183542496,
+    "stop" : 1721183546765,
+    "duration" : 4269
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183542574,
+      "stop" : 1721183542699,
+      "duration" : 125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I get VAT payer status",
+    "time" : {
+      "start" : 1721183542918,
+      "stop" : 1721183542949,
+      "duration" : 31
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "If \"VATOnRelease\" variable does not exist Then",
+      "time" : {
+        "start" : 1721183542918,
+        "stop" : 1721183542949,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I save the value of the Vanessa Automation setting \"ИмяТекущейСборки\" as \"VATOnRelease\"",
+        "time" : {
+          "start" : 1721183542949,
+          "stop" : 1721183542949,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ИмяТекущейСборки"
+        }, {
+          "name" : "Парам2",
+          "value" : "VATOnRelease"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I save \"{CurrentDate() - 10*24*60*60}\" in \"Date\" variable",
+      "time" : {
+        "start" : 1721183542981,
+        "stop" : 1721183542981,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "{CurrentDate() - 10*24*60*60}"
+      }, {
+        "name" : "Парам2",
+        "value" : "Date"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I create Purchase invoice for \"Vendor VAT payer on release\" dated \"$Date$\"",
+      "time" : {
+        "start" : 1721183543012,
+        "stop" : 1721183546765,
+        "duration" : 3753
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I activate current test client window",
+        "time" : {
+          "start" : 1721183543012,
+          "stop" : 1721183543012,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "And I close all client application windows",
+        "time" : {
+          "start" : 1721183543329,
+          "stop" : 1721183543516,
+          "duration" : 187
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "And I save \"Vendor VAT payer on release\" value to \"Counterparty\" variable",
+        "time" : {
+          "start" : 1721183543735,
+          "stop" : 1721183543735,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Counterparty"
+        }, {
+          "name" : "Парам2",
+          "value" : "Vendor VAT payer on release"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "And I save \"CurTypeSimpleOperation\" value to \"TypeSimpleOperation\" variable",
+        "time" : {
+          "start" : 1721183543766,
+          "stop" : 1721183543766,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "TypeSimpleOperation"
+        }, {
+          "name" : "Парам2",
+          "value" : "CurTypeSimpleOperation"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+        "time" : {
+          "start" : 1721183543798,
+          "stop" : 1721183543798,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "e1cib/list/Document.PurchaseInvoice"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Then \"Purchase Invoices\" window is opened",
+        "time" : {
+          "start" : 1721183543813,
+          "stop" : 1721183543876,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "Purchase Invoices"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* Create a new invoice",
+        "time" : {
+          "start" : 1721183543907,
+          "stop" : 1721183545213,
+          "duration" : 1306
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click the button named \"FormCreate\"",
+          "time" : {
+            "start" : 1721183543907,
+            "stop" : 1721183543907,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormCreate"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then \"Purchase Invoice (create)\" window is opened",
+          "time" : {
+            "start" : 1721183543938,
+            "stop" : 1721183544084,
+            "duration" : 146
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Purchase Invoice (create)"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I input \"07.07.2024 05:32:22\" text in \"Date\" field",
+          "time" : {
+            "start" : 1721183544115,
+            "stop" : 1721183544115,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Date"
+          }, {
+            "name" : "Парам2",
+            "value" : "07.07.2024 05:32:22"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I select from the drop-down list named \"Company\" by \"Vendor VAT payer on release\" string",
+          "time" : {
+            "start" : 1721183544146,
+            "stop" : 1721183545213,
+            "duration" : 1067
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Company"
+          }, {
+            "name" : "Парам2",
+            "value" : "Vendor VAT payer on release"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 4,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* Select goods",
+        "time" : {
+          "start" : 1721183545291,
+          "stop" : 1721183546036,
+          "duration" : 745
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I fill \"LineItems\" table with data",
+          "time" : {
+            "start" : 1721183545291,
+            "stop" : 1721183546036,
+            "duration" : 745
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "9d39cfb784a415d6",
+            "name" : "table",
+            "source" : "9d39cfb784a415d6.csv",
+            "type" : "text/csv",
+            "size" : 76
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "LineItems"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* Posting",
+        "time" : {
+          "start" : 1721183546062,
+          "stop" : 1721183546765,
+          "duration" : 703
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I click the button named \"FormPost\"",
+          "time" : {
+            "start" : 1721183546062,
+            "stop" : 1721183546124,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormPost"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I save the window as \"Recorder\"",
+          "time" : {
+            "start" : 1721183546155,
+            "stop" : 1721183546452,
+            "duration" : 297
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Recorder"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I delete \"$$PINumber$$\" variable",
+          "time" : {
+            "start" : 1721183546484,
+            "stop" : 1721183546484,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "$$PINumber$$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I save the value of \"Number\" field as \"$$PINumber$$\"",
+          "time" : {
+            "start" : 1721183546515,
+            "stop" : 1721183546515,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Number"
+          }, {
+            "name" : "Парам2",
+            "value" : "$$PINumber$$"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I save the value of \"Date\" field as \"Date\"",
+          "time" : {
+            "start" : 1721183546546,
+            "stop" : 1721183546562,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Date"
+          }, {
+            "name" : "Парам2",
+            "value" : "Date"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1721183546593,
+            "stop" : 1721183546765,
+            "duration" : 172
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 6,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 20,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 22,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Peparation Purchase invocie"
+  }, {
+    "name" : "feature",
+    "value" : "160 Assembly build and Specification creation"
+  }, {
+    "name" : "suite",
+    "value" : "160 Assembly build and Specification creation"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh" ]
+  },
+  "source" : "13d3d91c3369e3b6.json",
+  "parameterValues" : [ ]
+}

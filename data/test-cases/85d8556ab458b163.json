@@ -1,0 +1,1123 @@
+{
+  "uid" : "85d8556ab458b163",
+  "name" : "(VATOnRelease) Purchase Invoice and sales Invoice EUR",
+  "historyId" : "Settlements Adjustment >DR/CR.(VATOnRelease) Purchase Invoice and sales Invoice EUR",
+  "time" : {
+    "start" : 1721186809279,
+    "stop" : 1721186832937,
+    "duration" : 23658
+  },
+  "status" : "failed",
+  "statusMessage" : "Form table named <LineItems> is not found.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(8935)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7758)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(6887)}: Form table named <LineItems> is not found.\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: MessageBox\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: Purchase Invoice and sales Invoice EUR\n        TreeRowNumber: 23.160\n        FeatureLineNumber: 956\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯАктивизируюПолеСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:22 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:27:11\nТекст модального окна:\n    Reset the cost center for line items?",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186809357,
+      "stop" : 1721186809638,
+      "duration" : 281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Form table named <LineItems> is not found.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(8935)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7758)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(6887)}: Form table named <LineItems> is not found.\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: MessageBox\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: Purchase Invoice and sales Invoice EUR\n        TreeRowNumber: 23.160\n        FeatureLineNumber: 956\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯАктивизируюПолеСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:22 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:27:11\nТекст модального окна:\n    Reset the cost center for line items?",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186809857,
+        "stop" : 1721186810249,
+        "duration" : 392
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+      "time" : {
+        "start" : 1721186810467,
+        "stop" : 1721186810483,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormCreate\"",
+      "time" : {
+        "start" : 1721186810514,
+        "stop" : 1721186810577,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormCreate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input begin of the current month date in \"Date\" field",
+      "time" : {
+        "start" : 1721186810608,
+        "stop" : 1721186810733,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Date"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Company\"",
+      "time" : {
+        "start" : 1721186810764,
+        "stop" : 1721186810827,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Company"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186810905,
+        "stop" : 1721186810952,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2342c3f6fcae4cf5",
+        "name" : "table",
+        "source" : "2342c3f6fcae4cf5.csv",
+        "type" : "text/csv",
+        "size" : 22
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186810967,
+        "stop" : 1721186810983,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Contract\"",
+      "time" : {
+        "start" : 1721186811015,
+        "stop" : 1721186811188,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Contract"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186811266,
+        "stop" : 1721186811297,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5913ba59c993cb8e",
+        "name" : "table",
+        "source" : "5913ba59c993cb8e.csv",
+        "type" : "text/csv",
+        "size" : 39
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186811313,
+        "stop" : 1721186811329,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input begin of the current month date in \"date\" field",
+      "time" : {
+        "start" : 1721186811344,
+        "stop" : 1721186811485,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "date"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And in the table \"LineItems\" I click the button named \"LineItemsAdd\"",
+      "time" : {
+        "start" : 1721186811500,
+        "stop" : 1721186811594,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsAdd"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click choice button of the attribute named \"LineItemsProduct\" in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186811625,
+        "stop" : 1721186811672,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsProduct"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormList\"",
+      "time" : {
+        "start" : 1721186811704,
+        "stop" : 1721186811766,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormList"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186811844,
+        "stop" : 1721186812255,
+        "duration" : 411
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d3c6802cebf1cc2e",
+        "name" : "table",
+        "source" : "d3c6802cebf1cc2e.csv",
+        "type" : "text/csv",
+        "size" : 34
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186812286,
+        "stop" : 1721186812302,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186812333,
+        "stop" : 1721186812411,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsQuantity"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"10,0000\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+      "time" : {
+        "start" : 1721186812443,
+        "stop" : 1721186812458,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsQuantity"
+      }, {
+        "name" : "Парам3",
+        "value" : "10,0000"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"LineItemsPrice\" in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186812474,
+        "stop" : 1721186812536,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsPrice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"150,00\" text in the field named \"LineItemsPrice\" of \"LineItems\" table",
+      "time" : {
+        "start" : 1721186812552,
+        "stop" : 1721186812583,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsPrice"
+      }, {
+        "name" : "Парам3",
+        "value" : "150,00"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186812599,
+        "stop" : 1721186812615,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1721186812630,
+        "stop" : 1721186812724,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate current test client window",
+      "time" : {
+        "start" : 1721186812755,
+        "stop" : 1721186812755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I click the button named \"FormDocumentSalesInvoiceCreateBasedOn\"",
+      "time" : {
+        "start" : 1721186812911,
+        "stop" : 1721186813115,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentSalesInvoiceCreateBasedOn"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Seria\"",
+      "time" : {
+        "start" : 1721186813146,
+        "stop" : 1721186815077,
+        "duration" : 1931
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Seria"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186815108,
+        "stop" : 1721186815171,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Delay \"3\"",
+      "time" : {
+        "start" : 1721186815202,
+        "stop" : 1721186818372,
+        "duration" : 3170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Company\"",
+      "time" : {
+        "start" : 1721186818607,
+        "stop" : 1721186818622,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Company"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186818716,
+        "stop" : 1721186818747,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2f951b7f8fa5b514",
+        "name" : "table",
+        "source" : "2f951b7f8fa5b514.csv",
+        "type" : "text/csv",
+        "size" : 22
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186818779,
+        "stop" : 1721186818779,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Contract\"",
+      "time" : {
+        "start" : 1721186818810,
+        "stop" : 1721186819065,
+        "duration" : 255
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Contract"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186819158,
+        "stop" : 1721186819205,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7f20a01fb285b8e2",
+        "name" : "table",
+        "source" : "7f20a01fb285b8e2.csv",
+        "type" : "text/csv",
+        "size" : 32
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186819236,
+        "stop" : 1721186819236,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"CostCenter\"",
+      "time" : {
+        "start" : 1721186819268,
+        "stop" : 1721186819471,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CostCenter"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186819549,
+        "stop" : 1721186819596,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "35e966c049453d7b",
+        "name" : "table",
+        "source" : "35e966c049453d7b.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186819611,
+        "stop" : 1721186819627,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"LineItemsProduct\" in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186819658,
+        "stop" : 1721186832937,
+        "duration" : 13279
+      },
+      "status" : "failed",
+      "statusMessage" : "Form table named <LineItems> is not found.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(8935)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(7758)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.УправляемаяФорма.Form(6887)}: Form table named <LineItems> is not found.\n\nTechnical data:\n        ActiveWindowHeader: 1C:Enterprise\n        ActiveFormName: MessageBox\n        FeatureName: Settlements Adjustment >DR/CR\n        ScriptName: Purchase Invoice and sales Invoice EUR\n        TreeRowNumber: 23.160\n        FeatureLineNumber: 956\n        FeatureFullPath: features\\CI\\Main\\Basic\\SettlementsAdjustment\\SettlementsAdjustmentDtCR.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯАктивизируюПолеСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:22 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:27:11\nТекст модального окна:\n    Reset the cost center for line items?",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "be37071877ff1147",
+        "name" : "EventLog.mxl",
+        "source" : "be37071877ff1147.mxl",
+        "type" : "mxl",
+        "size" : 97292
+      }, {
+        "uid" : "5ea29ca859285bfa",
+        "name" : "EventLog.html",
+        "source" : "5ea29ca859285bfa.html",
+        "type" : "html",
+        "size" : 97104
+      }, {
+        "uid" : "5b319628f8196917",
+        "name" : "EventLog.xlsx",
+        "source" : "5b319628f8196917.xlsx",
+        "type" : "xlsx",
+        "size" : 18589
+      }, {
+        "uid" : "4b2d8aa38dd7f967",
+        "name" : "ActiveFormState.mxl",
+        "source" : "4b2d8aa38dd7f967.mxl",
+        "type" : "mxl",
+        "size" : 6614
+      }, {
+        "uid" : "7df60b1c4ff4cdf1",
+        "name" : "ActiveFormState.html",
+        "source" : "7df60b1c4ff4cdf1.html",
+        "type" : "html",
+        "size" : 14190
+      }, {
+        "uid" : "c68436472e681986",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "c68436472e681986.xlsx",
+        "type" : "xlsx",
+        "size" : 7432
+      }, {
+        "uid" : "99fabe5657c166d1",
+        "name" : "AllFormsState.mxl",
+        "source" : "99fabe5657c166d1.mxl",
+        "type" : "mxl",
+        "size" : 264836
+      }, {
+        "uid" : "1e6bd1668d7bf704",
+        "name" : "AllFormsState.html",
+        "source" : "1e6bd1668d7bf704.html",
+        "type" : "html",
+        "size" : 548502
+      }, {
+        "uid" : "1eb13eb9a3655de6",
+        "name" : "AllFormsState.xlsx",
+        "source" : "1eb13eb9a3655de6.xlsx",
+        "type" : "xlsx",
+        "size" : 37069
+      }, {
+        "uid" : "4bbfce30cccbdb41",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "4bbfce30cccbdb41.txt",
+        "type" : "txt",
+        "size" : 3462
+      }, {
+        "uid" : "d3c12dc0dc018f81",
+        "name" : "OSProcessesData.txt",
+        "source" : "d3c12dc0dc018f81.txt",
+        "type" : "txt",
+        "size" : 23564
+      }, {
+        "uid" : "d186146876bd3901",
+        "name" : "VariableValues.mxl",
+        "source" : "d186146876bd3901.mxl",
+        "type" : "mxl",
+        "size" : 11183
+      }, {
+        "uid" : "90f59f3fbd5e1066",
+        "name" : "VariableValues.html",
+        "source" : "90f59f3fbd5e1066.html",
+        "type" : "html",
+        "size" : 23830
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsProduct"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"LineItemsQuantity\" in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsQuantity"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"1\" text in the field named \"LineItemsQuantity\" of \"LineItems\" table",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      }, {
+        "name" : "Парам2",
+        "value" : "LineItemsQuantity"
+      }, {
+        "name" : "Парам3",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I finish line editing in \"LineItems\" table",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save the value of the field named \"Number\" as \"NumberSIEUR\"",
+      "time" : {
+        "start" : 1721186832937,
+        "stop" : 1721186832937,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "57dd29ffab29aea0",
+        "name" : "Этот клиент.1C:Enterprise",
+        "source" : "57dd29ffab29aea0.png",
+        "type" : "image/png",
+        "size" : 4978
+      }, {
+        "uid" : "32d92311320a289f",
+        "name" : "Этот клиент.screenshot",
+        "source" : "32d92311320a289f.png",
+        "type" : "image/png",
+        "size" : 66771
+      }, {
+        "uid" : "a258b3beed624060",
+        "name" : "Этот клиент.screenshot",
+        "source" : "a258b3beed624060.png",
+        "type" : "image/png",
+        "size" : 66785
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Number"
+      }, {
+        "name" : "Парам2",
+        "value" : "NumberSIEUR"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b9fb67555b2393e",
+      "name" : "Этот клиент.1C:Enterprise",
+      "source" : "b9fb67555b2393e.png",
+      "type" : "image/png",
+      "size" : 4978
+    }, {
+      "uid" : "b7044b63f362f649",
+      "name" : "Этот клиент.screenshot",
+      "source" : "b7044b63f362f649.png",
+      "type" : "image/png",
+      "size" : 66771
+    }, {
+      "uid" : "3e3271807f627b2a",
+      "name" : "Этот клиент.screenshot",
+      "source" : "3e3271807f627b2a.png",
+      "type" : "image/png",
+      "size" : 66785
+    }, {
+      "uid" : "40d0bd8980b26bf",
+      "name" : "EventLog.mxl",
+      "source" : "40d0bd8980b26bf.mxl",
+      "type" : "mxl",
+      "size" : 97292
+    }, {
+      "uid" : "31899f7e787ef9b4",
+      "name" : "EventLog.html",
+      "source" : "31899f7e787ef9b4.html",
+      "type" : "html",
+      "size" : 97104
+    }, {
+      "uid" : "810acc20640e0c66",
+      "name" : "EventLog.xlsx",
+      "source" : "810acc20640e0c66.xlsx",
+      "type" : "xlsx",
+      "size" : 18589
+    }, {
+      "uid" : "a938ff2d3ba9e959",
+      "name" : "ActiveFormState.mxl",
+      "source" : "a938ff2d3ba9e959.mxl",
+      "type" : "mxl",
+      "size" : 6614
+    }, {
+      "uid" : "6e1e3799a93517aa",
+      "name" : "ActiveFormState.html",
+      "source" : "6e1e3799a93517aa.html",
+      "type" : "html",
+      "size" : 14190
+    }, {
+      "uid" : "6399a2c3c8f099bc",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "6399a2c3c8f099bc.xlsx",
+      "type" : "xlsx",
+      "size" : 7432
+    }, {
+      "uid" : "220ebef405250cfb",
+      "name" : "AllFormsState.mxl",
+      "source" : "220ebef405250cfb.mxl",
+      "type" : "mxl",
+      "size" : 264836
+    }, {
+      "uid" : "ba2563bfdc019a25",
+      "name" : "AllFormsState.html",
+      "source" : "ba2563bfdc019a25.html",
+      "type" : "html",
+      "size" : 548502
+    }, {
+      "uid" : "ed9634ad9434925",
+      "name" : "AllFormsState.xlsx",
+      "source" : "ed9634ad9434925.xlsx",
+      "type" : "xlsx",
+      "size" : 37069
+    }, {
+      "uid" : "ec4f20e56ea5163b",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "ec4f20e56ea5163b.txt",
+      "type" : "txt",
+      "size" : 3462
+    }, {
+      "uid" : "1788b5ab53329b59",
+      "name" : "OSProcessesData.txt",
+      "source" : "1788b5ab53329b59.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "c49c8bf4208605e2",
+      "name" : "VariableValues.mxl",
+      "source" : "c49c8bf4208605e2.mxl",
+      "type" : "mxl",
+      "size" : 11183
+    }, {
+      "uid" : "d5155b197340bd71",
+      "name" : "VariableValues.html",
+      "source" : "d5155b197340bd71.html",
+      "type" : "html",
+      "size" : 23830
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 43,
+    "attachmentsCount" : 38,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Purchase Invoice and sales Invoice EUR"
+  }, {
+    "name" : "feature",
+    "value" : "Settlements Adjustment >DR/CR"
+  }, {
+    "name" : "suite",
+    "value" : "Settlements Adjustment >DR/CR"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "SettlementsAdjustment"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "85d8556ab458b163.json",
+  "parameterValues" : [ ]
+}

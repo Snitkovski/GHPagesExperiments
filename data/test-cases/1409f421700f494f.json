@@ -1,0 +1,483 @@
+{
+  "uid" : "1409f421700f494f",
+  "name" : "(VATOnRelease) Account turnover report",
+  "historyId" : "Accounting reports detailing check.(VATOnRelease) Account turnover report",
+  "time" : {
+    "start" : 1721186427774,
+    "stop" : 1721186431263,
+    "duration" : 3489
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186427852,
+      "stop" : 1721186427993,
+      "duration" : 141
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/app/Report.AccountTurnover\"",
+      "time" : {
+        "start" : 1721186428228,
+        "stop" : 1721186428228,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/app/Report.AccountTurnover"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Account turnovers * * - *\" window is opened",
+      "time" : {
+        "start" : 1721186428260,
+        "stop" : 1721186428416,
+        "duration" : 156
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Account turnovers * * - *"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"Account\"",
+      "time" : {
+        "start" : 1721186428447,
+        "stop" : 1721186428478,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Account"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Chart of accounts\" window is opened",
+      "time" : {
+        "start" : 1721186428510,
+        "stop" : 1721186428556,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Chart of accounts"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186428650,
+        "stop" : 1721186428916,
+        "duration" : 266
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ddf2f245fa9c686a",
+        "name" : "table",
+        "source" : "ddf2f245fa9c686a.csv",
+        "type" : "text/csv",
+        "size" : 19
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186428947,
+        "stop" : 1721186428947,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"ShowSettings\"",
+      "time" : {
+        "start" : 1721186428978,
+        "stop" : 1721186429105,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ShowSettings"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select \"By Recorders\" exact value from the drop-down list named \"Periodicity\"",
+      "time" : {
+        "start" : 1721186429136,
+        "stop" : 1721186429167,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Periodicity"
+      }, {
+        "name" : "Парам2",
+        "value" : "By Recorders"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And in the table \"GroupingBy\" I click the button named \"GroupingByAdd\"",
+      "time" : {
+        "start" : 1721186429198,
+        "stop" : 1721186429230,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      }, {
+        "name" : "Парам2",
+        "value" : "GroupingByAdd"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Group field selection\" window is opened",
+      "time" : {
+        "start" : 1721186429261,
+        "stop" : 1721186429370,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Group field selection"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"AvailableFieldsGroupFields\" table",
+      "time" : {
+        "start" : 1721186429464,
+        "stop" : 1721186429480,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ded6f14d50ef3b6",
+        "name" : "table",
+        "source" : "2ded6f14d50ef3b6.csv",
+        "type" : "text/csv",
+        "size" : 33
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AvailableFieldsGroupFields"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"AvailableFieldsGroupFields\" table",
+      "time" : {
+        "start" : 1721186429511,
+        "stop" : 1721186429511,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AvailableFieldsGroupFields"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Account turnovers * Mărfuri cantitativ for * - *\" window is opened",
+      "time" : {
+        "start" : 1721186429542,
+        "stop" : 1721186429558,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Account turnovers * Mărfuri cantitativ for * - *"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And in the table \"GroupingBy\" I click the button named \"GroupingByAdd\"",
+      "time" : {
+        "start" : 1721186429589,
+        "stop" : 1721186429605,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "GroupingBy"
+      }, {
+        "name" : "Парам2",
+        "value" : "GroupingByAdd"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Group field selection\" window is opened",
+      "time" : {
+        "start" : 1721186429636,
+        "stop" : 1721186429714,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Group field selection"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"AvailableFieldsGroupFields\" table",
+      "time" : {
+        "start" : 1721186429808,
+        "stop" : 1721186429823,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4221d9783f3684dd",
+        "name" : "table",
+        "source" : "4221d9783f3684dd.csv",
+        "type" : "text/csv",
+        "size" : 32
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AvailableFieldsGroupFields"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"AvailableFieldsGroupFields\" table",
+      "time" : {
+        "start" : 1721186429855,
+        "stop" : 1721186429870,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AvailableFieldsGroupFields"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Account turnovers * Mărfuri cantitativ for * - *\" window is opened",
+      "time" : {
+        "start" : 1721186429886,
+        "stop" : 1721186429901,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Account turnovers * Mărfuri cantitativ for * - *"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"ApplySettings\"",
+      "time" : {
+        "start" : 1721186429933,
+        "stop" : 1721186429948,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ApplySettings"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I wait for \"Result\" spreadsheet document filling for \"10\" seconds",
+      "time" : {
+        "start" : 1721186429980,
+        "stop" : 1721186431045,
+        "duration" : 1065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Result"
+      }, {
+        "name" : "Парам2",
+        "value" : "10"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then user message window does not contain messages",
+      "time" : {
+        "start" : 1721186431263,
+        "stop" : 1721186431263,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 21,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Account turnover report"
+  }, {
+    "name" : "feature",
+    "value" : "Accounting reports detailing check"
+  }, {
+    "name" : "suite",
+    "value" : "Accounting reports detailing check"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "1409f421700f494f.json",
+  "parameterValues" : [ ]
+}

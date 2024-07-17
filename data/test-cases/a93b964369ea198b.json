@@ -1,0 +1,595 @@
+{
+  "uid" : "a93b964369ea198b",
+  "name" : "(VATOnRelease) Accountant user creation",
+  "historyId" : "Chief accountant profile check.(VATOnRelease) Accountant user creation",
+  "time" : {
+    "start" : 1721184167354,
+    "stop" : 1721184174972,
+    "duration" : 7618
+  },
+  "status" : "failed",
+  "statusMessage" : "Unable to move to the required line in <AccessGroups> table.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <AccessGroups> table. \n\t\t| 'Description'      | \n\t\t| 'Chief accountant' | \n\nTechnical data:\n        ActiveWindowHeader: Access groups\n        ActiveFormName: Catalog.AccessGroups.Form.SelectGroupsByEmployeeResponsible\n        FeatureName: Chief accountant profile check\n        ScriptName: Accountant user creation\n        TreeRowNumber: 10.841\n        FeatureLineNumber: 58\n        FeatureFullPath: features\\CI\\Main\\Basic\\ChiefAccountantProfileCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:42:53",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721184167432,
+      "stop" : 1721184167698,
+      "duration" : 266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Unable to move to the required line in <AccessGroups> table.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <AccessGroups> table. \n\t\t| 'Description'      | \n\t\t| 'Chief accountant' | \n\nTechnical data:\n        ActiveWindowHeader: Access groups\n        ActiveFormName: Catalog.AccessGroups.Form.SelectGroupsByEmployeeResponsible\n        FeatureName: Chief accountant profile check\n        ScriptName: Accountant user creation\n        TreeRowNumber: 10.841\n        FeatureLineNumber: 58\n        FeatureFullPath: features\\CI\\Main\\Basic\\ChiefAccountantProfileCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:42:53",
+    "steps" : [ {
+      "name" : "Given I open hyperlink \"e1cib/list/Catalog.Users\"",
+      "time" : {
+        "start" : 1721184167917,
+        "stop" : 1721184167932,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.Users"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Users\" window is opened",
+      "time" : {
+        "start" : 1721184167963,
+        "stop" : 1721184168074,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Users"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"CreateUser\"",
+      "time" : {
+        "start" : 1721184168090,
+        "stop" : 1721184168105,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CreateUser"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"User (create)\" window is opened",
+      "time" : {
+        "start" : 1721184168136,
+        "stop" : 1721184168418,
+        "duration" : 282
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "User (create)"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I input \"Accountant\" text in the field named \"Description\"",
+      "time" : {
+        "start" : 1721184168449,
+        "stop" : 1721184168449,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Description"
+      }, {
+        "name" : "Парам2",
+        "value" : "Accountant"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormWrite\"",
+      "time" : {
+        "start" : 1721184168480,
+        "stop" : 1721184168480,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormWrite"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Conversations (collaboration system)\" window is opened",
+      "time" : {
+        "start" : 1721184168511,
+        "stop" : 1721184169044,
+        "duration" : 533
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Conversations (collaboration system)"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"Command2\"",
+      "time" : {
+        "start" : 1721184169060,
+        "stop" : 1721184169075,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Command2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And In this window I click command interface button \"Access rights\"",
+      "time" : {
+        "start" : 1721184169106,
+        "stop" : 1721184169153,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Access rights"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And in the table \"AccessGroups\" I click the button named \"AccessGroupsAddToGroup\"",
+      "time" : {
+        "start" : 1721184169185,
+        "stop" : 1721184169356,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AccessGroups"
+      }, {
+        "name" : "Парам2",
+        "value" : "AccessGroupsAddToGroup"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Access groups\" window is opened",
+      "time" : {
+        "start" : 1721184169388,
+        "stop" : 1721184169435,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Access groups"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"AccessGroups\" table",
+      "time" : {
+        "start" : 1721184169513,
+        "stop" : 1721184174972,
+        "duration" : 5459
+      },
+      "status" : "failed",
+      "statusMessage" : "Unable to move to the required line in <AccessGroups> table.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(3551)}: Unable to move to the required line in <AccessGroups> table. \n\t\t| 'Description'      | \n\t\t| 'Chief accountant' | \n\nTechnical data:\n        ActiveWindowHeader: Access groups\n        ActiveFormName: Catalog.AccessGroups.Form.SelectGroupsByEmployeeResponsible\n        FeatureName: Chief accountant profile check\n        ScriptName: Accountant user creation\n        TreeRowNumber: 10.841\n        FeatureLineNumber: 58\n        FeatureFullPath: features\\CI\\Main\\Basic\\ChiefAccountantProfileCheck.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ВТаблицеЯПерехожуКСтроке\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:06 (ч:м:с)\n        ErrorDateTime: 17.07.2024 05:42:53",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a8bb6de19d6de84f",
+        "name" : "table",
+        "source" : "a8bb6de19d6de84f.csv",
+        "type" : "text/csv",
+        "size" : 36
+      }, {
+        "uid" : "df5f41a609bb874c",
+        "name" : "CurrentValueTable.mxl",
+        "source" : "df5f41a609bb874c.mxl",
+        "type" : "mxl",
+        "size" : 759
+      }, {
+        "uid" : "84a6a2b423aa469e",
+        "name" : "CurrentValueTable.html",
+        "source" : "84a6a2b423aa469e.html",
+        "type" : "html",
+        "size" : 1279
+      }, {
+        "uid" : "15458899a9631b78",
+        "name" : "EventLog.mxl",
+        "source" : "15458899a9631b78.mxl",
+        "type" : "mxl",
+        "size" : 163404
+      }, {
+        "uid" : "dc8e7b5362fba12a",
+        "name" : "EventLog.html",
+        "source" : "dc8e7b5362fba12a.html",
+        "type" : "html",
+        "size" : 160631
+      }, {
+        "uid" : "b480fe1f5cf7edf3",
+        "name" : "EventLog.xlsx",
+        "source" : "b480fe1f5cf7edf3.xlsx",
+        "type" : "xlsx",
+        "size" : 24526
+      }, {
+        "uid" : "d170e1583424072e",
+        "name" : "ActiveFormState.mxl",
+        "source" : "d170e1583424072e.mxl",
+        "type" : "mxl",
+        "size" : 8154
+      }, {
+        "uid" : "31babf2b5adcfe48",
+        "name" : "ActiveFormState.html",
+        "source" : "31babf2b5adcfe48.html",
+        "type" : "html",
+        "size" : 17453
+      }, {
+        "uid" : "11c9ec4816c1d899",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "11c9ec4816c1d899.xlsx",
+        "type" : "xlsx",
+        "size" : 7875
+      }, {
+        "uid" : "a25b28a885e483df",
+        "name" : "AllFormsState.mxl",
+        "source" : "a25b28a885e483df.mxl",
+        "type" : "mxl",
+        "size" : 275336
+      }, {
+        "uid" : "95199464938d52cc",
+        "name" : "AllFormsState.html",
+        "source" : "95199464938d52cc.html",
+        "type" : "html",
+        "size" : 592216
+      }, {
+        "uid" : "da9ca2202b06bf4b",
+        "name" : "AllFormsState.xlsx",
+        "source" : "da9ca2202b06bf4b.xlsx",
+        "type" : "xlsx",
+        "size" : 42197
+      }, {
+        "uid" : "10076566765fb973",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "10076566765fb973.txt",
+        "type" : "txt",
+        "size" : 3907
+      }, {
+        "uid" : "a095a54be4265cc0",
+        "name" : "OSProcessesData.txt",
+        "source" : "a095a54be4265cc0.txt",
+        "type" : "txt",
+        "size" : 23564
+      }, {
+        "uid" : "a8aa5b3a32b1e008",
+        "name" : "VariableValues.mxl",
+        "source" : "a8aa5b3a32b1e008.mxl",
+        "type" : "mxl",
+        "size" : 5960
+      }, {
+        "uid" : "1d6b44f0524df531",
+        "name" : "VariableValues.html",
+        "source" : "1d6b44f0524df531.html",
+        "type" : "html",
+        "size" : 12607
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AccessGroups"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 16,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"AccessGroups\" table",
+      "time" : {
+        "start" : 1721184174972,
+        "stop" : 1721184174972,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "AccessGroups"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And In this window I click command interface button \"Main\"",
+      "time" : {
+        "start" : 1721184174972,
+        "stop" : 1721184174972,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Main"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormWriteAndClose\"",
+      "time" : {
+        "start" : 1721184174972,
+        "stop" : 1721184174972,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormWriteAndClose"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I wait \"Accountant (User)\" window closing in 20 seconds",
+      "time" : {
+        "start" : 1721184174972,
+        "stop" : 1721184174972,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7d83cc9be7b28988",
+        "name" : "Этот клиент.Access groups",
+        "source" : "7d83cc9be7b28988.png",
+        "type" : "image/png",
+        "size" : 10328
+      }, {
+        "uid" : "87811d8b85b05c83",
+        "name" : "Этот клиент.screenshot",
+        "source" : "87811d8b85b05c83.png",
+        "type" : "image/png",
+        "size" : 39857
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Accountant (User)"
+      }, {
+        "name" : "Парам2",
+        "value" : "20"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3367a46038393394",
+      "name" : "Этот клиент.Access groups",
+      "source" : "3367a46038393394.png",
+      "type" : "image/png",
+      "size" : 10328
+    }, {
+      "uid" : "a47b043f6ed09ade",
+      "name" : "Этот клиент.screenshot",
+      "source" : "a47b043f6ed09ade.png",
+      "type" : "image/png",
+      "size" : 39857
+    }, {
+      "uid" : "5f7273d73f406668",
+      "name" : "CurrentValueTable.mxl",
+      "source" : "5f7273d73f406668.mxl",
+      "type" : "mxl",
+      "size" : 759
+    }, {
+      "uid" : "559e9401f2bb7c73",
+      "name" : "CurrentValueTable.html",
+      "source" : "559e9401f2bb7c73.html",
+      "type" : "html",
+      "size" : 1279
+    }, {
+      "uid" : "b8042abb27bc2af3",
+      "name" : "EventLog.mxl",
+      "source" : "b8042abb27bc2af3.mxl",
+      "type" : "mxl",
+      "size" : 163404
+    }, {
+      "uid" : "cc41f3740f57fabf",
+      "name" : "EventLog.html",
+      "source" : "cc41f3740f57fabf.html",
+      "type" : "html",
+      "size" : 160631
+    }, {
+      "uid" : "b386dd87e9b16ea4",
+      "name" : "EventLog.xlsx",
+      "source" : "b386dd87e9b16ea4.xlsx",
+      "type" : "xlsx",
+      "size" : 24526
+    }, {
+      "uid" : "561e8d97cedec07e",
+      "name" : "ActiveFormState.mxl",
+      "source" : "561e8d97cedec07e.mxl",
+      "type" : "mxl",
+      "size" : 8154
+    }, {
+      "uid" : "fd876c1bb3f6d5c1",
+      "name" : "ActiveFormState.html",
+      "source" : "fd876c1bb3f6d5c1.html",
+      "type" : "html",
+      "size" : 17453
+    }, {
+      "uid" : "ed9f185ba7aaa445",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "ed9f185ba7aaa445.xlsx",
+      "type" : "xlsx",
+      "size" : 7875
+    }, {
+      "uid" : "562dbf2f1cb61d22",
+      "name" : "AllFormsState.mxl",
+      "source" : "562dbf2f1cb61d22.mxl",
+      "type" : "mxl",
+      "size" : 275336
+    }, {
+      "uid" : "db16038c289f5130",
+      "name" : "AllFormsState.html",
+      "source" : "db16038c289f5130.html",
+      "type" : "html",
+      "size" : 592216
+    }, {
+      "uid" : "1cdf46b30a909599",
+      "name" : "AllFormsState.xlsx",
+      "source" : "1cdf46b30a909599.xlsx",
+      "type" : "xlsx",
+      "size" : 42197
+    }, {
+      "uid" : "aa190d417aab630b",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "aa190d417aab630b.txt",
+      "type" : "txt",
+      "size" : 3907
+    }, {
+      "uid" : "9fe3f488625848e1",
+      "name" : "OSProcessesData.txt",
+      "source" : "9fe3f488625848e1.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "d5f36bb7a643b8e1",
+      "name" : "VariableValues.mxl",
+      "source" : "d5f36bb7a643b8e1.mxl",
+      "type" : "mxl",
+      "size" : 5960
+    }, {
+      "uid" : "6c615f1b300b0ac7",
+      "name" : "VariableValues.html",
+      "source" : "6c615f1b300b0ac7.html",
+      "type" : "html",
+      "size" : 12607
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 16,
+    "attachmentsCount" : 35,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Accountant user creation"
+  }, {
+    "name" : "feature",
+    "value" : "Chief accountant profile check"
+  }, {
+    "name" : "suite",
+    "value" : "Chief accountant profile check"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "a93b964369ea198b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,634 @@
+{
+  "uid" : "c777cb6ef7cd3635",
+  "name" : "(VATOnRelease) Sales Invoice generate",
+  "historyId" : "Sales order and Sales invoice creating.(VATOnRelease) Sales Invoice generate",
+  "time" : {
+    "start" : 1721186471928,
+    "stop" : 1721186482437,
+    "duration" : 10509
+  },
+  "status" : "failed",
+  "statusMessage" : "Table <LineItems> does not match the standard.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <LineItems> does not match the standard. Expected <1> lines, and it contains <0> lines.\n\nTechnical data:\n        ActiveWindowHeader: Sales invoice (create) *\n        ActiveFormName: Document.SalesInvoice.Form.DocumentForm\n        FeatureName: Sales order and Sales invoice creating\n        ScriptName: Sales Invoice generate\n        TreeRowNumber: 21.573\n        FeatureLineNumber: 60\n        FeatureFullPath: features\\CI\\Main\\Basic\\SalesOrderAndSalesInvoice.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:21:20",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721186472016,
+      "stop" : 1721186472542,
+      "duration" : 526
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Table <LineItems> does not match the standard.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <LineItems> does not match the standard. Expected <1> lines, and it contains <0> lines.\n\nTechnical data:\n        ActiveWindowHeader: Sales invoice (create) *\n        ActiveFormName: Document.SalesInvoice.Form.DocumentForm\n        FeatureName: Sales order and Sales invoice creating\n        ScriptName: Sales Invoice generate\n        TreeRowNumber: 21.573\n        FeatureLineNumber: 60\n        FeatureFullPath: features\\CI\\Main\\Basic\\SalesOrderAndSalesInvoice.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:21:20",
+    "steps" : [ {
+      "name" : "And the previous scenario executed successfully",
+      "time" : {
+        "start" : 1721186472761,
+        "stop" : 1721186472776,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I save form header as \"SalesOrder\" variable",
+      "time" : {
+        "start" : 1721186472792,
+        "stop" : 1721186472808,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "SalesOrder"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormDocumentSalesOrderSalesInvoice\"",
+      "time" : {
+        "start" : 1721186472839,
+        "stop" : 1721186472839,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentSalesOrderSalesInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click Choice button of the field named \"CostCenter\"",
+      "time" : {
+        "start" : 1721186472870,
+        "stop" : 1721186473390,
+        "duration" : 520
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "CostCenter"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Locations\" window is opened",
+      "time" : {
+        "start" : 1721186473406,
+        "stop" : 1721186473453,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Locations"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186473531,
+        "stop" : 1721186473562,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1140486e1cfa20e",
+        "name" : "table",
+        "source" : "1140486e1cfa20e.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721186473594,
+        "stop" : 1721186473594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And \"LineItems\" table became equal by template",
+      "time" : {
+        "start" : 1721186473672,
+        "stop" : 1721186482437,
+        "duration" : 8765
+      },
+      "status" : "failed",
+      "statusMessage" : "Table <LineItems> does not match the standard.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6230)}: Table <LineItems> does not match the standard. Expected <1> lines, and it contains <0> lines.\n\nTechnical data:\n        ActiveWindowHeader: Sales invoice (create) *\n        ActiveFormName: Document.SalesInvoice.Form.DocumentForm\n        FeatureName: Sales order and Sales invoice creating\n        ScriptName: Sales Invoice generate\n        TreeRowNumber: 21.573\n        FeatureLineNumber: 60\n        FeatureFullPath: features\\CI\\Main\\Basic\\SalesOrderAndSalesInvoice.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавнойПоШаблону\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:09 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:21:20",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ed069edc029f1ce",
+        "name" : "table",
+        "source" : "4ed069edc029f1ce.csv",
+        "type" : "text/csv",
+        "size" : 220
+      }, {
+        "uid" : "19c118cba9cd15a6",
+        "name" : "Differences.mxl",
+        "source" : "19c118cba9cd15a6.mxl",
+        "type" : "mxl",
+        "size" : 579
+      }, {
+        "uid" : "f163fa74fd393a92",
+        "name" : "Differences.html",
+        "source" : "f163fa74fd393a92.html",
+        "type" : "html",
+        "size" : 739
+      }, {
+        "uid" : "efce6fd257a7d8e7",
+        "name" : "ReferenceValueTable.mxl",
+        "source" : "efce6fd257a7d8e7.mxl",
+        "type" : "mxl",
+        "size" : 1347
+      }, {
+        "uid" : "e0a016092275ceaf",
+        "name" : "ReferenceValueTable.html",
+        "source" : "e0a016092275ceaf.html",
+        "type" : "html",
+        "size" : 2659
+      }, {
+        "uid" : "f8cf9caea657efff",
+        "name" : "CurrentValueTable.mxl",
+        "source" : "f8cf9caea657efff.mxl",
+        "type" : "mxl",
+        "size" : 573
+      }, {
+        "uid" : "49dbbb56bbbbca96",
+        "name" : "CurrentValueTable.html",
+        "source" : "49dbbb56bbbbca96.html",
+        "type" : "html",
+        "size" : 739
+      }, {
+        "uid" : "d3d5fa321b84ff64",
+        "name" : "EventLog.mxl",
+        "source" : "d3d5fa321b84ff64.mxl",
+        "type" : "mxl",
+        "size" : 52232
+      }, {
+        "uid" : "f35ef11cc1b69ae8",
+        "name" : "EventLog.html",
+        "source" : "f35ef11cc1b69ae8.html",
+        "type" : "html",
+        "size" : 53869
+      }, {
+        "uid" : "2ed703ee2ef9bd1",
+        "name" : "EventLog.xlsx",
+        "source" : "2ed703ee2ef9bd1.xlsx",
+        "type" : "xlsx",
+        "size" : 14732
+      }, {
+        "uid" : "409e485c897f4580",
+        "name" : "ActiveFormState.mxl",
+        "source" : "409e485c897f4580.mxl",
+        "type" : "mxl",
+        "size" : 44550
+      }, {
+        "uid" : "dccf9b5b0337bdf4",
+        "name" : "ActiveFormState.html",
+        "source" : "dccf9b5b0337bdf4.html",
+        "type" : "html",
+        "size" : 94563
+      }, {
+        "uid" : "b39c35280813fa41",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "b39c35280813fa41.xlsx",
+        "type" : "xlsx",
+        "size" : 13380
+      }, {
+        "uid" : "59eab06edfb5ce4f",
+        "name" : "AllFormsState.mxl",
+        "source" : "59eab06edfb5ce4f.mxl",
+        "type" : "mxl",
+        "size" : 245446
+      }, {
+        "uid" : "6aa95878c9e2509f",
+        "name" : "AllFormsState.html",
+        "source" : "6aa95878c9e2509f.html",
+        "type" : "html",
+        "size" : 503798
+      }, {
+        "uid" : "c0bc88a407a0c924",
+        "name" : "AllFormsState.xlsx",
+        "source" : "c0bc88a407a0c924.xlsx",
+        "type" : "xlsx",
+        "size" : 36220
+      }, {
+        "uid" : "17a58a9a1866b808",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "17a58a9a1866b808.txt",
+        "type" : "txt",
+        "size" : 3977
+      }, {
+        "uid" : "17f217b4e05c3516",
+        "name" : "OSProcessesData.txt",
+        "source" : "17f217b4e05c3516.txt",
+        "type" : "txt",
+        "size" : 23718
+      }, {
+        "uid" : "a682e97623a22882",
+        "name" : "VariableValues.mxl",
+        "source" : "a682e97623a22882.mxl",
+        "type" : "mxl",
+        "size" : 9284
+      }, {
+        "uid" : "fee08b035f92585d",
+        "name" : "VariableValues.html",
+        "source" : "fee08b035f92585d.html",
+        "type" : "html",
+        "size" : 19936
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 20,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1721186482437,
+        "stop" : 1721186482437,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I delete \"$$SalesInvoice$$\" variable",
+      "time" : {
+        "start" : 1721186482437,
+        "stop" : 1721186482437,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$SalesInvoice$$"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save form header as \"$$SalesInvoice$$\" variable",
+      "time" : {
+        "start" : 1721186482437,
+        "stop" : 1721186482437,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "$$SalesInvoice$$"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And Posting check",
+      "time" : {
+        "start" : 1721186482437,
+        "stop" : 1721186482437,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ {
+        "name" : "If current window contains user messages Then",
+        "time" : {
+          "start" : 1721186482437,
+          "stop" : 1721186482437,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ {
+          "name" : "Then I raise \"Posting is failed.\" exception",
+          "time" : {
+            "start" : 1721186482437,
+            "stop" : 1721186482437,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Posting is failed."
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "If the warning is displayed then",
+        "time" : {
+          "start" : 1721186482437,
+          "stop" : 1721186482437,
+          "duration" : 0
+        },
+        "status" : "skipped",
+        "steps" : [ {
+          "name" : "And I click \"OK\" button",
+          "time" : {
+            "start" : 1721186482437,
+            "stop" : 1721186482437,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "OK"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then I raise \"Posting is failed.\" exception",
+          "time" : {
+            "start" : 1721186482437,
+            "stop" : 1721186482437,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "93c16d7f905f15",
+            "name" : "Этот клиент.screenshot",
+            "source" : "93c16d7f905f15.png",
+            "type" : "image/png",
+            "size" : 63349
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Posting is failed."
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "88bad47448ac679d",
+      "name" : "Этот клиент.screenshot",
+      "source" : "88bad47448ac679d.png",
+      "type" : "image/png",
+      "size" : 63349
+    }, {
+      "uid" : "639ceaa86eb0c494",
+      "name" : "Differences.mxl",
+      "source" : "639ceaa86eb0c494.mxl",
+      "type" : "mxl",
+      "size" : 579
+    }, {
+      "uid" : "f8ff594cbc79d2e3",
+      "name" : "Differences.html",
+      "source" : "f8ff594cbc79d2e3.html",
+      "type" : "html",
+      "size" : 739
+    }, {
+      "uid" : "1eac8835070e05b2",
+      "name" : "ReferenceValueTable.mxl",
+      "source" : "1eac8835070e05b2.mxl",
+      "type" : "mxl",
+      "size" : 1347
+    }, {
+      "uid" : "5314fc7ef50ba5ba",
+      "name" : "ReferenceValueTable.html",
+      "source" : "5314fc7ef50ba5ba.html",
+      "type" : "html",
+      "size" : 2659
+    }, {
+      "uid" : "311c771efe9646e5",
+      "name" : "CurrentValueTable.mxl",
+      "source" : "311c771efe9646e5.mxl",
+      "type" : "mxl",
+      "size" : 573
+    }, {
+      "uid" : "a438d4562bee900",
+      "name" : "CurrentValueTable.html",
+      "source" : "a438d4562bee900.html",
+      "type" : "html",
+      "size" : 739
+    }, {
+      "uid" : "7c00657ae4a8ed2d",
+      "name" : "EventLog.mxl",
+      "source" : "7c00657ae4a8ed2d.mxl",
+      "type" : "mxl",
+      "size" : 52232
+    }, {
+      "uid" : "e0c96d142ac18ea3",
+      "name" : "EventLog.html",
+      "source" : "e0c96d142ac18ea3.html",
+      "type" : "html",
+      "size" : 53869
+    }, {
+      "uid" : "5240c767f05a513a",
+      "name" : "EventLog.xlsx",
+      "source" : "5240c767f05a513a.xlsx",
+      "type" : "xlsx",
+      "size" : 14732
+    }, {
+      "uid" : "3ec62943eb798db4",
+      "name" : "ActiveFormState.mxl",
+      "source" : "3ec62943eb798db4.mxl",
+      "type" : "mxl",
+      "size" : 44550
+    }, {
+      "uid" : "49b3950df3a1f9a9",
+      "name" : "ActiveFormState.html",
+      "source" : "49b3950df3a1f9a9.html",
+      "type" : "html",
+      "size" : 94563
+    }, {
+      "uid" : "6e64fe91f5fdb82d",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "6e64fe91f5fdb82d.xlsx",
+      "type" : "xlsx",
+      "size" : 13380
+    }, {
+      "uid" : "7e08981dd2e30936",
+      "name" : "AllFormsState.mxl",
+      "source" : "7e08981dd2e30936.mxl",
+      "type" : "mxl",
+      "size" : 245446
+    }, {
+      "uid" : "96a801c6be25a9c5",
+      "name" : "AllFormsState.html",
+      "source" : "96a801c6be25a9c5.html",
+      "type" : "html",
+      "size" : 503798
+    }, {
+      "uid" : "4906fac3a07eb620",
+      "name" : "AllFormsState.xlsx",
+      "source" : "4906fac3a07eb620.xlsx",
+      "type" : "xlsx",
+      "size" : 36220
+    }, {
+      "uid" : "1ff77d4d1e85efd6",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "1ff77d4d1e85efd6.txt",
+      "type" : "txt",
+      "size" : 3977
+    }, {
+      "uid" : "2910c50d5c02d3f",
+      "name" : "OSProcessesData.txt",
+      "source" : "2910c50d5c02d3f.txt",
+      "type" : "txt",
+      "size" : 23718
+    }, {
+      "uid" : "13326845cba82cbe",
+      "name" : "VariableValues.mxl",
+      "source" : "13326845cba82cbe.mxl",
+      "type" : "mxl",
+      "size" : 9284
+    }, {
+      "uid" : "3d24faafcacf83dd",
+      "name" : "VariableValues.html",
+      "source" : "3d24faafcacf83dd.html",
+      "type" : "html",
+      "size" : 19936
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 42,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Sales Invoice generate"
+  }, {
+    "name" : "feature",
+    "value" : "Sales order and Sales invoice creating"
+  }, {
+    "name" : "suite",
+    "value" : "Sales order and Sales invoice creating"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "c777cb6ef7cd3635.json",
+  "parameterValues" : [ ]
+}

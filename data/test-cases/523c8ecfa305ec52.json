@@ -1,0 +1,355 @@
+{
+  "uid" : "523c8ecfa305ec52",
+  "name" : "(VATOnRelease) PurchaseOrder generate PurchaseInvoice",
+  "historyId" : "Purchase Invoices generate documents.(VATOnRelease) PurchaseOrder generate PurchaseInvoice",
+  "time" : {
+    "start" : 1721186070526,
+    "stop" : 1721186083044,
+    "duration" : 12518
+  },
+  "status" : "failed",
+  "statusMessage" : "The button named <FormAddPurchaseInvoice> is not found.",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase orders\n\nTechnical data:\n        ActiveWindowHeader: Purchase orders\n        ActiveFormName: Document.PurchaseOrder.Form.ListForm\n        FeatureName: Purchase Invoices generate documents\n        ScriptName: PurchaseOrder generate PurchaseInvoice\n        TreeRowNumber: 19.848\n        FeatureLineNumber: 78\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\PurchaseInvoiceGenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:41",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "The button named <FormAddPurchaseInvoice> is not found.",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase orders\n\nTechnical data:\n        ActiveWindowHeader: Purchase orders\n        ActiveFormName: Document.PurchaseOrder.Form.ListForm\n        FeatureName: Purchase Invoices generate documents\n        ScriptName: PurchaseOrder generate PurchaseInvoice\n        TreeRowNumber: 19.848\n        FeatureLineNumber: 78\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\PurchaseInvoiceGenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:41",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721186070619,
+        "stop" : 1721186070994,
+        "duration" : 375
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseOrder\"",
+      "time" : {
+        "start" : 1721186071218,
+        "stop" : 1721186071218,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseOrder"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721186071311,
+        "stop" : 1721186071327,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "25bcb8a65e6833fa",
+        "name" : "table",
+        "source" : "25bcb8a65e6833fa.csv",
+        "type" : "text/csv",
+        "size" : 26
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"Number\" in \"List\" table",
+      "time" : {
+        "start" : 1721186071358,
+        "stop" : 1721186071358,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "Number"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormAddPurchaseInvoice\"",
+      "time" : {
+        "start" : 1721186071389,
+        "stop" : 1721186083044,
+        "duration" : 11655
+      },
+      "status" : "failed",
+      "statusMessage" : "The button named <FormAddPurchaseInvoice> is not found.",
+      "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(4253)}: The button named <FormAddPurchaseInvoice> is not found. CurrentWindow=Purchase orders\n\nTechnical data:\n        ActiveWindowHeader: Purchase orders\n        ActiveFormName: Document.PurchaseOrder.Form.ListForm\n        FeatureName: Purchase Invoices generate documents\n        ScriptName: PurchaseOrder generate PurchaseInvoice\n        TreeRowNumber: 19.848\n        FeatureLineNumber: 78\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\PurchaseInvoiceGenerateDocument.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ЯНажимаюНаКнопкуСИменем\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:11 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:14:41",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6deed433efc7412a",
+        "name" : "EventLog.mxl",
+        "source" : "6deed433efc7412a.mxl",
+        "type" : "mxl",
+        "size" : 45386
+      }, {
+        "uid" : "7c90362c3a53d6e8",
+        "name" : "EventLog.html",
+        "source" : "7c90362c3a53d6e8.html",
+        "type" : "html",
+        "size" : 46344
+      }, {
+        "uid" : "e475bc04654eeeed",
+        "name" : "EventLog.xlsx",
+        "source" : "e475bc04654eeeed.xlsx",
+        "type" : "xlsx",
+        "size" : 14528
+      }, {
+        "uid" : "2d2573b803e42467",
+        "name" : "ActiveFormState.mxl",
+        "source" : "2d2573b803e42467.mxl",
+        "type" : "mxl",
+        "size" : 27051
+      }, {
+        "uid" : "c16c88003981d05c",
+        "name" : "ActiveFormState.html",
+        "source" : "c16c88003981d05c.html",
+        "type" : "html",
+        "size" : 58046
+      }, {
+        "uid" : "3a0a55ab2f826d3e",
+        "name" : "ActiveFormState.xlsx",
+        "source" : "3a0a55ab2f826d3e.xlsx",
+        "type" : "xlsx",
+        "size" : 10758
+      }, {
+        "uid" : "1050c784ffce9316",
+        "name" : "AllFormsState.mxl",
+        "source" : "1050c784ffce9316.mxl",
+        "type" : "mxl",
+        "size" : 171627
+      }, {
+        "uid" : "bd4431639b0e0a13",
+        "name" : "AllFormsState.html",
+        "source" : "bd4431639b0e0a13.html",
+        "type" : "html",
+        "size" : 345322
+      }, {
+        "uid" : "eabc8c3daee6b3a5",
+        "name" : "AllFormsState.xlsx",
+        "source" : "eabc8c3daee6b3a5.xlsx",
+        "type" : "xlsx",
+        "size" : 27292
+      }, {
+        "uid" : "2339cb835344ee84",
+        "name" : "NetworkConnectionsData.txt",
+        "source" : "2339cb835344ee84.txt",
+        "type" : "txt",
+        "size" : 3611
+      }, {
+        "uid" : "bc634df563d38c69",
+        "name" : "OSProcessesData.txt",
+        "source" : "bc634df563d38c69.txt",
+        "type" : "txt",
+        "size" : 23564
+      }, {
+        "uid" : "9b13c220654984dc",
+        "name" : "VariableValues.mxl",
+        "source" : "9b13c220654984dc.mxl",
+        "type" : "mxl",
+        "size" : 8677
+      }, {
+        "uid" : "2b4de1fa00a8897e",
+        "name" : "VariableValues.html",
+        "source" : "2b4de1fa00a8897e.html",
+        "type" : "html",
+        "size" : 18640
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormAddPurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"Purchase Invoice (create)\" window is opened",
+      "time" : {
+        "start" : 1721186083044,
+        "stop" : 1721186083044,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2e476e1854b81f49",
+        "name" : "Этот клиент.screenshot",
+        "source" : "2e476e1854b81f49.png",
+        "type" : "image/png",
+        "size" : 71610
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Purchase Invoice (create)"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "9d277025749fedfe",
+      "name" : "Этот клиент.screenshot",
+      "source" : "9d277025749fedfe.png",
+      "type" : "image/png",
+      "size" : 71610
+    }, {
+      "uid" : "25434c5c1ce4f014",
+      "name" : "EventLog.mxl",
+      "source" : "25434c5c1ce4f014.mxl",
+      "type" : "mxl",
+      "size" : 45386
+    }, {
+      "uid" : "f279c2e7febdef55",
+      "name" : "EventLog.html",
+      "source" : "f279c2e7febdef55.html",
+      "type" : "html",
+      "size" : 46344
+    }, {
+      "uid" : "7bd58bb8c5bf9877",
+      "name" : "EventLog.xlsx",
+      "source" : "7bd58bb8c5bf9877.xlsx",
+      "type" : "xlsx",
+      "size" : 14528
+    }, {
+      "uid" : "ab23e217847a0fe4",
+      "name" : "ActiveFormState.mxl",
+      "source" : "ab23e217847a0fe4.mxl",
+      "type" : "mxl",
+      "size" : 27051
+    }, {
+      "uid" : "12ce61b684509e1b",
+      "name" : "ActiveFormState.html",
+      "source" : "12ce61b684509e1b.html",
+      "type" : "html",
+      "size" : 58046
+    }, {
+      "uid" : "aca2565e8b8d9cc0",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "aca2565e8b8d9cc0.xlsx",
+      "type" : "xlsx",
+      "size" : 10758
+    }, {
+      "uid" : "891118aad7741a3d",
+      "name" : "AllFormsState.mxl",
+      "source" : "891118aad7741a3d.mxl",
+      "type" : "mxl",
+      "size" : 171627
+    }, {
+      "uid" : "f202ef6046d1ec5e",
+      "name" : "AllFormsState.html",
+      "source" : "f202ef6046d1ec5e.html",
+      "type" : "html",
+      "size" : 345322
+    }, {
+      "uid" : "9a71454b26cc4530",
+      "name" : "AllFormsState.xlsx",
+      "source" : "9a71454b26cc4530.xlsx",
+      "type" : "xlsx",
+      "size" : 27292
+    }, {
+      "uid" : "a348ec01a1d01e38",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "a348ec01a1d01e38.txt",
+      "type" : "txt",
+      "size" : 3611
+    }, {
+      "uid" : "92cb1868a17feb4f",
+      "name" : "OSProcessesData.txt",
+      "source" : "92cb1868a17feb4f.txt",
+      "type" : "txt",
+      "size" : 23564
+    }, {
+      "uid" : "4608d05bda93bc6b",
+      "name" : "VariableValues.mxl",
+      "source" : "4608d05bda93bc6b.mxl",
+      "type" : "mxl",
+      "size" : 8677
+    }, {
+      "uid" : "c07208576e270d84",
+      "name" : "VariableValues.html",
+      "source" : "c07208576e270d84.html",
+      "type" : "html",
+      "size" : 18640
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 29,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "PurchaseOrder generate PurchaseInvoice"
+  }, {
+    "name" : "feature",
+    "value" : "Purchase Invoices generate documents"
+  }, {
+    "name" : "suite",
+    "value" : "Purchase Invoices generate documents"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "MiscellaneousForOllCompany"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "523c8ecfa305ec52.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,195 @@
+{
+  "uid" : "4c9944811a40c33f",
+  "name" : "(VATOnRelease) Import VAT codes from file",
+  "historyId" : "Import VAT codes from file.(VATOnRelease) Import VAT codes from file",
+  "time" : {
+    "start" : 1721182434275,
+    "stop" : 1721182440975,
+    "duration" : 6700
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721182434385,
+      "stop" : 1721182434650,
+      "duration" : 265
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721182434869,
+        "stop" : 1721182435046,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Catalog.VATCodeClassifier\"",
+      "time" : {
+        "start" : 1721182435264,
+        "stop" : 1721182435264,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Catalog.VATCodeClassifier"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then \"VAT code classifier\" window is opened",
+      "time" : {
+        "start" : 1721182435296,
+        "stop" : 1721182435389,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VAT code classifier"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select \".\\features\\Additional\\Template_VATCodeClassifier.xlsx\" file",
+      "time" : {
+        "start" : 1721182435421,
+        "stop" : 1721182435421,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : ".\\features\\Additional\\Template_VATCodeClassifier.xlsx"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"ListImportFromExcel\"",
+      "time" : {
+        "start" : 1721182435671,
+        "stop" : 1721182435686,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "ListImportFromExcel"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I wait that in \"List\" table number of lines will be \"more\" \"0\" for \"10\" seconds",
+      "time" : {
+        "start" : 1721182435718,
+        "stop" : 1721182440975,
+        "duration" : 5257
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "more"
+      }, {
+        "name" : "Парам3",
+        "value" : "0"
+      }, {
+        "name" : "Парам4",
+        "value" : "10"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Import VAT codes from file"
+  }, {
+    "name" : "feature",
+    "value" : "Import VAT codes from file"
+  }, {
+    "name" : "suite",
+    "value" : "Import VAT codes from file"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "tag",
+    "value" : "CI"
+  }, {
+    "name" : "package",
+    "value" : "001_TestDataExport"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "CI", "tree" ]
+  },
+  "source" : "4c9944811a40c33f.json",
+  "parameterValues" : [ ]
+}

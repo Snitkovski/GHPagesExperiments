@@ -1,0 +1,321 @@
+{
+  "uid" : "e719d99a37d203da",
+  "name" : "(VATOnRelease) Data preparation Purchase invoice",
+  "historyId" : "Inventory Items commissioning.(VATOnRelease) Data preparation Purchase invoice",
+  "time" : {
+    "start" : 1721184498135,
+    "stop" : 1721184501295,
+    "duration" : 3160
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721184498244,
+      "stop" : 1721184498448,
+      "duration" : 204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I close all client application windows",
+    "time" : {
+      "start" : 1721184498666,
+      "stop" : 1721184499058,
+      "duration" : 392
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And I save \"{CurrentDate() - 10*24*60*60}\" in \"CurDate\" variable",
+      "time" : {
+        "start" : 1721184499308,
+        "stop" : 1721184499308,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "{CurrentDate() - 10*24*60*60}"
+      }, {
+        "name" : "Парам2",
+        "value" : "CurDate"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I check or create document \"PurchaseInvoice\" objects:",
+      "time" : {
+        "start" : 1721184499386,
+        "stop" : 1721184499527,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d2c29e0e7a3f8b4",
+        "name" : "table",
+        "source" : "d2c29e0e7a3f8b4.csv",
+        "type" : "text/csv",
+        "size" : 1496
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I refill object tabular section \"LineItems\":",
+      "time" : {
+        "start" : 1721184499730,
+        "stop" : 1721184499777,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1233ab30e1796f33",
+        "name" : "table",
+        "source" : "1233ab30e1796f33.csv",
+        "type" : "text/csv",
+        "size" : 3682
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/data/Document.PurchaseInvoice?ref=b2e6d6921d5e794611eeccc87cea27e1\"",
+      "time" : {
+        "start" : 1721184499808,
+        "stop" : 1721184499808,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/data/Document.PurchaseInvoice?ref=b2e6d6921d5e794611eeccc87cea27e1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1721184499840,
+        "stop" : 1721184500075,
+        "duration" : 235
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I delete \"00000000000000000012\" variable",
+      "time" : {
+        "start" : 1721184500091,
+        "stop" : 1721184500091,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "00000000000000000012"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I save the value of the field named \"Number\" as \"$$PINumber$$\"",
+      "time" : {
+        "start" : 1721184500122,
+        "stop" : 1721184500481,
+        "duration" : 359
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Number"
+      }, {
+        "name" : "Парам2",
+        "value" : "$$PINumber$$"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I check or create document \"PurchaseInvoice\" objects:",
+      "time" : {
+        "start" : 1721184500778,
+        "stop" : 1721184500903,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8210e800d00ee1e4",
+        "name" : "table",
+        "source" : "8210e800d00ee1e4.csv",
+        "type" : "text/csv",
+        "size" : 1496
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I refill object tabular section \"LineItems\":",
+      "time" : {
+        "start" : 1721184500981,
+        "stop" : 1721184501029,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "89f9b5b3f0474bcb",
+        "name" : "table",
+        "source" : "89f9b5b3f0474bcb.csv",
+        "type" : "text/csv",
+        "size" : 1036
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "LineItems"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/data/Document.PurchaseInvoice?ref=b2eee0e38c8a07b811ef0249906eb2b6\"",
+      "time" : {
+        "start" : 1721184501061,
+        "stop" : 1721184501061,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/data/Document.PurchaseInvoice?ref=b2eee0e38c8a07b811ef0249906eb2b6"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I click the button named \"FormPost\"",
+      "time" : {
+        "start" : 1721184501092,
+        "stop" : 1721184501295,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormPost"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Data preparation Purchase invoice"
+  }, {
+    "name" : "feature",
+    "value" : "Inventory Items commissioning"
+  }, {
+    "name" : "suite",
+    "value" : "Inventory Items commissioning"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "e719d99a37d203da.json",
+  "parameterValues" : [ ]
+}

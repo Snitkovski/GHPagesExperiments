@@ -1,0 +1,517 @@
+{
+  "uid" : "b0368cea5a7bfff4",
+  "name" : "(VATOnRelease) PI generate Purchase Return",
+  "historyId" : "Documents generate on.(VATOnRelease) PI generate Purchase Return",
+  "time" : {
+    "start" : 1721185533978,
+    "stop" : 1721185541995,
+    "duration" : 8017
+  },
+  "status" : "failed",
+  "statusMessage" : "<LineItems> table value checking error. Не найдены колонки: Price",
+  "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6204)}: <LineItems> table value checking error. Не найдены колонки: Price\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Purchase Return\n        TreeRowNumber: 17.705\n        FeatureLineNumber: 792\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:05:40",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721185534076,
+      "stop" : 1721185534326,
+      "duration" : 250
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I close all client application windows",
+    "time" : {
+      "start" : 1721185534545,
+      "stop" : 1721185534889,
+      "duration" : 344
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "<LineItems> table value checking error. Не найдены колонки: Price",
+    "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6204)}: <LineItems> table value checking error. Не найдены колонки: Price\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Purchase Return\n        TreeRowNumber: 17.705\n        FeatureLineNumber: 792\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:05:40",
+    "steps" : [ {
+      "name" : "And I close all client application windows",
+      "time" : {
+        "start" : 1721185535154,
+        "stop" : 1721185535342,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given I open hyperlink \"e1cib/list/Document.PurchaseInvoice\"",
+      "time" : {
+        "start" : 1721185535561,
+        "stop" : 1721185535576,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "e1cib/list/Document.PurchaseInvoice"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I go to line in \"List\" table",
+      "time" : {
+        "start" : 1721185535654,
+        "stop" : 1721185535717,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "58410d4dc44b3d81",
+        "name" : "table",
+        "source" : "58410d4dc44b3d81.csv",
+        "type" : "text/csv",
+        "size" : 35
+      } ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate field named \"Number\" in \"List\" table",
+      "time" : {
+        "start" : 1721185535733,
+        "stop" : 1721185535748,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      }, {
+        "name" : "Парам2",
+        "value" : "Number"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I select current line in \"List\" table",
+      "time" : {
+        "start" : 1721185535779,
+        "stop" : 1721185535779,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "List"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I activate current test client window",
+      "time" : {
+        "start" : 1721185535811,
+        "stop" : 1721185535811,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I click the button named \"FormDocumentPurchaseReturnCreateBasedOn\"",
+      "time" : {
+        "start" : 1721185535967,
+        "stop" : 1721185536050,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "FormDocumentPurchaseReturnCreateBasedOn"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"Company\" is filled",
+      "time" : {
+        "start" : 1721185536081,
+        "stop" : 1721185536284,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Company"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And the field named \"Contract\" is filled",
+      "time" : {
+        "start" : 1721185536315,
+        "stop" : 1721185536331,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "Contract"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+      "time" : {
+        "start" : 1721185536362,
+        "stop" : 1721185536362,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      }, {
+        "name" : "Парам2",
+        "value" : "NonPayer"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "elseIf \"VATOnRelease\" variable is equal to \"VATOnRelease\" Then",
+      "time" : {
+        "start" : 1721185536378,
+        "stop" : 1721185541995,
+        "duration" : 5617
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And \"LineItems\" table became equal",
+        "time" : {
+          "start" : 1721185536628,
+          "stop" : 1721185541995,
+          "duration" : 5367
+        },
+        "status" : "failed",
+        "statusMessage" : "<LineItems> table value checking error. Не найдены колонки: Price",
+        "statusTrace" : "{ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6339)}: {ExternalDataProcessor.VanessaAutomationsingle.Form.Тест_РаботаСИнтерфейсом.Form(6204)}: <LineItems> table value checking error. Не найдены колонки: Price\n\nTechnical data:\n        ActiveWindowHeader: Purchase Invoice 00000000000000000024 dated 16.07.2024 05:23:09\n        ActiveFormName: Document.PurchaseInvoice.Form.DocumentForm\n        FeatureName: Documents generate on\n        ScriptName: PI generate Purchase Return\n        TreeRowNumber: 17.705\n        FeatureLineNumber: 792\n        FeatureFullPath: features\\CI\\Main\\Basic\\MiscellaneousForOllCompany\\DocumentsGenerateOn.feature\n        FileName: ВнешняяОбработка.VanessaAutomationsingle.Форма.Тест_РаботаСИнтерфейсом\n        ProcedureName: ТаблицаСталаРавной\n        RunnerName: WIN-Fresh01\n        TestClientName: This client\n        TestClientSynonym: \n        TestClientType: Thin\n        ConnectionString: File=\"D:\\gha\\oc_va\\_w\\c3_edt\\c3_edt\\build\\base\";\n        AdditionalParametersConnections: /N\"Administrator\" \n        PIDTestClient: 23556\n        VBVersion: ver 1.2.041.1\n        PlatformVersion: 8.3.22.2239\n        PlatformType: Windows x86-64\n        TestManagerCompatibilityMode: Version8_3_21\n        ScriptTimeline: 0:00:07 (ч:м:с)\n        ErrorDateTime: 17.07.2024 06:05:40",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "982248b001231e0c",
+          "name" : "table",
+          "source" : "982248b001231e0c.csv",
+          "type" : "text/csv",
+          "size" : 810
+        }, {
+          "uid" : "62a1e629dba468ff",
+          "name" : "EventLog.mxl",
+          "source" : "62a1e629dba468ff.mxl",
+          "type" : "mxl",
+          "size" : 43864
+        }, {
+          "uid" : "676bc8a61fb73da2",
+          "name" : "EventLog.html",
+          "source" : "676bc8a61fb73da2.html",
+          "type" : "html",
+          "size" : 44787
+        }, {
+          "uid" : "a4882719c0be5769",
+          "name" : "EventLog.xlsx",
+          "source" : "a4882719c0be5769.xlsx",
+          "type" : "xlsx",
+          "size" : 14095
+        }, {
+          "uid" : "aef9824973cec62d",
+          "name" : "ActiveFormState.mxl",
+          "source" : "aef9824973cec62d.mxl",
+          "type" : "mxl",
+          "size" : 58891
+        }, {
+          "uid" : "8ef7a13a6f275003",
+          "name" : "ActiveFormState.html",
+          "source" : "8ef7a13a6f275003.html",
+          "type" : "html",
+          "size" : 125732
+        }, {
+          "uid" : "32383efb7a8aead7",
+          "name" : "ActiveFormState.xlsx",
+          "source" : "32383efb7a8aead7.xlsx",
+          "type" : "xlsx",
+          "size" : 15464
+        }, {
+          "uid" : "aba069035ce04f44",
+          "name" : "AllFormsState.mxl",
+          "source" : "aba069035ce04f44.mxl",
+          "type" : "mxl",
+          "size" : 293249
+        }, {
+          "uid" : "390e33a8691a260a",
+          "name" : "AllFormsState.html",
+          "source" : "390e33a8691a260a.html",
+          "type" : "html",
+          "size" : 604548
+        }, {
+          "uid" : "ba0eea927d4f94af",
+          "name" : "AllFormsState.xlsx",
+          "source" : "ba0eea927d4f94af.xlsx",
+          "type" : "xlsx",
+          "size" : 41531
+        }, {
+          "uid" : "c4a204b505ec7be9",
+          "name" : "NetworkConnectionsData.txt",
+          "source" : "c4a204b505ec7be9.txt",
+          "type" : "txt",
+          "size" : 3829
+        }, {
+          "uid" : "4bb765af34236f00",
+          "name" : "OSProcessesData.txt",
+          "source" : "4bb765af34236f00.txt",
+          "type" : "txt",
+          "size" : 23641
+        }, {
+          "uid" : "7454878a1b58a2be",
+          "name" : "VariableValues.mxl",
+          "source" : "7454878a1b58a2be.mxl",
+          "type" : "mxl",
+          "size" : 6983
+        }, {
+          "uid" : "bad31d919302862c",
+          "name" : "VariableValues.html",
+          "source" : "bad31d919302862c.html",
+          "type" : "html",
+          "size" : 14852
+        } ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "LineItems"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 14,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      }, {
+        "name" : "Парам2",
+        "value" : "VATOnRelease"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 14,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I close current window",
+      "time" : {
+        "start" : 1721185541995,
+        "stop" : 1721185541995,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "59d34a0b876366",
+        "name" : "Этот клиент.screenshot",
+        "source" : "59d34a0b876366.png",
+        "type" : "image/png",
+        "size" : 89078
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "a78b6aedc58d9c92",
+      "name" : "Этот клиент.screenshot",
+      "source" : "a78b6aedc58d9c92.png",
+      "type" : "image/png",
+      "size" : 89078
+    }, {
+      "uid" : "d235cfa48f4e02c7",
+      "name" : "EventLog.mxl",
+      "source" : "d235cfa48f4e02c7.mxl",
+      "type" : "mxl",
+      "size" : 43864
+    }, {
+      "uid" : "b34fd44315b10b65",
+      "name" : "EventLog.html",
+      "source" : "b34fd44315b10b65.html",
+      "type" : "html",
+      "size" : 44787
+    }, {
+      "uid" : "8bb5c3bf2c57f35b",
+      "name" : "EventLog.xlsx",
+      "source" : "8bb5c3bf2c57f35b.xlsx",
+      "type" : "xlsx",
+      "size" : 14095
+    }, {
+      "uid" : "6ddd18ec922b1c59",
+      "name" : "ActiveFormState.mxl",
+      "source" : "6ddd18ec922b1c59.mxl",
+      "type" : "mxl",
+      "size" : 58891
+    }, {
+      "uid" : "41c76b0965c0506b",
+      "name" : "ActiveFormState.html",
+      "source" : "41c76b0965c0506b.html",
+      "type" : "html",
+      "size" : 125732
+    }, {
+      "uid" : "a893c34673d7e7a2",
+      "name" : "ActiveFormState.xlsx",
+      "source" : "a893c34673d7e7a2.xlsx",
+      "type" : "xlsx",
+      "size" : 15464
+    }, {
+      "uid" : "f821433b45291f90",
+      "name" : "AllFormsState.mxl",
+      "source" : "f821433b45291f90.mxl",
+      "type" : "mxl",
+      "size" : 293249
+    }, {
+      "uid" : "d2e95fee7b74d3a8",
+      "name" : "AllFormsState.html",
+      "source" : "d2e95fee7b74d3a8.html",
+      "type" : "html",
+      "size" : 604548
+    }, {
+      "uid" : "b2649b925144bb05",
+      "name" : "AllFormsState.xlsx",
+      "source" : "b2649b925144bb05.xlsx",
+      "type" : "xlsx",
+      "size" : 41531
+    }, {
+      "uid" : "254639148691cf10",
+      "name" : "NetworkConnectionsData.txt",
+      "source" : "254639148691cf10.txt",
+      "type" : "txt",
+      "size" : 3829
+    }, {
+      "uid" : "a95748e96d024eca",
+      "name" : "OSProcessesData.txt",
+      "source" : "a95748e96d024eca.txt",
+      "type" : "txt",
+      "size" : 23641
+    }, {
+      "uid" : "b883568bda662673",
+      "name" : "VariableValues.mxl",
+      "source" : "b883568bda662673.mxl",
+      "type" : "mxl",
+      "size" : 6983
+    }, {
+      "uid" : "d6944188a72c782c",
+      "name" : "VariableValues.html",
+      "source" : "d6944188a72c782c.html",
+      "type" : "html",
+      "size" : 14852
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "attachmentsCount" : 30,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "PI generate Purchase Return"
+  }, {
+    "name" : "feature",
+    "value" : "Documents generate on"
+  }, {
+    "name" : "suite",
+    "value" : "Documents generate on"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "MiscellaneousForOllCompany"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "tree" ]
+  },
+  "source" : "b0368cea5a7bfff4.json",
+  "parameterValues" : [ ]
+}

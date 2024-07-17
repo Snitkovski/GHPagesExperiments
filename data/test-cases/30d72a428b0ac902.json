@@ -1,0 +1,1356 @@
+{
+  "uid" : "30d72a428b0ac902",
+  "name" : "(VATOnRelease) Data preparation",
+  "historyId" : "160 Assembly build and Specification creation.(VATOnRelease) Data preparation",
+  "time" : {
+    "start" : 1721183515857,
+    "stop" : 1721183534944,
+    "duration" : 19087
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Given I open new TestClient session or connect the existing one",
+    "time" : {
+      "start" : 1721183515967,
+      "stop" : 1721183516265,
+      "duration" : 298
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "And I get VAT payer status",
+    "time" : {
+      "start" : 1721183516483,
+      "stop" : 1721183516515,
+      "duration" : 32
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "If \"VATOnRelease\" variable does not exist Then",
+      "time" : {
+        "start" : 1721183516483,
+        "stop" : 1721183516515,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "And I save the value of the Vanessa Automation setting \"ИмяТекущейСборки\" as \"VATOnRelease\"",
+        "time" : {
+          "start" : 1721183516515,
+          "stop" : 1721183516515,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "Парам1",
+          "value" : "ИмяТекущейСборки"
+        }, {
+          "name" : "Парам2",
+          "value" : "VATOnRelease"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Парам1",
+        "value" : "VATOnRelease"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "And Data preparation For All Companies",
+      "time" : {
+        "start" : 1721183516546,
+        "stop" : 1721183534944,
+        "duration" : 18398
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "* Correct buc um",
+        "time" : {
+          "start" : 1721183516546,
+          "stop" : 1721183518049,
+          "duration" : 1503
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1721183516546,
+            "stop" : 1721183516671,
+            "duration" : 125
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Given I open hyperlink \"e1cib/list/Catalog.Units\"",
+          "time" : {
+            "start" : 1721183516890,
+            "stop" : 1721183516905,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/list/Catalog.Units"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I go to line in \"List\" table",
+          "time" : {
+            "start" : 1721183516983,
+            "stop" : 1721183516983,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b5faabb927c90c0c",
+            "name" : "table",
+            "source" : "b5faabb927c90c0c.csv",
+            "type" : "text/csv",
+            "size" : 24
+          } ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And in the table \"List\" I click the button named \"ListContextMenuChange\"",
+          "time" : {
+            "start" : 1721183517015,
+            "stop" : 1721183517032,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "List"
+          }, {
+            "name" : "Парам2",
+            "value" : "ListContextMenuChange"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I input \"BUC\" text in the field named \"Description\"",
+          "time" : {
+            "start" : 1721183517047,
+            "stop" : 1721183517063,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Description"
+          }, {
+            "name" : "Парам2",
+            "value" : "BUC"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I click the button named \"FormWriteAndClose\"",
+          "time" : {
+            "start" : 1721183517094,
+            "stop" : 1721183517094,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "FormWriteAndClose"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I wait \"Bucată (Unit) *\" window closing in 20 seconds",
+          "time" : {
+            "start" : 1721183517125,
+            "stop" : 1721183518049,
+            "duration" : 924
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Bucată (Unit) *"
+          }, {
+            "name" : "Парам2",
+            "value" : "20"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 7,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "* set Updating counterparties = False",
+        "time" : {
+          "start" : 1721183518080,
+          "stop" : 1721183518689,
+          "duration" : 609
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And I close all client application windows",
+          "time" : {
+            "start" : 1721183518080,
+            "stop" : 1721183518299,
+            "duration" : 219
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "Given I open hyperlink \"e1cib/app/DataProcessor.SettingsManager\"",
+          "time" : {
+            "start" : 1721183518517,
+            "stop" : 1721183518517,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "e1cib/app/DataProcessor.SettingsManager"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "Then \"Settings\" window is opened",
+          "time" : {
+            "start" : 1721183518549,
+            "stop" : 1721183518611,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Settings"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I select \"Disabled\" exact value from the drop-down list named \"UpdatingCompanies\"",
+          "time" : {
+            "start" : 1721183518642,
+            "stop" : 1721183518658,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "UpdatingCompanies"
+          }, {
+            "name" : "Парам2",
+            "value" : "Disabled"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "And I close \"Settings\" window",
+          "time" : {
+            "start" : 1721183518689,
+            "stop" : 1721183518689,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "Парам1",
+            "value" : "Settings"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183518830,
+          "stop" : 1721183518892,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.WorldCountries",
+          "time" : {
+            "start" : 1721183518830,
+            "stop" : 1721183518892,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"WorldCountries\" objects:",
+            "time" : {
+              "start" : 1721183518830,
+              "stop" : 1721183518892,
+              "duration" : 62
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "58f374ba7c706cf5",
+              "name" : "table",
+              "source" : "58f374ba7c706cf5.csv",
+              "type" : "text/csv",
+              "size" : 576
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "WorldCountries"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183518986,
+          "stop" : 1721183519018,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.ActivityTypes",
+          "time" : {
+            "start" : 1721183518986,
+            "stop" : 1721183519018,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"ActivityTypes\" objects:",
+            "time" : {
+              "start" : 1721183518986,
+              "stop" : 1721183519018,
+              "duration" : 32
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "ded237407f944231",
+              "name" : "table",
+              "source" : "ded237407f944231.csv",
+              "type" : "text/csv",
+              "size" : 227
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "ActivityTypes"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183519097,
+          "stop" : 1721183519144,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.Series",
+          "time" : {
+            "start" : 1721183519097,
+            "stop" : 1721183519144,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Series\" objects:",
+            "time" : {
+              "start" : 1721183519097,
+              "stop" : 1721183519144,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "e614a3e8e56c9ef2",
+              "name" : "table",
+              "source" : "e614a3e8e56c9ef2.csv",
+              "type" : "text/csv",
+              "size" : 126
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Series"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183519222,
+          "stop" : 1721183519269,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.States",
+          "time" : {
+            "start" : 1721183519222,
+            "stop" : 1721183519269,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"States\" objects:",
+            "time" : {
+              "start" : 1721183519222,
+              "stop" : 1721183519269,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "b66a05e390f43d80",
+              "name" : "table",
+              "source" : "b66a05e390f43d80.csv",
+              "type" : "text/csv",
+              "size" : 214
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "States"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183519347,
+          "stop" : 1721183519394,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.Employees",
+          "time" : {
+            "start" : 1721183519347,
+            "stop" : 1721183519394,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Employees\" objects:",
+            "time" : {
+              "start" : 1721183519347,
+              "stop" : 1721183519394,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "aadcc10a515d3663",
+              "name" : "table",
+              "source" : "aadcc10a515d3663.csv",
+              "type" : "text/csv",
+              "size" : 290
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Employees"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183519472,
+          "stop" : 1721183519519,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Create catalog Banks objects",
+          "time" : {
+            "start" : 1721183519472,
+            "stop" : 1721183519519,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Try",
+            "time" : {
+              "start" : 1721183519472,
+              "stop" : 1721183519519,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "And I check or create catalog \"Banks\" objects:",
+              "time" : {
+                "start" : 1721183519472,
+                "stop" : 1721183519519,
+                "duration" : 47
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "b73907da9adb36e2",
+                "name" : "table",
+                "source" : "b73907da9adb36e2.csv",
+                "type" : "text/csv",
+                "size" : 179
+              } ],
+              "parameters" : [ {
+                "name" : "Парам1",
+                "value" : "Banks"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183519644,
+          "stop" : 1721183519722,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.Currencies",
+          "time" : {
+            "start" : 1721183519644,
+            "stop" : 1721183519722,
+            "duration" : 78
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Currencies\" objects:",
+            "time" : {
+              "start" : 1721183519644,
+              "stop" : 1721183519722,
+              "duration" : 78
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "f7614f4e420556b8",
+              "name" : "table",
+              "source" : "f7614f4e420556b8.csv",
+              "type" : "text/csv",
+              "size" : 762
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Currencies"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183520379,
+          "stop" : 1721183520723,
+          "duration" : 344
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.Companies",
+          "time" : {
+            "start" : 1721183520379,
+            "stop" : 1721183520723,
+            "duration" : 344
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Companies\" objects:",
+            "time" : {
+              "start" : 1721183520379,
+              "stop" : 1721183520723,
+              "duration" : 344
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "bb44b4988ad8934c",
+              "name" : "table",
+              "source" : "bb44b4988ad8934c.csv",
+              "type" : "text/csv",
+              "size" : 8037
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Companies"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183520754,
+          "stop" : 1721183521693,
+          "duration" : 939
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And InformationRegister.CompanyVATPayerInformation",
+          "time" : {
+            "start" : 1721183520754,
+            "stop" : 1721183521693,
+            "duration" : 939
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}' in \"date\" variable",
+            "time" : {
+              "start" : 1721183520754,
+              "stop" : 1721183520754,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy\")}"
+            }, {
+              "name" : "Парам2",
+              "value" : "date"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And I save '{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}' in \"datetime\" variable",
+            "time" : {
+              "start" : 1721183520785,
+              "stop" : 1721183520785,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "{Format(begofyear(CurrentDate()) , \"DF=dd.MM.yyyy hh:mm:ss\")}"
+            }, {
+              "name" : "Парам2",
+              "value" : "datetime"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "If \"VATOnRelease\" variable is equal to \"NonPayer\" Then",
+            "time" : {
+              "start" : 1721183520817,
+              "stop" : 1721183520817,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "VATOnRelease"
+            }, {
+              "name" : "Парам2",
+              "value" : "NonPayer"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "Else",
+            "time" : {
+              "start" : 1721183520848,
+              "stop" : 1721183520848,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "And I save \"Enum.VATPayerStatus.VAT_OnRelease\" in \"Enum\" variable",
+              "time" : {
+                "start" : 1721183520848,
+                "stop" : 1721183520848,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "Парам1",
+                "value" : "Enum.VATPayerStatus.VAT_OnRelease"
+              }, {
+                "name" : "Парам2",
+                "value" : "Enum"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And I check or create information register \"CompanyVATPayerInformation\" records:",
+            "time" : {
+              "start" : 1721183521427,
+              "stop" : 1721183521693,
+              "duration" : 266
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "73ee504952cbffc5",
+              "name" : "table",
+              "source" : "73ee504952cbffc5.csv",
+              "type" : "text/csv",
+              "size" : 3051
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "CompanyVATPayerInformation"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 6,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 7,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183522163,
+          "stop" : 1721183522288,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Contact Information",
+          "time" : {
+            "start" : 1721183522163,
+            "stop" : 1721183522288,
+            "duration" : 125
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I refill object tabular section \"ContactInformation\":",
+            "time" : {
+              "start" : 1721183522163,
+              "stop" : 1721183522288,
+              "duration" : 125
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "aa6158dbb56b0473",
+              "name" : "table",
+              "source" : "aa6158dbb56b0473.csv",
+              "type" : "text/csv",
+              "size" : 3858
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "ContactInformation"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183523121,
+          "stop" : 1721183523565,
+          "duration" : 444
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Create catalog Contracts objects",
+          "time" : {
+            "start" : 1721183523121,
+            "stop" : 1721183523565,
+            "duration" : 444
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Contracts\" objects:",
+            "time" : {
+              "start" : 1721183523121,
+              "stop" : 1721183523565,
+              "duration" : 444
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "34f353daf85d1e90",
+              "name" : "table",
+              "source" : "34f353daf85d1e90.csv",
+              "type" : "text/csv",
+              "size" : 8792
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Contracts"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183525636,
+          "stop" : 1721183526969,
+          "duration" : 1333
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Create catalog Products objects",
+          "time" : {
+            "start" : 1721183525636,
+            "stop" : 1721183526969,
+            "duration" : 1333
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"Products\" objects:",
+            "time" : {
+              "start" : 1721183525636,
+              "stop" : 1721183526829,
+              "duration" : 1193
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "1cc22e50bc63990c",
+              "name" : "table",
+              "source" : "1cc22e50bc63990c.csv",
+              "type" : "text/csv",
+              "size" : 30971
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Products"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "And I check or create catalog \"Products\" objects:",
+            "time" : {
+              "start" : 1721183526922,
+              "stop" : 1721183526969,
+              "duration" : 47
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "c452f2acf7f7861c",
+              "name" : "table",
+              "source" : "c452f2acf7f7861c.csv",
+              "type" : "text/csv",
+              "size" : 661
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "Products"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "try",
+        "time" : {
+          "start" : 1721183527161,
+          "stop" : 1721183527271,
+          "duration" : 110
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Create Information Register ApplicabilityParametersForNumerators",
+          "time" : {
+            "start" : 1721183527161,
+            "stop" : 1721183527271,
+            "duration" : 110
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create information register \"ApplicabilityParametersForNumerators\" records:",
+            "time" : {
+              "start" : 1721183527161,
+              "stop" : 1721183527271,
+              "duration" : 110
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "49b7b583007fa2c8",
+              "name" : "table",
+              "source" : "49b7b583007fa2c8.csv",
+              "type" : "text/csv",
+              "size" : 749
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "ApplicabilityParametersForNumerators"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "try",
+        "time" : {
+          "start" : 1721183527489,
+          "stop" : 1721183527614,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Create catalog FixedAssetsClassifier objects",
+          "time" : {
+            "start" : 1721183527489,
+            "stop" : 1721183527614,
+            "duration" : 125
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"FixedAssetsClassifier\" objects:",
+            "time" : {
+              "start" : 1721183527489,
+              "stop" : 1721183527614,
+              "duration" : 125
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "635487d344c202d4",
+              "name" : "table",
+              "source" : "635487d344c202d4.csv",
+              "type" : "text/csv",
+              "size" : 1726
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "FixedAssetsClassifier"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "Try",
+        "time" : {
+          "start" : 1721183527755,
+          "stop" : 1721183534944,
+          "duration" : 7189
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "And Catalog.CustomsClassifier",
+          "time" : {
+            "start" : 1721183527755,
+            "stop" : 1721183534944,
+            "duration" : 7189
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "And I check or create catalog \"CustomsClassifier\" objects:",
+            "time" : {
+              "start" : 1721183527755,
+              "stop" : 1721183534944,
+              "duration" : 7189
+            },
+            "status" : "broken",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "dbabaa34a3618e00",
+              "name" : "table",
+              "source" : "dbabaa34a3618e00.csv",
+              "type" : "text/csv",
+              "size" : 325
+            } ],
+            "parameters" : [ {
+              "name" : "Парам1",
+              "value" : "CustomsClassifier"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 66,
+      "attachmentsCount" : 17,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 67,
+    "attachmentsCount" : 17,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Data preparation"
+  }, {
+    "name" : "feature",
+    "value" : "160 Assembly build and Specification creation"
+  }, {
+    "name" : "suite",
+    "value" : "160 Assembly build and Specification creation"
+  }, {
+    "name" : "tag",
+    "value" : "fresh"
+  }, {
+    "name" : "tag",
+    "value" : "tree"
+  }, {
+    "name" : "package",
+    "value" : "Basic"
+  }, {
+    "name" : "host",
+    "value" : "WIN-Fresh01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "tree", "fresh" ]
+  },
+  "source" : "30d72a428b0ac902.json",
+  "parameterValues" : [ ]
+}
